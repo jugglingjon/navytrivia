@@ -9,7 +9,8 @@ var $categories,
 	$correctScore=1000,
 	$bonusScore=1000;
 
-var $startTime;
+var $startTime,
+	$questionTimer;
 
 // ====================================
 // 				UTILITIES
@@ -33,6 +34,28 @@ function shuffle(a) {
 //Timer functions
 function startQuestionTimer(){
 	$startTime=Date.now();
+
+	$('.game-timer-bar-inner').animate({
+		width:'0%'
+	},$questionTime,'linear');
+
+	$questionTimer=setTimeout(function(){
+		//check for final question
+		$('.screen-game').fadeOut($globalFadeTime,function(){
+			window.clearTimeout($questionTimer);
+			$('.game-timer-bar-inner').css('width','100%');
+
+			if($currentQuestion<($gameLength-1)){
+				$currentQuestion++;
+				loadQuestion($currentQuestion);
+			}
+			else{
+				endGame();
+			}
+			
+		});
+	},$questionTime);
+
 }
 
 function reportQuestionTimer(){
@@ -92,11 +115,14 @@ function endGame(){
 //loads specified question and options into question screen
 function loadQuestion(question){
 
+	//get current question
 	var currentQuestion=$categories[$currentCategory].questions[question];
 
+	//populate question
 	$('.game-category').text($categories[$currentCategory].title);
 	$('.game-question').text(currentQuestion.question);
 
+	//clear answer space and populate with answers
 	$('.game-answers').empty();
 	$.each(currentQuestion.answers,function(){
 		var newAnswer=$('<a href="#" class="answer">'+this.answer+'</a>');
@@ -106,14 +132,18 @@ function loadQuestion(question){
 		newAnswer.appendTo('.game-answers');
 	});
 
+	//fade in game screen, and begin timer
 	$('.screen-game').fadeIn($globalFadeTime,function(){
 		startQuestionTimer();
 	});
 
+	//when answer clicked
 	$('.answer').click(function(){
 
-		//save question answer time
+		//save question answer time and clear timout, stop animation bar
 		var answerTime=reportQuestionTimer();
+		window.clearTimeout($questionTimer);
+		$('.game-timer-bar-inner').stop();
 		
 		//if correct, calculate score bonus
 		if($(this).hasClass('correct')){			
@@ -144,6 +174,7 @@ function loadQuestion(question){
 
 		//check for final question
 		$('.screen-game').fadeOut($globalFadeTime,function(){
+			$('.game-timer-bar-inner').css('width','100%');
 			if($currentQuestion<($gameLength-1)){
 				$currentQuestion++;
 				loadQuestion($currentQuestion);

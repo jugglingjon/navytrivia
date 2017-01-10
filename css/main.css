@@ -130,3 +130,11 @@ header .header-title {
 #categoriesModal .modal-categories-list .modal-category .modal-category-stats {
   display: flex;
 }
+.screen-game .game-timer-bar {
+  height: 20px;
+}
+.screen-game .game-timer-bar .game-timer-bar-inner {
+  height: 20px;
+  background-color: yellow;
+  width: 100%;
+}
