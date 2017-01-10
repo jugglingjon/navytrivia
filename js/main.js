@@ -25,44 +25,29 @@ function shuffle(a) {
 // 				SCREEN CONTROL
 // ====================================
 
+
+
 //changes to targeted screen
-function changeScreen(screenClass, callbackAfterTransition){
+function changeScreen(screenClass, callbackObj){
 
-	$('.screen:not(.'+screenClass+')').fadeOut($globalFadeTime, function(){
-		if($(this).is($('.screen:not(.'+screenClass+')').last())&&callbackAfterTransition){
-			$('.'+screenClass).fadeIn($globalFadeTime,function(){
-					callbackAfterTransition();
-			});
+	var elementsToFade=$('.screen:not(.'+screenClass+')');
+	var fadeCount=elementsToFade.length;
+
+	elementsToFade.fadeOut($globalFadeTime, function(){
+		if(--fadeCount>0) return;
+
+		if(callbackObj&&callbackObj.before){
+			callbackObj.before();
 		}
-		else if($(this).is($('.screen:not(.'+screenClass+')').last())){
-			$('.'+screenClass).fadeIn($globalFadeTime);
-		}
+		
+		$('.'+screenClass).fadeIn($globalFadeTime,function(){
+			if(callbackObj&&callbackObj.after){
+				callbackObj.after();
+			}
+		});
 	});
 }
 
-//changes to targeted screen with callback before transition
-function changeScreenBeforeTransition(screenClass, callbackBeforeTransition){
-
-	$('.screen:not(.'+screenClass+')').fadeOut($globalFadeTime, function(){
-		if($(this).is($('.screen:not(.'+screenClass+')').last())&&callbackBeforeTransition){
-			callbackBeforeTransition();
-			$('.'+screenClass).fadeIn($globalFadeTime);
-		}
-	});
-}
-
-//changes to targeted screen with callback before transition
-function changeScreenDoubleCallback(screenClass, callbackBeforeTransition, callbackAfterTransition){
-
-	$('.screen:not(.'+screenClass+')').fadeOut($globalFadeTime, function(){
-		if($(this).is($('.screen:not(.'+screenClass+')').last())){
-			callbackBeforeTransition();
-			$('.'+screenClass).fadeIn($globalFadeTime,function(){
-					callbackAfterTransition();
-			});
-		}
-	});
-}
 
 // ====================================
 // 				STORAGE
@@ -248,11 +233,11 @@ $(document).ready(function(){
 	$('body').on('click','.modal-category-play',function(){
 		$('#categoriesModal').modal('hide');
 		$currentCategory=parseInt($(this).attr('data-categoryIndex'));
-		changeScreenBeforeTransition('screen-game',playGame);
+		changeScreen('screen-game',{before:playGame});
 	});
 
 	//back to categories after
 	$('body').on('click','.btn-gameover',function(){
-		changeScreenBeforeTransition('screen-categories',populateCategories);
+		changeScreen('screen-categories',{before:populateCategories});
 	});
 });
