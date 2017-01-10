@@ -59,24 +59,7 @@ function startQuestionTimer(){
 
 		clearInterval($textTimer);
 
-		//after a delay, reset, and proceed to next question or end
-		window.setTimeout(function(){
-			$('.screen-game').fadeOut($globalFadeTime,function(){
-				window.clearTimeout($questionTimer);
-				$('.game-timer-time').text($questionTime/1000);
-				$('.game-answers').removeClass('clicked');
-				$('.game-timer-bar-inner').css('width','100%');
-
-				if($currentQuestion<($gameLength-1)){
-					$currentQuestion++;
-					loadQuestion($currentQuestion);
-				}
-				else{
-					endGame();
-				}
-				
-			});
-		},$answerDisplayDelay);
+		advanceGame();
 	},$questionTime);
 
 }
@@ -154,6 +137,27 @@ function endGame(){
 	});
 }
 
+//advance game to next question or end
+function advanceGame(){
+	//after delay, save answer data for later display, reset and proceed
+	window.setTimeout(function(){
+		cloneGameData();
+		$('.screen-game').fadeOut($globalFadeTime,function(){
+			$('.game-timer-time').text($questionTime/1000);
+			$('.game-timer-bar-inner').css('width','100%');
+			$('.game-answers').removeClass('clicked');
+			if($currentQuestion<($gameLength-1)){
+				$currentQuestion++;
+				loadQuestion($currentQuestion);
+			}
+			else{
+				endGame();
+			}
+			
+		});
+	},$answerDisplayDelay);
+}
+
 //loads specified question and options into question screen
 function loadQuestion(question){
 
@@ -217,23 +221,7 @@ function loadQuestion(question){
 				console.log('incorrect');
 			}
 
-			//after delay, save answer data for later display, reset and proceed
-			window.setTimeout(function(){
-				cloneGameData();
-				$('.screen-game').fadeOut($globalFadeTime,function(){
-					$('.game-timer-time').text($questionTime/1000);
-					$('.game-timer-bar-inner').css('width','100%');
-					$('.game-answers').removeClass('clicked');
-					if($currentQuestion<($gameLength-1)){
-						$currentQuestion++;
-						loadQuestion($currentQuestion);
-					}
-					else{
-						endGame();
-					}
-					
-				});
-			},$answerDisplayDelay);
+			advanceGame();
 		});
 	});
 
