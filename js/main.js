@@ -12,7 +12,8 @@ var $categories,
 	$gameData=[];
 
 var $startTime,
-	$questionTimer;
+	$questionTimer,
+	$textTimer;
 
 // ====================================
 // 				UTILITIES
@@ -43,6 +44,11 @@ function startQuestionTimer(){
 		width:'0%'
 	},$questionTime,'linear');
 
+	$('.game-timer-time').text($questionTime/1000);
+	$textTimer= setInterval(function(){
+		$('.game-timer-time').text($('.game-timer-time').text()-1);
+	},1000);
+
 	//after question time expires
 	$questionTimer=setTimeout(function(){
 		//expose answers
@@ -51,10 +57,13 @@ function startQuestionTimer(){
 		//clone answers and question for display later
 		cloneGameData();
 
+		clearInterval($textTimer);
+
 		//after a delay, reset, and proceed to next question or end
 		window.setTimeout(function(){
 			$('.screen-game').fadeOut($globalFadeTime,function(){
 				window.clearTimeout($questionTimer);
+				$('.game-timer-time').text($questionTime/1000);
 				$('.game-answers').removeClass('clicked');
 				$('.game-timer-bar-inner').css('width','100%');
 
@@ -175,6 +184,8 @@ function loadQuestion(question){
 			$(this).addClass('clicked');
 			$('.game-answers').addClass('clicked');
 
+			clearInterval($textTimer);
+
 			$('.answer').off('click');
 
 			//save question answer time and clear timout, stop animation bar
@@ -210,6 +221,7 @@ function loadQuestion(question){
 			window.setTimeout(function(){
 				cloneGameData();
 				$('.screen-game').fadeOut($globalFadeTime,function(){
+					$('.game-timer-time').text($questionTime/1000);
 					$('.game-timer-bar-inner').css('width','100%');
 					$('.game-answers').removeClass('clicked');
 					if($currentQuestion<($gameLength-1)){
@@ -235,6 +247,7 @@ function playGame(){
 	$currentQuestion=0;
 	$gameScore=0;
 	$gameData=[];
+	$('.game-timer-time').text($questionTime/1000);
 
 	//shuffle questions and begin game
 	shuffle($categories[$currentCategory].questions);
