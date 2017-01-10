@@ -5,9 +5,11 @@ var $categories,
 	$currentQuestion=0,
 	$gameLength=5,
 	$questionTime=10000,
+	$answerDisplayDelay=1000,
 	$bonusBuffer=3000,
 	$correctScore=1000,
-	$bonusScore=1000;
+	$bonusScore=1000,
+	$gameData=[];
 
 var $startTime,
 	$questionTimer;
@@ -33,27 +35,39 @@ function shuffle(a) {
 
 //Timer functions
 function startQuestionTimer(){
+	//save current time
 	$startTime=Date.now();
 
+	//reset timer bar position and begin animation
 	$('.game-timer-bar-inner').animate({
 		width:'0%'
 	},$questionTime,'linear');
 
+	//after question time expires
 	$questionTimer=setTimeout(function(){
-		//check for final question
-		$('.screen-game').fadeOut($globalFadeTime,function(){
-			window.clearTimeout($questionTimer);
-			$('.game-timer-bar-inner').css('width','100%');
+		//expose answers
+		$('.game-answers').addClass('clicked');
+		
+		//clone answers and question for display later
+		cloneGameData();
 
-			if($currentQuestion<($gameLength-1)){
-				$currentQuestion++;
-				loadQuestion($currentQuestion);
-			}
-			else{
-				endGame();
-			}
-			
-		});
+		//after a delay, reset, and proceed to next question or end
+		window.setTimeout(function(){
+			$('.screen-game').fadeOut($globalFadeTime,function(){
+				window.clearTimeout($questionTimer);
+				$('.game-answers').removeClass('clicked');
+				$('.game-timer-bar-inner').css('width','100%');
+
+				if($currentQuestion<($gameLength-1)){
+					$currentQuestion++;
+					loadQuestion($currentQuestion);
+				}
+				else{
+					endGame();
+				}
+				
+			});
+		},$answerDisplayDelay);
 	},$questionTime);
 
 }
@@ -106,10 +120,29 @@ function updateLocalData(){
 // 				GAME
 // ====================================
 
+//clone game data for display at end
+function cloneGameData(){
+	$gameData.push($('.game-data').clone());
+}
+
 //game end
 function endGame(){
+	//update score
 	$('.end-score').text($gameScore);
-	changeScreen('screen-end');
+	
+	//append game data to history div
+	$('.end-history').empty();
+	$.each($gameData,function(){
+		this.appendTo('.end-history');
+	});
+
+	changeScreen('screen-end',{
+		after:function(){
+			$('.end-history').flickity({
+				prevNextButtons:false,
+			});
+		}
+	});
 }
 
 //loads specified question and options into question screen
@@ -135,57 +168,64 @@ function loadQuestion(question){
 	//fade in game screen, and begin timer
 	$('.screen-game').fadeIn($globalFadeTime,function(){
 		startQuestionTimer();
-	});
+		//when answer clicked
+		$('.answer').click(function(){
+			
+			//add clicked classes
+			$(this).addClass('clicked');
+			$('.game-answers').addClass('clicked');
 
-	//when answer clicked
-	$('.answer').click(function(){
+			$('.answer').off('click');
 
-		//save question answer time and clear timout, stop animation bar
-		var answerTime=reportQuestionTimer();
-		window.clearTimeout($questionTimer);
-		$('.game-timer-bar-inner').stop();
-		
-		//if correct, calculate score bonus
-		if($(this).hasClass('correct')){			
-			console.log('correct');
-			console.log('answer time: '+answerTime);
+			//save question answer time and clear timout, stop animation bar
+			var answerTime=reportQuestionTimer();
+			window.clearTimeout($questionTimer);
+			$('.game-timer-bar-inner').stop();
+			
+			//if correct, calculate score bonus
+			if($(this).hasClass('correct')){			
 
-			//add correct score bonus
-			$gameScore+=$correctScore;
+				//add correct score bonus
+				$gameScore+=$correctScore;
 
-			//add time bonus
-			var answerBonus=0;
-			if(answerTime<=3000){
-				answerBonus=$bonusScore;
-			}
-			else if(answerTime>$bonusBuffer&&answerTime<=$questionTime){
-				answerBonus=Math.floor(((($questionTime-$bonusBuffer)-(answerTime-$bonusBuffer))/($questionTime-$bonusBuffer))*$bonusScore);	
-			}
-			$gameScore+=answerBonus;
-			console.log('answer bonus: '+answerBonus);
+				//add time bonus
+				var answerBonus=0;
+				if(answerTime<=3000){
+					answerBonus=$bonusScore;
+				}
+				else if(answerTime>$bonusBuffer&&answerTime<=$questionTime){
+					answerBonus=Math.floor(((($questionTime-$bonusBuffer)-(answerTime-$bonusBuffer))/($questionTime-$bonusBuffer))*$bonusScore);	
+				}
+				$gameScore+=answerBonus;
 
-			//mark correct in data
-			currentQuestion.complete=true;
-			updateLocalData();
-		}
-		else{
-			console.log('incorrect');
-		}
-
-		//check for final question
-		$('.screen-game').fadeOut($globalFadeTime,function(){
-			$('.game-timer-bar-inner').css('width','100%');
-			if($currentQuestion<($gameLength-1)){
-				$currentQuestion++;
-				loadQuestion($currentQuestion);
+				//mark correct in data
+				currentQuestion.complete=true;
+				updateLocalData();
 			}
 			else{
-				endGame();
+				console.log('incorrect');
 			}
-			
+
+			//after delay, save answer data for later display, reset and proceed
+			window.setTimeout(function(){
+				cloneGameData();
+				$('.screen-game').fadeOut($globalFadeTime,function(){
+					$('.game-timer-bar-inner').css('width','100%');
+					$('.game-answers').removeClass('clicked');
+					if($currentQuestion<($gameLength-1)){
+						$currentQuestion++;
+						loadQuestion($currentQuestion);
+					}
+					else{
+						endGame();
+					}
+					
+				});
+			},$answerDisplayDelay);
 		});
-		
 	});
+
+	
 }
 
 //shuffles questionsand initiates game
@@ -194,6 +234,7 @@ function playGame(){
 	//zero out game progress variables
 	$currentQuestion=0;
 	$gameScore=0;
+	$gameData=[];
 
 	//shuffle questions and begin game
 	shuffle($categories[$currentCategory].questions);
@@ -310,6 +351,8 @@ $(document).ready(function(){
 
 	//back to categories after
 	$('body').on('click','.btn-gameover',function(){
-		changeScreen('screen-categories',{before:populateCategories});
+		changeScreen('screen-categories',{before: function(){
+			$('.end-history').flickity('destroy').empty();
+			populateCategories();}});
 	});
 });

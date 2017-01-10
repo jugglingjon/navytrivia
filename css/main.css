@@ -130,11 +130,49 @@ header .header-title {
 #categoriesModal .modal-categories-list .modal-category .modal-category-stats {
   display: flex;
 }
-.screen-game .game-timer-bar {
+.screen-game .game-answers .answer,
+.screen-end .game-answers .answer {
+  background-color: gray;
+  border: 1px solid black;
+  width: 50%;
+  height: 150px;
+  font-size: 20px;
+  line-height: 150px;
+  text-align: center;
+  display: block;
+  float: left;
+  color: black;
+}
+.screen-game .game-answers .answer:active,
+.screen-end .game-answers .answer:active,
+.screen-game .game-answers .answer:hover,
+.screen-end .game-answers .answer:hover {
+  text-decoration: none;
+}
+.screen-game .game-answers.clicked .answer.clicked,
+.screen-end .game-answers.clicked .answer.clicked {
+  background-color: red;
+}
+.screen-game .game-answers.clicked .answer.correct,
+.screen-end .game-answers.clicked .answer.correct {
+  background-color: green;
+}
+.screen-game .game-answers.clicked .answer.clicked.correct,
+.screen-end .game-answers.clicked .answer.clicked.correct {
+  background-color: green;
+}
+.screen-game .game-timer-bar,
+.screen-end .game-timer-bar {
   height: 20px;
 }
-.screen-game .game-timer-bar .game-timer-bar-inner {
+.screen-game .game-timer-bar .game-timer-bar-inner,
+.screen-end .game-timer-bar .game-timer-bar-inner {
   height: 20px;
   background-color: yellow;
   width: 100%;
+}
+.screen-end .game-data {
+  width: 460px;
+  background: #404040;
+  margin-right: 80px;
 }

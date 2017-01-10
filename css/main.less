@@ -214,7 +214,42 @@ header{
 // 				Game
 // ====================================
 
-.screen-game{
+.screen-game,.screen-end{
+	
+	.game-answers{
+		.answer{
+			background-color:gray;
+			border:1px solid black;
+			width: 50%;
+			height: 150px;
+			font-size: 20px;
+			line-height:150px;
+			text-align:center;
+			display:block;
+			float:left;
+			color:black;
+
+			&:active,&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+
+	.game-answers.clicked{
+		.answer{
+			&.clicked{
+				background-color:red;
+			}
+
+			&.correct{
+				background-color:green;
+			}
+
+			&.clicked.correct{
+				background-color:green;
+			}
+		}
+	}
 
 	.game-timer-bar{
 		height: 20px;
@@ -228,8 +263,16 @@ header{
 }
 
 // ====================================
-// 				Section
+// 				End
 // ====================================
+
+.screen-end{
+	.game-data{
+		width: 460px;
+		background:#404040;
+		margin-right: 4*@basePadding;
+	}
+}
 
 // ====================================
 // 				Section
