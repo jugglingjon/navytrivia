@@ -3,7 +3,13 @@ var $categories,
 	$currentCategory,
 	$gameScore=0,
 	$currentQuestion=0,
-	$gameLength=5;
+	$gameLength=5,
+	$questionTime=10000,
+	$bonusBuffer=3000,
+	$correctScore=1000,
+	$bonusScore=1000;
+
+var $startTime;
 
 // ====================================
 // 				UTILITIES
@@ -19,6 +25,21 @@ function shuffle(a) {
 		a[j] = x;
 	}
 }
+
+// ====================================
+// 				TIMER
+// ====================================
+
+//Timer functions
+function startQuestionTimer(){
+	$startTime=Date.now();
+}
+
+function reportQuestionTimer(){
+	var elapsedTime=Date.now()-$startTime;
+	return elapsedTime;
+}
+
 
 
 // ====================================
@@ -85,20 +106,40 @@ function loadQuestion(question){
 		newAnswer.appendTo('.game-answers');
 	});
 
-	$('.screen-game').fadeIn($globalFadeTime);
+	$('.screen-game').fadeIn($globalFadeTime,function(){
+		startQuestionTimer();
+	});
 
 	$('.answer').click(function(){
-		if($(this).hasClass('correct')){
+
+		//save question answer time
+		var answerTime=reportQuestionTimer();
+		
+		//if correct, calculate score bonus
+		if($(this).hasClass('correct')){			
+			console.log('correct');
+			console.log('answer time: '+answerTime);
+
 			//add correct score bonus
-			$gameScore+=1000;
-			alert('correct');
+			$gameScore+=$correctScore;
+
+			//add time bonus
+			var answerBonus=0;
+			if(answerTime<=3000){
+				answerBonus=$bonusScore;
+			}
+			else if(answerTime>$bonusBuffer&&answerTime<=$questionTime){
+				answerBonus=Math.floor(((($questionTime-$bonusBuffer)-(answerTime-$bonusBuffer))/($questionTime-$bonusBuffer))*$bonusScore);	
+			}
+			$gameScore+=answerBonus;
+			console.log('answer bonus: '+answerBonus);
 
 			//mark correct in data
 			currentQuestion.complete=true;
 			updateLocalData();
 		}
 		else{
-			alert('incorrect');
+			console.log('incorrect');
 		}
 
 		//check for final question
