@@ -1,5 +1,24 @@
 var $categories,
-	globalFadeTime=500;
+	$globalFadeTime=500,
+	$currentCategory,
+	$gameScore=0,
+	$currentQuestion=0,
+	$gameLength=5;
+
+// ====================================
+// 				UTILITIES
+// ====================================
+
+//array shuffle function
+function shuffle(a) {
+	var j, x, i;
+	for (i = a.length; i; i--) {
+		j = Math.floor(Math.random() * i);
+		x = a[i - 1];
+		a[i - 1] = a[j];
+		a[j] = x;
+	}
+}
 
 
 // ====================================
@@ -7,18 +26,121 @@ var $categories,
 // ====================================
 
 //changes to targeted screen
-function changeScreen(screenClass, after){
-	$('.screen:not(.'+screenClass+')').fadeOut(globalFadeTime, function(){
-		$('.'+screenClass).fadeIn(globalFadeTime);
-	});
+function changeScreen(screenClass, callbackAfterTransition){
 
-	if(after){
-		after();
-	}
+	$('.screen:not(.'+screenClass+')').fadeOut($globalFadeTime, function(){
+		if($(this).is($('.screen:not(.'+screenClass+')').last())&&callbackAfterTransition){
+			$('.'+screenClass).fadeIn($globalFadeTime,function(){
+					callbackAfterTransition();
+			});
+		}
+		else if($(this).is($('.screen:not(.'+screenClass+')').last())){
+			$('.'+screenClass).fadeIn($globalFadeTime);
+		}
+	});
 }
 
+//changes to targeted screen with callback before transition
+function changeScreenBeforeTransition(screenClass, callbackBeforeTransition){
+
+	$('.screen:not(.'+screenClass+')').fadeOut($globalFadeTime, function(){
+		if($(this).is($('.screen:not(.'+screenClass+')').last())&&callbackBeforeTransition){
+			callbackBeforeTransition();
+			$('.'+screenClass).fadeIn($globalFadeTime);
+		}
+	});
+}
+
+//changes to targeted screen with callback before transition
+function changeScreenDoubleCallback(screenClass, callbackBeforeTransition, callbackAfterTransition){
+
+	$('.screen:not(.'+screenClass+')').fadeOut($globalFadeTime, function(){
+		if($(this).is($('.screen:not(.'+screenClass+')').last())){
+			callbackBeforeTransition();
+			$('.'+screenClass).fadeIn($globalFadeTime,function(){
+					callbackAfterTransition();
+			});
+		}
+	});
+}
+
+// ====================================
+// 				STORAGE
+// ====================================
+
+//updates localhost data after change
+function updateLocalData(){
+
+}
+
+// ====================================
+// 				GAME
+// ====================================
+
+//game end
+function endGame(){
+	$('.end-score').text($gameScore);
+	changeScreen('screen-end');
+}
+
+//loads specified question and options into question screen
+function loadQuestion(question){
+
+	var currentQuestion=$categories[$currentCategory].questions[question];
+
+	$('.game-category').text($categories[$currentCategory].title);
+	$('.game-question').text(currentQuestion.question);
+
+	$('.game-answers').empty();
+	$.each(currentQuestion.answers,function(){
+		var newAnswer=$('<a href="#" class="answer">'+this.answer+'</a>');
+		if(this.correct){
+			newAnswer.addClass('correct');
+		}
+		newAnswer.appendTo('.game-answers');
+	});
+
+	$('.screen-game').fadeIn($globalFadeTime);
+
+	$('.answer').click(function(){
+		if($(this).hasClass('correct')){
+			//add correct score bonus
+			$gameScore+=1000;
+			alert('correct');
+
+			//mark correct in data
+			currentQuestion.complete=true;
+			updateLocalData();
+		}
+		else{
+			alert('incorrect');
+		}
+
+		//check for final question
+		$('.screen-game').fadeOut($globalFadeTime,function(){
+			if($currentQuestion<($gameLength-1)){
+				$currentQuestion++;
+				loadQuestion($currentQuestion);
+			}
+			else{
+				endGame();
+			}
+			
+		});
+		
+	});
+}
+
+//shuffles questionsand initiates game
 function playGame(){
-	//alert('game playing');
+
+	//zero out game progress variables
+	$currentQuestion=0;
+	$gameScore=0;
+
+	//shuffle questions and begin game
+	shuffle($categories[$currentCategory].questions);
+	loadQuestion($currentQuestion);
 }
 
 
@@ -103,6 +225,7 @@ $(document).ready(function(){
 		init(data);
 	});
 
+	//when category button is clicked, open modal and init flickity to that index
 	$('.categories-list').on('click','.category',function(){
 		var clickedIndex=parseInt($(this).attr('data-categoryIndex'));
 		$('#categoriesModal').modal().one('shown.bs.modal', function () {
@@ -124,7 +247,12 @@ $(document).ready(function(){
 	//When play button clicked
 	$('body').on('click','.modal-category-play',function(){
 		$('#categoriesModal').modal('hide');
-		$('.screen-game').text($(this).attr('data-categoryIndex'));
-		changeScreen('screen-game',playGame);
+		$currentCategory=parseInt($(this).attr('data-categoryIndex'));
+		changeScreenBeforeTransition('screen-game',playGame);
+	});
+
+	//back to categories after
+	$('body').on('click','.btn-gameover',function(){
+		changeScreenBeforeTransition('screen-categories',populateCategories);
 	});
 });
