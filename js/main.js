@@ -2,6 +2,9 @@ var $categories,
 	$globalFadeTime=500,
 	$currentCategory,
 	$gameScore=0,
+	$gameBonusScore=0,
+	$gameCorrectScore=0,
+	$gameCorrectCount=0,
 	$currentQuestion=0,
 	$gameLength=5,
 	$questionTime=10000,
@@ -136,8 +139,15 @@ function cloneGameData(){
 
 //game end
 function endGame(){
+
+	//total scores
+	$gameScore=$gameBonusScore+$gameCorrectScore;
+
 	//render end screen
-	$('.end-score').text($gameScore);
+	$('.correct-score').text($gameCorrectCount + '/' + $gameLength +' Correct: '+ $gameCorrectScore);
+	$('.bonus-score').text('Time Bonus: '+ $gameBonusScore);
+	$('.end-score').text('Score: '+ $gameScore);
+	$('.end-category').text($categories[$currentCategory].title);
 	
 	//append game data to history div
 	$('.end-history').empty();
@@ -236,8 +246,11 @@ function loadQuestion(question){
 			//if correct, calculate score bonus
 			if($(this).hasClass('correct')){			
 
+				//iterate correct count
+				$gameCorrectCount++;
+
 				//add correct score bonus
-				$gameScore+=$correctScore;
+				$gameCorrectScore+=$correctScore;
 
 				//add time bonus
 				var answerBonus=0;
@@ -247,7 +260,7 @@ function loadQuestion(question){
 				else if(answerTime>$bonusBuffer&&answerTime<=$questionTime){
 					answerBonus=Math.floor(((($questionTime-$bonusBuffer)-(answerTime-$bonusBuffer))/($questionTime-$bonusBuffer))*$bonusScore);	
 				}
-				$gameScore+=answerBonus;
+				$gameBonusScore+=answerBonus;
 
 				//mark correct in data, and update local
 				currentQuestion.complete=true;
@@ -270,6 +283,9 @@ function playGame(){
 	//zero out game progress variables
 	$currentQuestion=0;
 	$gameScore=0;
+	$gameCorrectCount=0;
+	$gameCorrectScore=0;
+	$gameBonusScore=0;
 	$gameData=[];
 	$('.game-timer-time').text($questionTime/1000);
 
