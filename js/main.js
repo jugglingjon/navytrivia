@@ -166,14 +166,17 @@ function processAchievements(callback){
 		}
 
 	});
-	$('#achievementsModal').modal().one('shown.bs.modal', function () {
-		$('.modal-achievements-list').flickity({
-			prevNextButtons:false,
-			pageDots:false
+	
+	if($('.modal-achievement').length){
+		$('#achievementsModal').modal().one('shown.bs.modal', function () {
+			$('.modal-achievements-list').flickity({
+				prevNextButtons:false,
+				pageDots:false
+			});
+			$('.modal-achievements-list').animate({opacity:'1'},$globalFadeTime);
 		});
-		$('.modal-achievements-list').animate({opacity:'1'},$globalFadeTime);
-	});
-
+	}
+	
 	callback();
 }
 
