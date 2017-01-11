@@ -224,6 +224,19 @@ header .header-title {
 #achievementsModal .modal-achievements-list .modal-achievement .modal-category-stats {
   display: flex;
 }
+.screen-stats .stats-questions-completed {
+  background: gray;
+  height: 20px;
+}
+.screen-stats .stats-questions-completed .stats-questions-completed-inner {
+  display: block;
+  width: 0%;
+  height: 20px;
+  background-color: yellow;
+}
+.screen-stats .stats-categories-list .stats-category img {
+  max-width: 100px;
+}
 .screen-game .game-answers .answer,
 .screen-end .game-answers .answer {
   background-color: gray;

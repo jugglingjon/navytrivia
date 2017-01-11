@@ -150,6 +150,7 @@ function processAchievements(callback){
 			console.log(criteria.stat+criteria.operator+criteria.threshold);
 			console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
 			this.complete=true;
+			this.completedOn=Date.now();
 
 			//build modal achievement
 			var newAchievement='<div class="modal-achievement">'+
@@ -388,6 +389,85 @@ function playGame(){
 	loadQuestion($currentQuestion);
 }
 
+// ====================================
+// 				STATS
+// ====================================
+
+//populate stats screen
+function populateStats(){
+
+	//empty existing data form lists
+	$('.stats-latest-achievements-list,.stats-categories-list').empty();
+
+	//variables for accumulation
+	var achievementCount=0,
+		completedQuestions=0,
+		totalQuestions=0,
+		completedCategories=0,
+		completedAchievements=[];
+
+	//loop achievements increment count if complete
+	$.each($data.achievements,function(){
+		if(this.complete){
+			achievementCount++;
+			completedAchievements.push(this);
+		}
+	});
+
+	//sort completed achievements by date, newest to oldest
+	completedAchievements.sort(function(a,b){
+		return parseFloat(b.completedOn) - parseFloat(a.completedOn);
+	});
+
+	//slice to 3 newest achievements, display
+	var newestCompletedAchievements= completedAchievements.slice(0,3);
+	$.each(newestCompletedAchievements, function(){
+		$('<h4>'+this.title+'</h4>').appendTo('.stats-latest-achievements-list');
+	});
+
+	//get completed questions total count and add category to category list
+	$.each($categories,function(){
+		
+		var categoryCompleted=0,
+			categoryTotalQuestions=0;
+
+		//for each question, count completed nad total
+		$.each(this.questions,function(){
+			if(this.complete){
+				categoryCompleted++;
+			}
+			categoryTotalQuestions++;
+		});
+
+		//if category fully complete, increment complete count
+		if(categoryCompleted===categoryTotalQuestions){
+			completedCategories++;
+		}
+
+		//add topic totals to overall totals
+		completedQuestions+=categoryCompleted;
+		totalQuestions+=categoryTotalQuestions;
+
+		//render category listing for stats screen
+		var newCategory='<div class="stats-category">'+
+				'<img src="categories/'+this.slug+'.png">'+
+				'<h4>'+this.title+'</h4>'+
+				'<h5>Completed: '+categoryCompleted+'/'+categoryTotalQuestions+'</h5>'+
+				'<h5>Times played: '+this.played+'</h5>'+
+				'<h5>High score: '+this.highScore+'</h5>'+
+				'<h5>Last score: '+this.lastScore+'</h5>'+
+			'</div>';
+
+		//add to list
+		$(newCategory).appendTo('.stats-categories-list');
+	});
+
+	//add general stats
+	$('.stats-times-played .stat-number').text($data.stats.gamesPlayed);
+	$('.stats-achievements .stat-number').text(achievementCount);
+	$('.stats-completed .stat-number').text(completedCategories);
+	$('.stats-questions-completed-inner').css('width',completedQuestions/totalQuestions*100+'%')
+}
 
 // ====================================
 // 				CATEGORIES
@@ -514,6 +594,11 @@ $(document).ready(function(){
 	//navigate to achievements screen
 	$('.nav-achievements').click(function(){
 		changeScreen('screen-achievements',{before:populateAchievements});
+	});
+
+	//navigate to achievements screen
+	$('.nav-stats').click(function(){
+		changeScreen('screen-stats',{before:populateStats});
 	});
 
 	//navigate to categories screen

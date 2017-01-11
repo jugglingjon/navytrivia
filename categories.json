@@ -120,7 +120,6 @@
 				},
 				{
 					"question": "2What is the Navy?",
-					"complete":false,
 					"answers":[
 						{"answer": "A color"},
 						{"answer": "A store"},
@@ -130,7 +129,6 @@
 				},
 				{
 					"question": "3What is the Navy?",
-					"complete":true,
 					"answers":[
 						{"answer": "A color"},
 						{"answer": "A store"},
@@ -140,183 +138,6 @@
 				},
 				{
 					"question": "4What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				}
-			]
-		},
-		{
-			"title": "Naval History 2",
-			"slug": "navalhistory",
-			"image": true,
-			"description": "Important figures, dates, and events for the US Navy",
-			"highScore": 1500,
-			"lastScore": 1200,
-			"cumulativeScore":4500,
-			"played":4,
-			"questions":[
-				{
-					"question": "5What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "6What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "7What is the Navy?",
-					"complete":false,
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "8What is the Navy?",
-					"complete":true,
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "9What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				}
-			]
-		},
-		{
-			"title": "Naval History",
-			"slug": "navalhistory",
-			"image": true,
-			"description": "Important figures, dates, and events for the US Navy",
-			"highScore": 1500,
-			"lastScore": 1200,
-			"cumulativeScore":4500,
-			"played":4,
-			"questions":[
-				{
-					"question": "10What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "11What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "12What is the Navy?",
-					"complete":false,
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "13What is the Navy?",
-					"complete":true,
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "14What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				}
-			]
-		},
-		{
-			"title": "Naval History 2",
-			"slug": "navalhistory",
-			"image": true,
-			"description": "Important figures, dates, and events for the US Navy",
-			"highScore": 1500,
-			"lastScore": 1200,
-			"cumulativeScore":4500,
-			"played":4,
-			"questions":[
-				{
-					"question": "15What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "16What is the Navy?",
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "17What is the Navy?",
-					"complete":false,
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "18What is the Navy?",
-					"complete":true,
-					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
-					]
-				},
-				{
-					"question": "19What is the Navy?",
 					"answers":[
 						{"answer": "A color"},
 						{"answer": "A store"},
