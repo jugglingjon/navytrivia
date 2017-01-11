@@ -138,13 +138,10 @@ function loadData(){
 
 //scan and process newly earned achievements
 function processAchievements(callback){
+	
+	$('.modal-achievements-list').empty();
 	$.each($data.achievements,function(){
 		var criteria=this.criteria;
-
-		// console.log('\n\nTesting achivement '+this.title);
-		// console.log(this.description);
-		// console.log(criteria.stat+criteria.operator+criteria.threshold);
-		// console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
 
 		//build and evaluate test criteria for incomplete achievements
 		if(eval(criteria.stat+criteria.operator+criteria.threshold)&&!this.complete){
@@ -153,8 +150,28 @@ function processAchievements(callback){
 			console.log(criteria.stat+criteria.operator+criteria.threshold);
 			console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
 			this.complete=true;
+
+			//build modal achievement
+			var newAchievement='<div class="modal-achievement">'+
+				'<h2>Achievement Unlocked</h2>'+
+				'<div class="achievement-image-wrapper">'+
+					'<img src="achievements/'+this.slug+'.png">'+
+				'</div>'+
+				'<h2 class="achievement-title">'+this.title+'</h2>'+
+				'<p>'+this.description+'</p>'+
+			'</div>';
+
+			//append to field
+			$(newAchievement).appendTo('.modal-achievements-list');
 		}
 
+	});
+	$('#achievementsModal').modal().one('shown.bs.modal', function () {
+		$('.modal-achievements-list').flickity({
+			prevNextButtons:false,
+			pageDots:false
+		});
+		$('.modal-achievements-list').animate({opacity:'1'},$globalFadeTime);
 	});
 
 	callback();
@@ -460,14 +477,14 @@ $(document).ready(function(){
 	//back to categories after
 	$('body').on('click','.btn-gameover',function(){
 		changeScreen('screen-categories',{before: function(){
-			$('.end-history').flickity('destroy').empty().css('opacity','0');
+			$('.end-history, .modal-achievements-list').flickity('destroy').empty().css('opacity','0');
 			populateCategories();}});
 	});
 
 	//try again button, restart game
 	$('body').on('click','.btn-restart',function(){
 		changeScreen('screen-game',{before:function(){
-			$('.end-history').flickity('destroy').empty().css('opacity','0');
+			$('.end-history, .modal-achievements-list').flickity('destroy').empty().css('opacity','0');
 			$consecutiveGames++;
 			playGame();
 		}});

@@ -78,33 +78,64 @@ header .header-title {
   background-color: yellow;
 }
 #categoriesModal .modal-dialog,
+#achievementsModal .modal-dialog,
 #categoriesModal .modal-content,
-#categoriesModal .modal-body {
+#achievementsModal .modal-content,
+#categoriesModal .modal-body,
+#achievementsModal .modal-body {
   background: none;
   box-shadow: none;
 }
-#categoriesModal .modal-dialog {
+#categoriesModal .modal-dialog,
+#achievementsModal .modal-dialog {
   width: auto;
   margin: 0;
   top: 140px;
 }
-#categoriesModal .modal-body {
+#categoriesModal .modal-body,
+#achievementsModal .modal-body {
   padding: 0;
 }
-#categoriesModal .modal-content {
+#categoriesModal .modal-content,
+#achievementsModal .modal-content {
   border: 0;
 }
-#categoriesModal .modal-categories-list {
+#categoriesModal .modal-categories-list,
+#achievementsModal .modal-categories-list,
+#categoriesModal .modal-achievements-list,
+#achievementsModal .modal-achievements-list {
   opacity: 0;
 }
-#categoriesModal .modal-categories-list .modal-category {
+#categoriesModal .modal-categories-list .modal-category,
+#achievementsModal .modal-categories-list .modal-category,
+#categoriesModal .modal-achievements-list .modal-category,
+#achievementsModal .modal-achievements-list .modal-category,
+#categoriesModal .modal-categories-list .modal-achievement,
+#achievementsModal .modal-categories-list .modal-achievement,
+#categoriesModal .modal-achievements-list .modal-achievement,
+#achievementsModal .modal-achievements-list .modal-achievement {
   width: 460px;
   margin-right: 80px;
   background-color: white;
   color: black;
   text-align: center;
 }
-#categoriesModal .modal-categories-list .modal-category .category-image-wrapper {
+#categoriesModal .modal-categories-list .modal-category .category-image-wrapper,
+#achievementsModal .modal-categories-list .modal-category .category-image-wrapper,
+#categoriesModal .modal-achievements-list .modal-category .category-image-wrapper,
+#achievementsModal .modal-achievements-list .modal-category .category-image-wrapper,
+#categoriesModal .modal-categories-list .modal-achievement .category-image-wrapper,
+#achievementsModal .modal-categories-list .modal-achievement .category-image-wrapper,
+#categoriesModal .modal-achievements-list .modal-achievement .category-image-wrapper,
+#achievementsModal .modal-achievements-list .modal-achievement .category-image-wrapper,
+#categoriesModal .modal-categories-list .modal-category .achievement-image-wrapper,
+#achievementsModal .modal-categories-list .modal-category .achievement-image-wrapper,
+#categoriesModal .modal-achievements-list .modal-category .achievement-image-wrapper,
+#achievementsModal .modal-achievements-list .modal-category .achievement-image-wrapper,
+#categoriesModal .modal-categories-list .modal-achievement .achievement-image-wrapper,
+#achievementsModal .modal-categories-list .modal-achievement .achievement-image-wrapper,
+#categoriesModal .modal-achievements-list .modal-achievement .achievement-image-wrapper,
+#achievementsModal .modal-achievements-list .modal-achievement .achievement-image-wrapper {
   display: inline-block;
   width: 50%;
   border-radius: 50%;
@@ -112,22 +143,58 @@ header .header-title {
   margin-top: 20px;
   background: gray;
 }
-#categoriesModal .modal-categories-list .modal-category .category-image-wrapper img {
+#categoriesModal .modal-categories-list .modal-category .category-image-wrapper img,
+#achievementsModal .modal-categories-list .modal-category .category-image-wrapper img,
+#categoriesModal .modal-achievements-list .modal-category .category-image-wrapper img,
+#achievementsModal .modal-achievements-list .modal-category .category-image-wrapper img,
+#categoriesModal .modal-categories-list .modal-achievement .category-image-wrapper img,
+#achievementsModal .modal-categories-list .modal-achievement .category-image-wrapper img,
+#categoriesModal .modal-achievements-list .modal-achievement .category-image-wrapper img,
+#achievementsModal .modal-achievements-list .modal-achievement .category-image-wrapper img,
+#categoriesModal .modal-categories-list .modal-category .achievement-image-wrapper img,
+#achievementsModal .modal-categories-list .modal-category .achievement-image-wrapper img,
+#categoriesModal .modal-achievements-list .modal-category .achievement-image-wrapper img,
+#achievementsModal .modal-achievements-list .modal-category .achievement-image-wrapper img,
+#categoriesModal .modal-categories-list .modal-achievement .achievement-image-wrapper img,
+#achievementsModal .modal-categories-list .modal-achievement .achievement-image-wrapper img,
+#categoriesModal .modal-achievements-list .modal-achievement .achievement-image-wrapper img,
+#achievementsModal .modal-achievements-list .modal-achievement .achievement-image-wrapper img {
   display: inline-block;
   width: 100%;
   height: auto;
 }
-#categoriesModal .modal-categories-list .modal-category .category-progress {
+#categoriesModal .modal-categories-list .modal-category .category-progress,
+#achievementsModal .modal-categories-list .modal-category .category-progress,
+#categoriesModal .modal-achievements-list .modal-category .category-progress,
+#achievementsModal .modal-achievements-list .modal-category .category-progress,
+#categoriesModal .modal-categories-list .modal-achievement .category-progress,
+#achievementsModal .modal-categories-list .modal-achievement .category-progress,
+#categoriesModal .modal-achievements-list .modal-achievement .category-progress,
+#achievementsModal .modal-achievements-list .modal-achievement .category-progress {
   background: gray;
   height: 20px;
 }
-#categoriesModal .modal-categories-list .modal-category .category-progress .category-progress-inner {
+#categoriesModal .modal-categories-list .modal-category .category-progress .category-progress-inner,
+#achievementsModal .modal-categories-list .modal-category .category-progress .category-progress-inner,
+#categoriesModal .modal-achievements-list .modal-category .category-progress .category-progress-inner,
+#achievementsModal .modal-achievements-list .modal-category .category-progress .category-progress-inner,
+#categoriesModal .modal-categories-list .modal-achievement .category-progress .category-progress-inner,
+#achievementsModal .modal-categories-list .modal-achievement .category-progress .category-progress-inner,
+#categoriesModal .modal-achievements-list .modal-achievement .category-progress .category-progress-inner,
+#achievementsModal .modal-achievements-list .modal-achievement .category-progress .category-progress-inner {
   display: block;
   width: 40%;
   height: 20px;
   background-color: yellow;
 }
-#categoriesModal .modal-categories-list .modal-category .modal-category-stats {
+#categoriesModal .modal-categories-list .modal-category .modal-category-stats,
+#achievementsModal .modal-categories-list .modal-category .modal-category-stats,
+#categoriesModal .modal-achievements-list .modal-category .modal-category-stats,
+#achievementsModal .modal-achievements-list .modal-category .modal-category-stats,
+#categoriesModal .modal-categories-list .modal-achievement .modal-category-stats,
+#achievementsModal .modal-categories-list .modal-achievement .modal-category-stats,
+#categoriesModal .modal-achievements-list .modal-achievement .modal-category-stats,
+#achievementsModal .modal-achievements-list .modal-achievement .modal-category-stats {
   display: flex;
 }
 .screen-game .game-answers .answer,
