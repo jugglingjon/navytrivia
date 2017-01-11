@@ -210,8 +210,13 @@ function loadQuestion(question){
 		newAnswer.appendTo('.game-answers');
 	});
 
+	//set dots
+	$('.game-progress-dot').removeClass('current past').eq(question).addClass('current');
+	$('.game-progress-dot:lt('+question+')').addClass('past');
+
 	//fade in game screen, and begin timer
 	$('.screen-game').fadeIn($globalFadeTime,function(){
+		
 		startQuestionTimer();
 
 		//when answer clicked
@@ -267,6 +272,12 @@ function playGame(){
 	$gameScore=0;
 	$gameData=[];
 	$('.game-timer-time').text($questionTime/1000);
+
+	//setup game dots
+	$('.game-progress-dots').empty();
+	for(var i=0;i<$gameLength;i++){
+		$('.game-progress-dots').append($('<div class="game-progress-dot"></div>'));
+	}
 
 	//shuffle questions and begin game
 	shuffle($categories[$currentCategory].questions);

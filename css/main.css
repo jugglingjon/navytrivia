@@ -171,8 +171,37 @@ header .header-title {
   background-color: yellow;
   width: 100%;
 }
+.game-progress-dots {
+  text-align: center;
+}
+.game-progress-dots .game-progress-dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 10px;
+  background: white;
+  opacity: .2;
+}
+.game-progress-dots .game-progress-dot.past {
+  opacity: .6;
+}
+.game-progress-dots .game-progress-dot.current {
+  opacity: 1;
+  background-color: yellow;
+}
 .screen-end .game-data {
   width: 460px;
   background: #404040;
   margin-right: 80px;
+}
+.screen-end .game-data {
+  width: 460px;
+  background: #404040;
+  margin-right: 80px;
+}
+.game-progress-dots {
+  text-align: center;
+}
+.game-progress-dots .game-progress-dot {
+  display: inline-block;
 }
