@@ -38,6 +38,17 @@ function shuffle(a) {
 	}
 }
 
+//randomize jquery object children
+$.fn.randomize = function(selector){
+    (selector ? this.find(selector) : this).parent().each(function(){
+        $(this).children(selector).sort(function(){
+            return Math.random() - 0.5;
+        }).detach().appendTo(this);
+    });
+
+    return this;
+};
+
 // ====================================
 // 				TIMER
 // ====================================
@@ -145,10 +156,10 @@ function processAchievements(callback){
 
 		//build and evaluate test criteria for incomplete achievements
 		if(eval(criteria.stat+criteria.operator+criteria.threshold)&&!this.complete){
-			console.log('\n\nAchievement Unlocked: '+this.title);
-			console.log(this.description);
-			console.log(criteria.stat+criteria.operator+criteria.threshold);
-			console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
+			// console.log('\n\nAchievement Unlocked: '+this.title);
+			// console.log(this.description);
+			// console.log(criteria.stat+criteria.operator+criteria.threshold);
+			// console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
 			this.complete=true;
 			this.completedOn=Date.now();
 
@@ -302,6 +313,7 @@ function loadQuestion(question){
 		}
 		newAnswer.appendTo('.game-answers');
 	});
+	$('.game-answers').randomize('.answer');
 
 	//set dot colors
 	$('.game-progress-dot').removeClass('current past').eq(question).addClass('current');
@@ -466,7 +478,7 @@ function populateStats(){
 	$('.stats-times-played .stat-number').text($data.stats.gamesPlayed);
 	$('.stats-achievements .stat-number').text(achievementCount);
 	$('.stats-completed .stat-number').text(completedCategories);
-	$('.stats-questions-completed-inner').css('width',completedQuestions/totalQuestions*100+'%')
+	$('.stats-questions-completed-inner').css('width',completedQuestions/totalQuestions*100+'%');
 }
 
 // ====================================
