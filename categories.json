@@ -1,4 +1,94 @@
 {
+	"stats":
+		{
+			"gamesPlayed":0,
+			"cumulativeScore":0,
+			"bonusScore":0,
+			"correctScore":0,
+			"perfectGames":0,
+			"fastAnswers":0
+		},
+	"achievements":
+		[
+			{
+				"title":"Consecutive Games",
+				"slug": "testachievement",
+				"description": "3 consecutive games within a single topic",
+				"image": true,
+				"criteria":{
+					"stat": "$consecutiveGames",
+					"operator": ">=",
+					"threshold": 3
+				}
+			},
+			{
+				"title":"Single Topic Score",
+				"slug": "testachievement",
+				"description": "5,000 points within a single topic",
+				"image": true,
+				"criteria":{
+					"stat": "$categories[$currentCategory].cumulativeScore",
+					"operator": ">=",
+					"threshold": 5000
+				}
+			},
+			{
+				"title":"Overall Games Played",
+				"slug": "testachievement",
+				"description": "Play 5 games",
+				"image": true,
+				"criteria":{
+					"stat": "$data.stats.gamesPlayed",
+					"operator": ">=",
+					"threshold": 5
+				}
+			},
+			{
+				"title":"Overall Score",
+				"slug": "testachievement",
+				"description": "Overall Score of 20,000",
+				"image": true,
+				"criteria":{
+					"stat": "$data.stats.cumulativeScore",
+					"operator": ">=",
+					"threshold": 20000
+				}
+			},
+			{
+				"title":"Perfect Scores",
+				"slug": "testachievement",
+				"description": "1 Perfect Score Game",
+				"image": true,
+				"criteria":{
+					"stat": "$data.stats.perfectGames",
+					"operator": ">=",
+					"threshold": 1
+				}
+			},
+			{
+				"title":"Speed",
+				"slug": "testachievement",
+				"description": "3 questions correct in under 5 seconds",
+				"image": true,
+				"criteria":{
+					"stat": "$data.stats.fastAnswers",
+					"operator": ">=",
+					"threshold": 3
+				}
+			},
+			{
+				"title":"Bonus Points",
+				"slug": "testachievement",
+				"description": "Earn 500 Bonus Points",
+				"image": true,
+				"criteria":{
+					"stat": "$data.stats.bonusScore",
+					"operator": ">=",
+					"threshold": 500
+				}
+			}
+		]
+	,
 	"categories":[
 		{
 			"title": "Naval History",

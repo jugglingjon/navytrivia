@@ -1,11 +1,15 @@
-var $categories,
+var $data,
+	$categories,
 	$globalFadeTime=500,
 	$currentCategory,
 	$gameScore=0,
 	$gameBonusScore=0,
 	$gameCorrectScore=0,
 	$gameCorrectCount=0,
+	$gameFastAnswers=0,
+	$fastAnswerTime=5000,
 	$currentQuestion=0,
+	$consecutiveGames=0,
 	$gameLength=5,
 	$questionTime=10000,
 	$answerDisplayDelay=750,
@@ -111,21 +115,49 @@ function changeScreen(screenClass, callbackObj){
 
 //updates localhost data after change
 function updateLocalData(){
-	localStorage[$localKey]=JSON.stringify($categories);
+	localStorage[$localKey]=JSON.stringify($data);
 }
 
 //load local data if available
 function loadData(){
 	if(localStorage[$localKey]){
-		var localCategories=JSON.parse(localStorage[$localKey]);
-		init(localCategories);
+		var localData=JSON.parse(localStorage[$localKey]);
+		init(localData);
 	}
 	else{
 		//read json data file and initiate
 		$.getJSON('categories.json', function(data){
-			init(data.categories);
+			init(data);
 		});
 	}
+}
+
+// ====================================
+// 				ACHIEVEMENTS
+// ====================================
+
+//scan and process newly earned achievements
+function processAchievements(callback){
+	$.each($data.achievements,function(){
+		var criteria=this.criteria;
+
+		// console.log('\n\nTesting achivement '+this.title);
+		// console.log(this.description);
+		// console.log(criteria.stat+criteria.operator+criteria.threshold);
+		// console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
+
+		//build and evaluate test criteria for incomplete achievements
+		if(eval(criteria.stat+criteria.operator+criteria.threshold)&&!this.complete){
+			console.log('\n\nAchievement Unlocked: '+this.title);
+			console.log(this.description);
+			console.log(criteria.stat+criteria.operator+criteria.threshold);
+			console.log(eval(criteria.stat+criteria.operator+criteria.threshold));
+			this.complete=true;
+		}
+
+	});
+
+	callback();
 }
 
 // ====================================
@@ -163,7 +195,19 @@ function endGame(){
 	$categories[$currentCategory].cumulativeScore+=$gameScore;
 	$categories[$currentCategory].played++;
 
-	updateLocalData();
+	//save for overall stats, if perfect, iterate that
+	$data.stats.gamesPlayed++;
+	$data.stats.cumulativeScore+=$gameScore;
+	$data.stats.correctScore+=$gameCorrectScore;
+	$data.stats.bonusScore+=$gameBonusScore;
+	$data.stats.fastAnswers+=$gameFastAnswers;
+	if($gameScore===($bonusScore+$correctScore)*$gameLength){
+		$data.stats.perfectGames++;
+	}
+
+	//process achievements and update local data
+	processAchievements(updateLocalData);
+	
 
 	//nav to end screen and start flickity when shown
 	changeScreen('screen-end',{
@@ -262,6 +306,11 @@ function loadQuestion(question){
 				}
 				$gameBonusScore+=answerBonus;
 
+				//if answered fast, add to count
+				if(answerTime<$fastAnswerTime){
+					$gameFastAnswers++;
+				}
+
 				//mark correct in data, and update local
 				currentQuestion.complete=true;
 				updateLocalData();
@@ -285,6 +334,7 @@ function playGame(){
 	$gameScore=0;
 	$gameCorrectCount=0;
 	$gameCorrectScore=0;
+	$gameFastAnswers=0;
 	$gameBonusScore=0;
 	$gameData=[];
 	$('.game-timer-time').text($questionTime/1000);
@@ -370,7 +420,8 @@ function populateCategories(){
 function init(data){
 
 	//define categories from data, populate first screen
-	$categories=data;
+	$data=data;
+	$categories=$data.categories;
 	populateCategories();
 	
 }
@@ -402,6 +453,7 @@ $(document).ready(function(){
 	$('body').on('click','.modal-category-play',function(){
 		$('#categoriesModal').modal('hide');
 		$currentCategory=parseInt($(this).attr('data-categoryIndex'));
+		$consecutiveGames=1;
 		changeScreen('screen-game',{before:playGame});
 	});
 
@@ -416,6 +468,7 @@ $(document).ready(function(){
 	$('body').on('click','.btn-restart',function(){
 		changeScreen('screen-game',{before:function(){
 			$('.end-history').flickity('destroy').empty().css('opacity','0');
+			$consecutiveGames++;
 			playGame();
 		}});
 	});
