@@ -210,7 +210,7 @@ function loadQuestion(question){
 		newAnswer.appendTo('.game-answers');
 	});
 
-	//set dots
+	//set dot colors
 	$('.game-progress-dot').removeClass('current past').eq(question).addClass('current');
 	$('.game-progress-dot:lt('+question+')').addClass('past');
 
