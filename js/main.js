@@ -411,4 +411,12 @@ $(document).ready(function(){
 			$('.end-history').flickity('destroy').empty().css('opacity','0');
 			populateCategories();}});
 	});
+
+	//try again button, restart game
+	$('body').on('click','.btn-restart',function(){
+		changeScreen('screen-game',{before:function(){
+			$('.end-history').flickity('destroy').empty().css('opacity','0');
+			playGame();
+		}});
+	});
 });
