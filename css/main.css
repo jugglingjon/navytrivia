@@ -40,12 +40,16 @@ header .header-title {
   font-size: 28px;
   text-transform: uppercase;
 }
-.categories-list {
+.categories-list,
+.achievements-list {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.categories-list .category {
+.categories-list .category,
+.achievements-list .category,
+.categories-list .achievement,
+.achievements-list .achievement {
   display: block;
   width: 200px;
   margin: 10px;
@@ -53,25 +57,48 @@ header .header-title {
   text-align: center;
   color: white;
 }
-.categories-list .category .category-image-wrapper {
+.categories-list .category .category-image-wrapper,
+.achievements-list .category .category-image-wrapper,
+.categories-list .achievement .category-image-wrapper,
+.achievements-list .achievement .category-image-wrapper,
+.categories-list .category .achievement-image-wrapper,
+.achievements-list .category .achievement-image-wrapper,
+.categories-list .achievement .achievement-image-wrapper,
+.achievements-list .achievement .achievement-image-wrapper {
   border-radius: 50%;
   padding: 20px;
   background: gray;
 }
-.categories-list .category .category-image-wrapper img {
+.categories-list .category .category-image-wrapper img,
+.achievements-list .category .category-image-wrapper img,
+.categories-list .achievement .category-image-wrapper img,
+.achievements-list .achievement .category-image-wrapper img,
+.categories-list .category .achievement-image-wrapper img,
+.achievements-list .category .achievement-image-wrapper img,
+.categories-list .achievement .achievement-image-wrapper img,
+.achievements-list .achievement .achievement-image-wrapper img {
   display: inline-block;
   width: 100%;
   height: auto;
 }
-.categories-list .category span {
+.categories-list .category span,
+.achievements-list .category span,
+.categories-list .achievement span,
+.achievements-list .achievement span {
   display: block;
   margin: 10px 0;
 }
-.categories-list .category .category-progress {
+.categories-list .category .category-progress,
+.achievements-list .category .category-progress,
+.categories-list .achievement .category-progress,
+.achievements-list .achievement .category-progress {
   background: gray;
   height: 20px;
 }
-.categories-list .category .category-progress .category-progress-inner {
+.categories-list .category .category-progress .category-progress-inner,
+.achievements-list .category .category-progress .category-progress-inner,
+.categories-list .achievement .category-progress .category-progress-inner,
+.achievements-list .achievement .category-progress .category-progress-inner {
   display: block;
   width: 40%;
   height: 20px;

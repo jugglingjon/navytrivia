@@ -176,8 +176,26 @@ function processAchievements(callback){
 			$('.modal-achievements-list').animate({opacity:'1'},$globalFadeTime);
 		});
 	}
-	
+
 	callback();
+}
+
+//populate achievements screen
+function populateAchievements(){
+	$('.achievements-list').empty();
+	$.each($data.achievements, function(){
+
+		var image=this.complete?this.slug:'lock';
+
+		var newAchievement='<a href="#" class="achievement">'+
+				'<div class="achievement-image-wrapper">'+
+					'<img src="achievements/'+image+'.png">'+
+				'</div>'+
+				'<span class="achievement-title">'+this.title+'</span>'+
+				'<span class="achievement-description">'+this.description+'</span>'+
+			'</a>';
+		$(newAchievement).appendTo('.achievements-list');
+	});
 }
 
 // ====================================
@@ -491,5 +509,15 @@ $(document).ready(function(){
 			$consecutiveGames++;
 			playGame();
 		}});
+	});
+
+	//navigate to achievements screen
+	$('.nav-achievements').click(function(){
+		changeScreen('screen-achievements',{before:populateAchievements});
+	});
+
+	//navigate to categories screen
+	$('.nav-categories').click(function(){
+		changeScreen('screen-categories');
 	});
 });
