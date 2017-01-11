@@ -302,7 +302,7 @@ function playGame(){
 
 
 // ====================================
-// 				DATA
+// 				CATEGORIES
 // ====================================
 
 //populates categories list with fresh data
