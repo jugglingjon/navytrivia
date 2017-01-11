@@ -5,10 +5,10 @@
 			"slug": "navalhistory",
 			"image": true,
 			"description": "Important figures, dates, and events for the US Navy",
-			"highScore": 1500,
-			"lastScore": 1200,
-			"cumulativeScore":4500,
-			"played":4,
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
 			"questions":[
 				{
 					"question": "0What is the Navy?",

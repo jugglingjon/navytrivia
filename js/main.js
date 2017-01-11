@@ -5,11 +5,12 @@ var $categories,
 	$currentQuestion=0,
 	$gameLength=5,
 	$questionTime=10000,
-	$answerDisplayDelay=1000,
+	$answerDisplayDelay=750,
 	$bonusBuffer=3000,
 	$correctScore=1000,
 	$bonusScore=1000,
-	$gameData=[];
+	$gameData=[],
+	$localKey='navyTriviaData';
 
 var $startTime,
 	$questionTimer,
@@ -64,6 +65,7 @@ function startQuestionTimer(){
 
 }
 
+//returns current timer number in ms
 function reportQuestionTimer(){
 	var elapsedTime=Date.now()-$startTime;
 	return elapsedTime;
@@ -78,6 +80,7 @@ function reportQuestionTimer(){
 
 
 //changes to targeted screen
+//callback object: {before:<callback before fadein begins>, after: <callback after faded in>}
 function changeScreen(screenClass, callbackObj){
 
 	var elementsToFade=$('.screen:not(.'+screenClass+')');
@@ -105,7 +108,21 @@ function changeScreen(screenClass, callbackObj){
 
 //updates localhost data after change
 function updateLocalData(){
+	localStorage[$localKey]=JSON.stringify($categories);
+}
 
+//load local data if available
+function loadData(){
+	if(localStorage[$localKey]){
+		var localCategories=JSON.parse(localStorage[$localKey]);
+		init(localCategories);
+	}
+	else{
+		//read json data file and initiate
+		$.getJSON('categories.json', function(data){
+			init(data.categories);
+		});
+	}
 }
 
 // ====================================
@@ -119,7 +136,7 @@ function cloneGameData(){
 
 //game end
 function endGame(){
-	//update score
+	//render end screen
 	$('.end-score').text($gameScore);
 	
 	//append game data to history div
@@ -128,11 +145,24 @@ function endGame(){
 		this.appendTo('.end-history');
 	});
 
+	//save game data
+	$categories[$currentCategory].lastScore=$gameScore;
+	if($categories[$currentCategory].highScore<$gameScore){
+		$categories[$currentCategory].highScore=$gameScore;
+	}
+	$categories[$currentCategory].cumulativeScore+=$gameScore;
+	$categories[$currentCategory].played++;
+
+	updateLocalData();
+
+	//nav to end screen and start flickity when shown
 	changeScreen('screen-end',{
 		after:function(){
 			$('.end-history').flickity({
 				prevNextButtons:false,
 			});
+
+			$('.end-history').animate({opacity:'1'});
 		}
 	});
 }
@@ -143,6 +173,8 @@ function advanceGame(){
 	window.setTimeout(function(){
 		cloneGameData();
 		$('.screen-game').fadeOut($globalFadeTime,function(){
+			
+			//after faded out, clean up game screen for next question
 			$('.game-timer-time').text($questionTime/1000);
 			$('.game-timer-bar-inner').css('width','100%');
 			$('.game-answers').removeClass('clicked');
@@ -164,7 +196,7 @@ function loadQuestion(question){
 	//get current question
 	var currentQuestion=$categories[$currentCategory].questions[question];
 
-	//populate question
+	//populate question text
 	$('.game-category').text($categories[$currentCategory].title);
 	$('.game-question').text(currentQuestion.question);
 
@@ -181,18 +213,17 @@ function loadQuestion(question){
 	//fade in game screen, and begin timer
 	$('.screen-game').fadeIn($globalFadeTime,function(){
 		startQuestionTimer();
+
 		//when answer clicked
 		$('.answer').click(function(){
 			
-			//add clicked classes
+			//add clicked classes for colors
 			$(this).addClass('clicked');
 			$('.game-answers').addClass('clicked');
 
+			//freeze answer screen: stop timers, disable click handler, stop animations
 			clearInterval($textTimer);
-
 			$('.answer').off('click');
-
-			//save question answer time and clear timout, stop animation bar
 			var answerTime=reportQuestionTimer();
 			window.clearTimeout($questionTimer);
 			$('.game-timer-bar-inner').stop();
@@ -205,7 +236,7 @@ function loadQuestion(question){
 
 				//add time bonus
 				var answerBonus=0;
-				if(answerTime<=3000){
+				if(answerTime<=$bonusBuffer){
 					answerBonus=$bonusScore;
 				}
 				else if(answerTime>$bonusBuffer&&answerTime<=$questionTime){
@@ -213,12 +244,12 @@ function loadQuestion(question){
 				}
 				$gameScore+=answerBonus;
 
-				//mark correct in data
+				//mark correct in data, and update local
 				currentQuestion.complete=true;
 				updateLocalData();
 			}
 			else{
-				console.log('incorrect');
+				//incorrect response
 			}
 
 			advanceGame();
@@ -228,7 +259,7 @@ function loadQuestion(question){
 	
 }
 
-//shuffles questionsand initiates game
+//shuffles questions and initiates game
 function playGame(){
 
 	//zero out game progress variables
@@ -312,17 +343,14 @@ function populateCategories(){
 function init(data){
 
 	//define categories from data, populate first screen
-	$categories=data.categories;
+	$categories=data;
 	populateCategories();
 	
 }
 
 $(document).ready(function(){
 
-	//read json data file and initiate
-	$.getJSON('categories.json', function(data){
-		init(data);
-	});
+	loadData();
 
 	//when category button is clicked, open modal and init flickity to that index
 	$('.categories-list').on('click','.category',function(){
@@ -333,7 +361,7 @@ $(document).ready(function(){
 				pageDots:false,
 				initialIndex:clickedIndex
 			});
-			$('.modal-categories-list').css('opacity','1');
+			$('.modal-categories-list').animate({opacity:'1'},$globalFadeTime);
 		});
 	});
 
@@ -353,7 +381,7 @@ $(document).ready(function(){
 	//back to categories after
 	$('body').on('click','.btn-gameover',function(){
 		changeScreen('screen-categories',{before: function(){
-			$('.end-history').flickity('destroy').empty();
+			$('.end-history').flickity('destroy').empty().css('opacity','0');
 			populateCategories();}});
 	});
 });
