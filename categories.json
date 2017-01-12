@@ -11,6 +11,17 @@
 	"achievements":
 		[
 			{
+				"title":"Topic Specific",
+				"slug": "testachievement",
+				"description": "Correctly answer all questions in Naval History",
+				"image": true,
+				"criteria":{
+					"stat": "isComplete('navalhistory').boolean",
+					"operator": "===",
+					"threshold": true
+				}
+			},
+			{
 				"title":"Consecutive Games",
 				"slug": "testachievement",
 				"description": "3 consecutive games within a single topic",
