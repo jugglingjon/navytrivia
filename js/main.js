@@ -405,6 +405,32 @@ function playGame(){
 // 				STATS
 // ====================================
 
+//tests for completion of topic, returns object with percentage and true/false
+function isComplete(category){
+	var questions = $categories[category].questions,
+		completeCount = 0,
+		trueFalse,
+		percentage;
+
+	//check each question for completion, add to count
+	$.each(questions, function(){
+		if(this.complete){
+			completeCount++;
+		}
+	});
+
+	//generate percentage and true false result
+	percentage=completeCount/questions.length;
+	if(percentage===1){
+		trueFalse = true;
+	}
+	else{
+		trueFalse = false;
+	}
+
+	return {percentage: percentage, boolean: trueFalse, complete: completeCount, total: questions.length};
+}
+
 //populate stats screen
 function populateStats(){
 
@@ -438,33 +464,25 @@ function populateStats(){
 	});
 
 	//get completed questions total count and add category to category list
-	$.each($categories,function(){
+	$.each($categories,function(index){
 		
-		var categoryCompleted=0,
-			categoryTotalQuestions=0;
-
-		//for each question, count completed nad total
-		$.each(this.questions,function(){
-			if(this.complete){
-				categoryCompleted++;
-			}
-			categoryTotalQuestions++;
-		});
-
+		//save completion status
+		var completionStatus=isComplete(index);
+		
 		//if category fully complete, increment complete count
-		if(categoryCompleted===categoryTotalQuestions){
+		if(completionStatus.boolean){
 			completedCategories++;
 		}
 
 		//add topic totals to overall totals
-		completedQuestions+=categoryCompleted;
-		totalQuestions+=categoryTotalQuestions;
+		completedQuestions+=completionStatus.complete;
+		totalQuestions+=completionStatus.total;
 
 		//render category listing for stats screen
 		var newCategory='<div class="stats-category">'+
 				'<img src="categories/'+this.slug+'.png">'+
 				'<h4>'+this.title+'</h4>'+
-				'<h5>Completed: '+categoryCompleted+'/'+categoryTotalQuestions+'</h5>'+
+				'<h5>Completed: '+completionStatus.complete+'/'+completionStatus.total+'</h5>'+
 				'<h5>Times played: '+this.played+'</h5>'+
 				'<h5>High score: '+this.highScore+'</h5>'+
 				'<h5>Last score: '+this.lastScore+'</h5>'+
