@@ -405,8 +405,18 @@ function playGame(){
 // 				STATS
 // ====================================
 
-//tests for completion of topic, returns object with percentage and true/false
+//tests for completion of category (accepts slug or index), returns object with percentage and true/false
 function isComplete(category){
+	
+	//if slug provided, find index
+	if(typeof category === 'string'){
+		$.each($categories,function(index){
+			if(this.slug===category){
+				category=index;
+			}
+		});
+	}
+
 	var questions = $categories[category].questions,
 		completeCount = 0,
 		trueFalse,
