@@ -76,6 +76,9 @@ function startQuestionTimer(){
 		//clone answers and question for display later
 		cloneGameData();
 
+		//turn off click handlers for answers
+		$('.answer').off('click');
+
 		clearInterval($textTimer);
 
 		advanceGame();
