@@ -24,7 +24,7 @@ var $startTime,
 	$textTimer;
 
 // ====================================
-// 				UTILITIES
+// 				^UTILITIES
 // ====================================
 
 //array shuffle function
@@ -50,7 +50,7 @@ $.fn.randomize = function(selector){
 };
 
 // ====================================
-// 				TIMER
+// 				^TIMER
 // ====================================
 
 //Timer functions
@@ -92,7 +92,7 @@ function reportQuestionTimer(){
 
 
 // ====================================
-// 				SCREEN CONTROL
+// 				^SCREEN CONTROL
 // ====================================
 
 
@@ -121,7 +121,7 @@ function changeScreen(screenClass, callbackObj){
 
 
 // ====================================
-// 				STORAGE
+// 				^STORAGE
 // ====================================
 
 //updates localhost data after change
@@ -144,7 +144,7 @@ function loadData(){
 }
 
 // ====================================
-// 				ACHIEVEMENTS
+// 				^ACHIEVEMENTS
 // ====================================
 
 //scan and process newly earned achievements
@@ -211,7 +211,7 @@ function populateAchievements(){
 }
 
 // ====================================
-// 				GAME
+// 				^GAME
 // ====================================
 
 //clone game data for display at end
@@ -282,6 +282,7 @@ function advanceGame(){
 			$('.game-timer-time').text($questionTime/1000);
 			$('.game-timer-bar-inner').css('width','100%');
 			$('.game-answers').removeClass('clicked');
+			$('.game-image').hide();
 			if($currentQuestion<($gameLength-1)){
 				$currentQuestion++;
 				loadQuestion($currentQuestion);
@@ -303,6 +304,10 @@ function loadQuestion(question){
 	//populate question text
 	$('.game-category').text($categories[$currentCategory].title);
 	$('.game-question').text(currentQuestion.question);
+	if(currentQuestion.image){
+		$('.game-image img').attr('src','categories/'+$categories[$currentCategory].slug+'/'+currentQuestion.image);
+		$('.game-image').show();
+	}
 
 	//clear answer space and populate with answers
 	$('.game-answers').empty();
@@ -402,7 +407,7 @@ function playGame(){
 }
 
 // ====================================
-// 				STATS
+// 				^STATS
 // ====================================
 
 //tests for completion of category (accepts slug or index), returns object with percentage and true/false
@@ -510,7 +515,7 @@ function populateStats(){
 }
 
 // ====================================
-// 				CATEGORIES
+// 				^CATEGORIES
 // ====================================
 
 //populates categories list with fresh data
@@ -535,7 +540,7 @@ function populateCategories(){
 		//build button on categories screen
 		var newCategory='<a href="#" class="category" data-categoryIndex="'+index+'">'+
 		'<div class="category-image-wrapper">'+
-		'<img src="categories/'+this.slug+'.png">'+
+		'<img src="categories/'+this.slug+'/icon.png">'+
 		'</div>'+
 		'<span class="category-title">'+this.title+'</span>'+
 		'<div class="category-progress"><div class="category-progress-inner" style="width:'+completePercentage+'%"></div></div>'+
@@ -547,7 +552,7 @@ function populateCategories(){
 		//build modal category
 		var newModalCategory='<div class="modal-category">'+
 			'<div class="category-image-wrapper">'+
-				'<img src="categories/'+this.slug+'.png">'+
+				'<img src="categories/'+this.slug+'/icon.png">'+
 			'</div>'+
 			'<h2 class="category-title">'+this.title+'</h2>'+
 			'<p>'+this.description+'</p>'+
@@ -572,7 +577,7 @@ function populateCategories(){
 
 
 // ====================================
-// 				INIT AND HANDLERS
+// 				^INIT AND HANDLERS
 // ====================================
 
 function init(data){

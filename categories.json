@@ -113,6 +113,7 @@
 			"questions":[
 				{
 					"question": "0What is the Navy?",
+					"image":"testImage.jpg",
 					"answers":[
 						{"answer": "A color"},
 						{"answer": "A store"},
