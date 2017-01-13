@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.navy.navytrivia"
+    versionCode = "10" 
+    version     = "1.0.0" >
+
+    <name>Navy Trivia</name>
+
+    <description>
+        Prototype Navy Trivia App
+    </description>
+
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.2.0" />
+
+    <platform name="ios" >
+        <preference name="target-device" value="tablet" />
+        <preference name="orientation" value="portrait" />
+    </platform>
+
+    <platform name="android" >
+        <preference name="orientation" value="portrait" />
+    </platform>
+    
+    <preference name="webviewbounce" value="false" />
+
+    <gap:config-file platform="ios" parent="UIStatusBarHidden">
+        <true/>
+    </gap:config-file>
+
+    <gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+        <false/>
+    </gap:config-file>
+
+
+</widget>
+
+
+
