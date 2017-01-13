@@ -10,7 +10,7 @@ var $data,
 	$fastAnswerTime=5000,
 	$currentQuestion=0,
 	$consecutiveGames=0,
-	$gameLength=5,
+	$gameLength=10,
 	$questionTime=10000,
 	$answerDisplayDelay=750,
 	$bonusBuffer=3000,
@@ -130,13 +130,18 @@ function updateLocalData(){
 }
 
 //load local data if available
-function loadData(){
-	if(localStorage[$localKey]){
+function loadData(reset){
+	if(localStorage[$localKey]&&!reset){
 		var localData=JSON.parse(localStorage[$localKey]);
 		init(localData);
 	}
 	else{
 		//read json data file and initiate
+		if(reset){
+			alert('Reseting Data');
+			localStorage.removeItem($localKey);
+			changeScreen('screen-categories',{before: populateCategories});
+		}
 		$.getJSON('categories.json', function(data){
 			init(data);
 		});
@@ -645,5 +650,11 @@ $(document).ready(function(){
 	//navigate to categories screen
 	$('.nav-categories').click(function(){
 		changeScreen('screen-categories');
+	});
+
+	//rests stat data for testing
+	$('.stats-reset').click(function(){
+		//reset data
+		loadData(true);
 	});
 });
