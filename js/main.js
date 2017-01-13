@@ -526,16 +526,9 @@ function populateCategories(){
 	
 	//for each category
 	$.each($categories,function(index){
-		var category=this,
-			completeQuestions=0;
 
-		//count complete and calculate percentage
-		$.each(this.questions,function(){
-			if(this.complete){
-				completeQuestions++;
-			}
-		});
-		var completePercentage=completeQuestions/category.questions.length*100;
+		//find complete percentage
+		var completePercentage=isComplete(index).percentage*100;
 
 		//build button on categories screen
 		var newCategory='<a href="#" class="category" data-categoryIndex="'+index+'">'+
