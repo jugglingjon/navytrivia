@@ -233,6 +233,7 @@
 				},
 				{	
 					"question": "What type of injury is this?",
+					"image":"thirddegree.jpg",
 					"answers":[
 						{"answer": "Scald"},
 						{"answer": "2nd degree burn"},
@@ -286,6 +287,7 @@
 				},
 				{	
 					"question": "What type of injury is this?",
+					"image":"abrasion.jpg",
 					"answers":[
 						{"answer": "Abrasion", "correct":true},
 						{"answer": "1st degree burn"},
@@ -331,6 +333,7 @@
 				},
 				{	
 					"question": "What type of stretcher is this?",
+					"image":"miller.jpg",
 					"answers":[
 						{"answer": "Army litter"},
 						{"answer": "Spine board"},
@@ -466,6 +469,7 @@
 				},
 				{	
 					"question": "What type of injury is this?",
+					"image":"laceration.jpg",
 					"answers":[
 						{"answer": "Abrasion"},
 						{"answer": "Incision"},
