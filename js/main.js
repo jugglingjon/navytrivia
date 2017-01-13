@@ -584,6 +584,9 @@ function init(data){
 
 $(document).ready(function(){
 
+	//implement fastclick
+	FastClick.attach(document.body);
+
 	loadData();
 
 	//when category button is clicked, open modal and init flickity to that index
