@@ -158,6 +158,375 @@
 					]
 				}
 			]
+		},
+		{
+			"title": "First Aid",
+			"slug": "firstaid",
+			"image": true,
+			"description": "Symptoms, treatments, and other important first aid information",
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{	
+					"question": "The three primary tasks of First Aid are to maintain airway, breathing, and what?",
+					"answers":[
+						{"answer": "Circulation", "correct":true},
+						{"answer": "Pressure"},
+						{"answer": "Heart rate "},
+						{"answer": "Communication"}
+					]
+				},
+				{	
+					"question": "What should you do if a victim is bleeding or vomiting from the mouth?",
+					"answers":[
+						{"answer": "Elevate the head"},
+						{"answer": "Perform CPR"},
+						{"answer": "Turn head to side", "correct":true},
+						{"answer": "Elevate the feet"}
+					]
+				},
+				{	"question": "What is the condition when blood circulation is seriously disturbed with a lack of oxygen to the body?",
+					"answers":[
+						{"answer": "Shock", "correct":true},
+						{"answer": "Swoon"},
+						{"answer": "Concussion"},
+						{"answer": "Altitude sickness"}
+					]
+				},
+				{	
+					"question": "How many primary tasks are there in First Aid?",
+					"answers":[
+						{"answer": "1"},
+						{"answer": "2"},
+						{"answer": "3", "correct":true},
+						{"answer": "4"}
+					]
+				},
+				{	
+					"question": "What is arterial bleeding? ",
+					"answers":[
+						{"answer": "Bleeding from the veins  "},
+						{"answer": "Bleeding from the arteries ", "correct":true},
+						{"answer": "Bleeding from the capillaries "},
+						{"answer": "Bleeding internally"}
+					]
+				},
+				{	
+					"question": "What is the definition of a strain? ",
+					"answers":[
+						{"answer": "Stretched or torn tendons"},
+						{"answer": "Stretched or torn muscle", "correct":true},
+						{"answer": "Bone forcibly displaced"},
+						{"answer": "Stretched or torn ligaments"}
+					]
+				},
+				{	
+					"question": "What are the characteristics of a second degree burn?  ",
+					"answers":[
+						{"answer": "Minor redness, mild pain"},
+						{"answer": "Destruction of nerve endings"},
+						{"answer": "May appear charred or white"},
+						{"answer": "Red, mottled and blistered", "correct":true}
+					]
+				},
+				{	
+					"question": "What type of injury is this?",
+					"answers":[
+						{"answer": "Scald"},
+						{"answer": "2nd degree burn"},
+						{"answer": "Laceration"},
+						{"answer": "3rd degree burn", "correct":true}
+					]
+				},
+				{	
+					"question": "First Aid is emergency care of the sick or the what?",
+					"answers":[
+						{"answer": "Wounded"},
+						{"answer": "Helpless"},
+						{"answer": "Injured", "correct":true},
+						{"answer": "Panicked"}
+					]
+				},
+				{	
+					"question": "How many methods are there to control bleeding?",
+					"answers":[
+						{"answer": "1 "},
+						{"answer": "2 "},
+						{"answer": "3 "},
+						{"answer": "4", "correct":true}
+					]
+				},
+				{	
+					"question": "How many types of skin wounds are there?",
+					"answers":[
+						{"answer": "2"},
+						{"answer": "3"},
+						{"answer": "4"},
+						{"answer": "5", "correct":true}
+					]
+				},
+				{	"question": "An injury characterized by a bone that is forcibly displaced from its joint is known as a what?",
+					"answers":[
+						{"answer": "Dislocation", "correct":true},
+						{"answer": "Bone spur"},
+						{"answer": "Fracture"},
+						{"answer": "Bone chip"}
+					]
+				},
+				{	
+					"question": "The treatment for burns is the same as for what?",
+					"answers":[
+						{"answer": "Scalds  ", "correct":true},
+						{"answer": "Abrasions"},
+						{"answer": "Tears"},
+						{"answer": "Cuts"}
+					]
+				},
+				{	
+					"question": "What type of injury is this?",
+					"answers":[
+						{"answer": "Abrasion", "correct":true},
+						{"answer": "1st degree burn"},
+						{"answer": "Laceration"},
+						{"answer": "Incision"}
+					]
+				},
+				{	
+					"question": "What do you NOT do when treating burns?",
+					"answers":[
+						{"answer": "Remove jewelry", "correct":true},
+						{"answer": "Apply cold compresses"},
+						{"answer": "Remove charred skin or clothing"},
+						{"answer": "Examine for respiratory distress"}
+					]
+				},
+				{	
+					"question": "How many types of heat injuries are there?",
+					"answers":[
+						{"answer": "1 "},
+						{"answer": "2 "},
+						{"answer": "3 ", "correct":true},
+						{"answer": "4"}
+					]
+				},
+				{	
+					"question": "NEVER attempt CPR procedures unless you have received what?",
+					"answers":[
+						{"answer": "Permission"},
+						{"answer": "Reasonable cause"},
+						{"answer": "Justification"},
+						{"answer": "Training", "correct":true}
+					]
+				},
+				{	
+					"question": "Transport a victim head first up ladders while using a what?",
+					"answers":[
+						{"answer": "Fireman’s carry"},
+						{"answer": "Stretcher", "correct":true},
+						{"answer": "Rope harness"},
+						{"answer": "Piggyback"}
+					]
+				},
+				{	
+					"question": "What type of stretcher is this?",
+					"answers":[
+						{"answer": "Army litter"},
+						{"answer": "Spine board"},
+						{"answer": "Miller board", "correct":true},
+						{"answer": "Stokes stretcher"}
+					]
+				},
+				{	
+					"question": "Who observes the victim's breathing while being transported on a stretcher?",
+					"answers":[
+						{"answer": "Hospital Corpsman "},
+						{"answer": "Person at the head ", "correct":true},
+						{"answer": "CPR qualified personnel "},
+						{"answer": "Person at the feet"}
+					]
+				},
+				{	
+					"question": "What is the freezing of the deep layers of tissue called?",
+					"answers":[
+						{"answer": "Frostbite"},
+						{"answer": "Chill"},
+						{"answer": "Deep frostbite", "correct":true},
+						{"answer": "Wind shear"}
+					]
+				},
+				{	
+					"question": "What do you call bleeding that is dark red or maroon blood flowing freely from a wound?",
+					"answers":[
+						{"answer": "Internal"},
+						{"answer": "Capillary"},
+						{"answer": "Venous", "correct":true},
+						{"answer": "Arterial"}
+					]
+				},
+				{	
+					"question": "What do you call bleeding that is bright red/maroon blood and oozing from a wound?",
+					"answers":[
+						{"answer": "Arterial "},
+						{"answer": "Capillary ", "correct":true},
+						{"answer": "External "},
+						{"answer": "Venous "}
+					]
+				},
+				{	
+					"question": "What is the temperature range for treating frostbite with warm water immersion?",
+					"answers":[
+						{"answer": "100-102 "},
+						{"answer": "100-104 "},
+						{"answer": "100-106 ", "correct":true},
+						{"answer": "100-108"}
+					]
+				},
+				{	
+					"question": "Skin that is cool, pale, and moist is a symptom of what?",
+					"answers":[
+						{"answer": "Frostbite"},
+						{"answer": "Heat exhaustion", "correct":true},
+						{"answer": "Heat cramps"},
+						{"answer": "Heat stroke"}
+					]
+				},
+				{	
+					"question": "Freezing injuries are characterized by the formation of what?",
+					"answers":[
+						{"answer": "Ice crystals in the skin", "correct":true},
+						{"answer": "Oxygen in the blood "},
+						{"answer": "CO2 in the blood"},
+						{"answer": "Lack of circulation"}
+					]
+				},
+				{	
+					"question": "How many types of fractures are there?",
+					"answers":[
+						{"answer": "1"},
+						{"answer": "2", "correct":true},
+						{"answer": "3"},
+						{"answer": "4"}
+					]
+				},
+				{	
+					"question": "Which kind of stretcher is used to transfer victims from boats or ships?",
+					"answers":[
+						{"answer": "Stokes ", "correct":true},
+						{"answer": "Miller board "},
+						{"answer": "Army litter "},
+						{"answer": "Spine board"}
+					]
+				},
+				{	
+					"question": "Shallow, irregular, and rapid breathing is a symptom of what?",
+					"answers":[
+						{"answer": "Heat cramps"},
+						{"answer": "Shock", "correct":true},
+						{"answer": "Heat stroke"},
+						{"answer": "Heat exhaustion"}
+					]
+				},
+				{	
+					"question": "Which one of the following are NOT purposes of First Aid?",
+					"answers":[
+						{"answer": "Minimize infection"},
+						{"answer": "Save life"},
+						{"answer": "Minimize shock", "correct":true},
+						{"answer": "Prevent further injury"}
+					]
+				},
+				{	
+					"question": "Which one of the following is NOT a general rule of First Aid?",
+					"answers":[
+						{"answer": "Remain calm"},
+						{"answer": "Allow the victim to see the injury", "correct":true},
+						{"answer": "Do not touch open wounds"},
+						{"answer": "Keep the victim lying down"}
+					]
+				},
+				{	
+					"question": "When a body's sweating mechanism breaks down it is symptomatic of what?",
+					"answers":[
+						{"answer": "Heat inhalation"},
+						{"answer": "Heat exhaustion"},
+						{"answer": "Heat cramps"},
+						{"answer": "Heatstroke", "correct":true}
+					]
+				},
+				{	
+					"question": "How many types of stretchers are there?",
+					"answers":[
+						{"answer": "1"},
+						{"answer": "2"},
+						{"answer": "3"},
+						{"answer": "4", "correct":true}
+					]
+				},
+				{	
+					"question": "What type of injury is this?",
+					"answers":[
+						{"answer": "Abrasion"},
+						{"answer": "Incision"},
+						{"answer": "Avulsion"},
+						{"answer": "Laceration", "correct":true}
+					]
+				},
+				{	"question": "What do you use to immobilize and transport victims horizontally or vertically through confined spaces?",
+					"answers":[
+						{"answer": "Reeves Sleeve", "correct":true},
+						{"answer": "Miller board "},
+						{"answer": "Army litter "},
+						{"answer": "Spine board"}
+					]
+				},
+				{	
+					"question": "If you have a Laceration, you have skin that is what?",
+					"answers":[
+						{"answer": "Rubbed or scraped off"},
+						{"answer": "Torn rather than cut", "correct":true},
+						{"answer": "Pierced by a pointed object"},
+						{"answer": "Torn loose or left hanging"}
+					]
+				},
+				{	
+					"question": "Which method for controlling bleeding should only be used as a last resort?",
+					"answers":[
+						{"answer": "Direct Pressure"},
+						{"answer": "Elevation"},
+						{"answer": "Indirect Pressure"},
+						{"answer": "Tourniquet", "correct":true}
+					]
+				},
+				{	
+					"question": "All injuries are accompanied by some degree of what?",
+					"answers":[
+						{"answer": "Pain"},
+						{"answer": "Shock", "correct":true},
+						{"answer": "Discomfort"},
+						{"answer": "Bruising"}
+					]
+				},
+				{	
+					"question": "Characteristics of Heat Injuries include Heat Cramps, Heat Exhaustion and what?",
+					"answers":[
+						{"answer": "Heat Sear"},
+						{"answer": "Heat Stroke", "correct":true},
+						{"answer": "Heat Clench"},
+						{"answer": "Heat Burn"}
+					]
+				},
+				{	
+					"question": "The external compression of the heart provides blood circulation to the organs and what?",
+					"answers":[
+						{"answer": "Limbic system"},
+						{"answer": "Tissues of the body", "correct":true},
+						{"answer": "Integumentary system"},
+						{"answer": "Endocrine system"}
+					]
+				}
+			]
 		}
 	]
 }
