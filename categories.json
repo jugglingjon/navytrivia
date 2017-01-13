@@ -112,49 +112,404 @@
 			"played":0,
 			"questions":[
 				{
-					"question": "0What is the Navy?",
-					"image":"testImage.jpg",
+					"question": "The Continental Navy was created by Congress on October 13th of what year?",
 					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
+						{"answer":"1772"},
+						{"answer":"1774"},
+						{"answer":"1775", "correct":true},
+						{"answer":"1776"}
 					]
 				},
 				{
-					"question": "1What is the Navy?",
+					"question": "The Revolutionary War began in 1775, but when did it end?",
 					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
+						{"answer":"1781"},
+						{"answer":"1782"},
+						{"answer":"1783", "correct":true},
+						{"answer":"1784"}
 					]
 				},
 				{
-					"question": "2What is the Navy?",
+					"question": "When did the Congress establish the Department of the Navy?",
 					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
+						{"answer":"September 17, 1775"},
+						{"answer":"October 13, 1775", "correct":true},
+						{"answer":"November 9, 1775"},
+						{"answer":"December 5, 1775"}
 					]
 				},
 				{
-					"question": "3What is the Navy?",
+					"question": "Which is the name of this early submarine?",
+					"image": "holland.jpg",
 					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
+						{"answer":"Blueback"},
+						{"answer":"Holland", "correct":true},
+						{"answer":"Alligator"},
+						{"answer":"Nautilus"}
 					]
 				},
 				{
-					"question": "4What is the Navy?",
+					"question": "What was the name of the first submarine used in combat?",
 					"answers":[
-						{"answer": "A color"},
-						{"answer": "A store"},
-						{"answer": "Ships and People", "correct":true},
-						{"answer": "The aliens in Avatar"}
+						{"answer":"Turtle", "correct":true},
+						{"answer":"Monitor"},
+						{"answer":"Hunley"},
+						{"answer":"Eagle"}
+					]
+				},
+				{
+					"question": "Which Master Chief was appointed as the first Senior Enlisted Advisor of the Navy?",
+					"answers":[
+						{"answer":"John Whittet "},
+						{"answer":"Robert Walker "},
+						{"answer":"Delbert Black ", "correct":true},
+						{"answer":"Thomas Crow"}
+					]
+				},
+				{
+					"question": "What are the two primary functions of the Navy are Sea Control and what?",
+					"answers":[
+						{"answer":"Sea strike"},
+						{"answer":"Power Projection", "correct":true},
+						{"answer":"Naval Presence"},
+						{"answer":"Good will"}
+					]
+				},
+				{
+					"question": "What is the name of this historic ship?",
+					"image": "constitution.jpg",
+					"answers":[
+						{"answer":"Chesapeake"},
+						{"answer":"Constitution ", "correct":true},
+						{"answer":"Congress"},
+						{"answer":"Constellation"}
+					]
+				},
+				{
+					"question": "What was the first operational submarine commissioned in 1900?",
+					"answers":[
+						{"answer":"Alabama"},
+						{"answer":"Maine"},
+						{"answer":"Holland", "correct":true},
+						{"answer":"Dallas"}
+					]
+				},
+				{
+					"question": "What was the name of the first submarine to sink a warship?  ",
+					"answers":[
+						{"answer":"Hunley ", "correct":true},
+						{"answer":"Monitor "},
+						{"answer":"Virginia "},
+						{"answer":"Holland"}
+					]
+				},
+				{
+					"question": "What year was the Women Accepted for Voluntary Emergency Service established?",
+					"answers":[
+						{"answer":"1972 "},
+						{"answer":"1945 "},
+						{"answer":"1942 ", "correct":true},
+						{"answer":"1941"}
+					]
+				},
+				{
+					"question": "What was the first naval battle in which neither fleet saw the other because it was fought entirely by carrier-based aircraft?  ",
+					"answers":[
+						{"answer":"Ironclads "},
+						{"answer":"Coral Sea ", "correct":true},
+						{"answer":"Midway "},
+						{"answer":"Mobile Bay"}
+					]
+				},
+				{
+					"question": "What U.S. aircraft carrier was lost during the Battle of Coral Sea?",
+					"answers":[
+						{"answer":"Hornet"},
+						{"answer":"Lexington", "correct":true},
+						{"answer":"Ranger"},
+						{"answer":"Yorktown"}
+					]
+				},
+				{
+					"question": "What class of ship is this?",
+					"image": "battleship.jpg",
+					"answers":[
+						{"answer":"Aircraft carrier"},
+						{"answer":"Frigate"},
+						{"answer":"Battleship", "correct":true},
+						{"answer":"Cruiser"}
+					]
+				},
+				{
+					"question": "Which war resulted in the original 13 colonies achieving independence as the United States of America?",
+					"answers":[
+						{"answer":"War of 1812"},
+						{"answer":"Revolutionary War", "correct":true},
+						{"answer":"Spanish American War "},
+						{"answer":"Civil War"}
+					]
+				},
+				{
+					"question": "How many years do you have to serve active duty before you can join the Fleet Reserve?",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"5"},
+						{"answer":"15"},
+						{"answer":"20", "correct":true}
+					]
+				},
+				{
+					"question": "When is the Navy's \"birthday\"?",
+					"answers":[
+						{"answer":"13 October 1775", "correct":true},
+						{"answer":"4 July 1776"},
+						{"answer":"5 April 1812"},
+						{"answer":"1 January 1782"}
+					]
+				},
+				{
+					"question": "Who uttered the famous quote \"I have not yet begun to fight\"?",
+					"answers":[
+						{"answer":"Captain John Paul Hunley "},
+						{"answer":"Admiral David G. Farragut "},
+						{"answer":"Captain Isaac Hull "},
+						{"answer":"Captain John Paul Jones", "correct":true}
+					]
+				},
+				{
+					"question": "What year did the battle of Mobile Bay take place?",
+					"answers":[
+						{"answer":"1776 "},
+						{"answer":"1812 "},
+						{"answer":"1862 "},
+						{"answer":"1864", "correct":true}
+					]
+				},
+				{
+					"question": "Which U.S. President sent \"The Great White Fleet\" around the world to show naval strength?",
+					"answers":[
+						{"answer":"Franklin D. Roosevelt "},
+						{"answer":"Dwight D. Eisenhower "},
+						{"answer":"Harry S. Truman "},
+						{"answer":"Theodore Roosevelt", "correct":true}
+					]
+				},
+				{
+					"question": "Which Schooner became the first ship commissioned in the Continental Navy?",
+					"answers":[
+						{"answer":"Scorpion"},
+						{"answer":"Hanna", "correct":true},
+						{"answer":"Wasp"},
+						{"answer":"Hornet"}
+					]
+				},
+				{
+					"question": "In 1894, how many Frigates did Congress order constructed?",
+					"answers":[
+						{"answer":"Three"},
+						{"answer":"Five"},
+						{"answer":"Six", "correct":true},
+						{"answer":"Eight"}
+					]
+				},
+				{
+					"question": "In 1812, the USS Constitution engaged in an historic battle with which British warship?",
+					"answers":[
+						{"answer":"Margaretta"},
+						{"answer":"Guerriere", "correct":true},
+						{"answer":"Drake"},
+						{"answer":"Victory"}
+					]
+				},
+				{
+					"question": "What was the name of the first U.S. Naval ship commissioned in the 19th century?",
+					"answers":[
+						{"answer":"Constitution"},
+						{"answer":"Constellation"},
+						{"answer":"Chesapeake", "correct":true},
+						{"answer":"Enterprise"}
+					]
+				},
+				{
+					"question": "What was the French warship Duc De Duras renamed by the U.S.?",
+					"answers":[
+						{"answer":"Bonhomme Richard", "correct":true},
+						{"answer":"Merrimack"},
+						{"answer":"Hornet"},
+						{"answer":"Serapis"}
+					]
+				},
+				{
+					"question": "Which Union warship was captured, modified and renamed the CSS Virginia?",
+					"answers":[
+						{"answer":"Monitor"},
+						{"answer":"Minnesota"},
+						{"answer":"Cumberland"},
+						{"answer":"Merrimack", "correct":true}
+					]
+				},
+				{
+					"question": "What was the name of the Civil War ship that first introduced the turreted gun?",
+					"answers":[
+						{"answer":"Monitor", "correct":true},
+						{"answer":"Merrimack"},
+						{"answer":"Invincible"},
+						{"answer":"Dauntless"}
+					]
+				},
+				{
+					"question": "What class of ship is this?",
+					"image": "carrier.jpg",
+					"answers":[
+						{"answer":"Aircraft carrier", "correct":true},
+						{"answer":"Battleship"},
+						{"answer":"Frigate"},
+						{"answer":"Cruiser"}
+					]
+				},
+				{
+					"question": "Japan surrendered, ending World War II on which U.S. Battleship?",
+					"answers":[
+						{"answer":"Arizona"},
+						{"answer":"Missouri", "correct":true},
+						{"answer":"Nevada "},
+						{"answer":"New York"}
+					]
+				},
+				{
+					"question": "Who was the Navy’s first African-American Master Diver?",
+					"answers":[
+						{"answer":"Carl Brashear", "correct":true},
+						{"answer":"Douglas Hegdahl"},
+						{"answer":"Francis Junior Pierce"},
+						{"answer":"James E. Williams"}
+					]
+				},
+				{
+					"question": "What is the name of the most decorated Enlisted Sailor in U.S. history?",
+					"answers":[
+						{"answer":"Carl Brashear"},
+						{"answer":"Douglas Hegdahl"},
+						{"answer":"James E. Williams", "correct":true},
+						{"answer":"Francis Junior Pierce"}
+					]
+				},
+				{
+					"question": "What type of aircraft is this?",
+					"image": "phantom.jpg",
+					"answers":[
+						{"answer":"Hellcat"},
+						{"answer":"Falcon"},
+						{"answer":"Phantom", "correct":true},
+						{"answer":"Hornet"}
+					]
+				},
+				{
+					"question": "Barbary States included the coastal regions of what are now Morocco, Algeria, Tunisia and what country?",
+					"answers":[
+						{"answer":"Syria"},
+						{"answer":"Congo"},
+						{"answer":"Libya", "correct":true},
+						{"answer":"Egypt"}
+					]
+				},
+				{
+					"question": "What is the name of the oldest commissioned ship in the U.S. Navy?",
+					"answers":[
+						{"answer":"Constitution", "correct":true},
+						{"answer":"Arleigh Burke"},
+						{"answer":"Enterprise"},
+						{"answer":"America"}
+					]
+				},
+				{
+					"question": "Which ship was commissioned as the world’s first nuclear-powered aircraft carrier CVN-65?",
+					"answers":[
+						{"answer":"Lexington"},
+						{"answer":"Enterprise", "correct":true},
+						{"answer":"Yorktown"},
+						{"answer":"Potemkin"}
+					]
+				},
+				{
+					"question": "Which ship was commissioned as the world’s first nuclear-powered submarine?",
+					"answers":[
+						{"answer":"Skipjack"},
+						{"answer":"Alabama"},
+						{"answer":"Conqueror"},
+						{"answer":"Nautilus", "correct":true}
+					]
+				},
+				{
+					"question": "What is the top speed of the nuclear aircraft carrier Enterprise?",
+					"answers":[
+						{"answer":"25 knots"},
+						{"answer":"35 knots", "correct":true},
+						{"answer":"40 knots"},
+						{"answer":"50 knots"}
+					]
+				},
+				{
+					"question": "What is the designation for a Wasp-class amphibious assault ship?",
+					"answers":[
+						{"answer":"LHD", "correct":true},
+						{"answer":"LHA"},
+						{"answer":"LMS"},
+						{"answer":"LSD"}
+					]
+				},
+				{
+					"question": "How many miles could the powerful 16-inch guns of an Iowa-Class Battleship launch a shell?",
+					"answers":[
+						{"answer":"10"},
+						{"answer":"20", "correct":true},
+						{"answer":"25"},
+						{"answer":"28"}
+					]
+				},
+				{
+					"question": "What was the first submarine to navigate under the arctic ice?",
+					"answers":[
+						{"answer":"Nautilus", "correct":true},
+						{"answer":"George Washington"},
+						{"answer":"Virginia"},
+						{"answer":"San Juan"}
+					]
+				},
+				{
+					"question": "Which Hospital Corpsman received the Medal of Honor, Navy Cross, and Silver Star for “gallantry and intrepidity”?",
+					"answers":[
+						{"answer":"Francis Junior Pierce", "correct":true},
+						{"answer":"Carl Brashear"},
+						{"answer":"Douglas Hegdahl"},
+						{"answer":"James E. Williams"}
+					]
+				},
+				{
+					"question": "Under the Naval Act of 1794, what was the cost per ship of the first six Frigates?",
+					"answers":[
+						{"answer":"$75K"},
+						{"answer":"$125K"},
+						{"answer":"$200K", "correct":true},
+						{"answer":"$300K"}
+					]
+				},
+				{
+					"question": "What was the 1800’s landward expansion 'Manifest' that hampered the Navy’s growth called?",
+					"answers":[
+						{"answer":"Manifest Providence"},
+						{"answer":"Manifest Destiny", "correct":true},
+						{"answer":"Manifest Colony"},
+						{"answer":"Manifest Provision"}
+					]
+				},
+				{
+					"question": "The sea power of France played a decisive role in the War of Independence at which battle?",
+					"answers":[
+						{"answer":"Saratoga"},
+						{"answer":"Gettysburg "},
+						{"answer":"Boston"},
+						{"answer":"Yorktown", "correct":true}
 					]
 				}
 			]
@@ -298,9 +653,9 @@
 				{	
 					"question": "What do you NOT do when treating burns?",
 					"answers":[
-						{"answer": "Remove jewelry", "correct":true},
+						{"answer": "Remove jewelry"},
 						{"answer": "Apply cold compresses"},
-						{"answer": "Remove charred skin or clothing"},
+						{"answer": "Remove charred skin or clothing", "correct":true},
 						{"answer": "Examine for respiratory distress"}
 					]
 				},
