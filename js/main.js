@@ -495,7 +495,7 @@ function populateStats(){
 
 		//render category listing for stats screen
 		var newCategory='<div class="stats-category">'+
-				'<img src="categories/'+this.slug+'.png">'+
+				'<img src="categories/'+this.slug+'/icon.png">'+
 				'<h4>'+this.title+'</h4>'+
 				'<h5>Completed: '+completionStatus.complete+'/'+completionStatus.total+'</h5>'+
 				'<h5>Times played: '+this.played+'</h5>'+
