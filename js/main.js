@@ -14,8 +14,8 @@ var $data,
 	$questionTime=10000,
 	$answerDisplayDelay=750,
 	$bonusBuffer=3000,
-	$correctScore=1000,
-	$bonusScore=1000,
+	$correctScore=100,
+	$bonusScore=100,
 	$gameData=[],
 	$localKey='navyTriviaData';
 
