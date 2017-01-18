@@ -212,13 +212,13 @@ function populateAchievements(){
 
 		var image=this.complete?this.slug:'lock';
 
-		var newAchievement='<a href="#" class="achievement">'+
+		var newAchievement='<div class="achievement">'+
 				'<div class="achievement-image-wrapper">'+
 					'<img src="achievements/'+image+'.png">'+
 				'</div>'+
 				'<span class="achievement-title">'+this.title+'</span>'+
 				'<span class="achievement-description">'+this.description+'</span>'+
-			'</a>';
+			'</div>';
 		$(newAchievement).appendTo('.achievements-list');
 	});
 }
