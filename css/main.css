@@ -35,6 +35,9 @@ body {
   color: white;
   font-size: 16px;
 }
+.animated {
+  animation-duration: .5s;
+}
 header .header-title {
   text-align: center;
   font-size: 28px;
@@ -103,6 +106,14 @@ header .header-title {
   width: 40%;
   height: 20px;
   background-color: yellow;
+}
+.modal.nofade.fade {
+  opacity: 1;
+}
+.modal.nofade.fade .modal-dialog {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  transform: translate(0);
 }
 #categoriesModal .modal-dialog,
 #achievementsModal .modal-dialog,

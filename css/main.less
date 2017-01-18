@@ -57,6 +57,10 @@ body{
 	font-size: @text-base;
 }
 
+.animated{
+	animation-duration: .5s;
+}
+
 
 // ====================================
 // 				^Header
@@ -135,6 +139,16 @@ header{
 // ====================================
 // 				^Modals
 // ====================================
+
+//unanimate modals
+.modal.nofade.fade{
+	opacity:1;
+}
+.modal.nofade.fade .modal-dialog {
+	-webkit-transform: translate(0);
+	-moz-transform: translate(0);
+	transform: translate(0);
+}
 
 #categoriesModal, #achievementsModal{
 	

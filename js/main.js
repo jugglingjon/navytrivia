@@ -481,7 +481,7 @@ function populateStats(){
 	});
 
 	//slice to 3 newest achievements, display
-	var newestCompletedAchievements= completedAchievements.slice(0,3);
+	var newestCompletedAchievements= completedAchievements.slice(0,4);
 	$.each(newestCompletedAchievements, function(){
 		$('<h4>'+this.title+'</h4>').appendTo('.stats-latest-achievements-list');
 	});
@@ -660,4 +660,13 @@ $(document).ready(function(){
 		//reset data
 		loadData(true);
 	});
+
+	//set animation for achievements modal
+	// $('#categoriesModal').on('show.bs.modal',function(){
+	// 	$(this).find('.modal-dialog').attr('class','modal-dialog fadeInDown animated');
+	// });
+
+	// $('#categoriesModal').on('hide.bs.modal',function(){
+	// 	$(this).find('.modal-dialog').attr('class','modal-dialog fadeOutUp animated');
+	// });
 });
