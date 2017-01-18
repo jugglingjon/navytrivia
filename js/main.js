@@ -49,6 +49,11 @@ $.fn.randomize = function(selector){
     return this;
 };
 
+//convert number to number with commas
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 // ====================================
 // 				^TIMER
 // ====================================
