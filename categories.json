@@ -99,7 +99,7 @@
 				}
 			},
 			{
-				"title":"Ensign",
+				"title":"Seaman",
 				"slug": "testachievement",
 				"description": "Complete your first game",
 				"image": true,
@@ -110,7 +110,7 @@
 				}
 			},
 			{
-				"title":"Lieutenant",
+				"title":"Petty Officer",
 				"slug": "testachievement",
 				"description": "Play 20 games",
 				"image": true,
@@ -121,7 +121,7 @@
 				}
 			},
 			{
-				"title":"Captain",
+				"title":"Chief",
 				"slug": "testachievement",
 				"description": "Play 40 games",
 				"image": true,
@@ -132,7 +132,7 @@
 				}
 			},
 			{
-				"title":"Admiral",
+				"title":"Master Chief",
 				"slug": "testachievement",
 				"description": "Play 60 games",
 				"image": true,
