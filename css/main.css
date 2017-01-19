@@ -312,14 +312,3 @@ header .header-title {
   background: #404040;
   margin-right: 80px;
 }
-.screen-end .game-data {
-  width: 460px;
-  background: #404040;
-  margin-right: 80px;
-}
-.game-progress-dots {
-  text-align: center;
-}
-.game-progress-dots .game-progress-dot {
-  display: inline-block;
-}
