@@ -523,6 +523,7 @@ function populateStats(){
 	//add general stats
 	$('.stats-times-played .stat-number').text($data.stats.gamesPlayed);
 	$('.stats-achievements .stat-number').text(achievementCount);
+	$('.stats-perfect .stat-perfect').text($data.stats.perfectGames);
 	$('.stats-completed .stat-number').text(completedCategories);
 	$('.stats-questions-completed-inner').css('width',completedQuestions/totalQuestions*100+'%');
 }
