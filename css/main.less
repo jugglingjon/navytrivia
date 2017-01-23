@@ -34,6 +34,12 @@ Examples:
 // ====================================
 
 @background: black;
+@backgroundGradientStart: #2D3A4D;
+@backgroundGradientEnd: #36647B;
+
+@headerGradientStart: #1BA1C4;
+@headerGradientEnd: #39A5B1;
+
 @text:white;
 @neutral: gray;
 @highlight: yellow;
@@ -44,7 +50,7 @@ Examples:
 @text-large: 28px;
 @text-huge: 36px;
 
-@basePadding: 20px;
+@basePadding: 30px;
 
 
 // ====================================
@@ -67,6 +73,11 @@ body{
 // ====================================
 
 header{
+	height: 100px;
+	padding: @basePadding;
+
+	background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
+
 	.header-title{
 		text-align:center;
 		font-size: @text-large;
