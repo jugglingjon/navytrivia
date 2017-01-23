@@ -562,15 +562,20 @@ function populateCategories(){
 				'<img src="categories/'+this.slug+'/icon.png">'+
 			'</div>'+
 			'<h2 class="category-title">'+this.title+'</h2>'+
-			'<p>'+this.description+'</p>'+
-			'<span>Questions Completed</span>'+
-			'<div class="category-progress"><div class="category-progress-inner" style="width:'+completePercentage+'%"></div></div>'+
-			'<div class="modal-category-stats">'+
-				'<div class="modal-category-stat">'+this.played+'</div>'+
-				'<div class="modal-category-stat">'+this.highScore+'</div>'+
-				'<div class="modal-category-stat">'+this.lastScore+'</div>'+
+			'<p class="category-description">'+this.description+'</p>'+
+			'<div class="category-data">'+
+				'<div class="category-complete clearfix">'+
+					'<span class="category-complete-label">Questions Completed</span><span class="category-complete-number">'+Math.ceil(completePercentage)+'%</span>'+
+				'</div>'+
+				'<div class="category-progress"><div class="category-progress-inner" style="width:'+completePercentage+'%"></div></div>'+
+
+				'<div class="category-stats clearfix">'+
+					'<div class="category-stat"><h3>'+this.played+'</h3><h4>Times Played</h4></div>'+
+					'<div class="category-stat"><h3>'+numberWithCommas(this.highScore)+'</h3><h4>High Score</h4></div>'+
+					'<div class="category-stat"><h3>'+numberWithCommas(this.lastScore)+'</h3><h4>Last Score</h4></div>'+
+				'</div>'+
 			'</div>'+
-			'<a href="#" data-categoryIndex="'+index+'" class="modal-category-play">Play</a>'+
+			'<a href="#" data-categoryIndex="'+index+'" class="btn btn-primary modal-category-play">Play</a>'+
 		'</div>';
 
 		//append to field

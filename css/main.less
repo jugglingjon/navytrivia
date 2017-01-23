@@ -40,25 +40,38 @@ Examples:
 @headerGradientStart: #1BA1C4;
 @headerGradientEnd: #39A5B1;
 
+
+
+@uiGreyLight: #EEEEEE;
+@uiGreyMedium: #B7B7B7;
+@uiGreyDark: #545454;
+@uiGreyHeavy: #292728;
+
 @text:white;
-@neutral: gray;
-@highlight: yellow;
+@neutral: @uiGreyMedium;
+@highlight: #1CA0C1;
+@highlightMuted: #719BB3;
 
 @text-small: 12px;
 @text-base: 16px;
-@text-medium: 20px;
+@text-medium: 24px;
 @text-large: 28px;
 @text-huge: 36px;
 
 @basePadding: 30px;
+@lessPadding: 20px;
 
 
 // ====================================
 // 				^Shared
 // ====================================
 
+html, body{
+	height: 100%;
+}
+
 body{
-	background: @background;
+	background: linear-gradient(to bottom, @backgroundGradientStart 0%,@backgroundGradientEnd 100%);
 	color: @text;
 	font-size: @text-base;
 }
@@ -69,12 +82,32 @@ body{
 
 
 // ====================================
+// 				^Buttons
+// ====================================
+
+.btn{
+	padding: @basePadding/2;
+	min-width: 215px;
+
+	font-size: @text-medium;
+	text-transform: uppercase;
+	text-align: center;
+	border:0;
+	border-radius: 10px;
+
+	&.btn-primary{
+		background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
+		color:white;
+	}
+}
+
+// ====================================
 // 				^Header
 // ====================================
 
 header{
 	height: 100px;
-	padding: @basePadding;
+	padding: @basePadding !important;
 
 	background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
 
@@ -92,7 +125,78 @@ header{
 // 				^Categories
 // ====================================
 
-.categories-list,.achievements-list{
+.screen-categories{
+	padding: 2*@basePadding;
+}
+
+.categories-list{
+
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.category,.achievement{
+		display:block;
+
+		padding: @basePadding;
+
+		&:nth-child(1){
+			padding-left:0;
+		}
+
+		&:nth-child(3n){
+			padding-right:0;
+		}
+
+
+		text-align:center;
+		color: @text;
+		font-size: @text-medium;
+
+		.category-image-wrapper,.achievement-image-wrapper{
+			border-radius: 50%;
+			width: 176px;
+			height: 176px;
+			padding: @basePadding;
+
+			background: radial-gradient(ellipse at center, @headerGradientStart 0%,@headerGradientEnd 100%);
+			border:6px solid @highlightMuted;
+
+			img{
+				display:inline-block;
+				width:100%;
+				height:auto;
+			}
+
+		}
+
+		
+		span{
+			display:block;
+			margin: @basePadding/2 0;
+		}
+
+		.category-progress{
+			
+			background: @neutral;
+			height:14px;
+
+			.category-progress-inner{
+				display:block;
+				width: 40%;
+				height: 14px;
+
+				background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
+			}
+		}
+
+
+	}
+}
+
+
+
+.achievements-list{
 
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -155,6 +259,11 @@ header{
 .modal.nofade.fade{
 	opacity:1;
 }
+
+.modal-backdrop.fade.in{
+	opacity:.85;
+}
+
 .modal.nofade.fade .modal-dialog {
 	-webkit-transform: translate(0);
 	-moz-transform: translate(0);
@@ -199,21 +308,37 @@ header{
 
 		.modal-category, .modal-achievement{
 
-			width: 460px;
-			margin-right: 4*@basePadding;
+			width: 470px;
+			margin-right: 2*@basePadding;
+			padding: 2*@lessPadding;
 
-			background-color:white;
+			background: linear-gradient(to bottom, @uiGreyLight 0%,@uiGreyMedium 100%);
 			color:black;
 			text-align:center;
 
+			.category-title{
+				color: @uiGreyHeavy;
+				font-size: @text-huge;
+				font-weight: bold;
+			}
+
+			.category-description{
+				margin-bottom: @basePadding*2;
+
+				color: @uiGreyHeavy;
+				font-size: @text-base*1.25;
+				font-weight: 200;
+			}
+
 			.category-image-wrapper, .achievement-image-wrapper{
 				display:inline-block;
-				width:50%;
+				width:176px;
 				border-radius: 50%;
 				padding: @basePadding;
-				margin-top: @basePadding;
+				border: 6px solid @highlightMuted;
 
-				background: @neutral;
+				background: radial-gradient(ellipse at center, @headerGradientStart 0%,@headerGradientEnd 100%);
+
 
 				img{
 					display:inline-block;
@@ -223,24 +348,84 @@ header{
 
 			}
 
-			.category-progress{
 			
-				background: @neutral;
-				height:20px;
-
-				.category-progress-inner{
-					display:block;
-					width: 40%;
-					height: 20px;
-					background-color:@highlight;
-				}
-			}
-
-			.modal-category-stats{
-				display:flex;
-			}
 		}
 
+	}
+}
+
+.category-data{
+
+	.category-complete{
+		position: relative;
+
+		.category-complete-label{
+			vertical-align: baseline;
+			float:left;
+
+			text-transform: uppercase;
+			color: @uiGreyDark;
+		}
+		.category-complete-number{
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+
+
+			font-size: @text-huge;
+			line-height: @text-huge;
+			color: @uiGreyDark;
+			font-weight: 200;
+		}
+	}
+
+	.category-progress{
+		margin: @basePadding/2 0;
+
+		background: @neutral;
+		height:14px;
+
+		.category-progress-inner{
+			display:block;
+			width: 40%;
+			height: 14px;
+			background-color:@highlight;
+		}
+	}
+
+	.category-stats{
+		margin: @basePadding 0;
+
+		.category-stat{
+			width: 33.33333%;
+			padding: 0 @lessPadding/2;
+			float:left;
+
+			
+			text-align:center;
+
+			&:nth-child(2){
+				border-left: 1px solid @uiGreyDark;
+				border-right: 1px solid @uiGreyDark;
+			}
+
+			h3{
+				margin-top:0;
+
+				color: @highlight;
+				font-size: @text-huge;
+				line-height: @text-huge;
+				font-weight: 200;
+			}
+
+			h4{
+				margin-bottom:0;
+				
+				font-size: 15px;
+				color:black;
+				text-transform:uppercase;
+			}
+		}
 	}
 }
 
