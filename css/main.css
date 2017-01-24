@@ -201,14 +201,17 @@ header .header-title {
 #categoriesModal .btn-close,
 #achievementsModal .btn-close {
   position: fixed;
-  top: 60px;
-  right: 60px;
+  top: 30px;
+  right: 30px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  text-align: Center;
+  border-radius: 50%;
+  font-size: 70px;
+  line-height: 69px;
   color: white;
   font-size: 72px;
-}
-#categoriesModal .btn-close::before,
-#achievementsModal .btn-close::before {
-  content: '\00d7';
 }
 #categoriesModal .modal-dialog,
 #achievementsModal .modal-dialog,
