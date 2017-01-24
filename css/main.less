@@ -62,6 +62,27 @@ Examples:
 @lessPadding: 20px;
 
 
+
+// ====================================
+// 				^Fonts
+// ====================================
+
+.custom-font(@family: arial, @weight: normal, @style: normal, @filename){
+    @font-face{
+        font-family: @family;
+        src:url('../fonts/@{filename}.ttf') format('truetype');
+        font-weight: @weight;
+        font-style: @style;
+    }
+}
+
+.custom-font('Open Sans',300,normal,'OpenSans-Light');
+.custom-font('Open Sans',normal,normal,'OpenSans-Regular');
+.custom-font('Open Sans',600,normal,'OpenSans-Semibold');
+.custom-font('Open Sans',bold,normal,'OpenSans-Bold');
+
+
+
 // ====================================
 // 				^Shared
 // ====================================
@@ -331,7 +352,6 @@ header{
 
 				color: @uiGreyHeavy;
 				font-size: @text-base*1.25;
-				font-weight: 200;
 			}
 
 			.category-image-wrapper, .achievement-image-wrapper{
@@ -379,7 +399,7 @@ header{
 			font-size: @text-huge;
 			line-height: @text-huge;
 			color: @uiGreyDark;
-			font-weight: 200;
+			font-weight: 300;
 		}
 	}
 
@@ -419,7 +439,7 @@ header{
 				color: @highlight;
 				font-size: @text-huge;
 				line-height: @text-huge;
-				font-weight: 200;
+				font-weight: 300;
 			}
 
 			h4{

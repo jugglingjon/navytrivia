@@ -30,6 +30,30 @@ Examples:
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 html,
 body {
   height: 100%;
@@ -281,7 +305,6 @@ header .header-title {
   margin-bottom: 60px;
   color: #292728;
   font-size: 20px;
-  font-weight: 200;
 }
 #categoriesModal .modal-categories-list .modal-category .category-image-wrapper,
 #achievementsModal .modal-categories-list .modal-category .category-image-wrapper,
@@ -343,7 +366,7 @@ header .header-title {
   font-size: 36px;
   line-height: 36px;
   color: #545454;
-  font-weight: 200;
+  font-weight: 300;
 }
 .category-data .category-progress {
   margin: 15px 0;
@@ -374,7 +397,7 @@ header .header-title {
   color: #1CA0C1;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .category-data .category-stats .category-stat h4 {
   margin-bottom: 0;
