@@ -23,11 +23,11 @@
 	<header class="screen-categories screen header">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-3"><a href="#" class="nav-stats">Stats</a></div>
+				<div class="col-xs-3"><a href="#" class="nav-stats"><i class="fa fa-line-chart"></i></a></div>
 				<div class="col-xs-6 header-title">
 					Name of Game
 				</div>
-				<div class="col-xs-3"><a href="#" class="nav-achievements">Achievements</a></div>
+				<div class="col-xs-3 text-right"><a href="#" class="nav-achievements"><i class="fa fa-trophy"></i></a></div>
 			</div>
 		</div>
 	</header>
@@ -42,7 +42,7 @@
 	<header class="screen-achievements screen header" style="display:none;">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3"><a href="#" class="nav-categories">Back</a></div>
+				<div class="col-xs-3"><a href="#" class="nav-categories"><i class="fa fa-arrow-left"></i></a></div>
 				<div class="col-xs-6 header-title">
 					Achievements
 				</div>
@@ -61,7 +61,7 @@
 	<header class="screen-stats screen header" style="display:none;">
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-3"><a href="#" class="nav-categories">Back</a></div>
+				<div class="col-xs-3"><a href="#" class="nav-categories"><i class="fa fa-arrow-left"></i></a></div>
 				<div class="col-xs-6 header-title">
 					Stats
 				</div>
@@ -117,18 +117,49 @@
 		</div>
 	</div>   
 
+	<header class="screen-end screen header" style="display:none;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-3"></div>
+				<div class="col-xs-6 header-title">
+					Your Results
+				</div>
+				<div class="col-xs-3"></div>
+			</div>
+		</div>
+	</header>
 	<div class="screen screen-end" style="display:none;">
-		<h4 class="end-category"></h4>
-		<h3>Your Score</h3>
-		<h1 class="correct-score"></h1>
-		<h1 class="bonus-score"></h1>
-		<h1 class="end-score"></h1>
-		<a href="#" class="btn-gameover">End</a>
-		<a href="#" class="btn-restart">Try Again</a>
 
-		<div class="end-history" style="opacity:0;">
+		<div class="end-scores">
+			<div class="end-score-wrapper">
+				<h1 class="correct-score"></h1>
+				<div class="end-score-label"><span class="correct-score-count"></span>/<span class="correct-score-total"></span> Correct</div>
+			</div>
+			<div class="end-score-wrapper">
+				<h1 class="end-score"></h1>
+				<div class="end-score-label">Your Score</div>
+			</div>
+			<div class="end-score-wrapper">
+				<h1 class="bonus-score"></h1>
+				<div class="end-score-label">Time Bonus</div>
+			</div>
 			
 		</div>
+
+		<div class="end-history-wrapper">
+			<h3>Questions Review</h3>
+			<div class="end-history" style="opacity:0;">
+				
+			</div>
+		</div>
+		
+		<div class="end-footer">
+			<a href="#" class="btn-restart btn btn-primary">Try Again</a>
+			<a href="#" class="btn-gameover btn btn-primary">Quit</a>	
+		</div>
+		
+
+		
 	</div>
 
 

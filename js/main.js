@@ -236,10 +236,12 @@ function endGame(){
 	$gameScore=$gameBonusScore+$gameCorrectScore;
 
 	//render end screen
-	$('.correct-score').text($gameCorrectCount + '/' + $gameLength +' Correct: '+ $gameCorrectScore);
-	$('.bonus-score').text('Time Bonus: '+ $gameBonusScore);
-	$('.end-score').text('Score: '+ $gameScore);
-	$('.end-category').text($categories[$currentCategory].title);
+	$('.correct-score').text(numberWithCommas($gameCorrectScore));
+	$('.correct-score-count').text($gameCorrectCount)
+	$('.correct-score-total').text($gameLength);
+
+	$('.bonus-score').text(numberWithCommas($gameBonusScore));
+	$('.end-score').text(numberWithCommas($gameScore));
 	
 	//append game data to history div
 	$('.end-history').empty();
@@ -273,7 +275,8 @@ function endGame(){
 	changeScreen('screen-end',{
 		after:function(){
 			$('.end-history').flickity({
-				prevNextButtons:false,
+				prevNextButtons: false,
+				pageDots: false
 			});
 
 			$('.end-history').animate({opacity:'1'});
