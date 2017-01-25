@@ -61,6 +61,7 @@ Examples:
 @highlightDeep: #2d475c;
 @highlightMuted: fadeout(#AADFFA,43%);
 @highlight: #1ba1c3;
+@highlightMiddle: #056db6;
 
 //generic
 @text:white;
@@ -516,21 +517,75 @@ header{
 
 .screen-game,.screen-end{
 	
+	margin-top: 20px;
+	padding: @lessPadding*2;
+	
+	.game-question-wrapper{
+		display:table;
+		width: 100%;
+		height: 424px;
+		margin-bottom: @lessPadding*2;
+
+		.game-question{
+			display: table-cell;
+			width: 100%;
+			font-size: 50px;
+			color:white;
+			font-weight:@light;
+			text-align:center;
+			vertical-align:middle;
+		}
+	}
+	
+	.game-image{
+		height: 424px;
+		position: relative;
+		margin-bottom: @lessPadding*2;
+
+		background-size:cover;
+		background-position: center center;
+
+		.game-question{
+			position: absolute;
+			bottom:0;
+			right:0;
+			left:0;
+			padding: @lessPadding*2;
+			margin:0;
+
+			background-color: rgba(0,0,0,.7);
+			font-size: 30px;
+			color:white;
+			font-weight: @light;
+			text-align: center;
+		}
+	}
+
 	.game-answers{
 		.answer{
-			background-color:gray;
-			border:1px solid black;
-			width: 50%;
-			height: 150px;
-			font-size: 20px;
-			line-height:150px;
-			text-align:center;
-			display:block;
+			background-color:white;
+			display:table;
 			float:left;
-			color:black;
+			margin: 0 @lessPadding @lessPadding 0;
+			padding: @lessPadding;
+			width: 334px;
+			height: 190px;
+
+			&:nth-child(2n){
+				margin-right:0;
+			}
+			
+			font-size: @text-huge;
+			text-align:center;
+			color:@highlightMiddle;
 
 			&:active,&:hover{
 				text-decoration: none;
+			}
+
+			.answer-text{
+				display: table-cell;
+				vertical-align: middle;
 			}
 		}
 	}
@@ -539,47 +594,60 @@ header{
 		.answer{
 			&.clicked{
 				background-color:red;
+				color:white;
 			}
 
 			&.correct{
 				background-color:green;
+				color:white;
 			}
 
 			&.clicked.correct{
 				background-color:green;
+				color:white;
 			}
 		}
 	}
 
 	.game-timer-bar{
+		position:fixed;
+		top:0;
+		left:0;
+		right:0;
+
 		height: 20px;
 
 		.game-timer-bar-inner{
 			height:20px;
-			background-color:@highlight;
+			background: @progressDark;
 			width:100%;
 		}
 	}
 }
 
 .game-progress-dots{
+	position: fixed;
+	bottom: @basePadding;
+	right:0;
+	left:0;
+
 	text-align:center;
 	.game-progress-dot{
 		width: 10px;
 		height: 10px;
+		border-radius: 50%;
 
 		display:inline-block;
-		margin: @basePadding/2;
-		background:white;
-		opacity:.2;
+		margin: @lessPadding/4;
+		background-color: #636363;
 
 		&.past{
-			opacity:.6;
+			background-color: #959595;
 		}
 
 		&.current{
 			opacity: 1;
-			background-color: @highlight;
+			background-color: white;
 		}
 	}
 

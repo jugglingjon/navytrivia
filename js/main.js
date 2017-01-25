@@ -293,6 +293,8 @@ function advanceGame(){
 			$('.game-timer-bar-inner').css('width','100%');
 			$('.game-answers').removeClass('clicked');
 			$('.game-image').hide();
+			$('.game-question-wrapper').show();
+
 			if($currentQuestion<($gameLength-1)){
 				$currentQuestion++;
 				loadQuestion($currentQuestion);
@@ -314,15 +316,17 @@ function loadQuestion(question){
 	//populate question text
 	$('.game-category').text($categories[$currentCategory].title);
 	$('.game-question').text(currentQuestion.question);
+
+	//if image, show, and hide normal question
 	if(currentQuestion.image){
-		$('.game-image img').attr('src','categories/'+$categories[$currentCategory].slug+'/'+currentQuestion.image);
-		$('.game-image').show();
+		$('.game-image').show().attr('style','background-image: url(categories/'+$categories[$currentCategory].slug+'/'+currentQuestion.image+')');
+		$('.game-question-wrapper').hide();
 	}
 
 	//clear answer space and populate with answers
 	$('.game-answers').empty();
 	$.each(currentQuestion.answers,function(){
-		var newAnswer=$('<a href="#" class="answer">'+this.answer+'</a>');
+		var newAnswer=$('<a href="#" class="answer"><span class="answer-text">'+this.answer+'</span></a>');
 		if(this.correct){
 			newAnswer.addClass('correct');
 		}

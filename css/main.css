@@ -426,18 +426,66 @@ header .header-title {
 .screen-stats .stats-categories-list .stats-category img {
   max-width: 100px;
 }
+.screen-game,
+.screen-end {
+  margin-top: 20px;
+  padding: 40px;
+}
+.screen-game .game-question-wrapper,
+.screen-end .game-question-wrapper {
+  display: table;
+  width: 100%;
+  height: 424px;
+  margin-bottom: 40px;
+}
+.screen-game .game-question-wrapper .game-question,
+.screen-end .game-question-wrapper .game-question {
+  display: table-cell;
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+}
+.screen-game .game-image,
+.screen-end .game-image {
+  height: 424px;
+  position: relative;
+  margin-bottom: 40px;
+  background-size: cover;
+  background-position: center center;
+}
+.screen-game .game-image .game-question,
+.screen-end .game-image .game-question {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 40px;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
 .screen-game .game-answers .answer,
 .screen-end .game-answers .answer {
-  background-color: gray;
-  border: 1px solid black;
-  width: 50%;
-  height: 150px;
-  font-size: 20px;
-  line-height: 150px;
-  text-align: center;
-  display: block;
+  background-color: white;
+  display: table;
   float: left;
-  color: black;
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  width: 334px;
+  height: 190px;
+  font-size: 36px;
+  text-align: center;
+  color: #056db6;
+}
+.screen-game .game-answers .answer:nth-child(2n),
+.screen-end .game-answers .answer:nth-child(2n) {
+  margin-right: 0;
 }
 .screen-game .game-answers .answer:active,
 .screen-end .game-answers .answer:active,
@@ -445,45 +493,62 @@ header .header-title {
 .screen-end .game-answers .answer:hover {
   text-decoration: none;
 }
+.screen-game .game-answers .answer .answer-text,
+.screen-end .game-answers .answer .answer-text {
+  display: table-cell;
+  vertical-align: middle;
+}
 .screen-game .game-answers.clicked .answer.clicked,
 .screen-end .game-answers.clicked .answer.clicked {
   background-color: red;
+  color: white;
 }
 .screen-game .game-answers.clicked .answer.correct,
 .screen-end .game-answers.clicked .answer.correct {
   background-color: green;
+  color: white;
 }
 .screen-game .game-answers.clicked .answer.clicked.correct,
 .screen-end .game-answers.clicked .answer.clicked.correct {
   background-color: green;
+  color: white;
 }
 .screen-game .game-timer-bar,
 .screen-end .game-timer-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 20px;
 }
 .screen-game .game-timer-bar .game-timer-bar-inner,
 .screen-end .game-timer-bar .game-timer-bar-inner {
   height: 20px;
-  background-color: #1ba1c3;
+  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
+  background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
   width: 100%;
 }
 .game-progress-dots {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  left: 0;
   text-align: center;
 }
 .game-progress-dots .game-progress-dot {
   width: 10px;
   height: 10px;
+  border-radius: 50%;
   display: inline-block;
-  margin: 15px;
-  background: white;
-  opacity: .2;
+  margin: 5px;
+  background-color: #636363;
 }
 .game-progress-dots .game-progress-dot.past {
-  opacity: .6;
+  background-color: #959595;
 }
 .game-progress-dots .game-progress-dot.current {
   opacity: 1;
-  background-color: #1ba1c3;
+  background-color: white;
 }
 .screen-end .game-data {
   width: 460px;
