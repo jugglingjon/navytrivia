@@ -33,31 +33,47 @@ Examples:
 // 				^Variables
 // ====================================
 
+//backgrounds
 @background: black;
 @backgroundGradientStart: #2D3A4D;
 @backgroundGradientEnd: #36647B;
 
-@headerGradientStart: #1BA1C4;
-@headerGradientEnd: #39A5B1;
+//header
+@headerGradientStart: #3DB0B6;
+@headerGradientEnd: #33A1C1;
 
+//progress bars
+@progressDark: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
+@progressDarkBack: #182A32;
+@progressDarkBorder: #ACACAC;
 
+@progressLight: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
+@progressLightBack: #B7B7B7;
+@progressLightBorder: #959595;
 
+//ui greys
 @uiGreyLight: #EEEEEE;
 @uiGreyMedium: #B7B7B7;
-@uiGreyDark: #545454;
-@uiGreyHeavy: #292728;
+@uiGreyDark: #707070;
+@uiGreyHeavy: #282727;
 
+//highlights
+@highlightDeep: #2d475c;
+@highlightMuted: fadeout(#AADFFA,43%);
+@highlight: #1ba1c3;
+
+//generic
 @text:white;
 @neutral: @uiGreyMedium;
-@highlight: #1CA0C1;
-@highlightMuted: #719BB3;
 
+//text sizes
 @text-small: 12px;
 @text-base: 16px;
-@text-medium: 24px;
+@text-medium: 22px;
 @text-large: 28px;
 @text-huge: 36px;
 
+//paddings
 @basePadding: 30px;
 @lessPadding: 20px;
 
@@ -81,6 +97,11 @@ Examples:
 .custom-font('Open Sans',600,normal,'OpenSans-Semibold');
 .custom-font('Open Sans',bold,normal,'OpenSans-Bold');
 
+//weights
+@light: 300;
+@normal: normal;
+@semibold: 600;
+@bold: bold;
 
 
 // ====================================
@@ -119,6 +140,8 @@ body{
 	&.btn-primary{
 		background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
 		color:white;
+		box-shadow: 1px 1px 8px 0px rgba(3, 26, 46, 0.31);
+
 	}
 }
 
@@ -172,7 +195,7 @@ header{
 
 		text-align:center;
 		color: @text;
-		font-size: @text-medium;
+		font-size: 22px;
 
 		.category-image-wrapper,.achievement-image-wrapper{
 			border-radius: 50%;
@@ -180,8 +203,8 @@ header{
 			height: 176px;
 			padding: @basePadding;
 
-			background: radial-gradient(ellipse at center, @headerGradientStart 0%,@headerGradientEnd 100%);
-			border:6px solid @highlightMuted;
+			background: radial-gradient(ellipse at center, #30A1C1 0%,#217E8F 100%);
+			border:5px solid @highlightMuted;
 
 			img{
 				display:inline-block;
@@ -199,15 +222,16 @@ header{
 
 		.category-progress{
 			
-			background: @neutral;
+			border: 1px solid @progressDarkBorder;
+			background: @progressDarkBack;
 			height:14px;
 
 			.category-progress-inner{
 				display:block;
 				width: 40%;
-				height: 14px;
+				height: 100%;
 
-				background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
+				background: @progressDark;
 			}
 		}
 
@@ -250,7 +274,7 @@ header{
 		
 		span{
 			display:block;
-			margin: @basePadding/2 0;
+			margin: @lessPadding 0;
 		}
 
 		.category-progress{
@@ -342,16 +366,17 @@ header{
 			text-align:center;
 
 			.category-title{
-				color: @uiGreyHeavy;
+				color: @highlightDeep;
 				font-size: @text-huge;
-				font-weight: bold;
+				font-weight: @semibold;
 			}
 
 			.category-description{
 				margin-bottom: @basePadding*2;
 
 				color: @uiGreyHeavy;
-				font-size: @text-base*1.25;
+				font-size: @text-medium;
+				font-weight: @light;
 			}
 
 			.category-image-wrapper, .achievement-image-wrapper{
@@ -361,7 +386,7 @@ header{
 				padding: @basePadding;
 				border: 6px solid @highlightMuted;
 
-				background: radial-gradient(ellipse at center, @headerGradientStart 0%,@headerGradientEnd 100%);
+				background: radial-gradient(ellipse at center, #30A1C1 0%,#217E8F 100%);
 
 
 				img{
@@ -386,7 +411,9 @@ header{
 		.category-complete-label{
 			vertical-align: baseline;
 			float:left;
-
+			
+			font-size: @text-base;
+			font-weight: @normal;
 			text-transform: uppercase;
 			color: @uiGreyDark;
 		}
@@ -395,25 +422,25 @@ header{
 			bottom: 0px;
 			right: 0px;
 
-
 			font-size: @text-huge;
 			line-height: @text-huge;
 			color: @uiGreyDark;
-			font-weight: 300;
+			font-weight: @light;
 		}
 	}
 
 	.category-progress{
 		margin: @basePadding/2 0;
 
-		background: @neutral;
+		background: @progressLightBack;
+		border: 1px solid @progressLightBorder;
 		height:14px;
 
 		.category-progress-inner{
 			display:block;
 			width: 40%;
-			height: 14px;
-			background-color:@highlight;
+			height: 100%;
+			background: @progressLight;
 		}
 	}
 
@@ -439,14 +466,15 @@ header{
 				color: @highlight;
 				font-size: @text-huge;
 				line-height: @text-huge;
-				font-weight: 300;
+				font-weight: @light;
 			}
 
 			h4{
 				margin-bottom:0;
 				
-				font-size: 15px;
-				color:black;
+				font-size: @text-small;
+				font-weight: @semibold;
+				color: @uiGreyHeavy;
 				text-transform:uppercase;
 			}
 		}
