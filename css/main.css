@@ -94,6 +94,14 @@ body {
   color: white;
   box-shadow: 1px 1px 8px 0px rgba(3, 26, 46, 0.31);
 }
+.btn.btn-secondary {
+  padding: 10px 40px;
+  min-width: 0;
+  width: auto;
+  border: 1px solid #1ba1c3;
+  color: #1ba1c3;
+  font-size: 16px;
+}
 header {
   height: 100px;
   padding: 30px !important;
@@ -529,8 +537,14 @@ header a {
 }
 .screen-stats .stats-achievements {
   padding: 40px;
+  position: relative;
   background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #c3ccd1 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #c3ccd1 100%);
+}
+.screen-stats .stats-achievements .btn {
+  position: absolute;
+  right: 40px;
+  top: 30px;
 }
 .screen-stats .stats-achievements .stats-latest-achievements-list {
   zoom: 1;
@@ -790,7 +804,8 @@ header a {
 .screen-end .end-history-wrapper {
   padding: 40px 0;
   height: 660px;
-  background-color: linear-gradient(to bottom, #EEEEEE 0%, #B7B7B7 100%);
+  background: -webkit-linear-gradient(top, #EEEEEE 0%, #B7B7B7 100%);
+  background: linear-gradient(to bottom, #EEEEEE 0%, #B7B7B7 100%);
 }
 .screen-end .end-history-wrapper h3 {
   margin: 0;

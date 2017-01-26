@@ -152,6 +152,18 @@ body{
 		box-shadow: 1px 1px 8px 0px rgba(3, 26, 46, 0.31);
 
 	}
+
+	&.btn-secondary{
+		padding: @lessPadding/2 @lessPadding*2;
+		min-width:0;
+		width:auto;
+
+		border: 1px solid @highlight;
+		color: @highlight;
+		font-size: @text-base;
+
+
+	}
 }
 
 // ====================================
@@ -616,8 +628,15 @@ header{
 	.stats-achievements{
 
 		padding: @lessPadding*2;
+		position: relative;
 
 		background: linear-gradient(to bottom, #ffffff 0%,#ffffff 66%,#c3ccd1 100%);
+
+		.btn{
+			position: absolute;
+			right: @lessPadding*2;
+			top: @lessPadding*2-10;
+		}
 
 		.stats-latest-achievements-list{
 			.clearfix;
@@ -914,7 +933,7 @@ header{
 		padding: @lessPadding*2 0;
 		height: 660px;
 
-		background-color: @gradientLight;
+		background: @gradientLight;
 
 
 		h3{
