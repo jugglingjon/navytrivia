@@ -63,6 +63,7 @@ Examples:
 @uiGreyMedium: #B7B7B7;
 @uiGreyDark: #707070;
 @uiGreyHeavy: #282727;
+@gradientLight: linear-gradient(to bottom, @uiGreyLight 0%,@uiGreyMedium 100%);
 
 //highlights
 @highlightDeep: #2d475c;
@@ -374,7 +375,7 @@ header{
 			margin-right: 2*@basePadding;
 			padding: 2*@lessPadding;
 
-			background: linear-gradient(to bottom, @uiGreyLight 0%,@uiGreyMedium 100%);
+			background: @gradientLight;
 			color:black;
 			text-align:center;
 
@@ -500,26 +501,187 @@ header{
 
 .screen-stats{
 
+	padding-top: 100px;
+
+	&.header{
+		padding-top: @basePadding;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,.6);
+	}
+
+	.stats-cumulative{
+		padding: @lessPadding*2;
+
+		background: @background;
+
+
+		
+
+		.stats-cumulative-stats{
+			.clearfix;
+
+			.stats-cumulative-stat{
+				float:left;
+				width:25%;
+
+				text-align:center;
+				border-right: 1px solid #E1E1E1;
+
+				&:last-child{
+					border-right:0;
+				}
+
+				h1{
+					margin-top: 0;
+					margin-bottom: 10px;
+					color: #fff;
+					font-size: 70px;
+					font-weight: @light;
+				}
+
+				h4{
+					margin-bottom:0;
+
+					text-transform: uppercase;
+					font-weight:@normal;
+					font-size: @text-base;
+				}
+			}
+		}
+	}
+
+	h5{
+		font-size: @text-base;
+		text-transform:uppercase;
+		margin:0;
+	}
+
 	.stats-questions-completed{
 			
-		background: @neutral;
-		height:20px;
+		height:14px;
+		margin: @lessPadding 0 @lessPadding*2 0;
+
+		border: 1px solid @progressDarkBorder;
+		background: @progressDarkBack;
+		
 
 		.stats-questions-completed-inner{
 			display:block;
 			width: 0%;
-			height: 20px;
-			background-color:@highlight;
+			height: 100%;
+
+			background: @progressDark;
 		}
 	}
 
-	.stats-categories-list{
-		.stats-category{
-			img{
-				max-width:100px;
+	h2{
+		margin-top:0;
+		margin-bottom: @lessPadding;
+
+		text-transform:uppercase;
+		font-weight: @semibold;
+		font-size: 18px;
+		color: @highlightDeep;
+	}
+
+	.stats-achievements{
+
+		padding: @lessPadding*2;
+
+		background: linear-gradient(to bottom, #ffffff 0%,#ffffff 66%,#c3ccd1 100%);
+
+		.stats-latest-achievements-list{
+			.clearfix;
+
+			.latest-achievement{
+				width: 25%;
+				float: left;
+				padding: 0 @basePadding;
+				position: relative;
+
+				text-align: center;
+
+				&::after{
+					content: '';
+					display: block;
+					position: absolute;
+					z-index: -1;
+					bottom: -20px;
+					height: 5px;
+					border-radius: 50%;
+					background: rgba(0,0,0,.2);
+					right: 30px;
+					left: 30px;
+					box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
+					opacity: 1;
+					z-index:9
+				}
+				
 			}
 		}
 	}
+	
+	.stats-categories{
+		padding: @lessPadding*2;
+
+		background-color:white;
+
+		.stats-categories-list{
+
+			.stat-category{
+				background: @uiGreyLight;
+				.clearfix;
+				margin-bottom: @lessPadding;
+				position: relative;
+
+				.stat-category-icon{
+					width: 25%;
+					position: absolute;
+					top:0;
+					bottom:0;
+
+
+					background: @background;
+
+					img{
+						position:absolute;
+						width: 100px;
+						top: 50%;
+						left:0;
+						right:0;
+						transform: translateY(-50%);
+
+						margin: 0 auto;
+					}
+				}
+
+				.stat-category-content{
+					margin-left: 25%;
+					width: 75%;
+					padding: @basePadding;
+
+					&>h3{
+						font-size: 30px;
+						margin-top: 0;
+
+						color: @highlightDeep;
+					}
+
+					.category-data{
+						.category-stats{
+							margin-bottom:0;
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	
 }
 
 
@@ -727,7 +889,7 @@ header{
 		padding: @lessPadding*2 0;
 		height: 660px;
 
-		background-color:white;
+		background-color: @gradientLight;
 
 
 		h3{
@@ -777,7 +939,7 @@ header{
 						margin:0 10px 10px 0;
 						padding: @lessPadding/2;
 
-						font-size: @text-medium;
+						font-size: 14px;
 
 						&:nth-child(2n){
 							margin-right:0;
@@ -809,7 +971,7 @@ header{
 					right: 20px;
 					left: 20px;
 					box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
-					opacity: .5;
+					opacity: 1;
 				}
 			}
 		}
@@ -829,56 +991,10 @@ header{
 
 		.btn{
 			margin: 0 @lessPadding/2;
+			width: 290px;
 		}
 	}
 	
 }
 
 
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================
-
-// ====================================
-// 				Section
-// ====================================

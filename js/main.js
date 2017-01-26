@@ -492,7 +492,7 @@ function populateStats(){
 	//slice to 3 newest achievements, display
 	var newestCompletedAchievements= completedAchievements.slice(0,4);
 	$.each(newestCompletedAchievements, function(){
-		$('<h4>'+this.title+'</h4>').appendTo('.stats-latest-achievements-list');
+		$('<div class="latest-achievement"><div class="latest-achievement-image"><img src="achievements/'+this.slug+'.png" class="img-responsive"></div><h4 class="lastest-achievement-label" style="display:none;">'+this.title+'</h4></div>').appendTo('.stats-latest-achievements-list');
 	});
 
 	//get completed questions total count and add category to category list
@@ -511,13 +511,25 @@ function populateStats(){
 		totalQuestions+=completionStatus.total;
 
 		//render category listing for stats screen
-		var newCategory='<div class="stats-category">'+
-				'<img src="categories/'+this.slug+'/icon.png">'+
-				'<h4>'+this.title+'</h4>'+
-				'<h5>Completed: '+completionStatus.complete+'/'+completionStatus.total+'</h5>'+
-				'<h5>Times played: '+this.played+'</h5>'+
-				'<h5>High score: '+this.highScore+'</h5>'+
-				'<h5>Last score: '+this.lastScore+'</h5>'+
+		var newCategory='<div class="stat-category">'+
+				'<div class="stat-category-icon">'+
+					'<img src="categories/'+this.slug+'/icon.png" class="img-responsive">'+
+				'</div>'+
+				'<div class="stat-category-content">'+
+					'<h3>'+this.title+'</h3>'+
+					'<div class="category-data">'+
+						'<div class="category-complete clearfix">'+
+							'<span class="category-complete-label">Questions Completed</span><span class="category-complete-number">'+Math.ceil(completionStatus.percentage*100)+'%</span>'+
+						'</div>'+
+						'<div class="category-progress"><div class="category-progress-inner" style="width:'+completionStatus.percentage*100+'%"></div></div>'+
+
+						'<div class="category-stats clearfix">'+
+							'<div class="category-stat"><h3>'+this.played+'</h3><h4>Times Played</h4></div>'+
+							'<div class="category-stat"><h3>'+numberWithCommas(this.highScore)+'</h3><h4>High Score</h4></div>'+
+							'<div class="category-stat"><h3>'+numberWithCommas(this.lastScore)+'</h3><h4>Last Score</h4></div>'+
+						'</div>'+
+					'</div>'+
+				'</div>'+
 			'</div>';
 
 		//add to list
@@ -525,10 +537,10 @@ function populateStats(){
 	});
 
 	//add general stats
-	$('.stats-times-played .stat-number').text($data.stats.gamesPlayed);
-	$('.stats-achievements .stat-number').text(achievementCount);
-	$('.stats-perfect .stat-perfect').text($data.stats.perfectGames);
-	$('.stats-completed .stat-number').text(completedCategories);
+	$('.stats-cumulative-stat-played').text($data.stats.gamesPlayed);
+	$('.stats-cumulative-stat-achivements').text(achievementCount);
+	$('.stats-cumulative-stat-perfect').text($data.stats.perfectGames);
+	$('.stats-cumulative-stat-completed').text(completedCategories);
 	$('.stats-questions-completed-inner').css('width',completedQuestions/totalQuestions*100+'%');
 }
 

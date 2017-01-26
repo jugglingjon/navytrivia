@@ -59,7 +59,7 @@
 	</div>
 
 	<header class="screen-stats screen header" style="display:none;">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-3"><a href="#" class="nav-categories"><i class="fa fa-arrow-left"></i></a></div>
 				<div class="col-xs-6 header-title">
@@ -70,23 +70,63 @@
 		</div>
 	</header>
 	<div class="screen screen-stats" style="display:none;">
-		<a href="#" class="stats-reset">Reset Data</a>
-		<div class="stats-times-played">Times Played: <span class="stat-number"></span></div>
+		<div class="stats-cumulative">
+			<h5>Questions Completed</h5>
+			<div class="stats-questions-completed"><div class="stats-questions-completed-inner"></div></div>
+
+			<div class="stats-cumulative-stats">
+				<div class="stats-cumulative-stat">
+					<h1 class="stats-cumulative-stat-played">
+						
+					</h1>
+					<h4 class="stats-cumulative-stat-label">
+						Times Played
+					</h4>
+				</div>
+
+				<div class="stats-cumulative-stat">
+					<h1 class="stats-cumulative-stat-achivements">
+						
+					</h1>
+					<h4 class="stats-cumulative-stat-label">
+						Achievements
+					</h4>
+				</div>
+
+				<div class="stats-cumulative-stat">
+					<h1 class="stats-cumulative-stat-perfect">
+						
+					</h1>
+					<h4 class="stats-cumulative-stat-label">
+						Perfect Scores
+					</h4>
+				</div>
+
+				<div class="stats-cumulative-stat">
+					<h1 class="stats-cumulative-stat-completed">
+						
+					</h1>
+					<h4 class="stats-cumulative-stat-label">
+						Topics Completed
+					</h4>
+				</div>
+			</div>
+		</div>
+
+		<a href="#" class="stats-reset" style="display:none;">Reset Data</a>
 		
-		<div class="stats-achievements">Achievements: <span class="stat-number"></span></div>
+		<div class="stats-achievements">
+			<h2>Recent Achievements</h2>
+			<div class="stats-latest-achievements-list"></div>
+		</div>
+		
 
-		<div class="stats-perfect">Perfect Scores: <span class="stat-perfect"></span></div>
+		<div class="stats-categories">
+			<h2>Performance by topic</h2>
+			<div class="stats-categories-list"></div>
+		</div>
 
-		<div class="stats-completed">Topics Completed: <span class="stat-number"></span></div>
-
-		<h2>Questions Completed</h2>
-		<div class="stats-questions-completed"><div class="stats-questions-completed-inner"></div></div>
-
-		<h2>Latest Achievements</h2>
-		<div class="stats-latest-achievements-list"></div>
-
-		<h2>Performance by topic</h2>
-		<div class="stats-categories-list"></div>
+		
 
 	</div>
 
