@@ -215,7 +215,7 @@ function populateAchievements(){
 
 		var image=this.complete?this.slug:'lock';
 
-		var newAchievement='<div class="achievement">'+
+		var newAchievement='<div class="achievement" data-complete="'+this.complete+'">'+
 				'<div class="achievement-image-wrapper">'+
 					'<img src="achievements/'+image+'.png">'+
 				'</div>'+

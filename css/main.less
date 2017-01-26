@@ -283,62 +283,105 @@ header{
 	}
 }
 
+// ====================================
+// 				^Achievements
+// ====================================
+
+.screen-achievements{
+
+	padding-top: 100px;
+
+	background-color:white;
+
+	&.header{
+		padding-top: @basePadding;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		z-index:999999999;
+
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,.6);
+	}
+
+	.achievements-list{
+
+		display: inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
 
-.achievements-list{
+		.achievement{
+			display:block;
+			width: 200px;
+			
 
-	display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-	.category,.achievement{
-		display:block;
-		width: 200px;
-
-		margin: @basePadding/2;
-		padding: @basePadding;
-
-		text-align:center;
-		color: @text;
-
-		.category-image-wrapper,.achievement-image-wrapper{
-			border-radius: 50%;
+			margin: @basePadding/2;
 			padding: @basePadding;
+			padding-bottom: 0;
 
-			background: @neutral;
+			text-align:center;
+			color: @text;
 
-			img{
-				display:inline-block;
-				width:100%;
-				height:auto;
+			.achievement-image-wrapper{
+				margin-bottom: @lessPadding;
+				position: relative;
+
+				img{
+					display:inline-block;
+					width:100%;
+					height:auto;
+				}
+
+				&::after{
+					content: '';
+					display: block;
+					position: absolute;
+					z-index: -1;
+					bottom: -10px;
+					height: 5px;
+					border-radius: 50%;
+					background: rgba(0,0,0,.2);
+					right: 30px;
+					left: 30px;
+					box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
+					opacity: .8;
+					z-index:9
+				}
+
 			}
 
+			
+			span{
+				display:block;	
+
+				&.achievement-title{
+					margin-bottom: @lessPadding/2;
+
+					color: @highlightDeep;
+					font-size: @text-medium;
+					font-weight: @semibold;
+				}
+
+				&.achievement-description{
+					font-size: @text-base;
+					color: @uiGreyDark;
+				}
+			}
+
+			&[data-complete=false],&[data-complete=undefined]{
+				.achievement-title{
+					color: @uiGreyDark;
+				}
+			}
+
+			
 		}
 
 		
-		span{
-			display:block;
-			margin: @lessPadding 0;
-		}
-
-		.category-progress{
-			
-			background: @neutral;
-			height:20px;
-
-			.category-progress-inner{
-				display:block;
-				width: 40%;
-				height: 20px;
-				background-color:@highlight;
-			}
-		}
-
-
 	}
+
 }
-
-
 
 // ====================================
 // 				^Modals
