@@ -184,10 +184,22 @@ header{
 // ====================================
 
 .screen-categories{
-	padding: 2*@basePadding;
+
+	padding-top: 100px;
+
+	&.header{
+		padding-top: @basePadding;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,.6);
+	}	
 }
 
 .categories-list{
+	padding: 2*@basePadding;
 
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -212,6 +224,7 @@ header{
 		font-size: 22px;
 
 		.category-image-wrapper,.achievement-image-wrapper{
+			position: relative;
 			border-radius: 50%;
 			width: 176px;
 			height: 176px;
@@ -221,9 +234,14 @@ header{
 			border:5px solid @highlightMuted;
 
 			img{
-				display:inline-block;
-				width:100%;
-				height:auto;
+				display:block;
+				position: absolute;
+				width:80px;
+				top: 50%;
+				left: 0;
+				right: 0;
+				transform: translateY(-50%);
+				margin: 0 auto;
 			}
 
 		}
@@ -396,17 +414,24 @@ header{
 			.category-image-wrapper, .achievement-image-wrapper{
 				display:inline-block;
 				width:176px;
+				height: 176px;
 				border-radius: 50%;
 				padding: @basePadding;
 				border: 6px solid @highlightMuted;
 
 				background: radial-gradient(ellipse at center, #30A1C1 0%,#217E8F 100%);
+				position: relative;
 
 
 				img{
-					display:inline-block;
-					width:100%;
-					height:auto;
+					display:block;
+					position: absolute;
+					width:80px;
+					top: 50%;
+					left: 0;
+					right: 0;
+					transform: translateY(-50%);
+					margin: 0 auto;
 				}
 
 			}

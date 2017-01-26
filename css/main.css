@@ -110,9 +110,18 @@ header a {
   font-size: 34px;
 }
 .screen-categories {
-  padding: 60px;
+  padding-top: 100px;
+}
+.screen-categories.header {
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
 }
 .categories-list {
+  padding: 60px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -142,6 +151,7 @@ header a {
 .categories-list .achievement .category-image-wrapper,
 .categories-list .category .achievement-image-wrapper,
 .categories-list .achievement .achievement-image-wrapper {
+  position: relative;
   border-radius: 50%;
   width: 176px;
   height: 176px;
@@ -154,9 +164,15 @@ header a {
 .categories-list .achievement .category-image-wrapper img,
 .categories-list .category .achievement-image-wrapper img,
 .categories-list .achievement .achievement-image-wrapper img {
-  display: inline-block;
-  width: 100%;
-  height: auto;
+  display: block;
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 auto;
 }
 .categories-list .category span,
 .categories-list .achievement span {
@@ -342,11 +358,13 @@ header a {
 #achievementsModal .modal-achievements-list .modal-achievement .achievement-image-wrapper {
   display: inline-block;
   width: 176px;
+  height: 176px;
   border-radius: 50%;
   padding: 30px;
   border: 6px solid rgba(170, 223, 250, 0.57);
   background: -webkit-radial-gradient(center ellipse, #30A1C1 0%, #217E8F 100%);
   background: radial-gradient(ellipse at center, #30A1C1 0%, #217E8F 100%);
+  position: relative;
 }
 #categoriesModal .modal-categories-list .modal-category .category-image-wrapper img,
 #achievementsModal .modal-categories-list .modal-category .category-image-wrapper img,
@@ -364,9 +382,15 @@ header a {
 #achievementsModal .modal-categories-list .modal-achievement .achievement-image-wrapper img,
 #categoriesModal .modal-achievements-list .modal-achievement .achievement-image-wrapper img,
 #achievementsModal .modal-achievements-list .modal-achievement .achievement-image-wrapper img {
-  display: inline-block;
-  width: 100%;
-  height: auto;
+  display: block;
+  position: absolute;
+  width: 80px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin: 0 auto;
 }
 .category-data .category-complete {
   position: relative;
