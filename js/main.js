@@ -17,7 +17,9 @@ var $data,
 	$correctScore=100,
 	$bonusScore=100,
 	$gameData=[],
-	$localKey='navyTriviaData';
+	$localKey='navyTriviaData',
+	$currentScreen='screen-categories',
+	$lastScreen='screen-categories';
 
 var $startTime,
 	$questionTimer,
@@ -105,6 +107,10 @@ function reportQuestionTimer(){
 //changes to targeted screen
 //callback object: {before:<callback before fadein begins>, after: <callback after faded in>}
 function changeScreen(screenClass, callbackObj){
+	
+	//manage current and last screen variables
+	$lastScreen=$currentScreen;
+	$currentScreen=screenClass;
 
 	var elementsToFade=$('.screen:not(.'+screenClass+')');
 	var fadeCount=elementsToFade.length;
@@ -680,6 +686,11 @@ $(document).ready(function(){
 	//navigate to categories screen
 	$('.nav-categories').click(function(){
 		changeScreen('screen-categories');
+	});
+
+	//navigate to previous screen
+	$('.nav-back').click(function(){
+		changeScreen($lastScreen);
 	});
 
 	//rests stat data for testing
