@@ -439,7 +439,7 @@ header{
 		border:0;
 	}
 
-	.modal-categories-list, .modal-achievements-list{
+	.modal-categories-list{
 		opacity:0;
 
 		.modal-category, .modal-achievement{
@@ -487,6 +487,68 @@ header{
 					right: 0;
 					transform: translateY(-50%);
 					margin: 0 auto;
+				}
+
+			}
+
+			
+		}
+
+	}
+
+	.modal-achievements-list{
+		opacity:0;
+
+		.modal-achievement{
+
+			width: 470px;
+			margin-right: 2*@basePadding;
+			padding: 0;
+
+			background: @gradientLight;
+			color:black;
+			text-align:center;
+
+			h1{
+				margin-top:0;
+				padding: @lessPadding;
+
+				background-color: @highlightDeep;
+				text-transform:uppercase;
+				font-size: @text-huge;
+				color:white;
+			}
+
+			.achievement-wrapper{
+
+				padding: @basePadding;
+
+				.achievement-title{
+					color: @highlightDeep;
+					font-size: @text-huge;
+					font-weight: @semibold;
+				}
+
+				.achievement-description{
+					color: @uiGreyHeavy;
+					font-size: @text-medium;
+					font-weight: @light;
+				}
+
+				.achievement-image-wrapper{
+					display:inline-block;
+					width:200px;
+					height: 200px;
+					border-radius: 50%;
+
+					position: relative;
+
+
+					img{
+						display:block;
+						width:100%;
+					}
+
 				}
 
 			}
@@ -901,15 +963,15 @@ header{
 
 		display:inline-block;
 		margin: @lessPadding/4;
-		background-color: #636363;
+		background-color: #fff;
+		opacity: .2;
 
 		&.past{
-			background-color: #959595;
+			opacity: .6;
 		}
 
 		&.current{
 			opacity: 1;
-			background-color: white;
 		}
 	}
 

@@ -181,12 +181,14 @@ function processAchievements(callback){
 
 			//build modal achievement
 			var newAchievement='<div class="modal-achievement">'+
-				'<h2>Achievement Unlocked</h2>'+
-				'<div class="achievement-image-wrapper">'+
-					'<img src="achievements/'+this.slug+'.png">'+
+				'<h1>Achievement Unlocked</h1>'+
+				'<div class="achievement-wrapper">'+
+					'<div class="achievement-image-wrapper">'+
+						'<img src="achievements/'+this.slug+'.png">'+
+					'</div>'+
+					'<h2 class="achievement-title">'+this.title+'</h2>'+
+					'<p class="achievement-description">'+this.description+'</p>'+
 				'</div>'+
-				'<h2 class="achievement-title">'+this.title+'</h2>'+
-				'<p>'+this.description+'</p>'+
 			'</div>';
 
 			//append to field
