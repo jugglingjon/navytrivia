@@ -27,11 +27,27 @@ Examples:
 */
 @import "elements.less";
 
+// ====================================
+// 				^Mixins
+// ====================================
+
+//clearfix
 .clearfix{
 	zoom:1;
 	&:before, &:after{ content:""; display:table; }
 	&:after{ clear: both; }
 }
+
+//return random number
+.makeRandom(@min: 0, @max: @min+1, @int: 0) {
+    .checkInt() {
+        @getNum: `Math.random() * (@{max} - @{min} + @{int})`;
+        @base: unit(`@{int} == 1 ? Math.floor(@{getNum}) : @{getNum}`);
+    }
+    .checkInt();
+    @randNum: @base + @min;
+}
+
 
 
 
@@ -402,6 +418,83 @@ header{
 	transform: translate(0);
 }
 
+#achievementsModal{
+
+	.confetti{
+		position:absolute;
+		width:12px;
+		height:12px;
+		background-color:#f00;
+		opacity:0.0;
+		z-index: -1;
+
+		animation-name: fallsway;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-delay: 0s;
+		animation-iteration-count: infinite;
+		animation-direction: normal;
+		animation-fill-mode: none;
+		animation-play-state: running;
+	}
+
+	.generate-confetti(@n, @i: 1) when (@i =< @n) {
+		.confetti:nth-child(@{i}) {
+			transform: scale(`Math.random()`);
+			//z-index: @i;
+			animation-name: %('animation-%s',@i);
+			animation-delay: unit((4 / 20) * @i,s);
+
+			@randomColor: `Math.floor(Math.random()*16777215).toString(16)`;
+			@colorHex: e(@randomColor);
+			@color: ~"#@{colorHex}";
+			background-color:@color;
+
+			.makeRandom();
+		}
+
+		@keyframes %('animation-%s',@i){
+			0%{
+				.makeRandom(0,95);
+				left: unit(0+@randNum,%);
+				top:-5%;       
+				opacity:1.0;
+				transform:skew(-30deg);
+			}
+			25%{
+				.makeRandom(0,105);
+				left: unit(100-@randNum,%);
+				transform:skew(30deg);
+				opacity:1;
+			}
+			50%{
+				.makeRandom(0,95);
+				left: unit(0+@randNum,%);
+				transform:skew(-30deg);
+
+			}
+			75%{
+				.makeRandom(0,105);
+				left: unit(100-@randNum,%);
+				transform:skew(30deg);
+			}
+			100% {
+				top:100%;
+				.makeRandom(0,95);
+				left: unit(0+@randNum,%);
+				opacity:0.0;
+				transform:skew(-30deg);
+			}
+		}  
+
+		.generate-confetti(@n, (@i + 1));
+	}
+	.generate-confetti(20);
+
+
+
+}
+
 #categoriesModal, #achievementsModal{
 	
 	.btn-close{
@@ -500,14 +593,17 @@ header{
 		opacity:0;
 
 		.modal-achievement{
-
 			width: 470px;
 			margin-right: 2*@basePadding;
 			padding: 0;
+			overflow: hidden;
+			z-index:999;
 
 			background: @gradientLight;
 			color:black;
 			text-align:center;
+
+
 
 			h1{
 				margin-top:0;

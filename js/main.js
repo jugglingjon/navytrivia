@@ -181,13 +181,15 @@ function processAchievements(callback){
 
 			//build modal achievement
 			var newAchievement='<div class="modal-achievement">'+
-				'<h1>Achievement Unlocked</h1>'+
-				'<div class="achievement-wrapper">'+
-					'<div class="achievement-image-wrapper">'+
-						'<img src="achievements/'+this.slug+'.png">'+
+				'<div class="achievement-content">'+
+					'<h1>Achievement Unlocked</h1>'+
+					'<div class="achievement-wrapper">'+
+						'<div class="achievement-image-wrapper">'+
+							'<img src="achievements/'+this.slug+'.png">'+
+						'</div>'+
+						'<h2 class="achievement-title">'+this.title+'</h2>'+
+						'<p class="achievement-description">'+this.description+'</p>'+
 					'</div>'+
-					'<h2 class="achievement-title">'+this.title+'</h2>'+
-					'<p class="achievement-description">'+this.description+'</p>'+
 				'</div>'+
 			'</div>';
 
@@ -546,7 +548,7 @@ function populateStats(){
 
 	//add general stats
 	$('.stats-cumulative-stat-played').text($data.stats.gamesPlayed);
-	$('.stats-cumulative-stat-achivements').text(achievementCount);
+	$('.stats-cumulative-stat-achievements').text(achievementCount);
 	$('.stats-cumulative-stat-perfect').text($data.stats.perfectGames);
 	$('.stats-cumulative-stat-completed').text(completedCategories);
 	$('.stats-questions-completed-inner').css('width',completedQuestions/totalQuestions*100+'%');
