@@ -26,6 +26,7 @@ Examples:
 
 */
 @import "elements.less";
+@import "icons.css";
 
 // ====================================
 // 				^Mixins
@@ -200,7 +201,7 @@ header{
 
 	a{
 		color:white;
-		font-size: 34px;
+		font-size: 40px;
 	}
 }
 
@@ -489,7 +490,7 @@ header{
 
 		.generate-confetti(@n, (@i + 1));
 	}
-	.generate-confetti(20);
+	.generate-confetti(30);
 
 
 
@@ -504,13 +505,11 @@ header{
 		width: 80px;
 		height: 80px;
 	
-		border: 2px solid white;
-		text-align: Center;
+		text-align: center;
 		border-radius: 50%;
-		font-size: 70px;
-		line-height: 69px;
+		line-height: 60px;
 		color:@text;
-		font-size: 2*@text-huge;
+		font-size: 60px;
 	}
 
 	.modal-dialog,.modal-content,.modal-body{
