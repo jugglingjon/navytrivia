@@ -12,7 +12,7 @@
 		[
 			{
 				"title":"Resolute",
-				"slug": "testachievement",
+				"slug": "resolute",
 				"description": "3 consecutive games within a single topic",
 				"image": true,
 				"criteria":{
@@ -23,7 +23,7 @@
 			},
 			{
 				"title":"Dogged",
-				"slug": "testachievement",
+				"slug": "dogged",
 				"description": "6 consecutive games within a single topic",
 				"image": true,
 				"criteria":{
@@ -34,7 +34,7 @@
 			},
 			{
 				"title":"Frogman",
-				"slug": "testachievement",
+				"slug": "frogman",
 				"description": "5,000 points within a single topic",
 				"image": true,
 				"criteria":{
@@ -45,7 +45,7 @@
 			},
 			{
 				"title":"Diver",
-				"slug": "testachievement",
+				"slug": "diver",
 				"description": "10,000 points within a single topic",
 				"image": true,
 				"criteria":{
@@ -56,7 +56,7 @@
 			},
 			{
 				"title":"Aquanaut",
-				"slug": "testachievement",
+				"slug": "aquanaut",
 				"description": "20,000 points within a single topic",
 				"image": true,
 				"criteria":{
@@ -67,7 +67,7 @@
 			},
 			{
 				"title":"Patrol",
-				"slug": "testachievement",
+				"slug": "patrol",
 				"description": "Overall score of 20,000 points",
 				"image": true,
 				"criteria":{
@@ -78,7 +78,7 @@
 			},
 			{
 				"title":"Task Force",
-				"slug": "testachievement",
+				"slug": "taskForce",
 				"description": "Overall score of 50,000 points",
 				"image": true,
 				"criteria":{
@@ -89,7 +89,7 @@
 			},
 			{
 				"title":"Fleet",
-				"slug": "testachievement",
+				"slug": "fleet",
 				"description": "Overall score of 100,000 points",
 				"image": true,
 				"criteria":{
@@ -100,7 +100,7 @@
 			},
 			{
 				"title":"Seaman",
-				"slug": "testachievement",
+				"slug": "seaman",
 				"description": "Complete your first game",
 				"image": true,
 				"criteria":{
@@ -111,7 +111,7 @@
 			},
 			{
 				"title":"Petty Officer",
-				"slug": "testachievement",
+				"slug": "pettyOfficer",
 				"description": "Play 20 games",
 				"image": true,
 				"criteria":{
@@ -122,7 +122,7 @@
 			},
 			{
 				"title":"Chief",
-				"slug": "testachievement",
+				"slug": "chief",
 				"description": "Play 40 games",
 				"image": true,
 				"criteria":{
@@ -133,7 +133,7 @@
 			},
 			{
 				"title":"Master Chief",
-				"slug": "testachievement",
+				"slug": "masterChief",
 				"description": "Play 60 games",
 				"image": true,
 				"criteria":{
@@ -144,7 +144,7 @@
 			},
 			{
 				"title":"Bronze Anchor",
-				"slug": "testachievement",
+				"slug": "bronze",
 				"description": "1 perfect score game",
 				"image": true,
 				"criteria":{
@@ -155,7 +155,7 @@
 			},
 			{
 				"title":"Silver Anchor",
-				"slug": "testachievement",
+				"slug": "silver",
 				"description": "5 perfect score games",
 				"image": true,
 				"criteria":{
@@ -166,7 +166,7 @@
 			},
 			{
 				"title":"Gold Anchor",
-				"slug": "testachievement",
+				"slug": "gold",
 				"description": "10 perfect score games",
 				"image": true,
 				"criteria":{
@@ -176,8 +176,8 @@
 				}
 			},
 			{
-				"title":"Tug",
-				"slug": "testachievement",
+				"title":"Sailboat",
+				"slug": "sailboat",
 				"description": "3 questions correct in under 5 seconds",
 				"image": true,
 				"criteria":{
@@ -188,7 +188,7 @@
 			},
 			{
 				"title":"Cruiser",
-				"slug": "testachievement",
+				"slug": "cruiser",
 				"description": "5 questions correct in under 5 seconds",
 				"image": true,
 				"criteria":{
@@ -199,7 +199,7 @@
 			},
 			{
 				"title":"Torpedo",
-				"slug": "testachievement",
+				"slug": "torpedo",
 				"description": "10 questions correct in under 5 seconds",
 				"image": true,
 				"criteria":{
@@ -210,7 +210,7 @@
 			},
 			{
 				"title":"Spruce Goose",
-				"slug": "testachievement",
+				"slug": "spruce",
 				"description": "Earn 500 bonus points",
 				"image": true,
 				"criteria":{
@@ -221,7 +221,7 @@
 			},
 			{
 				"title":"High Flyer",
-				"slug": "testachievement",
+				"slug": "highFlyer",
 				"description": "Earn 1,000 bonus points",
 				"image": true,
 				"criteria":{
@@ -232,7 +232,7 @@
 			},		
 			{
 				"title":"Historian",
-				"slug": "testachievement",
+				"slug": "historian",
 				"description": "Correctly answer all questions in Naval History",
 				"image": true,
 				"criteria":{
@@ -243,7 +243,7 @@
 			},
 			{
 				"title":"Corpsman",
-				"slug": "testachievement",
+				"slug": "corpsman",
 				"description": "Correctly answer all questions in First Aid",
 				"image": true,
 				"criteria":{
