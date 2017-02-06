@@ -19,10 +19,6 @@
         <preference name="target-device" value="tablet" />
         <preference name="orientation" value="portrait" />
     </platform>
-
-    <platform name="android" >
-        <preference name="orientation" value="portrait" />
-    </platform>
     
     <preference name="webviewbounce" value="false" />
 
