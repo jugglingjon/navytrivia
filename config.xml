@@ -14,6 +14,7 @@
     </description>
 
     <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.2.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
 
     <platform name="ios" >
         <preference name="target-device" value="tablet" />
