@@ -30,6 +30,8 @@
         <false/>
     </gap:config-file>
 
+    <splash src="splash.png" />
+
 
 </widget>
 
