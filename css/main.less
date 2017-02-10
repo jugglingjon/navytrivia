@@ -645,6 +645,21 @@ header{
 
 					position: relative;
 
+					&::after{
+						content: '';
+						display: block;
+						position: absolute;
+						z-index: -1;
+						bottom: -10px;
+						height: 5px;
+						border-radius: 50%;
+						background: rgba(0,0,0,.2);
+						right: 30px;
+						left: 30px;
+						box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
+						opacity: .8;
+						z-index:9
+					}
 
 					img{
 						display:block;
