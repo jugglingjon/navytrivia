@@ -32,7 +32,7 @@
     </gap:config-file>
 
     <splash src="splash.png" />
-    <gap:splash src="splash.png" />
+    <icon src="icon.png" />
 
 
 </widget>
