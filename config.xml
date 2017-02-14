@@ -13,6 +13,10 @@
         Prototype Navy Trivia App
     </description>
 
+    
+    <icon src="icon.png" />
+    <splash src="splash.png" />
+
     <gap:plugin name="cordova-plugin-statusbar" source="npm" version="2.2.0" />
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.1" />
 
@@ -31,8 +35,7 @@
         <false/>
     </gap:config-file>
 
-    <splash src="splash.png" platform="ios" gap:role="default" />
-    <icon src="icon.png" platform="ios" gap:role="default" />
+   
 
 
 </widget>
