@@ -31,8 +31,8 @@
         <false/>
     </gap:config-file>
 
-    <splash src="splash.png" platform="ios" />
-    <icon src="icon.png" platform="ios" />
+    <splash src="splash.png" platform="ios" gap:role="default" />
+    <icon src="icon.png" platform="ios" gap:role="default" />
 
 
 </widget>
