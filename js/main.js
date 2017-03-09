@@ -1,5 +1,6 @@
 var $data,
 	$categories,
+	$categoryGrid,
 	$globalFadeTime=500,
 	$currentCategory,
 	$gameScore=0,
@@ -54,6 +55,16 @@ $.fn.randomize = function(selector){
 //convert number to number with commas
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+//converts spaces to dashes
+function toDashes(text){
+	return text.replace(' ','-');
+}
+
+//converts spaces to spaces
+function toSpaces(text){
+	return text.replace('-','');
 }
 
 // ====================================
@@ -561,17 +572,33 @@ function populateStats(){
 //populates categories list with fresh data
 function populateCategories(){
 
+	//array of tags
+	var tagArray=[]
+
+
 	//empty existing
 	$('.categories-list,.modal-categories-list').empty();
 	
 	//for each category
 	$.each($categories,function(index){
 
+		//read tags for category
+		var categoryTags=$.map(this.tags,function(text){
+			
+			//if not in total list, add
+			if(tagArray.indexOf(text)===-1){
+				tagArray.push(text);
+			}
+
+			//add convert to slug version for data-tags
+			return toDashes(text);
+		});
+
 		//find complete percentage
 		var completePercentage=isComplete(index).percentage*100;
 
 		//build button on categories screen
-		var newCategory='<a href="#" class="category" data-categoryIndex="'+index+'">'+
+		var newCategory='<a href="#" class="category" data-categoryIndex="'+index+'" data-tags="'+categoryTags.join(' ')+'">'+
 		'<div class="category-image-wrapper">'+
 		'<img src="categories/'+this.slug+'/icon.png">'+
 		'</div>'+
@@ -609,6 +636,15 @@ function populateCategories(){
 
 		
 	});
+
+	//populate drop down filter
+	$('.tag-select').empty();
+	$('.tag-select').append($('<option value="">All Topics</option>'))
+	$.each(tagArray,function(){
+		$('.tag-select').append($('<option value="'+toDashes(this)+'">'+this+'</option>'));
+	});
+	$categoryGrid=$('.categories-list').isotope();
+	console.log(tagArray);
 }
 
 
@@ -645,6 +681,20 @@ $(document).ready(function(){
 			});
 			$('.modal-categories-list').animate({opacity:'1'},$globalFadeTime);
 		});
+	});
+
+	//category tags dropdown
+	$('.tag-select').change(function(){
+		//get selected tag
+		var selected=$(this).val();
+		
+		//if blank, show all, otherwise check data-tags attribute
+		if(!selected){
+			$categoryGrid.isotope({filter:'*'});
+		}
+		else{
+			$categoryGrid.isotope({filter:'[data-tags*='+selected+']'});
+		}
 	});
 
 	//on categories modal close, reset flickity
