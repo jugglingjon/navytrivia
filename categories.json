@@ -260,6 +260,9 @@
 			"slug": "navalhistory",
 			"image": true,
 			"description": "Important figures, dates, and events for the US Navy",
+			"tags":[
+				"Basic Seamanship"
+			],
 			"highScore": 0,
 			"lastScore": 0,
 			"cumulativeScore":0,
@@ -673,6 +676,10 @@
 			"slug": "firstaid",
 			"image": true,
 			"description": "Symptoms, treatments, and other important first aid information",
+			"tags":[
+				"Basic Seamanship",
+				"Test 1"
+			],
 			"highScore": 0,
 			"lastScore": 0,
 			"cumulativeScore":0,
