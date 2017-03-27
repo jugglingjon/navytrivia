@@ -106,6 +106,7 @@ a:hover {
   position: absolute;
   top: 10px;
   left: 24px;
+  pointer-events: none;
   font-size: 12px;
   text-transform: uppercase;
   opacity: .6;
@@ -348,41 +349,41 @@ header a {
           animation-play-state: running;
 }
 #achievementsModal .confetti:nth-child(1) {
-  -webkit-transform: scale(0.13856681);
-          transform: scale(0.13856681);
+  -webkit-transform: scale(0.06309284);
+          transform: scale(0.06309284);
   -webkit-animation-name: 'animation-1';
           animation-name: 'animation-1';
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  background-color: #ae00ca;
+  background-color: #655f95;
 }
 @-webkit-keyframes 'animation-1' {
   0% {
-    left: 94.81972876%;
+    left: 90.90868359%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 20.90202235%;
+    left: 0.42918614%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 88.24052106%;
+    left: 52.43591437%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 18.83026138%;
+    left: 56.19302033%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 0.83095382%;
+    left: 53.62472579%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -390,72 +391,72 @@ header a {
 }
 @keyframes 'animation-1' {
   0% {
-    left: 94.81972876%;
+    left: 90.90868359%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 20.90202235%;
+    left: 0.42918614%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 88.24052106%;
+    left: 52.43591437%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 18.83026138%;
+    left: 56.19302033%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 0.83095382%;
+    left: 53.62472579%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(2) {
-  -webkit-transform: scale(0.33011932);
-          transform: scale(0.33011932);
+  -webkit-transform: scale(0.34414625);
+          transform: scale(0.34414625);
   -webkit-animation-name: 'animation-2';
           animation-name: 'animation-2';
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  background-color: #50a88c;
+  background-color: #905de9;
 }
 @-webkit-keyframes 'animation-2' {
   0% {
-    left: 51.66711245%;
+    left: 60.57593295%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 15.77530009%;
+    left: 92.41002089%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 58.13535354%;
+    left: 22.24746375%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 44.25836434%;
+    left: 86.92313512%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 34.98784348%;
+    left: 91.14121119%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -463,72 +464,72 @@ header a {
 }
 @keyframes 'animation-2' {
   0% {
-    left: 51.66711245%;
+    left: 60.57593295%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 15.77530009%;
+    left: 92.41002089%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 58.13535354%;
+    left: 22.24746375%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 44.25836434%;
+    left: 86.92313512%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 34.98784348%;
+    left: 91.14121119%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(3) {
-  -webkit-transform: scale(0.8957857);
-          transform: scale(0.8957857);
+  -webkit-transform: scale(0.75028021);
+          transform: scale(0.75028021);
   -webkit-animation-name: 'animation-3';
           animation-name: 'animation-3';
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
-  background-color: #182cc9;
+  background-color: #2b160f;
 }
 @-webkit-keyframes 'animation-3' {
   0% {
-    left: 63.38174247%;
+    left: 21.54925887%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 25.73982429%;
+    left: 77.24451483%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 87.52034779%;
+    left: 73.30794932%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 95.01534642%;
+    left: 24.01675658%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 82.89343306%;
+    left: 93.43132808%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -536,72 +537,72 @@ header a {
 }
 @keyframes 'animation-3' {
   0% {
-    left: 63.38174247%;
+    left: 21.54925887%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 25.73982429%;
+    left: 77.24451483%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 87.52034779%;
+    left: 73.30794932%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 95.01534642%;
+    left: 24.01675658%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 82.89343306%;
+    left: 93.43132808%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(4) {
-  -webkit-transform: scale(0.13447812);
-          transform: scale(0.13447812);
+  -webkit-transform: scale(0.24855498);
+          transform: scale(0.24855498);
   -webkit-animation-name: 'animation-4';
           animation-name: 'animation-4';
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  background-color: #2b0b2d;
+  background-color: #5f9f81;
 }
 @-webkit-keyframes 'animation-4' {
   0% {
-    left: 55.89527365%;
+    left: 51.25467981%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 63.26801637%;
+    left: 20.7102339%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 18.27857328%;
+    left: 43.3252905%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 28.34587115%;
+    left: 71.96829761%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 90.90364927%;
+    left: 55.96642802%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -609,72 +610,72 @@ header a {
 }
 @keyframes 'animation-4' {
   0% {
-    left: 55.89527365%;
+    left: 51.25467981%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 63.26801637%;
+    left: 20.7102339%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 18.27857328%;
+    left: 43.3252905%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 28.34587115%;
+    left: 71.96829761%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 90.90364927%;
+    left: 55.96642802%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(5) {
-  -webkit-transform: scale(0.53752432);
-          transform: scale(0.53752432);
+  -webkit-transform: scale(0.95017437);
+          transform: scale(0.95017437);
   -webkit-animation-name: 'animation-5';
           animation-name: 'animation-5';
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  background-color: #cc847c;
+  background-color: #676e55;
 }
 @-webkit-keyframes 'animation-5' {
   0% {
-    left: 0.86587357%;
+    left: 86.52023907%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 38.93390942%;
+    left: 28.97218469%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 0.73192693%;
+    left: 75.01836933%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 92.19530668%;
+    left: 40.3986268%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 34.49030289%;
+    left: 72.47772394%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -682,72 +683,72 @@ header a {
 }
 @keyframes 'animation-5' {
   0% {
-    left: 0.86587357%;
+    left: 86.52023907%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 38.93390942%;
+    left: 28.97218469%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 0.73192693%;
+    left: 75.01836933%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 92.19530668%;
+    left: 40.3986268%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 34.49030289%;
+    left: 72.47772394%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(6) {
-  -webkit-transform: scale(0.03762334);
-          transform: scale(0.03762334);
+  -webkit-transform: scale(0.66308116);
+          transform: scale(0.66308116);
   -webkit-animation-name: 'animation-6';
           animation-name: 'animation-6';
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
-  background-color: #985f71;
+  background-color: #4b8f2;
 }
 @-webkit-keyframes 'animation-6' {
   0% {
-    left: 73.41517083%;
+    left: 82.61473025%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 67.21094431%;
+    left: 24.14261244%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 32.14418729%;
+    left: 41.11097826%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 80.51108267%;
+    left: 66.9930411%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 31.55454886%;
+    left: 3.47308519%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -755,72 +756,72 @@ header a {
 }
 @keyframes 'animation-6' {
   0% {
-    left: 73.41517083%;
+    left: 82.61473025%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 67.21094431%;
+    left: 24.14261244%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 32.14418729%;
+    left: 41.11097826%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 80.51108267%;
+    left: 66.9930411%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 31.55454886%;
+    left: 3.47308519%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(7) {
-  -webkit-transform: scale(0.18265589);
-          transform: scale(0.18265589);
+  -webkit-transform: scale(0.52219641);
+          transform: scale(0.52219641);
   -webkit-animation-name: 'animation-7';
           animation-name: 'animation-7';
   -webkit-animation-delay: 1.4s;
           animation-delay: 1.4s;
-  background-color: #d81cd2;
+  background-color: #de682d;
 }
 @-webkit-keyframes 'animation-7' {
   0% {
-    left: 93.30027824%;
+    left: 77.08044767%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 72.34870901%;
+    left: 47.9738874%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 35.73976135%;
+    left: 45.0285975%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 69.82649271%;
+    left: 96.24368892%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 12.32276488%;
+    left: 50.96639042%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -828,72 +829,72 @@ header a {
 }
 @keyframes 'animation-7' {
   0% {
-    left: 93.30027824%;
+    left: 77.08044767%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 72.34870901%;
+    left: 47.9738874%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 35.73976135%;
+    left: 45.0285975%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 69.82649271%;
+    left: 96.24368892%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 12.32276488%;
+    left: 50.96639042%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(8) {
-  -webkit-transform: scale(0.8996899);
-          transform: scale(0.8996899);
+  -webkit-transform: scale(0.09626234);
+          transform: scale(0.09626234);
   -webkit-animation-name: 'animation-8';
           animation-name: 'animation-8';
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
-  background-color: #211c4d;
+  background-color: #85c629;
 }
 @-webkit-keyframes 'animation-8' {
   0% {
-    left: 11.18778076%;
+    left: 18.83111751%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 36.09516363%;
+    left: 46.71568374%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 67.02042301%;
+    left: 23.35219378%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 69.95771499%;
+    left: 47.36272176%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 68.61655962%;
+    left: 48.76723969%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -901,72 +902,72 @@ header a {
 }
 @keyframes 'animation-8' {
   0% {
-    left: 11.18778076%;
+    left: 18.83111751%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 36.09516363%;
+    left: 46.71568374%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 67.02042301%;
+    left: 23.35219378%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 69.95771499%;
+    left: 47.36272176%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 68.61655962%;
+    left: 48.76723969%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(9) {
-  -webkit-transform: scale(0.43746964);
-          transform: scale(0.43746964);
+  -webkit-transform: scale(0.95166312);
+          transform: scale(0.95166312);
   -webkit-animation-name: 'animation-9';
           animation-name: 'animation-9';
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s;
-  background-color: #8766fe;
+  background-color: #94d70e;
 }
 @-webkit-keyframes 'animation-9' {
   0% {
-    left: 49.43248356%;
+    left: 28.47415252%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 96.91448797%;
+    left: 8.05291626%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 15.09659597%;
+    left: 0.90546722%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 98.06305094%;
+    left: 61.59375351%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 27.68219962%;
+    left: 67.2051594%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -974,72 +975,72 @@ header a {
 }
 @keyframes 'animation-9' {
   0% {
-    left: 49.43248356%;
+    left: 28.47415252%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 96.91448797%;
+    left: 8.05291626%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 15.09659597%;
+    left: 0.90546722%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 98.06305094%;
+    left: 61.59375351%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 27.68219962%;
+    left: 67.2051594%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(10) {
-  -webkit-transform: scale(0.06950217);
-          transform: scale(0.06950217);
+  -webkit-transform: scale(0.62811282);
+          transform: scale(0.62811282);
   -webkit-animation-name: 'animation-10';
           animation-name: 'animation-10';
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
-  background-color: #b07a46;
+  background-color: #8f98b0;
 }
 @-webkit-keyframes 'animation-10' {
   0% {
-    left: 52.97570057%;
+    left: 88.72199062%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 23.18761008%;
+    left: 46.14350156%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 15.05469164%;
+    left: 75.96378259%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 4.08458574%;
+    left: 61.9451352%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 41.41139609%;
+    left: 60.43179478%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1047,72 +1048,72 @@ header a {
 }
 @keyframes 'animation-10' {
   0% {
-    left: 52.97570057%;
+    left: 88.72199062%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 23.18761008%;
+    left: 46.14350156%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 15.05469164%;
+    left: 75.96378259%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 4.08458574%;
+    left: 61.9451352%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 41.41139609%;
+    left: 60.43179478%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(11) {
-  -webkit-transform: scale(0.65179433);
-          transform: scale(0.65179433);
+  -webkit-transform: scale(0.2445071);
+          transform: scale(0.2445071);
   -webkit-animation-name: 'animation-11';
           animation-name: 'animation-11';
   -webkit-animation-delay: 2.2s;
           animation-delay: 2.2s;
-  background-color: #195420;
+  background-color: #dc40f3;
 }
 @-webkit-keyframes 'animation-11' {
   0% {
-    left: 0.81895835%;
+    left: 28.24691038%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 65.19594727%;
+    left: 34.21406575%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 46.31968502%;
+    left: 37.34111825%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 61.03371702%;
+    left: 86.45070947%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 43.29797978%;
+    left: 82.5344873%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1120,72 +1121,72 @@ header a {
 }
 @keyframes 'animation-11' {
   0% {
-    left: 0.81895835%;
+    left: 28.24691038%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 65.19594727%;
+    left: 34.21406575%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 46.31968502%;
+    left: 37.34111825%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 61.03371702%;
+    left: 86.45070947%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 43.29797978%;
+    left: 82.5344873%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(12) {
-  -webkit-transform: scale(0.81696132);
-          transform: scale(0.81696132);
+  -webkit-transform: scale(0.01610652);
+          transform: scale(0.01610652);
   -webkit-animation-name: 'animation-12';
           animation-name: 'animation-12';
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
-  background-color: #9de700;
+  background-color: #d1a207;
 }
 @-webkit-keyframes 'animation-12' {
   0% {
-    left: 7.08118526%;
+    left: 54.88047903%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 47.29257951%;
+    left: 36.99060823%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 41.47334157%;
+    left: 21.98160232%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 91.72497707%;
+    left: 1.247981%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 81.93821334%;
+    left: 69.12772325%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1193,72 +1194,72 @@ header a {
 }
 @keyframes 'animation-12' {
   0% {
-    left: 7.08118526%;
+    left: 54.88047903%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 47.29257951%;
+    left: 36.99060823%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 41.47334157%;
+    left: 21.98160232%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 91.72497707%;
+    left: 1.247981%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 81.93821334%;
+    left: 69.12772325%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(13) {
-  -webkit-transform: scale(0.57459934);
-          transform: scale(0.57459934);
+  -webkit-transform: scale(0.21037909);
+          transform: scale(0.21037909);
   -webkit-animation-name: 'animation-13';
           animation-name: 'animation-13';
   -webkit-animation-delay: 2.6s;
           animation-delay: 2.6s;
-  background-color: #19222e;
+  background-color: #ae71a5;
 }
 @-webkit-keyframes 'animation-13' {
   0% {
-    left: 47.18101236%;
+    left: 29.30297922%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 63.1409368%;
+    left: 97.41727439%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 63.10074631%;
+    left: 10.16965359%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 58.56324304%;
+    left: -1.39405087%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 57.5860861%;
+    left: 28.84703235%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1266,72 +1267,72 @@ header a {
 }
 @keyframes 'animation-13' {
   0% {
-    left: 47.18101236%;
+    left: 29.30297922%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 63.1409368%;
+    left: 97.41727439%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 63.10074631%;
+    left: 10.16965359%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 58.56324304%;
+    left: -1.39405087%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 57.5860861%;
+    left: 28.84703235%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(14) {
-  -webkit-transform: scale(0.63403142);
-          transform: scale(0.63403142);
+  -webkit-transform: scale(0.75865026);
+          transform: scale(0.75865026);
   -webkit-animation-name: 'animation-14';
           animation-name: 'animation-14';
   -webkit-animation-delay: 2.8s;
           animation-delay: 2.8s;
-  background-color: #bcc15e;
+  background-color: #347c80;
 }
 @-webkit-keyframes 'animation-14' {
   0% {
-    left: 30.43355295%;
+    left: 29.6184065%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 23.59198098%;
+    left: -4.54754701%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 89.71610094%;
+    left: 68.89794139%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 88.02921348%;
+    left: 90.62351906%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 89.11177008%;
+    left: 84.55897105%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1339,72 +1340,72 @@ header a {
 }
 @keyframes 'animation-14' {
   0% {
-    left: 30.43355295%;
+    left: 29.6184065%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 23.59198098%;
+    left: -4.54754701%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 89.71610094%;
+    left: 68.89794139%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 88.02921348%;
+    left: 90.62351906%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 89.11177008%;
+    left: 84.55897105%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(15) {
-  -webkit-transform: scale(0.89235102);
-          transform: scale(0.89235102);
+  -webkit-transform: scale(0.34728863);
+          transform: scale(0.34728863);
   -webkit-animation-name: 'animation-15';
           animation-name: 'animation-15';
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  background-color: #6270eb;
+  background-color: #72660e;
 }
 @-webkit-keyframes 'animation-15' {
   0% {
-    left: 72.2477133%;
+    left: 48.03459727%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 61.82706228%;
+    left: 61.17856857%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 31.10373979%;
+    left: 79.37734708%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 60.44374447%;
+    left: 73.18132405%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 79.53412329%;
+    left: 19.75686787%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1412,72 +1413,72 @@ header a {
 }
 @keyframes 'animation-15' {
   0% {
-    left: 72.2477133%;
+    left: 48.03459727%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 61.82706228%;
+    left: 61.17856857%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 31.10373979%;
+    left: 79.37734708%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 60.44374447%;
+    left: 73.18132405%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 79.53412329%;
+    left: 19.75686787%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(16) {
-  -webkit-transform: scale(0.96547162);
-          transform: scale(0.96547162);
+  -webkit-transform: scale(0.61664545);
+          transform: scale(0.61664545);
   -webkit-animation-name: 'animation-16';
           animation-name: 'animation-16';
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
-  background-color: #e1331a;
+  background-color: #f9fe0d;
 }
 @-webkit-keyframes 'animation-16' {
   0% {
-    left: 36.48265518%;
+    left: 35.4946053%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 58.15419216%;
+    left: 59.42254379%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 34.57579493%;
+    left: 80.74022125%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 1.30253067%;
+    left: 26.20733496%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 13.08444948%;
+    left: 44.86763741%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1485,72 +1486,72 @@ header a {
 }
 @keyframes 'animation-16' {
   0% {
-    left: 36.48265518%;
+    left: 35.4946053%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 58.15419216%;
+    left: 59.42254379%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 34.57579493%;
+    left: 80.74022125%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 1.30253067%;
+    left: 26.20733496%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 13.08444948%;
+    left: 44.86763741%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(17) {
-  -webkit-transform: scale(0.59217901);
-          transform: scale(0.59217901);
+  -webkit-transform: scale(0.6469667);
+          transform: scale(0.6469667);
   -webkit-animation-name: 'animation-17';
           animation-name: 'animation-17';
   -webkit-animation-delay: 3.4s;
           animation-delay: 3.4s;
-  background-color: #dcbf2d;
+  background-color: #e7c003;
 }
 @-webkit-keyframes 'animation-17' {
   0% {
-    left: 92.16932367%;
+    left: 93.35611251%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 5.15648915%;
+    left: 68.61288949%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 72.98972148%;
+    left: 12.28360688%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 77.84265754%;
+    left: 68.70256439%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 83.04879147%;
+    left: 82.46423484%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1558,72 +1559,72 @@ header a {
 }
 @keyframes 'animation-17' {
   0% {
-    left: 92.16932367%;
+    left: 93.35611251%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 5.15648915%;
+    left: 68.61288949%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 72.98972148%;
+    left: 12.28360688%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 77.84265754%;
+    left: 68.70256439%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 83.04879147%;
+    left: 82.46423484%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(18) {
-  -webkit-transform: scale(0.36118453);
-          transform: scale(0.36118453);
+  -webkit-transform: scale(0.78107135);
+          transform: scale(0.78107135);
   -webkit-animation-name: 'animation-18';
           animation-name: 'animation-18';
   -webkit-animation-delay: 3.6s;
           animation-delay: 3.6s;
-  background-color: #455915;
+  background-color: #3480cd;
 }
 @-webkit-keyframes 'animation-18' {
   0% {
-    left: 78.12714625%;
+    left: 55.26823676%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 83.40741769%;
+    left: 27.43537284%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 16.49678071%;
+    left: 11.24686908%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 63.71729738%;
+    left: 98.90580109%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 69.62843793%;
+    left: 51.34913642%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1631,72 +1632,72 @@ header a {
 }
 @keyframes 'animation-18' {
   0% {
-    left: 78.12714625%;
+    left: 55.26823676%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 83.40741769%;
+    left: 27.43537284%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 16.49678071%;
+    left: 11.24686908%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 63.71729738%;
+    left: 98.90580109%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 69.62843793%;
+    left: 51.34913642%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(19) {
-  -webkit-transform: scale(0.51852398);
-          transform: scale(0.51852398);
+  -webkit-transform: scale(0.20898218);
+          transform: scale(0.20898218);
   -webkit-animation-name: 'animation-19';
           animation-name: 'animation-19';
   -webkit-animation-delay: 3.8s;
           animation-delay: 3.8s;
-  background-color: #92ba9e;
+  background-color: #7df944;
 }
 @-webkit-keyframes 'animation-19' {
   0% {
-    left: 50.54204169%;
+    left: 57.35802389%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: -0.49092825%;
+    left: 99.90594106%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 15.24014499%;
+    left: 77.43591096%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 62.66610068%;
+    left: 56.15603168%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 76.04011678%;
+    left: 92.55984439%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1704,72 +1705,72 @@ header a {
 }
 @keyframes 'animation-19' {
   0% {
-    left: 50.54204169%;
+    left: 57.35802389%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: -0.49092825%;
+    left: 99.90594106%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 15.24014499%;
+    left: 77.43591096%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 62.66610068%;
+    left: 56.15603168%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 76.04011678%;
+    left: 92.55984439%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(20) {
-  -webkit-transform: scale(0.0989989);
-          transform: scale(0.0989989);
+  -webkit-transform: scale(0.82740394);
+          transform: scale(0.82740394);
   -webkit-animation-name: 'animation-20';
           animation-name: 'animation-20';
   -webkit-animation-delay: 4s;
           animation-delay: 4s;
-  background-color: #cc9971;
+  background-color: #df45ad;
 }
 @-webkit-keyframes 'animation-20' {
   0% {
-    left: 55.3741105%;
+    left: 35.81874977%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 65.37489793%;
+    left: 87.22754935%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 13.40597794%;
+    left: 47.21156468%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 70.07377513%;
+    left: 25.94486977%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 4.37446934%;
+    left: 89.28419412%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1777,72 +1778,72 @@ header a {
 }
 @keyframes 'animation-20' {
   0% {
-    left: 55.3741105%;
+    left: 35.81874977%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 65.37489793%;
+    left: 87.22754935%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 13.40597794%;
+    left: 47.21156468%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 70.07377513%;
+    left: 25.94486977%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 4.37446934%;
+    left: 89.28419412%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(21) {
-  -webkit-transform: scale(0.43360623);
-          transform: scale(0.43360623);
+  -webkit-transform: scale(0.69840991);
+          transform: scale(0.69840991);
   -webkit-animation-name: 'animation-21';
           animation-name: 'animation-21';
   -webkit-animation-delay: 4.2s;
           animation-delay: 4.2s;
-  background-color: #ea782a;
+  background-color: #59093e;
 }
 @-webkit-keyframes 'animation-21' {
   0% {
-    left: 88.51643258%;
+    left: 30.12367091%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 27.12282624%;
+    left: 37.15842591%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 61.13519127%;
+    left: 88.61381109%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 8.84239061%;
+    left: 20.26020714%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 61.79082861%;
+    left: 14.81913714%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1850,72 +1851,72 @@ header a {
 }
 @keyframes 'animation-21' {
   0% {
-    left: 88.51643258%;
+    left: 30.12367091%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 27.12282624%;
+    left: 37.15842591%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 61.13519127%;
+    left: 88.61381109%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 8.84239061%;
+    left: 20.26020714%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 61.79082861%;
+    left: 14.81913714%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(22) {
-  -webkit-transform: scale(0.75102564);
-          transform: scale(0.75102564);
+  -webkit-transform: scale(0.14020932);
+          transform: scale(0.14020932);
   -webkit-animation-name: 'animation-22';
           animation-name: 'animation-22';
   -webkit-animation-delay: 4.4s;
           animation-delay: 4.4s;
-  background-color: #cbdcab;
+  background-color: #83604f;
 }
 @-webkit-keyframes 'animation-22' {
   0% {
-    left: 52.46341339%;
+    left: 86.55585863%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 78.15862743%;
+    left: 7.76623287%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 50.43895678%;
+    left: 5.31928324%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 78.61943646%;
+    left: 27.84583512%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 93.05323778%;
+    left: 94.63790929%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1923,72 +1924,72 @@ header a {
 }
 @keyframes 'animation-22' {
   0% {
-    left: 52.46341339%;
+    left: 86.55585863%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 78.15862743%;
+    left: 7.76623287%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 50.43895678%;
+    left: 5.31928324%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 78.61943646%;
+    left: 27.84583512%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 93.05323778%;
+    left: 94.63790929%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(23) {
-  -webkit-transform: scale(0.55502396);
-          transform: scale(0.55502396);
+  -webkit-transform: scale(0.5460997);
+          transform: scale(0.5460997);
   -webkit-animation-name: 'animation-23';
           animation-name: 'animation-23';
   -webkit-animation-delay: 4.6s;
           animation-delay: 4.6s;
-  background-color: #549119;
+  background-color: #ad1121;
 }
 @-webkit-keyframes 'animation-23' {
   0% {
-    left: 20.6475039%;
+    left: 46.95671878%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 82.67297736%;
+    left: 8.22209925%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 34.12519331%;
+    left: 40.83683413%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 97.49021577%;
+    left: 22.09712159%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 92.88726495%;
+    left: 26.14680143%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -1996,72 +1997,72 @@ header a {
 }
 @keyframes 'animation-23' {
   0% {
-    left: 20.6475039%;
+    left: 46.95671878%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 82.67297736%;
+    left: 8.22209925%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 34.12519331%;
+    left: 40.83683413%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 97.49021577%;
+    left: 22.09712159%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 92.88726495%;
+    left: 26.14680143%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(24) {
-  -webkit-transform: scale(0.70607131);
-          transform: scale(0.70607131);
+  -webkit-transform: scale(0.70790494);
+          transform: scale(0.70790494);
   -webkit-animation-name: 'animation-24';
           animation-name: 'animation-24';
   -webkit-animation-delay: 4.8s;
           animation-delay: 4.8s;
-  background-color: #a5243a;
+  background-color: #f5854a;
 }
 @-webkit-keyframes 'animation-24' {
   0% {
-    left: 32.26251299%;
+    left: 87.94469624%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 39.11394292%;
+    left: 41.16063093%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 65.60643907%;
+    left: 76.43529175%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 18.05009347%;
+    left: 21.53442023%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 37.79065545%;
+    left: 89.56956646%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2069,72 +2070,72 @@ header a {
 }
 @keyframes 'animation-24' {
   0% {
-    left: 32.26251299%;
+    left: 87.94469624%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 39.11394292%;
+    left: 41.16063093%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 65.60643907%;
+    left: 76.43529175%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 18.05009347%;
+    left: 21.53442023%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 37.79065545%;
+    left: 89.56956646%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(25) {
-  -webkit-transform: scale(0.43429714);
-          transform: scale(0.43429714);
+  -webkit-transform: scale(0.36070551);
+          transform: scale(0.36070551);
   -webkit-animation-name: 'animation-25';
           animation-name: 'animation-25';
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
-  background-color: #4909d1;
+  background-color: #cbe45d;
 }
 @-webkit-keyframes 'animation-25' {
   0% {
-    left: 45.83712766%;
+    left: 50.20999311%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 5.870735%;
+    left: 56.85810652%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 61.70030545%;
+    left: 69.04192631%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: -0.31713564%;
+    left: 31.95567755%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 52.81976848%;
+    left: 58.64632863%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2142,72 +2143,72 @@ header a {
 }
 @keyframes 'animation-25' {
   0% {
-    left: 45.83712766%;
+    left: 50.20999311%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 5.870735%;
+    left: 56.85810652%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 61.70030545%;
+    left: 69.04192631%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: -0.31713564%;
+    left: 31.95567755%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 52.81976848%;
+    left: 58.64632863%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(26) {
-  -webkit-transform: scale(0.36532099);
-          transform: scale(0.36532099);
+  -webkit-transform: scale(0.61686188);
+          transform: scale(0.61686188);
   -webkit-animation-name: 'animation-26';
           animation-name: 'animation-26';
   -webkit-animation-delay: 5.2s;
           animation-delay: 5.2s;
-  background-color: #1535c7;
+  background-color: #c9f63e;
 }
 @-webkit-keyframes 'animation-26' {
   0% {
-    left: 50.53803326%;
+    left: 80.01012265%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 67.35155515%;
+    left: 29.83782238%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 53.45250331%;
+    left: 88.56197646%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 50.60792304%;
+    left: 73.13822489%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 55.6481561%;
+    left: 85.9788415%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2215,72 +2216,72 @@ header a {
 }
 @keyframes 'animation-26' {
   0% {
-    left: 50.53803326%;
+    left: 80.01012265%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 67.35155515%;
+    left: 29.83782238%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 53.45250331%;
+    left: 88.56197646%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 50.60792304%;
+    left: 73.13822489%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 55.6481561%;
+    left: 85.9788415%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(27) {
-  -webkit-transform: scale(0.86301729);
-          transform: scale(0.86301729);
+  -webkit-transform: scale(0.85165376);
+          transform: scale(0.85165376);
   -webkit-animation-name: 'animation-27';
           animation-name: 'animation-27';
   -webkit-animation-delay: 5.4s;
           animation-delay: 5.4s;
-  background-color: #b9f9a5;
+  background-color: #fe186f;
 }
 @-webkit-keyframes 'animation-27' {
   0% {
-    left: 82.04445108%;
+    left: 9.87325482%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 31.81129508%;
+    left: 16.37998459%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 54.56486264%;
+    left: 39.8137176%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 97.82118276%;
+    left: 57.023583%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 61.13919992%;
+    left: 4.30989407%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2288,72 +2289,72 @@ header a {
 }
 @keyframes 'animation-27' {
   0% {
-    left: 82.04445108%;
+    left: 9.87325482%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 31.81129508%;
+    left: 16.37998459%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 54.56486264%;
+    left: 39.8137176%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 97.82118276%;
+    left: 57.023583%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 61.13919992%;
+    left: 4.30989407%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(28) {
-  -webkit-transform: scale(0.29499839);
-          transform: scale(0.29499839);
+  -webkit-transform: scale(0.45425084);
+          transform: scale(0.45425084);
   -webkit-animation-name: 'animation-28';
           animation-name: 'animation-28';
   -webkit-animation-delay: 5.6s;
           animation-delay: 5.6s;
-  background-color: #57a262;
+  background-color: #e56898;
 }
 @-webkit-keyframes 'animation-28' {
   0% {
-    left: 11.5941198%;
+    left: 65.76382596%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 12.13073089%;
+    left: -2.1316554%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 31.09063794%;
+    left: 64.70775432%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 31.18281054%;
+    left: 43.89565362%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 8.09163106%;
+    left: 59.35266676%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2361,72 +2362,72 @@ header a {
 }
 @keyframes 'animation-28' {
   0% {
-    left: 11.5941198%;
+    left: 65.76382596%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 12.13073089%;
+    left: -2.1316554%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 31.09063794%;
+    left: 64.70775432%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 31.18281054%;
+    left: 43.89565362%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 8.09163106%;
+    left: 59.35266676%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(29) {
-  -webkit-transform: scale(0.29811339);
-          transform: scale(0.29811339);
+  -webkit-transform: scale(0.37619448);
+          transform: scale(0.37619448);
   -webkit-animation-name: 'animation-29';
           animation-name: 'animation-29';
   -webkit-animation-delay: 5.8s;
           animation-delay: 5.8s;
-  background-color: #5cc63b;
+  background-color: #89fbc0;
 }
 @-webkit-keyframes 'animation-29' {
   0% {
-    left: 38.78636465%;
+    left: 32.358078%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 30.40340052%;
+    left: 44.01644204%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 32.35425373%;
+    left: 64.00192483%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 65.77105959%;
+    left: 31.27254631%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 31.62536851%;
+    left: 63.44853465%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2434,72 +2435,72 @@ header a {
 }
 @keyframes 'animation-29' {
   0% {
-    left: 38.78636465%;
+    left: 32.358078%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 30.40340052%;
+    left: 44.01644204%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 32.35425373%;
+    left: 64.00192483%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 65.77105959%;
+    left: 31.27254631%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 31.62536851%;
+    left: 63.44853465%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(30) {
-  -webkit-transform: scale(0.44706201);
-          transform: scale(0.44706201);
+  -webkit-transform: scale(0.9221882);
+          transform: scale(0.9221882);
   -webkit-animation-name: 'animation-30';
           animation-name: 'animation-30';
   -webkit-animation-delay: 6s;
           animation-delay: 6s;
-  background-color: #a2e8a3;
+  background-color: #3808a5;
 }
 @-webkit-keyframes 'animation-30' {
   0% {
-    left: 6.3237583%;
+    left: 68.06544792%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 29.95353142%;
+    left: 77.83923849%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 75.30550701%;
+    left: 52.34628764%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 81.36012374%;
+    left: 42.2428973%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 64.46659277%;
+    left: 30.67896463%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
@@ -2507,31 +2508,31 @@ header a {
 }
 @keyframes 'animation-30' {
   0% {
-    left: 6.3237583%;
+    left: 68.06544792%;
     top: -5%;
     opacity: 1.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   25% {
-    left: 29.95353142%;
+    left: 77.83923849%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 75.30550701%;
+    left: 52.34628764%;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);
   }
   75% {
-    left: 81.36012374%;
+    left: 42.2428973%;
     -webkit-transform: skew(30deg);
             transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 64.46659277%;
+    left: 30.67896463%;
     opacity: 0.0;
     -webkit-transform: skew(-30deg);
             transform: skew(-30deg);

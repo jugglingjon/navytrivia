@@ -577,6 +577,7 @@ function populateCategories(){
 
 
 	//empty existing
+	$('.categories-list').isotope('destroy');
 	$('.categories-list,.modal-categories-list').empty();
 	
 	//for each category
@@ -715,7 +716,12 @@ $(document).ready(function(){
 	$('body').on('click','.btn-gameover',function(){
 		changeScreen('screen-categories',{before: function(){
 			$('.end-history, .modal-achievements-list').flickity('destroy').empty().css('opacity','0');
-			populateCategories();}});
+			$('.categories-list').css({'opacity':'1'});
+			},
+			after:function(){		
+				populateCategories();
+				$('.categories-list').animate({'opacity':'1'},$globalFadeTime);
+			}});
 	});
 
 	//try again button, restart game
