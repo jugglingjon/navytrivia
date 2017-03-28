@@ -645,7 +645,9 @@ function populateCategories(){
 		$('.tag-select').append($('<option value="'+toDashes(this)+'">'+this+'</option>'));
 	});
 	$categoryGrid=$('.categories-list').isotope();
-	console.log(tagArray);
+	
+	//fade in categories list if not already
+	$('.categories-list').animate({'opacity':'1'},$globalFadeTime);
 }
 
 
@@ -716,11 +718,11 @@ $(document).ready(function(){
 	$('body').on('click','.btn-gameover',function(){
 		changeScreen('screen-categories',{before: function(){
 			$('.end-history, .modal-achievements-list').flickity('destroy').empty().css('opacity','0');
-			$('.categories-list').css({'opacity':'1'});
+			$('.categories-list').css({'opacity':'0'});
 			},
 			after:function(){		
 				populateCategories();
-				$('.categories-list').animate({'opacity':'1'},$globalFadeTime);
+				
 			}});
 	});
 
