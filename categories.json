@@ -1331,6 +1331,7 @@
 				},
 				{
 					"question":"What is this chain stopper component?",
+					"image":"anchor16.jpg",
 					"answers":[
 						{"answer":"Shackle"},
 						{"answer":"Turnbuckle"},
@@ -1340,6 +1341,7 @@
 				},
 				{
 					"question":"What is this chain stopper component?",
+					"image":"anchor17.jpg",
 					"answers":[
 						{"answer":"Shackle"},
 						{"answer":"Turnbuckle"},
@@ -1349,6 +1351,7 @@
 				},
 				{
 					"question":"What is this chain stopper component?",
+					"image":"anchor18.jpg",
 					"answers":[
 						{"correct":true,"answer":"Shackle"},
 						{"answer":"Turnbuckle"},
@@ -1358,6 +1361,7 @@
 				},
 				{
 					"question":"What is this chain stopper component?",
+					"image":"anchor19.jpg",
 					"answers":[
 						{"answer":"Shackle"},
 						{"correct":true,"answer":"Turnbuckle"},
