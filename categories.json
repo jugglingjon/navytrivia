@@ -1047,6 +1047,327 @@
 					]
 				}
 			]
+		},
+		{
+			"title": "Anchors",
+			"slug": "anchors",
+			"image": true,
+			"description": "Anchors description.",
+			"tags":[
+				"Basic Seamanship",
+				"Test 1"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What engages the links of the anchor chain?",
+					"answers":[
+						{"answer":"Lifeline"},
+						{"correct":true,"answer":"Wildcat"},
+						{"answer":"Windlass"},
+						{"answer":"Hawsepipe"}
+					]
+				},
+				{
+					"question":"Which one of the following anchors is NOT a type of stockless anchor?",
+					"answers":[
+						{"answer":"Commercial"},
+						{"correct":true,"answer":"Danforth"},
+						{"answer":"Standard "},
+						{"answer":"Mark 2"}
+					]
+				},
+				{
+					"question":"What size Mark 2’s are used on aircraft carriers?",
+					"answers":[
+						{"answer":"40,000 lbs"},
+						{"answer":"50,000 lbs"},
+						{"correct":true,"answer":"60,000 lbs"},
+						{"answer":"70,000 lbs"}
+					]
+				},
+				{
+					"question":"Which anchor is NOT considered Light Weight?",
+					"answers":[
+						{"correct":true,"answer":"Mushroom"},
+						{"answer":"Danforth"},
+						{"answer":"Mark 2"},
+						{"answer":"Wedge"}
+					]
+				},
+				{
+					"question":"Which anchor is commonly used by surface ships and the newest submarines?",
+					"answers":[
+						{"answer":"Navy Type Stock"},
+						{"answer":"Wedge"},
+						{"answer":"Mushroom"},
+						{"correct":true,"answer":"Two-Fluke/Balanced Fluke"}
+					]
+				},
+				{
+					"question":"What guides the anchor chain through the deck and out the side of the ship?",
+					"answers":[
+						{"answer":"Fender"},
+						{"answer":"Windlass"},
+						{"correct":true,"answer":"Hawsepipe"},
+						{"answer":"Forecastle"}
+					]
+				},
+				{
+					"question":"When the anchor is dropped, the NEXT TO THE LAST SHOT is painted which color?",
+					"answers":[
+						{"correct":true,"answer":"Yellow"},
+						{"answer":"Red"},
+						{"answer":"Black"},
+						{"answer":"Green"}
+					]
+				},
+				{
+					"question":"When the anchor is dropped, the LAST SHOT is painted which color?",
+					"answers":[
+						{"answer":"Yellow"},
+						{"correct":true,"answer":"Red"},
+						{"answer":"Black"},
+						{"answer":"Green"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor1.jpg",
+					"answers":[
+						{"correct":true,"answer":"Commercial Stockless"},
+						{"answer":"Danforth"},
+						{"answer":"Mark 2 Lightweight"},
+						{"answer":"Mushroom"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor2.jpg",
+					"answers":[
+						{"correct":true,"answer":"Danforth"},
+						{"answer":"Commercial Stockless"},
+						{"answer":"Navy Stock"},
+						{"answer":"Standard Navy Stockless"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor3.jpg",
+					"answers":[
+						{"correct":true,"answer":"Mark 2 Lightweight"},
+						{"answer":"Danforth"},
+						{"answer":"Wedge Block Lightweight"},
+						{"answer":"Mushroom"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor4.jpg",
+					"answers":[
+						{"correct":true,"answer":"Mark 2 Stockless"},
+						{"answer":"Standard Navy Stockless"},
+						{"answer":"Two-Fluke/Balanced-Fluke"},
+						{"answer":"Wedge Block Lightweight"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor5.jpg",
+					"answers":[
+						{"correct":true,"answer":"Mushroom"},
+						{"answer":"Commercial Stockless"},
+						{"answer":"Danforth"},
+						{"answer":"Mark 2 Lightweight"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor6.jpg",
+					"answers":[
+						{"correct":true,"answer":"Navy Stock"},
+						{"answer":"Standard Navy Stockless"},
+						{"answer":"Two-Fluke/Balanced-Fluke"},
+						{"answer":"Wedge Block Lightweight"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor7.jpg",
+					"answers":[
+						{"correct":true,"answer":"Standard Navy Stockless"},
+						{"answer":"Mark 2 Lightweight"},
+						{"answer":"Two-Fluke/Balanced-Fluke"},
+						{"answer":"Wedge Block Lightweight"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor8.jpg",
+					"answers":[
+						{"correct":true,"answer":"Two-Fluke/Balanced-Fluke"},
+						{"answer":"Commercial Stockless"},
+						{"answer":"Danforth"},
+						{"answer":"Wedge Block Lightweight"}
+					]
+				},
+				{
+					"question":"What type of anchor is this?",
+					"image":"anchor9.jpg",
+					"answers":[
+						{"correct":true,"answer":"Wedge Block Lightweight"},
+						{"answer":"Mushroom"},
+						{"answer":"Navy Stock"},
+						{"answer":"Standard Navy Stockless"}
+					]
+				},
+				{
+					"question":"What part of the Anchor is this?",
+					"image":"anchor10.jpg",
+					"answers":[
+						{"answer":"Shank"},
+						{"correct":true,"answer":"Bill or Pea"},
+						{"answer":"Palm or Fluke"},
+						{"answer":"Throat"}
+					]
+				},
+				{
+					"question":"What part of the Anchor is this?",
+					"image":"anchor11.jpg",
+					"answers":[
+						{"answer":"Stock"},
+						{"answer":"Shank"},
+						{"answer":"Bill or Pea"},
+						{"correct":true,"answer":"Palm or Fluke"}
+					]
+				},
+				{
+					"question":"What part of the Anchor is this?",
+					"image":"anchor12.jpg",
+					"answers":[
+						{"correct":true,"answer":"Ring"},
+						{"answer":"Stock"},
+						{"answer":"Shank"},
+						{"answer":"Throat"}
+					]
+				},
+				{
+					"question":"What part of the Anchor is this?",
+					"image":"anchor13.jpg",
+					"answers":[
+						{"answer":"Stock"},
+						{"correct":true,"answer":"Shank"},
+						{"answer":"Palm or Fluke"},
+						{"answer":"Throat"}
+					]
+				},
+				{
+					"question":"What part of the Anchor is this?",
+					"image":"anchor14.jpg",
+					"answers":[
+						{"correct":true,"answer":"Stock"},
+						{"answer":"Bill or Pea"},
+						{"answer":"Palm or Fluke"},
+						{"answer":"Throat"}
+					]
+				},
+				{
+					"question":"What part of the Anchor is this?",
+					"image":"anchor15.jpg",
+					"answers":[
+						{"answer":"Shank"},
+						{"answer":"Bill or Pea"},
+						{"answer":"Palm or Fluke"},
+						{"correct":true,"answer":"Throat"}
+					]
+				},
+				{
+					"question":"What kind of anchor is easy to stow?",
+					"answers":[
+						{"correct":true,"answer":"Stockless"},
+						{"answer":"Mushroom"},
+						{"answer":"Two-fluke"},
+						{"answer":"LWT"}
+					]
+				},
+				{
+					"question":"What type of anchor was once used in older submarines?",
+					"answers":[
+						{"answer":"Stockless"},
+						{"correct":true,"answer":"Mushroom"},
+						{"answer":"Two-fluke"},
+						{"answer":"LWT"}
+					]
+				},
+				{
+					"question":"Too little of what will allow the ship to move around too much within its anchorage?",
+					"answers":[
+						{"correct":true,"answer":"Chain"},
+						{"answer":"Line"},
+						{"answer":"Anchor"},
+						{"answer":"Slack"}
+					]
+				},
+				{
+					"question":"Too much of what may allow the ship to move out of its anchorage?",
+					"answers":[
+						{"correct":true,"answer":"Chain"},
+						{"answer":"Line"},
+						{"answer":"Anchor"},
+						{"answer":"Tension"}
+					]
+				},
+				{
+					"question":"What attaches the anchor chain to the anchor?",
+					"answers":[
+						{"correct":true,"answer":"Shackle"},
+						{"answer":"Brace"},
+						{"answer":"Bolt"},
+						{"answer":"Hook"}
+					]
+				},
+				{
+					"question":"What is this chain stopper component?",
+					"answers":[
+						{"answer":"Shackle"},
+						{"answer":"Turnbuckle"},
+						{"correct":true,"answer":"Detachable Link"},
+						{"answer":"Pelican Hook"}
+					]
+				},
+				{
+					"question":"What is this chain stopper component?",
+					"answers":[
+						{"answer":"Shackle"},
+						{"answer":"Turnbuckle"},
+						{"answer":"Detachable Link"},
+						{"correct":true,"answer":"Pelican Hook"}
+					]
+				},
+				{
+					"question":"What is this chain stopper component?",
+					"answers":[
+						{"correct":true,"answer":"Shackle"},
+						{"answer":"Turnbuckle"},
+						{"answer":"Detachable Link"},
+						{"answer":"Pelican Hook"}
+					]
+				},
+				{
+					"question":"What is this chain stopper component?",
+					"answers":[
+						{"answer":"Shackle"},
+						{"correct":true,"answer":"Turnbuckle"},
+						{"answer":"Detachable Link"},
+						{"answer":"Pelican Hook"}
+					]
+				}
+			]
+
+
 		}
 	]
 }
