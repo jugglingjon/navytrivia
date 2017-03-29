@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'navyTrivia';
   src:
-    url('../fonts/navyTrivia.ttf?najvsx') format('truetype'),
-    url('../fonts/navyTrivia.woff?najvsx') format('woff'),
-    url('../fonts/navyTrivia.svg?najvsx#navyTrivia') format('svg');
+    url('../fonts/navyTrivia.ttf?v60uxu') format('truetype'),
+    url('../fonts/navyTrivia.woff?v60uxu') format('woff'),
+    url('../fonts/navyTrivia.svg?v60uxu#navyTrivia') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.triviaIcon-chevron:before {
+  content: "\e904";
+}
 .triviaIcon-star:before {
   content: "\e900";
 }
