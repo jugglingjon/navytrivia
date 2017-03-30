@@ -1046,6 +1046,1122 @@
 			]
 		},
 		{
+			"title": "Ship Structure",
+			"slug": "shipstructure",
+			"image": true,
+			"description": "Ship structure description.",
+			"tags":[
+				"Basic Seamanship"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What does the letter “K” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"correct":true,"answer":"Chemicals & dangerous material"},
+						{"answer":"Ammunition Spaces"},
+						{"answer":"Vertical access trunks"},
+						{"answer":"Voids"}
+					]
+				},
+				{
+					"question":"What kind of space is compartment 4-80-0-E?",
+					"answers":[
+						{"correct":true,"answer":"Engineering"},
+						{"answer":"Equipment"},
+						{"answer":"Escape Trunk"},
+						{"answer":"Environmental"}
+					]
+				},
+				{
+					"question":"Upper decks start with a '0'.  Where is deck '00'?",
+					"answers":[
+						{"answer":"Surface of the ship"},
+						{"answer":"Back of the ship"},
+						{"answer":"Front of the ship"},
+						{"correct":true,"answer":"There is no deck '00'"}
+					]
+				},
+				{
+					"question":"What do you call the uppermost complete deck on most ships?",
+					"answers":[
+						{"correct":true,"answer":"Main deck"},
+						{"answer":"Brow"},
+						{"answer":"Upper Deck"},
+						{"answer":"Accommodation Ladder"}
+					]
+				},
+				{
+					"question":"What is the main deck on an aircraft carrier?",
+					"answers":[
+					{"correct":true,"answer":"Hangar deck"},
+						{"answer":"Quarterdeck"},
+						{"answer":"Fantail"},
+						{"answer":"Brow"}
+					]
+				},
+				{
+					"question":"What is the front of a ship called?",
+					"answers":[
+						{"correct":true,"answer":"Bow"},
+						{"answer":"Front"},
+						{"answer":"Stern"},
+						{"answer":"North"}
+					]
+				},
+				{
+					"question":"What do you call the imaginary line running down the middle of the ship?",
+					"answers":[
+						{"correct":true,"answer":"Centerline"},
+						{"answer":"Foul Line"},
+						{"answer":"Hull"},
+						{"answer":"Keel"}
+					]
+				},
+				{
+					"question":"What do you call the outer skin of the ship?",
+					"answers":[
+						{"answer":"Centerline"},
+						{"answer":"Foul Line"},
+						{"correct":true,"answer":"Hull"},
+						{"answer":"Keel"}
+					]
+				},
+				{
+					"question":"What do you call the “Backbone” of the ship’s hull?",
+					"answers":[
+						{"answer":"Centerline"},
+						{"answer":"Foul Line"},
+						{"answer":"Hull"},
+						{"correct":true,"answer":"Keel"}
+					]
+				},
+				{
+					"question":"What do you call any deck that is exposed to the elements?",
+					"answers":[
+						{"correct":true,"answer":"Weather Deck"},
+						{"answer":"Main Deck"},
+						{"answer":"Flight Deck"},
+						{"answer":"Hangar Bay"}
+					]
+				},
+				{
+					"question":"What do you call the ship area where aircraft land and launch?",
+					"answers":[
+						{"answer":"Weather Deck"},
+						{"answer":"Main Deck"},
+						{"correct":true,"answer":"Flight Deck"},
+						{"answer":"Hangar Bay"}
+					]
+				},
+				{
+					"question":"What do you call the area of a ship where aircraft are stored?",
+					"answers":[
+						{"answer":"Weather Deck"},
+						{"answer":"Main Deck"},
+						{"answer":"Flight Deck"},
+						{"correct":true,"answer":"Hangar Bay"}
+					]
+				},
+				{
+					"question":"What do you call the forward end of the main deck?",
+					"answers":[
+						{"correct":true,"answer":"Forecastle"},
+						{"answer":"Bow"},
+						{"answer":"Stern"},
+						{"answer":"Fantail"}
+					]
+				},
+				{
+					"question":"What do you call the forward most part of the ship?",
+					"answers":[
+						{"answer":"Forecastle"},
+						{"correct":true,"answer":"Bow"},
+						{"answer":"Stern "},
+						{"answer":"Fantail"}
+					]
+				},
+				{
+					"question":"What do you call the portion of the ship that is above the main deck?",
+					"answers":[
+						{"answer":"Waterline"},
+						{"correct":true,"answer":"Superstructure"},
+						{"answer":"Flight Deck Control"},
+						{"answer":"Navigation Radar"}
+					]
+				},
+				{
+					"question":"Attached inside the ship is known as what?",
+					"answers":[
+						{"correct":true,"answer":"Inboard"},
+						{"answer":"Fantail"},
+						{"answer":"Keel"},
+						{"answer":"List"}
+					]
+				},
+				{
+					"question":"What do you call the relationship of a ship's hull to waterline?",
+					"answers":[
+						{"correct":true,"answer":"Trim"},
+						{"answer":"Freeboard"},
+						{"answer":"Keel"},
+						{"answer":"Inboard"}
+					]
+				},
+				{
+					"question":"What do you call the distance from the waterline to the weather deck?",
+					"answers":[
+						{"answer":"Halyard"},
+						{"correct":true,"answer":"Freeboard"},
+						{"answer":"Draft"},
+						{"answer":"Trim"}
+					]
+				},
+				{
+					"question":"What does the number “3” represent in 3-126-1-T?",
+					"answers":[
+						{"answer":"Compartment Identifier"},
+						{"correct":true,"answer":"Deck Number"},
+						{"answer":"Frame Number"},
+						{"answer":"Compartment’s relation to the centerline"}
+					]
+				},
+				{
+					"question":"What does the number “126” represent in 3-126-1-T?",
+					"answers":[
+						{"answer":"Compartment Identifier"},
+						{"answer":"Deck Number"},
+						{"correct":true,"answer":"Frame Number"},
+						{"answer":"Compartment’s relation to the centerline"}
+					]
+				},
+				{
+					"question":"What does the number “1” represent in 3-126-1-T?",
+					"answers":[
+						{"answer":"Compartment identifier"},
+						{"answer":"Deck Number"},
+						{"answer":"Frame Number"},
+						{"correct":true,"answer":"Compartment’s relation to the centerline"}
+					]
+				},
+				{
+					"question":"What does the letter “T” represent in 3-126-1-T?",
+					"answers":[
+						{"correct":true,"answer":"Compartment Identifier"},
+						{"answer":"Deck Number"},
+						{"answer":"Frame Number"},
+						{"answer":"Compartment’s relation to the centerline"}
+					]
+				},
+				{
+					"question":"What does the letter “A” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"correct":true,"answer":"Stowage space "},
+						{"answer":"Oil stowage "},
+						{"answer":"Gasoline stowage "},
+						{"answer":"Aviation Fuel"}
+					]
+				},
+				{
+					"question":"What does the letter “F” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"answer":"Stowage space "},
+						{"correct":true,"answer":"Oil stowage "},
+						{"answer":"Gasoline stowage "},
+						{"answer":"Aviation Fuel"}
+					]
+				},
+				{
+					"question":"What does the letter “G” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"answer":"Stowage space "},
+						{"answer":"Oil stowage "},
+						{"correct":true,"answer":"Gasoline stowage "},
+						{"answer":"Aviation Fuel"}
+					]
+				},
+				{
+					"question":"What does the letter “J” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"answer":"Stowage space "},
+						{"answer":"Oil stowage "},
+						{"answer":"Gasoline stowage "},
+						{"correct":true,"answer":"Aviation Fuel"}
+					]
+				},
+				{
+					"question":"What does the letter “V” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"answer":"Chemicals & dangerous material"},
+						{"answer":"Ammunition Spaces"},
+						{"answer":"Vertical access trunks"},
+						{"correct":true,"answer":"Voids"}
+					]
+				},
+				{
+					"question":"What does the letter “T” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"answer":"Chemicals & dangerous material"},
+						{"answer":"Ammunition Spaces"},
+						{"correct":true,"answer":"Vertical access trunks"},
+						{"answer":"Voids"}
+					]
+				},
+				{
+					"question":"What does the letter “M” indicate is held in a shipboard compartment?",
+					"answers":[
+						{"answer":"Chemicals & dangerous material"},
+						{"correct":true,"answer":"Ammunition Spaces"},
+						{"answer":"Vertical access trunks"},
+						{"answer":"Voids"}
+					]
+				},
+				{
+					"question":"The JC system is for which station?",
+					"answers":[
+						{"answer":"Captain’s Battle Circuit"},
+						{"correct":true,"answer":"Weapons Control"},
+						{"answer":"Lookouts"},
+						{"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"If you are on the center-line, looking forward, which side of the ship is to your left?",
+					"answers":[
+						{"correct":true,"answer":"Port"},
+						{"answer":"Starboard"},
+						{"answer":"Aft"},
+						{"answer":"Keel"}
+					]
+				},
+				{
+					"question":"To go from compartment 1-56-4-L to 1-94-4-M, which way do you go?",
+					"answers":[
+						{"answer":"Forward"},
+						{"correct":true,"answer":"Aft"},
+						{"answer":"Port"},
+						{"answer":"Starboard"}
+					]
+				},
+				{
+					"question":"Which is the portion of the ship above the main deck called?",
+						"answers":[
+						{"correct":true,"answer":"Superstructure"},
+						{"answer":"Bridge"},
+						{"answer":"Keel"},
+						{"answer":"Centerline"}
+					]
+				},
+				{
+					"question":"What is the backbone of a ship called?",
+					"answers":[
+						{"correct":true,"answer":"Keel"},
+						{"answer":"Rear"},
+						{"answer":"Bow"},
+						{"answer":"South"}
+					]
+				},
+				{
+					"question":"What is the after most part of the ship called?",
+					"answers":[
+						{"answer":"Keel"},
+						{"answer":"Rear"},
+						{"answer":"Bow"},
+						{"correct":true,"answer":"Stern"}
+					]
+				},
+				{
+					"question":"What do you call the space where personnel command the ship when at sea?",
+					"answers":[
+						{"correct":true,"answer":"Bridge "},
+						{"answer":"Chart House"},
+						{"answer":"Stern Steering"},
+						{"answer":"Quarterdeck"}
+					]
+				},
+				{
+					"question":"What term refers to the rear of the ship?",
+					"answers":[
+						{"correct":true,"answer":"Stern"},
+						{"answer":"Aft"},
+						{"answer":"Bow"},
+						{"answer":"South"}
+					]
+				},
+				{
+					"question":"What do you call the furthest aft part of the main deck of a ship?",
+					"answers":[
+						{"answer":"Fantail"},
+						{"answer":"Keel"},
+						{"answer":"Inboard"},
+						{"correct":true,"answer":"Stern"}
+					]
+				},
+				{
+					"question":"What do you call an air or foam filled bumper that keeps vessels from banging into docks or each other?",
+					"answers":[
+						{"correct":true,"answer":"Fender"},
+						{"answer":"Freeboard"},
+						{"answer":"Keel"},
+						{"answer":"Inboard"}
+					]
+				},
+				{
+					"question":"Where in relation to the centerline are compartments 1-55-4-L and 02-82-2-E?",
+					"answers":[
+						{"correct":true,"answer":"Left/Port"},
+						{"answer":"Right/Starboard"},
+						{"answer":"Left/Bow"},
+						{"answer":"Right/Stern"}
+					]
+				},
+				{
+					"question":"How would you get from 1-82-2-L to 02-42-3-L?",
+					"answers":[
+						{"answer":"Up three decks, aft and port"},
+						{"answer":"Down three decks, forward and port"},
+						{"answer":"Down two decks, aft and starboard"},
+						{"correct":true,"answer":"Up two decks, forward and starboard"}
+					]
+				},
+				{
+					"question":"What letter is used to designate a berthing compartment?",
+					"answers":[
+						{"answer":"B for Birthing"},
+						{"correct":true,"answer":"L for Living"},
+						{"answer":"S for Sleeping"},
+						{"answer":"R for Resting"}
+					]
+				},
+				{
+					"question":"Which compartment is on the highest deck?",
+					"answers":[
+						{"answer":"02-26-4-E"},
+						{"answer":"1-26-2-L"},
+						{"correct":true,"answer":"03-15-4-E"},
+						{"answer":"00-12-7-L"}
+					]
+				}
+					
+			]
+
+
+		},
+		{
+			"title": "Deck Seamanship Equipment",
+			"slug": "deckequipment",
+			"image": true,
+			"description": "Deck seamanship equipment description.",
+			"tags":[
+				"Basic Seamanship"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What structure extends from land into the water and provides a mooring for ships?",
+					"answers":[
+						{"answer":"Bitt"},
+						{"answer":"Bollard"},
+						{"answer":"Chocks"},
+						{"correct":true,"answer":"Pier"}
+					]
+				},
+				{
+					"question":"What are the fittings on the deck of the ship, through which mooring lines are led?",
+					"answers":[
+						{"answer":"Bollard"},
+						{"answer":"Bitt"},
+						{"correct":true,"answer":"Chock"},
+						{"answer":"Cleat"}
+					]
+				},
+				{
+					"question":"Which of these is NOT a type of chock?",
+					"answers":[
+						{"answer":"Open"},
+						{"answer":"Closed"},
+						{"answer":"Roller"},
+						{"correct":true,"answer":"Bollard"}
+					]
+				},
+				{
+					"question":"What do you call a pair of projecting horns used for belying line or wire?",
+					"answers":[
+						{"answer":"Bollard"},
+						{"answer":"Bitt"},
+						{"answer":"Chock"},
+						{"correct":true,"answer":"Cleat"}
+					]
+				},
+				{
+					"question":"A portable flight of steps down a ship's side is called a what?",
+					"answers":[
+						{"correct":true,"answer":"Accommodation Ladder"},
+						{"answer":"Gangplank"},
+						{"answer":"Steppers"},
+						{"answer":"Throughway"}
+					]
+				},
+				{
+					"question":"What device is used to hold a vessel fast to the bottom, but still afloat?",
+					"answers":[
+						{"correct":true,"answer":"Anchor"},
+						{"answer":"Pier"},
+						{"answer":"Lines"},
+						{"answer":"Dock"}
+					]
+				},
+				{
+					"question":"What are the metal links that connect the anchor to the ship?",
+					"answers":[
+						{"correct":true,"answer":"Anchor chain"},
+						{"answer":"Divot"},
+						{"answer":"Widget"},
+						{"answer":"Mail"}
+					]
+				},
+				{
+					"question":"What do you call a ramp between a ship and a pier that gives personnel access to the ship?",
+					"answers":[
+						{"answer":"Quarterdeck"},
+						{"answer":"Fantail"},
+						{"correct":true,"answer":"Brow"},
+						{"answer":"Accommodation Ladder"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"Cleat"},
+						{"answer":"Bitts"},
+						{"answer":"Bollard"},
+						{"correct":true,"answer":"Open chock"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Closed chock"},
+						{"answer":"Cleat"},
+						{"answer":"Bitts"},
+						{"answer":"Bollard"}
+					]
+				},
+				{
+					"question":"What do you call a pair of metal posts on the deck of the ship; used mainly to secure the mooring lines?",
+					"answers":[
+						{"answer":"Bollard"},
+						{"correct":true,"answer":"Bitt"},
+						{"answer":"Chock"},
+						{"answer":"Cleat"}
+					]
+				},
+				{
+					"question":"Which of these is NOT a type of chock?",
+					"answers":[
+						{"correct":true,"answer":"Rolled"},
+						{"answer":"Roller"},
+						{"answer":"Open "},
+						{"answer":"Closed"}
+					]
+				},
+				{
+					"question":"Which type off windlass is used on combatant ships and has a capstan for handling lines/wires?",
+					"answers":[
+						{"answer":"Up/Down"},
+						{"answer":"Side-to-Side"},
+						{"correct":true,"answer":"Vertical"},
+						{"answer":"Horizontal"}
+					]
+				},
+				{
+					"question":"Which type of windlass is used on amphibious and auxiliary ships, and has gypsy heads for handling lines/wires?",
+					"answers":[
+						{"answer":"Up/Down"},
+						{"answer":"Side-to-Side"},
+						{"answer":"Vertical"},
+						{"correct":true,"answer":"Horizontal"}
+					]
+				},
+				{
+					"question":"How many fathoms does this indicate?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"60 "},
+						{"answer":"45 "},
+						{"answer":"30 "},
+						{"correct":true,"answer":"15 "}
+					]
+				},
+				{
+					"question":"How many fathoms does this indicate?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"60 "},
+						{"answer":"45 "},
+						{"correct":true,"answer":"30 "},
+						{"answer":"15 "}
+					]
+				},
+				{
+					"question":"How many fathoms does this indicate?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"60 "},
+						{"correct":true,"answer":"45 "},
+						{"answer":"30 "},
+						{"answer":"15 "}
+					]
+				},
+				{
+					"question":"How many fathoms does this indicate?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"60 "},
+						{"answer":"45 "},
+						{"answer":"30 "},
+						{"answer":"15 "}
+					]
+				},
+				{
+					"question":"How many fathoms does this indicate?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"45 "},
+						{"answer":"60 "},
+						{"correct":true,"answer":"75 "},
+						{"answer":"90 "}
+					]
+				},
+				{
+					"question":"How many fathoms does this indicate?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"45 "},
+						{"answer":"60 "},
+						{"answer":"75 "},
+						{"correct":true,"answer":"90 "}
+					]
+				},
+				{
+					"question":"How many fathoms are in one shot?",
+					"answers":[
+						{"answer":"10"},
+						{"answer":"12"},
+						{"correct":true,"answer":"15"},
+						{"answer":"20"}
+					]
+				},
+				{
+					"question":"How many fathoms are in two shots?",
+					"answers":[
+						{"answer":"12"},
+						{"answer":"15"},
+						{"answer":"20"},
+						{"correct":true,"answer":"30"}
+					]
+				},
+				{
+					"question":"How many fathoms are in three shots?",
+					"answers":[
+						{"answer":"15"},
+						{"answer":"20"},
+						{"answer":"30"},
+						{"correct":true,"answer":"45"}
+					]
+				},
+				{
+					"question":"How many feet are in a standard shot?",
+					"answers":[
+						{"answer":"80"},
+						{"answer":"85"},
+						{"correct":true,"answer":"90"},
+						{"answer":"100"}
+					]
+				},
+				{
+					"question":"How many fathoms are in a standard shot?",
+					"answers":[
+						{"answer":"13"},
+						{"correct":true,"answer":"15"},
+						{"answer":"17"},
+						{"answer":"19"}
+					]
+				},
+				{
+					"question":"How many fathoms are in six shots?",
+					"answers":[
+						{"answer":"30"},
+						{"answer":"45"},
+						{"answer":"65"},
+						{"correct":true,"answer":"90"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Accommodation Ladder"},
+						{"answer":"Gangplank"},
+						{"answer":"Steppers"},
+						{"answer":"Throughway"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Chafing gear"},
+						{"answer":"Bollard"},
+						{"answer":"Roller chock"},
+						{"answer":"Open chock"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Pad Eye"},
+						{"answer":"Bitts"},
+						{"answer":"Bollard"},
+						{"answer":"Open Chock"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Fender"},
+						{"answer":"Roller chock"},
+						{"answer":"Open chock"},
+						{"answer":"Bitts"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Rat guard"},
+						{"answer":"Bitts"},
+						{"answer":"Bollard"},
+						{"answer":"Open Chock"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Cleat"},
+						{"answer":"Bitts"},
+						{"answer":"Bollard"},
+						{"answer":"Open Chock"}
+					]
+				},
+				{
+					"question":"What are these?",
+					"answers":[
+						{"answer":"Bollard"},
+						{"answer":"Roller chock"},
+						{"answer":"Open chock"},
+						{"correct":true,"answer":"Bitts"}
+					]
+				},
+				{
+					"question":"What is this?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Bollard"},
+						{"answer":"Closed chock"},
+						{"answer":"Roller chock"},
+						{"answer":"Cleat"}
+					]
+				},
+				{
+					"question":"What is placed around the open areas of a flight deck to prevent falling over the side?",
+					"answers":[
+						{"correct":true,"answer":"Netting"},
+						{"answer":"Railing"},
+						{"answer":"Screen"},
+						{"answer":"Lifeline"}
+					]
+				},
+				{
+					"question":"What do you call the lightweight lines attached to the signal flags and pennants?",
+					"answers":[
+						{"correct":true,"answer":"Halyard"},
+						{"answer":"Freeboard"},
+						{"answer":"Draft"},
+						{"answer":"Trim"}
+					]
+				},
+				{
+					"question":"Mooring lines run from the bitts on the deck, through the chocks, and out to the what?",
+					"answers":[
+						{"correct":true,"answer":"Pier or Ship"},
+						{"answer":"Post"},
+						{"answer":"Tug"},
+						{"answer":"Pole"}
+					]
+				},
+				{
+					"question":"What do you call the post on the pier, over which the ship’s mooring line is placed?",
+					"answers":[
+						{"correct":true,"answer":"Bollard or cleat"},
+						{"answer":"Bitt"},
+						{"answer":"Chock"},
+						{"answer":"Stump"}
+					]
+				},
+				{
+					"question":"What do you call a pair of metal posts on the deck of the ship; used mainly to secure the mooring lines?",
+					"answers":[
+						{"answer":"Bollard"},
+						{"correct":true,"answer":"Bitt"},
+						{"answer":"Chock"},
+						{"answer":"Cleat"}
+					]
+				}
+			]
+
+
+		},
+		{
+			"title": "Line handling",
+			"slug": "linehandling",
+			"image": true,
+			"description": "Line handling description.",
+			"tags":[
+				"Basic Seamanship"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What natural fiber is strong, durable, easy of handle, and is resistant to weather?",
+					"answers":[
+						{"answer":"Manilla"},
+						{"answer":"Polyester"},
+						{"answer":"Marline"},
+						{"correct":true,"answer":"Cotton"}
+					]
+				},
+				{
+					"question":"What natural fiber is used for tying down objects?",
+					"answers":[
+						{"answer":"Manilla"},
+						{"answer":"Polyester"},
+						{"answer":"Marline"},
+						{"correct":true,"answer":"Cotton"}
+					]
+				},
+				{
+					"question":"What synthetic line is fuzzy, has less stretch ability and is used based on strength and minimum stretch?",
+					"answers":[
+						{"answer":"Manilla"},
+						{"correct":true,"answer":"Polyester"},
+						{"answer":"Nylon"},
+						{"answer":"Cotton"}
+					]
+				},
+				{
+					"question":"What synthetic line upon parting, returns to its original length with deadly force?",
+					"answers":[
+						{"answer":"Marline"},
+						{"answer":"Polyester"},
+						{"correct":true,"answer":"Nylon"},
+						{"answer":"Cotton"}
+					]
+				},
+				{
+					"question":"Fiber lines are identified by their type and what?",
+					"answers":[
+						{"answer":"Diameter"},
+						{"answer":"Radius"},
+						{"correct":true,"answer":"Circumference"},
+						{"answer":"Strength"}
+					]
+				},
+				{
+					"question":"Wire rope is measured by its what?",
+					"answers":[
+						{"correct":true,"answer":"Diameter"},
+						{"answer":"Radius"},
+						{"answer":"Circumference"},
+						{"answer":"Strength"}
+					]
+				},
+				{
+					"question":"Hawser lines have a circumference greater than what?",
+					"answers":[
+						{"answer":"4 inches"},
+						{"correct":true,"answer":"5 inches"},
+						{"answer":"6 inches"},
+						{"answer":"7 inches"}
+					]
+				},
+				{
+					"question":"What do you call pulling in a line?",
+					"answers":[
+						{"answer":"Belay"},
+						{"answer":"Cast Off"},
+						{"answer":"Check"},
+						{"correct":true,"answer":"Heave Around"}
+					]
+				},
+				{
+					"question":"A line with an orange ball at one end used to pull a mooring line across is called a what?",
+					"answers":[
+						{"answer":"Knot"},
+						{"answer":"Hitch"},
+						{"correct":true,"answer":"Heaving Line"},
+						{"answer":"Monkeys Fist"}
+					]
+				},
+				{
+					"question":"Feeding out or lengthening a line is called what?",
+					"answers":[
+						{"correct":true,"answer":"Pay out "},
+						{"answer":"Slack"},
+						{"answer":"Bird’s Nest"},
+						{"answer":"Heave"}
+					]
+				},
+				{
+					"question":"Another name for when you throw is what?",
+					"answers":[
+						{"answer":"Pay Out"},
+						{"answer":"Slack"},
+						{"answer":"Bird’s Nest"},
+						{"correct":true,"answer":"Heave"}
+					]
+				},
+				{
+					"question":"What do you call it when you allow a line to run out?",
+					"answers":[
+						{"answer":"Pay Out"},
+						{"correct":true,"answer":"Slack"},
+						{"answer":"Bird’s Nest"},
+						{"answer":"Heave"}
+					]
+				},
+				{
+					"question":"Excess mooring line wrapped around the bits to prevent trip hazards and surface abrasion is called a what?",
+					"answers":[
+						{"answer":"Pay Out"},
+						{"answer":"Slack"},
+						{"correct":true,"answer":"Bird’s Nest"},
+						{"answer":"Heave"}
+					]
+				},
+				{
+					"question":"Mooring lines are referred to by both names and what?",
+					"answers":[
+						{"correct":true,"answer":"Numbers"},
+						{"answer":"Colors"},
+						{"answer":"Materials"},
+						{"answer":"Width"}
+					]
+				},
+				{
+					"question":"Mooring lines are designed to prevent both lateral and what kind of movement?",
+					"answers":[
+						{"correct":true,"answer":"Parallel"},
+						{"answer":"Abrasive"},
+						{"answer":"Conductive"},
+						{"answer":"Buoyant"}
+					]
+				},
+				{
+					"question":"Mooring lines are designed to prevent both parallel and what kind of movement?",
+					"answers":[
+						{"correct":true,"answer":"Lateral "},
+						{"answer":"Conductive"},
+						{"answer":"Abrasive"},
+						{"answer":"Buoyant"}
+					]
+				},
+				{
+					"question":"What is used to bend a line to or around an object?",
+					"answers":[
+						{"answer":"Tie-downs"},
+						{"answer":"Knots"},
+						{"correct":true,"answer":"Hitches"},
+						{"answer":"Heaving Line"}
+					]
+				},
+				{
+					"question":"What should you use on sharp corners and rough surfaces when securing for sea?",
+					"answers":[
+						{"answer":"Line"},
+						{"correct":true,"answer":"Chafing gear"},
+						{"answer":"Rubbing pads"},
+						{"answer":"Lubricant oils"}
+					]
+				},
+				{
+					"question":"To ______ is to lay the line up in circles, roughly one on top of the other.",
+					"answers":[
+						{"correct":true,"answer":"Coil Down"},
+						{"answer":"Fake Down"},
+						{"answer":"Flemish Down"},
+						{"answer":"Dip the Eye"}
+					]
+				},
+				{
+					"question":"What is this line handling technique called?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Coil Down"},
+						{"answer":"Fake Down"},
+						{"answer":"Flemish Down"},
+						{"answer":"Dip the Eye"}
+					]
+				},
+				{
+					"question":"To _____ is to start with one end, lay circles of line on the deck, in a tight spiral.",
+					"answers":[
+						{"answer":"Coil Down"},
+						{"answer":"Fake Down"},
+						{"correct":true,"answer":"Flemish Down"},
+						{"answer":"Dip the Eye"}
+					]
+				},
+				{
+					"question":"What is this line handling technique called?",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"Coil Down"},
+						{"answer":"Fake Down"},
+						{"correct":true,"answer":"Flemish Down"},
+						{"answer":"Dip the Eye"}
+					]
+				},
+				{
+					"question":"To _____ is to secure a line to a fixed point, such as a cleat.",
+					"answers":[
+						{"correct":true,"answer":"Belay"},
+						{"answer":"Cast Off"},
+						{"answer":"Check"},
+						{"answer":"Heave Around"}
+					]
+				},
+				{
+					"question":"What do you call this line handling action?",
+					"image":"image.jpg",
+					"answers":[
+						{"correct":true,"answer":"Belay"},
+						{"answer":"Cast Off"},
+						{"answer":"Check"},
+						{"answer":"Heave Around"}
+					]
+				},
+				{
+					"question":"To _____ is to let go, or throw off, mooring lines from a bollard.",
+					"answers":[
+						{"answer":"Belay"},
+						{"correct":true,"answer":"Cast Off"},
+						{"answer":"Check "},
+						{"answer":"Heave Around"}
+					]
+				},
+				{
+					"question":"To _____ is to ease out just enough line to prevent it from parting under strain.",
+					"answers":[
+						{"answer":"Belay"},
+						{"answer":"Cast Off"},
+						{"correct":true,"answer":"Check"},
+						{"answer":"Heave Around"}
+					]
+				},
+				{
+					"question":"What natural fiber is a dark brown, natural fiber made of two-strand, tarred hemp?",
+					"answers":[
+						{"answer":"Manilla"},
+						{"answer":"Polyester"},
+						{"correct":true,"answer":"Marline"},
+						{"answer":"Cotton"}
+					]
+				},
+				{
+					"question":"What synthetic line is white and shiny; feels slick and is 3 times stronger than manila line of the same size?",
+					"answers":[
+						{"answer":"Marline"},
+						{"answer":"Polyester"},
+						{"correct":true,"answer":"Nylon"},
+						{"answer":"Cotton"}
+					]
+				},
+				{
+					"question":"What do you call lines having a circumference less than 1 ¾ inches?",
+					"answers":[
+						{"correct":true,"answer":"Small stuff"},
+						{"answer":"Little things"},
+						{"answer":"Threads"},
+						{"answer":"Weaves"}
+					]
+				},
+				{
+					"question":"To form eyes or to secure a cord or line around an object you would use _____.",
+					"answers":[
+						{"answer":"Tie-downs"},
+						{"correct":true,"answer":"Knots"},
+						{"answer":"Hitches"},
+						{"answer":"Heaving Line"}
+					]
+				},
+				{
+					"question":"To _____ is to lay the line up in long flat bights, one alongside the other.",
+					"answers":[
+						{"answer":"Coil Down"},
+						{"correct":true,"answer":"Fake Down"},
+						{"answer":"Flemish Down"},
+						{"answer":"Dip the Eye"}
+					]
+				},
+				{
+					"question":"What is this line handling technique called? ",
+					"image":"image.jpg",
+					"answers":[
+						{"answer":"Coiling Down"},
+						{"correct":true,"answer":"Faking Down"},
+						{"answer":"Flemishing Down"},
+						{"answer":"Dipping the Eye "}
+					]
+				},
+				{
+					"question":"Which of these rope types is a natural fiber?",
+					"answers":[
+						{"answer":"Nylon      "},
+						{"answer":"Polyester"},
+						{"answer":"Polypropylene"},
+						{"correct":true,"answer":"Manila"}
+					]
+				},
+				{
+					"question":"Which of these rope types is a synthetic fiber?",
+					"answers":[
+						{"answer":"Manila"},
+						{"answer":"Cotton"},
+						{"answer":"Hemp"},
+						{"correct":true,"answer":"Polyester"}
+					]
+				}
+
+			]
+
+
+		},
+		{
 			"title": "Anchors",
 			"slug": "anchors",
 			"image": true,
