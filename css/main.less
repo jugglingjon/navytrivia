@@ -142,6 +142,10 @@ html, body{
 	height: 100%;
 }
 
+html{
+	background-color: @backgroundGradientEnd;
+}
+
 body{
 	background: linear-gradient(to bottom, @backgroundGradientStart 0%,@backgroundGradientEnd 100%);
 	color: @text;
@@ -240,6 +244,7 @@ a:hover{
 header{
 	height: 100px;
 	padding: @basePadding !important;
+	z-index:10;
 
 	background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
 
@@ -295,6 +300,8 @@ header{
 
 	.category,.achievement{
 		display:block;
+		width: 236px;
+		height: 342px;
 		float:left;
 		padding: @basePadding @basePadding*2 @basePadding 0;
 
