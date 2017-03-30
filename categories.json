@@ -261,7 +261,6 @@
 			"image": true,
 			"description": "Important figures, dates, and events for the US Navy",
 			"tags":[
-				"Basic Seamanship"
 			],
 			"highScore": 0,
 			"lastScore": 0,
@@ -677,8 +676,6 @@
 			"image": true,
 			"description": "Symptoms, treatments, and other important first aid information",
 			"tags":[
-				"Basic Seamanship",
-				"Test 1"
 			],
 			"highScore": 0,
 			"lastScore": 0,
@@ -1054,8 +1051,7 @@
 			"image": true,
 			"description": "Anchors description.",
 			"tags":[
-				"Basic Seamanship",
-				"Test 1"
+				"Basic Seamanship"
 			],
 			"highScore": 0,
 			"lastScore": 0,
@@ -1372,6 +1368,532 @@
 			]
 
 
+		},
+		{
+			"title": "Signal Flags & Pennants",
+			"slug": "flags",
+			"image": true,
+			"description": "Flags description.",
+			"tags":[
+				"Basic Seamanship"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag1.jpg",
+					"answers":[
+						{"correct":true,"answer":"Alpha"},
+						{"answer":"Golf"},
+						{"answer":"Hotel"},
+						{"answer":"India"}
+					]
+				},
+				{
+					"question":"What situation does this signal flag indicate?",
+					"image":"flag2.jpg",
+					"answers":[
+						{"correct":true,"answer":"Man in the water"},
+						{"answer":"Man Overboard"},
+						{"answer":"Dead in the water"},
+						{"answer":"Taking on supplies"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag3.jpg",
+					"answers":[
+						{"correct":true,"answer":"Bravo"},
+						{"answer":"November"},
+						{"answer":"Oscar"},
+						{"answer":"Papa"}
+					]
+				},
+				{
+					"question":"What situation does this signal flag indicate?",
+					"image":"flag4.jpg",
+					"answers":[
+						{"correct":true,"answer":"Engaged with dangerous cargo"},
+						{"answer":"Taking on supplies"},
+						{"answer":"Ahead full"},
+						{"answer":"In distress"}
+					]
+				},
+				{
+				"question":"Which flag means taking in, discharging, or handling dangerous materials?",
+					"answers":[
+						{"answer":"Alfa"},
+						{"correct":true,"answer":"Bravo"},
+						{"answer":"Foxtrot"},
+						{"answer":"Hotel"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag5.jpg",
+					"answers":[
+						{"correct":true,"answer":"Charlie"},
+						{"answer":"Sierra"},
+						{"answer":"Tango"},
+						{"answer":"Uniform"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag6.jpg",
+					"answers":[
+						{"correct":true,"answer":"Foxtrot"},
+						{"answer":"Charlie"},
+						{"answer":"Delta"},
+						{"answer":"Echo"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag7.jpg",
+					"answers":[
+						{"correct":true,"answer":"Golf"},
+						{"answer":"Quebec"},
+						{"answer":"Romeo"},
+						{"answer":"Sierra"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag8.jpg",
+					"answers":[
+						{"correct":true,"answer":"India"},
+						{"answer":"Oscar"},
+						{"answer":"Papa"},
+						{"answer":"Quebec"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag9.jpg",
+					"answers":[
+						{"correct":true,"answer":"Juliet"},
+						{"answer":"Alpha"},
+						{"answer":"Bravo"},
+						{"answer":"Charlie"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag10.jpg",
+					"answers":[
+						{"correct":true,"answer":"Lima"},
+						{"answer":"Charlie"},
+						{"answer":"Quebec"},
+						{"answer":"Romeo"}
+					]
+				},
+				{
+					"question":"What situation does this signal flag indicate?",
+					"image":"flag11.jpg",
+					"answers":[
+						{"correct":true,"answer":"Man Overboard"},
+						{"answer":"Need resupply"},
+						{"answer":"Alert"},
+						{"answer":"Caution"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag12.jpg",
+					"answers":[
+						{"correct":true,"answer":"Papa"},
+						{"answer":"Alpha"},
+						{"answer":"Bravo"},
+						{"answer":"Charlie"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag13.jpg",
+					"answers":[
+						{"correct":true,"answer":"Quebec"},
+						{"answer":"Hotel"},
+						{"answer":"India"},
+						{"answer":"Juliet"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag14.jpg",
+					"answers":[
+						{"correct":true,"answer":"Romeo"},
+						{"answer":"Juliet"},
+						{"answer":"Kilo"},
+						{"answer":"Lima"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag15.jpg",
+					"answers":[
+						{"correct":true,"answer":"Sierra"},
+						{"answer":"India"},
+						{"answer":"Juliet"},
+						{"answer":"Kilo"}
+					]
+				}
+			]
+		},
+		{
+			"title": "Sound-Powered Telephones",
+			"slug": "telephones",
+			"image": true,
+			"description": "Sound-Powered Telephones description.",
+			"tags":[
+				"Basic Seamanship"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What does the operator of a sound powered phone speak into to send a message?",
+					"answers":[
+						{"answer":"Handset"},
+						{"answer":"Headset"},
+						{"correct":true,"answer":"Transmitter"},
+						{"answer":"Receiver"}
+					]
+				},
+				{
+					"question":"Which is NOT part of sending a message on a sound-powered phone?",
+					"answers":[
+						{"answer":"Name of station being called"},
+						{"answer":"Identify your station"},
+						{"answer":"Send Message"},
+						{"correct":true,"answer":"End messages with “Over”"}
+					]
+				},
+				{
+					"question":"The JA system is for which station?",
+					"answers":[
+						{"correct":true,"answer":"Captain’s Battle Circuit"},
+						{"answer":"Weapons Control"},
+						{"answer":"Lookouts"},
+						{"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"On sound-powered circuits aboard ships, the JL system is for which station?",
+					"answers":[
+						{"answer":"Captain’s Battle Circuit"},
+						{"answer":"Weapons Control"},
+						{"correct":true,"answer":"Lookouts"},
+						{"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"The JW system is for which station?",
+					"answers":[
+						{"answer":"Captain’s Battle Circuit"},
+						{"answer":"Weapons Control"},
+						{"answer":"Lookouts"},
+						{"correct":true,"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone1.jpg",
+					"answers":[
+						{"answer":"Chestplate"},
+						{"correct":true,"answer":"Jackplug"},
+						{"answer":"Cable"},
+						{"answer":"Junction Box"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone2.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Receiver"},
+						{"answer":"Transmitter"},
+						{"correct":true,"answer":"Chestplate"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone3.jpg",
+					"answers":[
+						{"correct":true,"answer":"Headband"},
+						{"answer":"Transmitter"},
+						{"answer":"Chestplate"},
+						{"answer":"Jackplug"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone4.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Transmitter"},
+						{"answer":"Chestplate"},
+						{"correct":true,"answer":"Jackplug"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone5.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Receiver"},
+						{"answer":"Tinsel cord"},
+						{"correct":true,"answer":"Junction Box"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone6.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Receiver"},
+						{"answer":"Tinsel cord"},
+						{"correct":true,"answer":"Neck strap"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone7.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"correct":true,"answer":"Receiver"},
+						{"answer":"Transmitter"},
+						{"answer":"Cable"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone8.jpg",
+					"answers":[
+						{"correct":true,"answer":"Transmitter"},
+						{"answer":"Chestplate"},
+						{"answer":"Cable"},
+						{"answer":"Junction Box"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"telephone9.jpg",
+					"answers":[
+						{"correct":true,"answer":"Tinsel cord"},
+						{"answer":"Neck strap"},
+						{"answer":"Transmitter"},
+						{"answer":"Junction Box"}
+					]
+				}
+			]
+		},
+		{
+			"title": "Misc",
+			"slug": "misc",
+			"image": true,
+			"description": "Misc description.",
+			"tags":[
+				"Basic Seamanship"
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What flagstaff insignia is fitted at the peak of an official whose authorized salute is 19 or more guns?",
+					"answers":[
+						{"correct":true,"answer":"Spread Eagle"},
+						{"answer":"Halberd"},
+						{"answer":"Ball"},
+						{"answer":"Star"}
+					]
+				},
+				{
+					"question":"What flagstaff insignia is fitted at the peak for a flag or general officer?",
+					"answers":[
+						{"answer":"Spread Eagle"},
+						{"correct":true,"answer":"Halberd"},
+						{"answer":"Ball"},
+						{"answer":"Star"}
+					]
+				},
+				{
+					"question":"What flagstaff insignia is fitted at the peak for a Captain in the Navy?",
+					"answers":[
+						{"answer":"Spread Eagle"},
+						{"answer":"Halberd"},
+						{"correct":true,"answer":"Ball "},
+						{"answer":"Star"}
+					]
+				},
+				{
+					"question":"What flagstaff insignia is fitted at the peak for Commander in the Navy?",
+					"answers":[
+						{"answer":"Spread Eagle"},
+						{"answer":"Halberd"},
+						{"answer":"Ball"},
+						{"correct":true,"answer":"Star"}
+					]
+				},
+				{
+					"question":"What Flagstaff Insignia is this?",
+					"image":"misc1.jpg",
+					"answers":[
+						{"correct":true,"answer":"Spread Eagle"},
+						{"answer":"Ball"},
+						{"answer":"Halbert"},
+						{"answer":"Star"}
+					]
+				},
+				{
+					"question":"What Flagstaff Insignia is this?",
+					"image":"misc2.jpg",
+					"answers":[
+						{"correct":true,"answer":"Halbert"},
+						{"answer":"Spread Eagle"},
+						{"answer":"Ball"},
+						{"answer":"Star"}
+					]
+				},
+				{
+					"question":"What Flagstaff Insignia is this?",
+					"image":"misc3.jpg",
+					"answers":[
+						{"correct":true,"answer":"Ball"},
+						{"answer":"Spread Eagle"},
+						{"answer":"Halbert"},
+						{"answer":"Star"}
+					]
+				},
+				{
+					"question":"What Flagstaff Insignia is this?",
+					"image":"misc4.jpg",
+					"answers":[
+						{"correct":true,"answer":"Star"},
+						{"answer":"Spread Eagle"},
+						{"answer":"Ball"},
+						{"answer":"Halbert"}
+					]
+				},
+				{
+					"question":"What kind of knot is this?",
+					"image":"misc5.jpg",
+					"answers":[
+						{"correct":true,"answer":"Square Knot"},
+						{"answer":"Clove Hitch"},
+						{"answer":"Bowline"},
+						{"answer":"Slip Knot"}
+					]
+				},
+				{
+					"question":"What kind of knot is this?",
+					"image":"misc6.jpg",
+					"answers":[
+						{"correct":true,"answer":"Clove Hitch"},
+						{"answer":"Square Knot"},
+						{"answer":"Bowline"},
+						{"answer":"Slip Knot"}
+					]
+				},
+				{
+					"question":"What kind of knot is this?",
+					"image":"misc7.jpg",
+					"answers":[
+						{"correct":true,"answer":"Bowline"},
+						{"answer":"Square Knot"},
+						{"answer":"Clove Hitch"},
+						{"answer":"Slip Knot"}
+					]
+				},
+				{
+					"question":"If possible, what should you throw into the water during a Man Overboard situation?",
+					"answers":[
+						{"correct":true,"answer":"Life ring or life jacket"},
+						{"answer":"Scuba gear"},
+						{"answer":"Inflatable raft"},
+						{"answer":"Styrofoam"}
+					]
+				},
+				{
+					"question":"In a Man Overboard situation, what do you drop in the water if available?",
+					"answers":[
+						{"correct":true,"answer":"Dye marker"},
+						{"answer":"Seat cushion"},
+						{"answer":"Flashlight"},
+						{"answer":"Inflatable raft"}
+					]
+				},
+				{
+					"question":"Where must all crewmembers muster in a Man Overboard situation?",
+					"answers":[
+						{"correct":true,"answer":"With their Divisions"},
+						{"answer":"Berthing area"},
+						{"answer":"Mess hall"},
+						{"answer":"Lifeboats"}
+					]
+				},
+				{
+					"question":"What must all crewmembers do to successfully recover a man overboard?",
+					"answers":[
+						{"correct":true,"answer":"Work together"},
+						{"answer":"Call for help"},
+						{"answer":"Get out of the way"},
+						{"answer":"Make noise"}
+					]
+				},
+				{
+					"question":"Who is responsible for maneuvering the ship to a recovery position when a man is overboard?",
+					"answers":[
+						{"correct":true,"answer":"Officer of the Deck"},
+						{"answer":"Pilot"},
+						{"answer":"MP"},
+						{"answer":"Corpsman"}
+					]
+				},
+				{
+					"question":"What should you call out when a crewmember goes over the side?",
+					"answers":[
+						{"correct":true,"answer":"Man overboard"},
+						{"answer":"Man in the water"},
+						{"answer":"Swimmer overboard"},
+						{"answer":"Crewman in the water"}
+					]
+				},
+				{
+					"question":"How many short blasts of the ships whistle are sounded when signaling Man Overboard?",
+					"answers":[
+						{"correct":true,"answer":"6+"},
+						{"answer":"3"},
+						{"answer":"4"},
+						{"answer":"5"}
+					]
+				},
+				{
+					"question":"In nautical navigation, speed is measured in what?",
+					"answers":[
+						{"correct":true,"answer":"Knots"},
+						{"answer":"MPH"},
+						{"answer":"KPH"},
+						{"answer":"FPS"}
+					]
+				},
+				{
+					"question":"Knots represent what?",
+					"answers":[
+						{"correct":true,"answer":"Nautical Miles Per Hour"},
+						{"answer":"Line handling"},
+						{"answer":"Distance between two points"},
+						{"answer":"Sea turbulence"}
+					]
+				}
+			]
 		}
 	]
 }
