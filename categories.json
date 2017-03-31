@@ -2500,7 +2500,7 @@
 			"questions":[
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag1.jpg",
+					"image":"flag2.jpg",
 					"answers":[
 						{"correct":true,"answer":"Alpha"},
 						{"answer":"Golf"},
@@ -2530,7 +2530,7 @@
 				},
 				{
 					"question":"What situation does this signal flag indicate?",
-					"image":"flag4.jpg",
+					"image":"flag3.jpg",
 					"answers":[
 						{"correct":true,"answer":"Engaged with dangerous cargo"},
 						{"answer":"Taking on supplies"},
@@ -2549,7 +2549,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag5.jpg",
+					"image":"flag1.jpg",
 					"answers":[
 						{"correct":true,"answer":"Charlie"},
 						{"answer":"Sierra"},
@@ -2559,7 +2559,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag6.jpg",
+					"image":"flag12.jpg",
 					"answers":[
 						{"correct":true,"answer":"Foxtrot"},
 						{"answer":"Charlie"},
@@ -2569,7 +2569,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag7.jpg",
+					"image":"flag4.jpg",
 					"answers":[
 						{"correct":true,"answer":"Golf"},
 						{"answer":"Quebec"},
@@ -2579,7 +2579,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag8.jpg",
+					"image":"flag11.jpg",
 					"answers":[
 						{"correct":true,"answer":"India"},
 						{"answer":"Oscar"},
@@ -2589,7 +2589,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag9.jpg",
+					"image":"flag13.jpg",
 					"answers":[
 						{"correct":true,"answer":"Juliet"},
 						{"answer":"Alpha"},
@@ -2599,7 +2599,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag10.jpg",
+					"image":"flag9.jpg",
 					"answers":[
 						{"correct":true,"answer":"Lima"},
 						{"answer":"Charlie"},
@@ -2609,7 +2609,7 @@
 				},
 				{
 					"question":"What situation does this signal flag indicate?",
-					"image":"flag11.jpg",
+					"image":"flag5.jpg",
 					"answers":[
 						{"correct":true,"answer":"Man Overboard"},
 						{"answer":"Need resupply"},
@@ -2619,7 +2619,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag12.jpg",
+					"image":"flag6.jpg",
 					"answers":[
 						{"correct":true,"answer":"Papa"},
 						{"answer":"Alpha"},
@@ -2629,7 +2629,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag13.jpg",
+					"image":"flag10.jpg",
 					"answers":[
 						{"correct":true,"answer":"Quebec"},
 						{"answer":"Hotel"},
@@ -2639,7 +2639,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag14.jpg",
+					"image":"flag8.jpg",
 					"answers":[
 						{"correct":true,"answer":"Romeo"},
 						{"answer":"Juliet"},
@@ -2649,7 +2649,7 @@
 				},
 				{
 					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag15.jpg",
+					"image":"flag7.jpg",
 					"answers":[
 						{"correct":true,"answer":"Sierra"},
 						{"answer":"India"},
