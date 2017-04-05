@@ -1537,7 +1537,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"openchock.jpg",
 					"answers":[
 						{"answer":"Cleat"},
 						{"answer":"Bitts"},
@@ -1547,7 +1547,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"closedchock.jpg",
 					"answers":[
 						{"correct":true,"answer":"Closed chock"},
 						{"answer":"Cleat"},
@@ -1593,7 +1593,7 @@
 				},
 				{
 					"question":"How many fathoms does this indicate?",
-					"image":"image.jpg",
+					"image":"chain1.jpg",
 					"answers":[
 						{"answer":"60 "},
 						{"answer":"45 "},
@@ -1603,7 +1603,7 @@
 				},
 				{
 					"question":"How many fathoms does this indicate?",
-					"image":"image.jpg",
+					"image":"chain2.jpg",
 					"answers":[
 						{"answer":"60 "},
 						{"answer":"45 "},
@@ -1613,7 +1613,7 @@
 				},
 				{
 					"question":"How many fathoms does this indicate?",
-					"image":"image.jpg",
+					"image":"chain3.jpg",
 					"answers":[
 						{"answer":"60 "},
 						{"correct":true,"answer":"45 "},
@@ -1623,7 +1623,7 @@
 				},
 				{
 					"question":"How many fathoms does this indicate?",
-					"image":"image.jpg",
+					"image":"chain4.jpg",
 					"answers":[
 						{"correct":true,"answer":"60 "},
 						{"answer":"45 "},
@@ -1633,7 +1633,7 @@
 				},
 				{
 					"question":"How many fathoms does this indicate?",
-					"image":"image.jpg",
+					"image":"chain5.jpg",
 					"answers":[
 						{"answer":"45 "},
 						{"answer":"60 "},
@@ -1643,7 +1643,7 @@
 				},
 				{
 					"question":"How many fathoms does this indicate?",
-					"image":"image.jpg",
+					"image":"chain6.jpg",
 					"answers":[
 						{"answer":"45 "},
 						{"answer":"60 "},
@@ -1707,7 +1707,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"ladder.jpg",
 					"answers":[
 						{"correct":true,"answer":"Accommodation Ladder"},
 						{"answer":"Gangplank"},
@@ -1717,7 +1717,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"chafing.jpg",
 					"answers":[
 						{"correct":true,"answer":"Chafing gear"},
 						{"answer":"Bollard"},
@@ -1727,7 +1727,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"padeye.jpg",
 					"answers":[
 						{"correct":true,"answer":"Pad Eye"},
 						{"answer":"Bitts"},
@@ -1737,7 +1737,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"fender.jpg",
 					"answers":[
 						{"correct":true,"answer":"Fender"},
 						{"answer":"Roller chock"},
@@ -1747,7 +1747,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"ratguard.jpg",
 					"answers":[
 						{"correct":true,"answer":"Rat guard"},
 						{"answer":"Bitts"},
@@ -1757,7 +1757,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"cleat.jpg",
 					"answers":[
 						{"correct":true,"answer":"Cleat"},
 						{"answer":"Bitts"},
@@ -1767,6 +1767,7 @@
 				},
 				{
 					"question":"What are these?",
+					"image":"bitt.jpg",
 					"answers":[
 						{"answer":"Bollard"},
 						{"answer":"Roller chock"},
@@ -1776,7 +1777,7 @@
 				},
 				{
 					"question":"What is this?",
-					"image":"image.jpg",
+					"image":"bollard.jpg",
 					"answers":[
 						{"correct":true,"answer":"Bollard"},
 						{"answer":"Closed chock"},
@@ -2019,7 +2020,7 @@
 				},
 				{
 					"question":"What is this line handling technique called?",
-					"image":"image.jpg",
+					"image":"coil.jpg",
 					"answers":[
 						{"correct":true,"answer":"Coil Down"},
 						{"answer":"Fake Down"},
@@ -2029,6 +2030,7 @@
 				},
 				{
 					"question":"To _____ is to start with one end, lay circles of line on the deck, in a tight spiral.",
+					"image":"flemish.jpg",
 					"answers":[
 						{"answer":"Coil Down"},
 						{"answer":"Fake Down"},
