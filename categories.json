@@ -2040,7 +2040,7 @@
 				},
 				{
 					"question":"What is this line handling technique called?",
-					"image":"image.jpg",
+					"image":"fake.jpg",
 					"answers":[
 						{"answer":"Coil Down"},
 						{"answer":"Fake Down"},
@@ -2059,7 +2059,7 @@
 				},
 				{
 					"question":"What do you call this line handling action?",
-					"image":"image.jpg",
+					"image":"belay.jpg",
 					"answers":[
 						{"correct":true,"answer":"Belay"},
 						{"answer":"Cast Off"},
@@ -2132,7 +2132,7 @@
 				},
 				{
 					"question":"What is this line handling technique called? ",
-					"image":"image.jpg",
+					"image":"fake.jpg",
 					"answers":[
 						{"answer":"Coiling Down"},
 						{"correct":true,"answer":"Faking Down"},
@@ -2902,7 +2902,7 @@
 				},
 				{
 					"question":"What kind of knot is this?",
-					"image":"misc5.jpg",
+					"image":"square.jpg",
 					"answers":[
 						{"correct":true,"answer":"Square Knot"},
 						{"answer":"Clove Hitch"},
@@ -2912,7 +2912,7 @@
 				},
 				{
 					"question":"What kind of knot is this?",
-					"image":"misc6.jpg",
+					"image":"clove.jpg",
 					"answers":[
 						{"correct":true,"answer":"Clove Hitch"},
 						{"answer":"Square Knot"},
@@ -2922,7 +2922,7 @@
 				},
 				{
 					"question":"What kind of knot is this?",
-					"image":"misc7.jpg",
+					"image":"bowline.jpg",
 					"answers":[
 						{"correct":true,"answer":"Bowline"},
 						{"answer":"Square Knot"},
