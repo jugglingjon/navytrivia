@@ -2721,17 +2721,17 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone1.jpg",
+					"image":"cable.jpg",
 					"answers":[
 						{"answer":"Chestplate"},
-						{"correct":true,"answer":"Jackplug"},
-						{"answer":"Cable"},
+						{"answer":"Jackplug"},
+						{"correct":true,"answer":"Cable"},
 						{"answer":"Junction Box"}
 					]
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone2.jpg",
+					"image":"chestplate.jpg",
 					"answers":[
 						{"answer":"Headband"},
 						{"answer":"Receiver"},
@@ -2741,7 +2741,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone3.jpg",
+					"image":"headband.jpg",
 					"answers":[
 						{"correct":true,"answer":"Headband"},
 						{"answer":"Transmitter"},
@@ -2751,7 +2751,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone4.jpg",
+					"image":"jackplug.jpg",
 					"answers":[
 						{"answer":"Headband"},
 						{"answer":"Transmitter"},
@@ -2761,7 +2761,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone5.jpg",
+					"image":"junctionbox.jpg",
 					"answers":[
 						{"answer":"Headband"},
 						{"answer":"Receiver"},
@@ -2771,7 +2771,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone6.jpg",
+					"image":"neckstrap.jpg",
 					"answers":[
 						{"answer":"Headband"},
 						{"answer":"Receiver"},
@@ -2781,7 +2781,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone7.jpg",
+					"image":"receiver.jpg",
 					"answers":[
 						{"answer":"Headband"},
 						{"correct":true,"answer":"Receiver"},
@@ -2791,7 +2791,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone8.jpg",
+					"image":"transmitter.jpg",
 					"answers":[
 						{"correct":true,"answer":"Transmitter"},
 						{"answer":"Chestplate"},
@@ -2801,7 +2801,7 @@
 				},
 				{
 					"question":"What is this sound-powered phone component?",
-					"image":"telephone9.jpg",
+					"image":"tinselcord.jpg",
 					"answers":[
 						{"correct":true,"answer":"Tinsel cord"},
 						{"answer":"Neck strap"},
