@@ -2862,7 +2862,7 @@
 				},
 				{
 					"question":"What Flagstaff Insignia is this?",
-					"image":"misc1.jpg",
+					"image":"bird.jpg",
 					"answers":[
 						{"correct":true,"answer":"Spread Eagle"},
 						{"answer":"Ball"},
@@ -2872,7 +2872,7 @@
 				},
 				{
 					"question":"What Flagstaff Insignia is this?",
-					"image":"misc2.jpg",
+					"image":"halbert.jpg",
 					"answers":[
 						{"correct":true,"answer":"Halbert"},
 						{"answer":"Spread Eagle"},
@@ -2882,7 +2882,7 @@
 				},
 				{
 					"question":"What Flagstaff Insignia is this?",
-					"image":"misc3.jpg",
+					"image":"ball.jpg",
 					"answers":[
 						{"correct":true,"answer":"Ball"},
 						{"answer":"Spread Eagle"},
@@ -2892,7 +2892,7 @@
 				},
 				{
 					"question":"What Flagstaff Insignia is this?",
-					"image":"misc4.jpg",
+					"image":"star.jpg",
 					"answers":[
 						{"correct":true,"answer":"Star"},
 						{"answer":"Spread Eagle"},
