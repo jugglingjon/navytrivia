@@ -18,9 +18,10 @@ var $data,
 	$correctScore=100,
 	$bonusScore=100,
 	$gameData=[],
-	$localKey='navyTriviaData',
+	$localKey='navyTriviaDataAlpha',
 	$currentScreen='screen-categories',
-	$lastScreen='screen-categories';
+	$lastScreen='screen-categories',
+	$version='1.0';
 
 var $startTime,
 	$questionTimer,
@@ -667,6 +668,9 @@ function init(data){
 }
 
 $(document).ready(function(){
+
+	//populate version number
+	$('#version').text('v'+$version);
 
 	//implement fastclick
 	FastClick.attach(document.body);

@@ -1049,7 +1049,7 @@
 			"title": "Ship Structure",
 			"slug": "shipstructure",
 			"image": true,
-			"description": "Ship structure description.",
+			"description": "Understanding the general layout and important parts of a ship.",
 			"tags":[
 				"Basic Seamanship"
 			],
@@ -1451,10 +1451,10 @@
 
 		},
 		{
-			"title": "Deck Seamanship Equipment",
+			"title": "Deck Equipment",
 			"slug": "deckequipment",
 			"image": true,
-			"description": "Deck seamanship equipment description.",
+			"description": "Understanding depth measurements and equipment used to secure a ship.",
 			"tags":[
 				"Basic Seamanship"
 			],
@@ -1838,7 +1838,7 @@
 			"title": "Line handling",
 			"slug": "linehandling",
 			"image": true,
-			"description": "Line handling description.",
+			"description": "Types, materials and techniques associated with line handling.",
 			"tags":[
 				"Basic Seamanship"
 			],
@@ -2167,7 +2167,7 @@
 			"title": "Anchors",
 			"slug": "anchors",
 			"image": true,
-			"description": "Anchors description.",
+			"description": "Understanding the anatomy, specifications, and types of anchors.",
 			"tags":[
 				"Basic Seamanship"
 			],
@@ -2488,334 +2488,10 @@
 
 		},
 		{
-			"title": "Signal Flags & Pennants",
-			"slug": "flags",
-			"image": true,
-			"description": "Flags description.",
-			"tags":[
-				"Basic Seamanship"
-			],
-			"highScore": 0,
-			"lastScore": 0,
-			"cumulativeScore":0,
-			"played":0,
-			"questions":[
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag2.jpg",
-					"answers":[
-						{"correct":true,"answer":"Alpha"},
-						{"answer":"Golf"},
-						{"answer":"Hotel"},
-						{"answer":"India"}
-					]
-				},
-				{
-					"question":"What situation does this signal flag indicate?",
-					"image":"flag2.jpg",
-					"answers":[
-						{"correct":true,"answer":"Man in the water"},
-						{"answer":"Man Overboard"},
-						{"answer":"Dead in the water"},
-						{"answer":"Taking on supplies"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag3.jpg",
-					"answers":[
-						{"correct":true,"answer":"Bravo"},
-						{"answer":"November"},
-						{"answer":"Oscar"},
-						{"answer":"Papa"}
-					]
-				},
-				{
-					"question":"What situation does this signal flag indicate?",
-					"image":"flag3.jpg",
-					"answers":[
-						{"correct":true,"answer":"Engaged with dangerous cargo"},
-						{"answer":"Taking on supplies"},
-						{"answer":"Ahead full"},
-						{"answer":"In distress"}
-					]
-				},
-				{
-				"question":"Which flag means taking in, discharging, or handling dangerous materials?",
-					"answers":[
-						{"answer":"Alfa"},
-						{"correct":true,"answer":"Bravo"},
-						{"answer":"Foxtrot"},
-						{"answer":"Hotel"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag1.jpg",
-					"answers":[
-						{"correct":true,"answer":"Charlie"},
-						{"answer":"Sierra"},
-						{"answer":"Tango"},
-						{"answer":"Uniform"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag12.jpg",
-					"answers":[
-						{"correct":true,"answer":"Foxtrot"},
-						{"answer":"Charlie"},
-						{"answer":"Delta"},
-						{"answer":"Echo"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag4.jpg",
-					"answers":[
-						{"correct":true,"answer":"Golf"},
-						{"answer":"Quebec"},
-						{"answer":"Romeo"},
-						{"answer":"Sierra"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag11.jpg",
-					"answers":[
-						{"correct":true,"answer":"India"},
-						{"answer":"Oscar"},
-						{"answer":"Papa"},
-						{"answer":"Quebec"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag13.jpg",
-					"answers":[
-						{"correct":true,"answer":"Juliet"},
-						{"answer":"Alpha"},
-						{"answer":"Bravo"},
-						{"answer":"Charlie"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag9.jpg",
-					"answers":[
-						{"correct":true,"answer":"Lima"},
-						{"answer":"Charlie"},
-						{"answer":"Quebec"},
-						{"answer":"Romeo"}
-					]
-				},
-				{
-					"question":"What situation does this signal flag indicate?",
-					"image":"flag5.jpg",
-					"answers":[
-						{"correct":true,"answer":"Man Overboard"},
-						{"answer":"Need resupply"},
-						{"answer":"Alert"},
-						{"answer":"Caution"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag6.jpg",
-					"answers":[
-						{"correct":true,"answer":"Papa"},
-						{"answer":"Alpha"},
-						{"answer":"Bravo"},
-						{"answer":"Charlie"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag10.jpg",
-					"answers":[
-						{"correct":true,"answer":"Quebec"},
-						{"answer":"Hotel"},
-						{"answer":"India"},
-						{"answer":"Juliet"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag8.jpg",
-					"answers":[
-						{"correct":true,"answer":"Romeo"},
-						{"answer":"Juliet"},
-						{"answer":"Kilo"},
-						{"answer":"Lima"}
-					]
-				},
-				{
-					"question":"What letter designation does this signal flag indicate?",
-					"image":"flag7.jpg",
-					"answers":[
-						{"correct":true,"answer":"Sierra"},
-						{"answer":"India"},
-						{"answer":"Juliet"},
-						{"answer":"Kilo"}
-					]
-				}
-			]
-		},
-		{
-			"title": "Sound-Powered Telephones",
-			"slug": "telephones",
-			"image": true,
-			"description": "Sound-Powered Telephones description.",
-			"tags":[
-				"Basic Seamanship"
-			],
-			"highScore": 0,
-			"lastScore": 0,
-			"cumulativeScore":0,
-			"played":0,
-			"questions":[
-				{
-					"question":"What does the operator of a sound powered phone speak into to send a message?",
-					"answers":[
-						{"answer":"Handset"},
-						{"answer":"Headset"},
-						{"correct":true,"answer":"Transmitter"},
-						{"answer":"Receiver"}
-					]
-				},
-				{
-					"question":"Which is NOT part of sending a message on a sound-powered phone?",
-					"answers":[
-						{"answer":"Name of station being called"},
-						{"answer":"Identify your station"},
-						{"answer":"Send Message"},
-						{"correct":true,"answer":"End messages with “Over”"}
-					]
-				},
-				{
-					"question":"The JA system is for which station?",
-					"answers":[
-						{"correct":true,"answer":"Captain’s Battle Circuit"},
-						{"answer":"Weapons Control"},
-						{"answer":"Lookouts"},
-						{"answer":"Navigation"}
-					]
-				},
-				{
-					"question":"On sound-powered circuits aboard ships, the JL system is for which station?",
-					"answers":[
-						{"answer":"Captain’s Battle Circuit"},
-						{"answer":"Weapons Control"},
-						{"correct":true,"answer":"Lookouts"},
-						{"answer":"Navigation"}
-					]
-				},
-				{
-					"question":"The JW system is for which station?",
-					"answers":[
-						{"answer":"Captain’s Battle Circuit"},
-						{"answer":"Weapons Control"},
-						{"answer":"Lookouts"},
-						{"correct":true,"answer":"Navigation"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"cable.jpg",
-					"answers":[
-						{"answer":"Chestplate"},
-						{"answer":"Jackplug"},
-						{"correct":true,"answer":"Cable"},
-						{"answer":"Junction Box"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"chestplate.jpg",
-					"answers":[
-						{"answer":"Headband"},
-						{"answer":"Receiver"},
-						{"answer":"Transmitter"},
-						{"correct":true,"answer":"Chestplate"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"headband.jpg",
-					"answers":[
-						{"correct":true,"answer":"Headband"},
-						{"answer":"Transmitter"},
-						{"answer":"Chestplate"},
-						{"answer":"Jackplug"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"jackplug.jpg",
-					"answers":[
-						{"answer":"Headband"},
-						{"answer":"Transmitter"},
-						{"answer":"Chestplate"},
-						{"correct":true,"answer":"Jackplug"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"junctionbox.jpg",
-					"answers":[
-						{"answer":"Headband"},
-						{"answer":"Receiver"},
-						{"answer":"Tinsel cord"},
-						{"correct":true,"answer":"Junction Box"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"neckstrap.jpg",
-					"answers":[
-						{"answer":"Headband"},
-						{"answer":"Receiver"},
-						{"answer":"Tinsel cord"},
-						{"correct":true,"answer":"Neck strap"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"receiver.jpg",
-					"answers":[
-						{"answer":"Headband"},
-						{"correct":true,"answer":"Receiver"},
-						{"answer":"Transmitter"},
-						{"answer":"Cable"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"transmitter.jpg",
-					"answers":[
-						{"correct":true,"answer":"Transmitter"},
-						{"answer":"Chestplate"},
-						{"answer":"Cable"},
-						{"answer":"Junction Box"}
-					]
-				},
-				{
-					"question":"What is this sound-powered phone component?",
-					"image":"tinselcord.jpg",
-					"answers":[
-						{"correct":true,"answer":"Tinsel cord"},
-						{"answer":"Neck strap"},
-						{"answer":"Transmitter"},
-						{"answer":"Junction Box"}
-					]
-				}
-			]
-		},
-		{
-			"title": "Misc",
+			"title": "Basic Seamanship",
 			"slug": "misc",
 			"image": true,
-			"description": "Misc description.",
+			"description": "Sound-powered telephones, flags and pennants, and flagstaff insignia.",
 			"tags":[
 				"Basic Seamanship"
 			],
@@ -3010,7 +2686,305 @@
 						{"answer":"Distance between two points"},
 						{"answer":"Sea turbulence"}
 					]
+				},
+
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag2.jpg",
+					"answers":[
+						{"correct":true,"answer":"Alpha"},
+						{"answer":"Golf"},
+						{"answer":"Hotel"},
+						{"answer":"India"}
+					]
+				},
+				{
+					"question":"What situation does this signal flag indicate?",
+					"image":"flag2.jpg",
+					"answers":[
+						{"correct":true,"answer":"Man in the water"},
+						{"answer":"Man Overboard"},
+						{"answer":"Dead in the water"},
+						{"answer":"Taking on supplies"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag3.jpg",
+					"answers":[
+						{"correct":true,"answer":"Bravo"},
+						{"answer":"November"},
+						{"answer":"Oscar"},
+						{"answer":"Papa"}
+					]
+				},
+				{
+					"question":"What situation does this signal flag indicate?",
+					"image":"flag3.jpg",
+					"answers":[
+						{"correct":true,"answer":"Engaged with dangerous cargo"},
+						{"answer":"Taking on supplies"},
+						{"answer":"Ahead full"},
+						{"answer":"In distress"}
+					]
+				},
+				{
+				"question":"Which flag means taking in, discharging, or handling dangerous materials?",
+					"answers":[
+						{"answer":"Alfa"},
+						{"correct":true,"answer":"Bravo"},
+						{"answer":"Foxtrot"},
+						{"answer":"Hotel"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag1.jpg",
+					"answers":[
+						{"correct":true,"answer":"Charlie"},
+						{"answer":"Sierra"},
+						{"answer":"Tango"},
+						{"answer":"Uniform"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag12.jpg",
+					"answers":[
+						{"correct":true,"answer":"Foxtrot"},
+						{"answer":"Charlie"},
+						{"answer":"Delta"},
+						{"answer":"Echo"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag4.jpg",
+					"answers":[
+						{"correct":true,"answer":"Golf"},
+						{"answer":"Quebec"},
+						{"answer":"Romeo"},
+						{"answer":"Sierra"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag11.jpg",
+					"answers":[
+						{"correct":true,"answer":"India"},
+						{"answer":"Oscar"},
+						{"answer":"Papa"},
+						{"answer":"Quebec"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag13.jpg",
+					"answers":[
+						{"correct":true,"answer":"Juliet"},
+						{"answer":"Alpha"},
+						{"answer":"Bravo"},
+						{"answer":"Charlie"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag9.jpg",
+					"answers":[
+						{"correct":true,"answer":"Lima"},
+						{"answer":"Charlie"},
+						{"answer":"Quebec"},
+						{"answer":"Romeo"}
+					]
+				},
+				{
+					"question":"What situation does this signal flag indicate?",
+					"image":"flag5.jpg",
+					"answers":[
+						{"correct":true,"answer":"Man Overboard"},
+						{"answer":"Need resupply"},
+						{"answer":"Alert"},
+						{"answer":"Caution"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag6.jpg",
+					"answers":[
+						{"correct":true,"answer":"Papa"},
+						{"answer":"Alpha"},
+						{"answer":"Bravo"},
+						{"answer":"Charlie"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag10.jpg",
+					"answers":[
+						{"correct":true,"answer":"Quebec"},
+						{"answer":"Hotel"},
+						{"answer":"India"},
+						{"answer":"Juliet"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag8.jpg",
+					"answers":[
+						{"correct":true,"answer":"Romeo"},
+						{"answer":"Juliet"},
+						{"answer":"Kilo"},
+						{"answer":"Lima"}
+					]
+				},
+				{
+					"question":"What letter designation does this signal flag indicate?",
+					"image":"flag7.jpg",
+					"answers":[
+						{"correct":true,"answer":"Sierra"},
+						{"answer":"India"},
+						{"answer":"Juliet"},
+						{"answer":"Kilo"}
+					]
+				},
+
+				{
+					"question":"What does the operator of a sound powered phone speak into to send a message?",
+					"answers":[
+						{"answer":"Handset"},
+						{"answer":"Headset"},
+						{"correct":true,"answer":"Transmitter"},
+						{"answer":"Receiver"}
+					]
+				},
+				{
+					"question":"Which is NOT part of sending a message on a sound-powered phone?",
+					"answers":[
+						{"answer":"Name of station being called"},
+						{"answer":"Identify your station"},
+						{"answer":"Send Message"},
+						{"correct":true,"answer":"End messages with “Over”"}
+					]
+				},
+				{
+					"question":"The JA system is for which station?",
+					"answers":[
+						{"correct":true,"answer":"Captain’s Battle Circuit"},
+						{"answer":"Weapons Control"},
+						{"answer":"Lookouts"},
+						{"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"On sound-powered circuits aboard ships, the JL system is for which station?",
+					"answers":[
+						{"answer":"Captain’s Battle Circuit"},
+						{"answer":"Weapons Control"},
+						{"correct":true,"answer":"Lookouts"},
+						{"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"The JW system is for which station?",
+					"answers":[
+						{"answer":"Captain’s Battle Circuit"},
+						{"answer":"Weapons Control"},
+						{"answer":"Lookouts"},
+						{"correct":true,"answer":"Navigation"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"cable.jpg",
+					"answers":[
+						{"answer":"Chestplate"},
+						{"answer":"Jackplug"},
+						{"correct":true,"answer":"Cable"},
+						{"answer":"Junction Box"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"chestplate.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Receiver"},
+						{"answer":"Transmitter"},
+						{"correct":true,"answer":"Chestplate"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"headband.jpg",
+					"answers":[
+						{"correct":true,"answer":"Headband"},
+						{"answer":"Transmitter"},
+						{"answer":"Chestplate"},
+						{"answer":"Jackplug"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"jackplug.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Transmitter"},
+						{"answer":"Chestplate"},
+						{"correct":true,"answer":"Jackplug"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"junctionbox.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Receiver"},
+						{"answer":"Tinsel cord"},
+						{"correct":true,"answer":"Jack Box"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"neckstrap.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"answer":"Receiver"},
+						{"answer":"Tinsel cord"},
+						{"correct":true,"answer":"Neck strap"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"receiver.jpg",
+					"answers":[
+						{"answer":"Headband"},
+						{"correct":true,"answer":"Receiver"},
+						{"answer":"Transmitter"},
+						{"answer":"Cable"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"transmitter.jpg",
+					"answers":[
+						{"correct":true,"answer":"Transmitter"},
+						{"answer":"Chestplate"},
+						{"answer":"Cable"},
+						{"answer":"Junction Box"}
+					]
+				},
+				{
+					"question":"What is this sound-powered phone component?",
+					"image":"tinselcord.jpg",
+					"answers":[
+						{"correct":true,"answer":"Tinsel cord"},
+						{"answer":"Neck strap"},
+						{"answer":"Transmitter"},
+						{"answer":"Junction Box"}
+					]
 				}
+			
+			
 			]
 		}
 	]
