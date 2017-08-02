@@ -2986,6 +2986,282 @@
 			
 			
 			]
+		},
+		{
+			"title": "Damage Control",
+			"slug": "damagecontrol",
+			"image": true,
+			"description": "Emergency control of situations that may cause the sinking of a watercraft.",
+			"tags":[
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question": "The _____ is the most often used patch for temporarily repairing a ruptured pipe.",
+					"answers":[
+						{"answer":"EWARP"},
+						{"correct":true,"answer":"Jubilee"},
+						{"answer":"Soft "},
+						{"answer":"Bucket "}
+					]
+				},
+				{
+					"question": "What does the '0' represent in compartment identification number 3-75-0-L?",
+					"answers":[
+						{"answer":"Maindeck"},
+						{"correct":true,"answer":"Centerline"},
+						{"answer":"Flight Deck"},
+						{"answer":"Heaving Line"}
+					]
+				},
+				{
+					"question": "Where is the damage control closure log maintained when Damage Control Central is manned 24-7?",
+					"answers":[
+						{"answer":"Bridge"},
+						{"answer":"Engineering Log Room"},
+						{"answer":"Quarterdeck"},
+						{"correct":true,"answer":"Damage Control Central"}
+					]
+				},
+				{
+					"question": "Material condition _____ provides the most protection against fire and flooding.",
+					"answers":[
+						{"answer":"Yoke"},
+						{"answer":"William"},
+						{"correct":true,"answer":"Zebra"},
+						{"answer":"Circle Zebra"}
+					]
+				},
+				{
+					"question": "Material condition _____ provides the least protection against fire and flooding.",
+					"answers":[
+						{"correct":true,"answer":"X-Ray"},
+						{"answer":"Circle William"},
+						{"answer":"Yoke"},
+						{"answer":"Modified-Yolk"}
+					]
+				},
+				{
+					"question": "The watertight fitting that provides access through a deck is a _____.",
+					"answers":[
+						{"answer":"QAWTD"},
+						{"answer":"Watertight Scuttle"},
+						{"correct":true,"answer":"Watertight Hatch"},
+						{"answer":"Watertight Door"}
+					]
+				},
+				{
+					"question": "Which alarm is a series of ‘Single Gong Tones'?",
+					"answers":[
+						{"correct":true,"answer":"General"},
+						{"answer":"Collision"},
+						{"answer":"Chemical"},
+						{"answer":"Chow"}
+					]
+				},
+				{
+					"question": "A ships’ stability is its’ ability to _____.",
+					"answers":[
+						{"answer":"Stay afloat"},
+						{"correct":true,"answer":"Resist pitch and roll"},
+						{"answer":"Sustain missile attack"},
+						{"answer":"Sail through waves"}
+					]
+				},
+				{
+					"question": "What document identifies all Damage Control fittings within a space?",
+					"answers":[
+						{"answer":"Damage Control Fittings Report"},
+						{"answer":"Material Condition List"},
+						{"correct":true,"answer":"Compartment Check Off List"},
+						{"answer":"Damage Control Log"}
+					]
+				},
+				{
+					"question": "What uses individually operated dogs to secure it?",
+					"answers":[
+						{"answer":"Emergency Escape Scuttle"},
+						{"answer":"Quick Acting Watertight Door"},
+						{"answer":"Waterproof Hatch"},
+						{"correct":true,"answer":"Watertight Door"}
+					]
+				},
+				{
+					"question": "Which Damage Control procedure is used to strengthen weakened bulkheads, decks, hatches, or doors?",
+					"answers":[
+						{"answer":"Plugging"},
+						{"answer":"Patching"},
+						{"correct":true,"answer":"Shoring"},
+						{"answer":"Welding"}
+					]
+				},
+				{
+					"question": "What is put in holes to stop flooding?",
+					"answers":[
+						{"answer":"Jubilee Patch"},
+						{"answer":"Bucket Patch"},
+						{"correct":true,"answer":"DC Plugs"},
+						{"answer":"EWARP"}
+					]
+				},
+				{
+					"question": "Watertight Integrity is a ships ability to _____.",
+					"answers":[
+						{"correct":true,"answer":"Resist flooding"},
+						{"answer":"Stay afloat"},
+						{"answer":"Sail in rough seas"},
+						{"answer":"Float in water"}
+					]
+				},
+				{
+					"question": "Fittings classified _____ may ONLY be opened with the commanding officers approval.",
+					"answers":[
+						{"answer":"Circle William"},
+						{"answer":"Dog Zebra"},
+						{"correct":true,"answer":"Circle Zebra"},
+						{"answer":"William"}
+					]
+				},
+				{
+					"question": "Fittings classified _____ are used during “darken ship” to prevent light from escaping the ship at night.",
+					"answers":[
+						{"answer":"William"},
+						{"answer":"X-Ray"},
+						{"correct":true,"answer":"Dog Zebra"},
+						{"answer":"Circle Zebra"}
+					]
+				},
+				{
+					"question": "What material condition of readiness allows for maximum ease of movement throughout the ship?",
+					"answers":[
+						{"answer":"Zebra"},
+						{"answer":"Yoke"},
+						{"correct":true,"answer":"X-Ray"},
+						{"answer":"Dog Zebra"}
+					]
+				},
+				{
+					"question": "What must be present at any open Circle Zebra fitting?",
+					"answers":[
+						{"answer":"Entry Log"},
+						{"answer":"Phone"},
+						{"correct":true,"answer":"Watch"},
+						{"answer":"CO2 Extinguisher"}
+					]
+				},
+				{
+					"question": "How many parts are in the Compartment Identification number?",
+					"answers":[
+						{"correct":true,"answer":"4"},
+						{"answer":"5"},
+						{"answer":"3"},
+						{"answer":"6"}
+					]
+				},
+				{
+					"question": "Watertight fitting identification numbers contain how many parts?",
+					"answers":[
+						{"correct":true,"answer":"3"},
+						{"answer":"4"},
+						{"answer":"2"},
+						{"answer":"5"}
+					]
+				},
+				{
+					"question": "What watertight fitting is a round opening with a quick acting securing device?",
+					"answers":[
+						{"answer":"Watertight Door"},
+						{"correct":true,"answer":"Escape scuttle"},
+						{"answer":"Watertight hatch"},
+						{"answer":"Quick-acting Watertight door"}
+				 	]
+				 },
+				{
+					"question": "What is the purpose/function of a room with the compartment identification number 3-175-2-F?",
+					"answers":[
+						{"answer":"Galley"},
+						{"correct":true,"answer":"Fuel Storage"},
+						{"answer":"Magazine"},
+						{"answer":"Berthing"}
+					]
+				},
+				{
+					"question": "What does the Chemical Alarm sound like?",
+					"answers":[
+						{"answer":"Series of single gong tones"},
+						{"correct":true,"answer":"Steady high pitch tone"},
+						{"answer":"Short high tones followed by ling deep tones"},
+						{"answer":"3 rings of the ships bell over IMC"}
+					]
+				},
+				{
+					"question": "When the collision alarm sounds, what is the first thing you should do?",
+					"answers":[
+						{"answer":"Lay flat on the floor"},
+						{"answer":"Secure for sea"},
+						{"answer":"Get under a desk"},
+						{"correct":true,"answer":"Brace for shock"}
+					]
+				},
+				{
+					"question": "Which damage control classification is attached to vital ship systems (fuel/firemain)?",
+					"answers":[
+						{"answer":"Circle William"},
+						{"correct":true,"answer":"William"},
+						{"answer":"Circle Zebra"},
+						{"answer":"Yoke"}
+					]
+				},
+				{
+					"question": "Compartment checkoff lists are posted at _____ in each compartment.",
+					"answers":[
+
+						{"answer":"Main entrance"},
+						{"correct":true,"answer":"Each entrance"},
+						{"answer":"Compartment Bulletin Board"}
+					]
+					},{"answer":"LCPO's Desk"},
+				 
+				{
+					"question": "Ventilation typically has which damage control classification assigned?",
+					"answers":[
+						{"answer":"Dog Zebra"},
+						{"answer":"William"},
+						{"correct":true,"answer":"Circle William"},
+						{"answer":"X-Ray"}
+					]
+				},
+				{
+					"question": "What is the purpose of watertight compartments?",
+					"answers":[
+						{"answer":"Safe place during flooding"},
+						{"answer":"Privacy for Officers and Chiefs"},
+						{"correct":true,"answer":"Control the spread of fire"},
+						{"answer":"Control stability and buoyancy of ship"}
+					]
+				},
+				{
+					"question": "What Material Condition is set during general quarters?",
+					"answers":[
+						{"answer":"X-Ray"},
+						{"answer":"Circle Zebra"},
+						{"correct":true,"answer":"Zebra"},
+						{"answer":"Yoke"}
+					]
+				},
+				{
+					"question": "Dog Zebra is represented by a red 'Z' within a _______.",
+					"answers":[
+						{"answer":"Red 'D'"},
+						{"answer":"Blue 'D'"},
+						{"correct":true,"answer":"Black 'D'"},
+						{"answer":"Yellow 'D'"}
+					]
+				}	
+			]
 		}
 	]
 }
