@@ -251,6 +251,17 @@
 					"operator": "===",
 					"threshold": true
 				}
+			},
+			{
+				"title":"Under Control",
+				"slug": "damagecontrolman",
+				"description": "Correctly answer all questions in Damage Control",
+				"image": true,
+				"criteria":{
+					"stat": "isComplete('damagecontrol').boolean",
+					"operator": "===",
+					"threshold": true
+				}
 			}
 		]
 	,
