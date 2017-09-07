@@ -93,17 +93,17 @@ Examples:
 @neutral: @uiGreyMedium;
 
 //text sizes
-@text-small: 12px;
-@text-base: 16px;
-@text-medium: 22px;
-@text-large: 28px;
-@text-huge: 36px;
+@text-small: .75rem;
+@text-base: 1rem;
+@text-medium: 1.375rem;
+@text-large: 1.75rem;
+@text-huge: 2.25rem;
 
 //paddings
 @basePadding: 30px;
 @lessPadding: 20px;
 
-
+@smartphones: ~"only screen and (max-width: 767px)";
 
 // ====================================
 // 				^Fonts
@@ -144,6 +144,11 @@ html, body{
 
 html{
 	background-color: @backgroundGradientEnd;
+	font-size: 16px;
+
+	@media @smartphones{
+		font-size: 12px;
+	}
 }
 
 body{
@@ -243,8 +248,13 @@ a:hover{
 
 header{
 	height: 100px;
-	padding: @basePadding !important;
+	padding: @lessPadding !important;
 	z-index:10;
+
+	@media @smartphones{
+		height:80px;
+		padding: @lessPadding !important;
+	}
 
 	background: linear-gradient(to right, @headerGradientStart 0%,@headerGradientEnd 100%);
 
@@ -252,6 +262,10 @@ header{
 		text-align:center;
 		font-size: @text-large;
 		text-transform:uppercase;
+
+		@media @smartphones{
+			margin-top:8px;
+		}
 	}
 
 	a{
@@ -289,6 +303,20 @@ header{
 		.tag-select{
 
 		}
+
+		@media @smartphones{
+			padding: @basePadding;
+			padding-bottom:0;
+			.dropdown{
+				display:block;
+				width:100%;
+
+				.dropdown-select{
+					display:block;
+					width:100%;
+				}
+			}
+		}
 	}
 
 }
@@ -301,12 +329,19 @@ header{
 .categories-list{
 	padding: @basePadding 0 2*@basePadding 2*@basePadding;
 
+	@media @smartphones{
+		padding: @basePadding;
+	}
+
 	.category,.achievement{
 		display:block;
 		width: 236px;
 		height: 342px;
 		float:left;
 		padding: @basePadding @basePadding*2 @basePadding 0;
+		
+		
+
 
 		// &:nth-child(1){
 		// 	padding-left:0;
@@ -321,6 +356,14 @@ header{
 		color: @text;
 		font-size: 21px;
 
+		@media @smartphones{
+			padding: 0 10px;
+			width: 50%;
+			height: 262px;
+			position:static !important;
+			font-size: 18px;
+		}
+
 		.category-image-wrapper,.achievement-image-wrapper{
 			position: relative;
 			border-radius: 50%;
@@ -331,15 +374,25 @@ header{
 			background: radial-gradient(ellipse at center, #30A1C1 0%,#217E8F 100%);
 			border:5px solid @highlightMuted;
 
+			@media @smartphones{
+				height: 140px;
+				width: 100%;
+			}
+
 			img{
 				display:block;
 				position: absolute;
-				width:80px;
+				height:85px;
+				width: auto;
 				top: 50%;
 				left: 0;
 				right: 0;
 				transform: translateY(-50%);
 				margin: 0 auto;
+
+				@media @smartphones{
+					height: 65px;
+				}
 			}
 
 		}
@@ -377,6 +430,10 @@ header{
 
 	padding-top: 100px;
 
+	@media @smartphones{
+		padding-top:80px;
+	}
+
 	background-color:white;
 
 	&.header{
@@ -408,6 +465,11 @@ header{
 
 			text-align:center;
 			color: @text;
+
+			@media @smartphones{
+				width:50%;
+				margin:0;
+			}
 
 			.achievement-image-wrapper{
 				margin-bottom: @lessPadding;
@@ -460,7 +522,6 @@ header{
 					color: @uiGreyDark;
 				}
 			}
-
 			
 		}
 
@@ -579,6 +640,10 @@ header{
 		line-height: 60px;
 		color:@text;
 		font-size: 60px;
+
+		@media @smartphones{
+			right:6px;
+		}
 	}
 
 	.modal-dialog,.modal-content,.modal-body{
@@ -590,6 +655,10 @@ header{
 		width: auto;
 		margin:0;
 		top:140px;
+
+		@media @smartphones{
+			top:110px;
+		}
 	}
 
 	.modal-body{
@@ -642,12 +711,32 @@ header{
 				img{
 					display:block;
 					position: absolute;
-					width:80px;
+					height:80px;
+					width: auto;
 					top: 50%;
 					left: 0;
 					right: 0;
 					transform: translateY(-50%);
 					margin: 0 auto;
+				}
+
+			}
+
+			@media @smartphones{
+				width:340px;
+				padding:@lessPadding;
+				.category-description{
+					margin-bottom:20px;
+				}
+
+				.category-image-wrapper, .achievement-image-wrapper{
+					width:120px !important;
+					height:120px !important;
+
+					img{
+						height:70px;
+					}
+
 				}
 
 			}
@@ -670,6 +759,10 @@ header{
 			background: @gradientLight;
 			color:black;
 			text-align:center;
+
+			@media @smartphones{
+				width:340px;
+			}
 
 
 
@@ -824,6 +917,10 @@ header{
 
 	padding-top: 100px;
 
+	@media @smartphones{
+		padding-top:80px;
+	}
+
 	&.header{
 		padding-top: @basePadding;
 		position: fixed;
@@ -836,6 +933,10 @@ header{
 
 	.stats-cumulative{
 		padding: @lessPadding*2;
+
+		@media @smartphones{
+			padding:@lessPadding;
+		}
 
 		background: @background;
 
@@ -852,6 +953,10 @@ header{
 				text-align:center;
 				border-right: 1px solid #E1E1E1;
 
+				@media @smartphones{
+					border:0;
+				}
+
 				&:last-child{
 					border-right:0;
 				}
@@ -862,6 +967,9 @@ header{
 					color: #fff;
 					font-size: 70px;
 					font-weight: @light;
+					@media @smartphones{
+						font-size:48px;
+					}
 				}
 
 				h4{
@@ -870,6 +978,10 @@ header{
 					text-transform: uppercase;
 					font-weight:@normal;
 					font-size: @text-base;
+
+					@media @smartphones{
+						font-size: 10px;
+					}
 				}
 			}
 		}
@@ -888,6 +1000,10 @@ header{
 
 		border: 1px solid @progressDarkBorder;
 		background: @progressDarkBack;
+
+		@media @smartphones{
+			margin: 10px 0 @lessPadding 0;
+		}
 		
 
 		.stats-questions-completed-inner{
@@ -916,10 +1032,21 @@ header{
 
 		background: linear-gradient(to bottom, #ffffff 0%,#ffffff 66%,#c3ccd1 100%);
 
+
 		.btn{
 			position: absolute;
 			right: @lessPadding*2;
 			top: @lessPadding*2-10;
+		}
+
+		@media @smartphones{
+			padding: @lessPadding;
+
+			.btn{
+				right: @lessPadding;
+				top: @lessPadding - 5;
+				padding: 6px 16px;
+			}
 		}
 
 		.stats-latest-achievements-list{
@@ -948,6 +1075,14 @@ header{
 					opacity: .8;
 					z-index:9
 				}
+
+				@media @smartphones{
+					padding: 0 10px;
+
+					&::after{
+						display:none;
+					}
+				}
 				
 			}
 		}
@@ -955,6 +1090,10 @@ header{
 	
 	.stats-categories{
 		padding: @lessPadding*2;
+
+		@media @smartphones{
+			padding: @lessPadding;
+		}
 
 		background-color:white;
 
@@ -977,13 +1116,18 @@ header{
 
 					img{
 						position:absolute;
-						width: 100px;
+						height: 100px;
+						width: auto;
 						top: 50%;
 						left:0;
 						right:0;
 						transform: translateY(-50%);
 
 						margin: 0 auto;
+
+						@media @smartphones{
+							height: 60px;
+						}
 					}
 				}
 
@@ -992,6 +1136,8 @@ header{
 					width: 75%;
 					padding: @basePadding;
 
+					
+
 					&>h3{
 						font-size: 30px;
 						margin-top: 0;
@@ -999,9 +1145,24 @@ header{
 						color: @highlightDeep;
 					}
 
+					@media @smartphones{
+						padding: 10px;
+
+						&>h3{
+							font-size: 20px;
+						}
+
+						.category-complete-number{
+							font-size: 20px;
+						}
+					}
+
 					.category-data{
 						.category-stats{
 							margin-bottom:0;
+							@media @smartphones{
+								margin-top: 10px;
+							}
 						}
 					}
 				}
@@ -1019,6 +1180,9 @@ header{
 
 .screen-game{
 	padding: @lessPadding*2+20 @lessPadding*2 @lessPadding*2 @lessPadding*2;
+	@media @smartphones{
+		padding:0;
+	}
 }
 
 .screen-game,.screen-end{
@@ -1029,6 +1193,11 @@ header{
 		height: 424px;
 		margin-bottom: @lessPadding*2;
 
+		@media @smartphones{
+			height:230px;
+			padding-top:60px;
+		}
+
 		.game-question{
 			display: table-cell;
 			width: 100%;
@@ -1037,6 +1206,11 @@ header{
 			font-weight:@light;
 			text-align:center;
 			vertical-align:middle;
+
+			@media @smartphones{
+				font-size:2.4rem;
+				padding: 0 10px;
+			}
 		}
 	}
 	
@@ -1061,6 +1235,15 @@ header{
 			color:white;
 			font-weight: @light;
 			text-align: center;
+		}
+
+		@media @smartphones{
+			height:200px;
+			margin-top:40px;
+			.game-question{
+				padding:4px;
+				font-size: 18px;
+			}
 		}
 	}
 
@@ -1089,6 +1272,17 @@ header{
 			.answer-text{
 				display: table-cell;
 				vertical-align: middle;
+			}
+
+			@media @smartphones{
+				width:48%;
+				height:150px;
+				margin-right:4%;
+				font-size:@text-large;
+
+				&:nth-child(2n){
+					margin:0;
+				}
 			}
 		}
 	}
@@ -1135,6 +1329,10 @@ header{
 	left:0;
 
 	text-align:center;
+
+	@media @smartphones{
+		bottom:10px;
+	}
 	.game-progress-dot{
 		width: 12px;
 		height: 12px;
@@ -1163,6 +1361,10 @@ header{
 .screen-end{
 	padding-top: 100px;
 
+	@media @smartphones{
+		padding-top:80px;
+	}
+
 	.flickity-viewport{
 		height: 540px !important;
 	}
@@ -1182,12 +1384,20 @@ header{
 		background: @background;
 		.clearfix;
 
+		@media @smartphones{
+			padding: @lessPadding 0;
+		}
+
 		.end-score-wrapper{
 			width: 33%;
 			float:left;
 			padding: 0 @lessPadding*2;
 
 			text-align:center;
+
+			@media @smartphones{
+				padding: 0 10px;
+			}
 
 			&:nth-child(2){
 				border-left: 1px solid #E1E1E1;
@@ -1201,6 +1411,10 @@ header{
 				color: @highlight;
 				font-size: 70px;
 				font-weight: @light;
+
+				@media @smartphones{
+					font-size:40px;
+				}
 			}
 
 			h1.end-score{
@@ -1211,6 +1425,8 @@ header{
 				text-transform:uppercase;
 			}
 		}
+
+		
 	}
 
 	.end-history-wrapper{
@@ -1219,26 +1435,41 @@ header{
 
 		background: @gradientLight;
 
+		@media @smartphones{
+			padding-top:0;
+		}
+
 
 		h3{
 			margin:0;
 			color: @uiGreyMedium;
 			text-transform:uppercase;
 			text-align:center;
+
+			@media @smartphones{
+				display:none;
+			}
 		}
 
 
 		.end-history{
 			margin-top: @lessPadding;
 
+			@media @smartphones{
+				padding-top:@lessPadding;
+				margin-top:0;
+			}
+
 			.game-data{
-				width: 500px;
-				height: 510px;
+				width: 340px;
+				height: 200px;
 				padding: @lessPadding*2;
 				margin-right: 2*@basePadding;
 				overflow:visible;
 
 				background: @background;
+
+
 				
 				.game-question-wrapper{
 					height: 210px;
@@ -1300,6 +1531,32 @@ header{
 					left: 20px;
 					box-shadow: 0 0 9px 5px rgba(0, 0, 0, 0.2);
 					opacity: 1;
+
+					@media @smartphones{
+						display:none;
+					}
+				}
+
+				@media @smartphones{
+					height:auto;
+					padding:0 0 10px 0;
+
+					.game-question-wrapper{
+						height:100px;
+						padding:10px;
+					}
+
+					.game-answers{
+						.answer{
+							width:48%;
+							margin-right:4%;
+
+							&:nth-child(2n){
+
+							}
+						}
+
+					}
 				}
 			}
 		}
@@ -1317,9 +1574,20 @@ header{
 		text-align:center;
 		background-color: @highlightDeep;
 
+		@media @smartphones{
+			padding: @lessPadding/2;
+		}
+
 		.btn{
 			margin: 0 @lessPadding/2;
 			width: 290px;
+			@media @smartphones{
+				float:left;
+				width: 46%;
+				min-width:0;
+				margin: 0 2%;
+				padding: 10px;
+			}
 		}
 	}
 	
