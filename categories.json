@@ -262,6 +262,17 @@
 					"operator": "===",
 					"threshold": true
 				}
+			},
+			{
+				"title":"Firefighter",
+				"slug": "firefighter",
+				"description": "Correctly answer all questions in Firefighting",
+				"image": true,
+				"criteria":{
+					"stat": "isComplete('firefighting').boolean",
+					"operator": "===",
+					"threshold": true
+				}
 			}
 		]
 	,
@@ -3271,7 +3282,1195 @@
 						{"correct":true,"answer":"Black 'D'"},
 						{"answer":"Yellow 'D'"}
 					]
+				},
+				{
+					"question": "At which MOPP level are you to have your mask in the carrier on your person?",
+					"answers":[
+						{"correct":true,"answer":"2"},
+						{"answer":"5"},
+						{"answer":"1"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "Which mask is used in a chemical warfare environment?",
+					"answers":[
+						{"correct":true,"answer":"MK 50"},
+						{"answer":"MCU-3K"},
+						{"answer":"MUC-2P"},
+						{"answer":"DELTA 7"}
+					]
+				},
+				{
+					"question": "Which canister is used on the M50 Mask?",
+					"answers":[
+						{"answer":"C2"},
+						{"correct":true,"answer":"M61"},
+						{"answer":"C1"},
+						{"answer":"M16"}
+					]
+				},
+				{
+					"question": "What MOPP level is put in place when an attack is “Probable”?",
+					"answers":[
+						{"correct":true,"answer":"3"},
+						{"answer":"4"},
+						{"answer":"2"},
+						{"answer":"1"}
+					]
+				},
+				{
+					"question": "What protective garment is used in a CBR environment?",
+					"answers":[
+						{"correct":true,"answer":"JLIST"},
+						{"answer":"ACPG"},
+						{"answer":"CBRS"},
+						{"answer":"MOPPG"}
+					]
+				},
+				{
+					"question": "What does MOPP stand for?",
+					"answers":[
+						{"correct":true,"answer":"Mission Oriented Protective Posture"},
+						{"answer":"Military Operations Post Protection*"},
+						{"answer":"Mission Oriented Post Protection Maritime Office Projects & Planning"}
+					]
+				},
+				{
+					"question": "In MOPP level 4, which item is the last to be donned?",
+					"answers":[
+						{"answer":"Mask"},
+						{"answer":"Blouse"},
+						{"answer":"Boots"},
+						{"correct":true,"answer":"Gloves"}
+					]
+				},
+				{
+					"question": "MOPP Level _____ is implemented when it is suspected that CBR will be used in the operational area.",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"correct":true,"answer":"4"}
+					]
+				},
+				{
+					"question": "MOPP Level _____ is implemented when a suspected threat is in the operational area.",
+					"answers":[
+						{"correct":true,"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "MOPP Level _____ is implemented when a threat to use CBR has been made in the operational area.",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"2"},
+						{"correct":true,"answer":"3"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "MOPP Level _____ is implemented when it is believed that CBR may be used in the operational area.",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"2"},
+						{"correct":true,"answer":"3"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "Donning your mask, hood and gloves is done in MOPP Level _____.",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"correct":true,"answer":"4"}
+					]
+				},
+				{
+					"question": "Donning your JLIST suit with hood down and installing a new canister on your mask is done in MOPP Level _____.",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"2"},
+						{"correct":true,"answer":"3"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "At which MOPP Level is CBRD protective gear issued?",
+					"answers":[
+						{"correct":true,"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"answer":"4"}
+					]
 				}	
+			]
+		},
+		{
+			"title": "Firefighting",
+			"slug": "firefighting",
+			"image": true,
+			"description": "Equipment, systems, teams and alerts associated with fire fighting.",
+			"tags":[
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question": "The maximum output of the P-100 pump is _____ gallons per minute.",
+					"answers":[
+						{"correct":true,"answer":"100"},
+						{"answer":"75"},
+						{"answer":"200"},
+						{"answer":"50"}
+					]
+				},
+				{
+					"question": "Which Eductor can pass 2.5 inch debris?",
+					"answers":[
+						{"answer":"Electric Submersible Pump"},
+						{"answer":"S-Type"},
+						{"correct":true,"answer":"Peri-Jet"},
+						{"answer":"OWS"}
+					]
+				},
+				{
+					"question": "What powers the P-100 pump?",
+					"answers":[
+						{"answer":"Electric"},
+						{"answer":"Solar"},
+						{"answer":"Unleaded Gas"},
+						{"correct":true,"answer":"Diesel Fuel"}
+					]
+				},
+				{
+					"question": "\"The 4\" Fire Hose is used for _____.",
+					"answers":[
+						{"answer":"Combating main space fires"},
+						{"answer":"Flight Deck fresh water wash down"},
+						{"correct":true,"answer":"Dewatering spaces"},
+						{"answer":"Ship to ship water transfers"}
+					]
+				},
+				{
+					"question": "The four main P-100 pump components/accessories are the Exhaust hose, 3\" Suction Hose, Discharge Valve and _____.",
+					"answers":[
+						{"correct":true,"answer":"Fuel tank"},
+						{"answer":"2 person carry handle"},
+						{"answer":"Eductor"},
+						{"answer":"Discharge hose"}
+					]
+				},
+				{
+					"question": "What is the largest size debris that a submersible pump can pass?",
+					"answers":[
+						{"correct":true,"answer":"1 inch"},
+						{"answer":"1.5 inches"},
+						{"answer":"2 inches"},
+						{"answer":"3 inches"}
+					]
+				},
+				{
+					"question": "The primary purpose of the P-100 pump is to _____.",
+					"answers":[
+						{"answer":"Dewater flooded spaces"},
+						{"answer":"Power auxiliary equipment"},
+						{"correct":true,"answer":"Supply firefighting water"},
+						{"answer":"Keep Damage Controlman busy with maintenance"}
+					]
+				},
+				{
+					"question": "A peri-jet eductor has _____ moving parts.",
+					"answers":[
+						{"answer":"1"},
+						{"correct":true,"answer":"0"},
+						{"answer":"2"},
+						{"answer":"6"}
+					]
+				},
+				{
+					"question": "What acts as a base and holds all the components of the SCBA?",
+					"answers":[
+						{"answer":"Backpack and apparatus  assembly"},
+						{"correct":true,"answer":"Backpack and harness assembly"},
+						{"answer":"Bottle holder assembly"},
+						{"answer":"Ruck assembly"}
+					]
+				},
+				{
+					"question": "How many minutes of breathable air does the SCBA provide?",
+					"answers":[
+						{"answer":"35"},
+						{"answer":"40"},
+						{"correct":true,"answer":"45"},
+						{"answer":"50"}
+					]
+				},
+				{
+					"question": "How many minutes of air does the Emergency Escape Breathing Device (EEBD) provide?",
+					"answers":[
+						{"answer":"15"},
+						{"answer":"5"},
+						{"correct":true,"answer":"10"},
+						{"answer":"30"}
+					]
+				},
+				{
+					"question": "What provided equipment allows sailors to escape a smoke filled space?",
+					"answers":[
+						{"answer":"SEED"},
+						{"answer":"SCBA"},
+						{"correct":true,"answer":"EEBD"},
+						{"answer":"OBA"}
+					]
+				},
+				{
+					"question": "The SCBA 2nd stage regulator reduces the pressure to _______.",
+					"answers":[
+						{"answer":".1 PSIG"},
+						{"answer":"1 PSIG"},
+						{"correct":true,"answer":"*05 PSIG"},
+						{"answer":".5 PSIG"}
+					]
+				},
+				{
+					"question": "What color is the case of a training EEBD?",
+					"answers":[
+						{"answer":"Orange"},
+						{"answer":"Red"},
+						{"correct":true,"answer":"Blue"},
+						{"answer":"Green"}
+					]
+				},
+				{
+					"question": "Given an SCBA 2nd stage regulator failure, what component would you use to resume air flow and exit the space?",
+					"answers":[
+						{"correct":true,"answer":"Purge valve"},
+						{"answer":"Air saver switch"},
+						{"answer":"Cylinder valve"},
+						{"answer":"Air restore valve"}
+					]
+				},
+				{
+					"question": "What is the minimum cylinder pressure for use on the SCBA?",
+					"answers":[
+						{"answer":"3500 PSIG"},
+						{"answer":"4500 PSIG"},
+						{"correct":true,"answer":"4000 PSIG"},
+						{"answer":"3000 PSIG"}
+					]
+				},
+				{
+					"question": "What size SCBA mask is red?",
+					"answers":[
+						{"answer":"Large"},
+						{"answer":"Medium"},
+						{"answer":"Small"},
+						{"correct":true,"answer":"Extra Large"}
+					]
+				},
+				{
+					"question": "Vibralert Alarm activates at _____ percent of air tank capacity.",
+					"answers":[
+						{"answer":"10 -> 15"},
+						{"answer":"15 -> 20"},
+						{"answer":"5 -> 10"},
+						{"correct":true,"answer":"20 -> 25"}
+					]
+				},
+				{
+					"question": "Which regulator on the SCBA maintains a positive pressure of breathable air in the mask at all times?",
+					"answers":[
+						{"answer":"1st stage"},
+						{"answer":"3rd stage"},
+						{"answer":"Purge stage"},
+						{"correct":true,"answer":"2nd stage"}
+					]
+				},
+				{
+					"question": "In training, you used what method of donning the SCBA?",
+					"answers":[
+						{"answer":"Over the head"},
+						{"correct":true,"answer":"Coat"},
+						{"answer":"Backpack"},
+						{"answer":"Just put it on"}
+					]
+				},
+				{
+					"question": "What component of the SCBA allows air to flow throughout the apparatus?",
+					"answers":[
+						{"answer":"1st stage regulator"},
+						{"answer":"2nd stage regulator"},
+						{"answer":"Cylinder"},
+						{"correct":true,"answer":"Cylinder valve"}
+					]
+				},
+				{
+					"question": "How long is the Standard Navy Fire Hose?",
+					"answers":[
+						{"correct":true,"answer":"50 Feet"},
+						{"answer":"100 Feet"},
+						{"answer":"50 Yards"},
+						{"answer":"55 Feet"}
+					]
+				},
+				{
+					"question": "How many bale positions are used with a 2 ½” Vari-nozzle?",
+					"answers":[
+						{"answer":"3"},
+						{"answer":"4"},
+						{"correct":true,"answer":"2"},
+						{"answer":"1"}
+					]
+				},
+				{
+					"question": "The standard time delay for discharge of HALON in manned spaces is _____.",
+					"answers":[
+						{"answer":"45 seconds"},
+						{"answer":"30 seconds"},
+						{"answer":"90 seconds"},
+						{"correct":true,"answer":"60 seconds"}
+					]
+				},
+				{
+					"question": "What does AFFF stand for?",
+					"answers":[
+						{"correct":true,"answer":"Aqueous film forming foam"},
+						{"answer":"Aerial flight framework fundamentals"},
+						{"answer":"Airborne film forming foam"},
+						{"answer":"Aqueous film flashover foam"}
+					]
+				},
+				{
+					"question": "How many types of fixed CO2 firefighting systems are on naval ships?",
+					"answers":[
+						{"answer":"1"},
+						{"answer":"3"},
+						{"correct":true,"answer":"2"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "HALON produces toxic gases when it contacts surfaces or flames at _____ degrees _____ or higher.",
+					"answers":[
+						{"answer":"750, Fahrenheit"},
+						{"answer":"900, Celsius"},
+						{"answer":"900, Centigrade"},
+						{"correct":true,"answer":"900, Fahrenheit"}
+					]
+				},
+				{
+					"question": "What are the two sizes of PKP bottles?",
+					"answers":[
+						{"answer":"19 and 28 lbs"},
+						{"correct":true,"answer":"10 and 27 lbs"},
+						{"answer":"15 and 30 lbs"},
+						{"answer":"20 and 40 lbs"}
+					]
+				},
+				{
+					"question": "What is the weight of the portable CO2 fire extinguisher?",
+					"answers":[
+						{"answer":"50 lbs"},
+						{"answer":"25 lbs"},
+						{"answer":"10 lbs"},
+						{"correct":true,"answer":"15 lbs"}
+					]
+				},
+				{
+					"question": "AFFF used to fight a fire is a combination of AFFF concentrate and _____.",
+					"answers":[
+						{"answer":"Fresh water"},
+						{"answer":"Ionized water"},
+						{"correct":true,"answer":"Sea water"},
+						{"answer":"Chill water"}
+					]
+				},
+				{
+					"question": "What Eductor is used when employing the portable AFFF system?",
+					"answers":[
+						{"answer":"Peri-jet"},
+						{"answer":"S-type"},
+						{"answer":"Electronic Submersible"},
+						{"correct":true,"answer":"Inline Eductor"}
+					]
+				},
+				{
+					"question": "How many gallons of AFFF concentrate and fresh water does the portable AFFF extinguisher contain?",
+					"answers":[
+						{"answer":"3"},
+						{"correct":true,"answer":"2.5"},
+						{"answer":"1.5"},
+						{"answer":"3.5"}
+					]
+				},
+				{
+					"question": "What is the maximum effective range of a 15 lb CO2 extinguisher?",
+					"answers":[
+						{"answer":"3-5 feet"},
+						{"answer":"3-6 feet"},
+						{"correct":true,"answer":"4-6 feet"},
+						{"answer":"4-5 feet"}
+					]
+				},
+				{
+					"question": "Why must the 15 lb CO2 bottle be grounded when discharging?",
+					"answers":[
+						{"answer":"Weight/fatigue"},
+						{"answer":"Discharge control"},
+						{"correct":true,"answer":"Deter static shock"},
+						{"answer":"Prevent wild hose"}
+					]
+				},
+				{
+					"question": "In a fixed AFFF system, the AFFF concentrate and sea water mixed at the _____.",
+					"answers":[
+						{"answer":"Tank"},
+						{"answer":"AFFF hose"},
+						{"answer":"Nozzle"},
+						{"correct":true,"answer":"Eductor"}
+					]
+				},
+				{
+					"question": "The Vari-nozzle comes in 1 ½, 2 ½ and ______ sizes?",
+					"answers":[
+						{"answer":"1 inch"},
+						{"answer":"2 inch"},
+						{"correct":true,"answer":"¾ inch"},
+						{"answer":"½ inch"}
+					]
+				},
+				{
+					"question": "The three types of portable extinguishers used aboard ships are CO2, AFFF and _____.",
+					"answers":[
+						{"answer":"ABC"},
+						{"answer":"HALON 1301"},
+						{"correct":true,"answer":"PKP"},
+						{"answer":"APC"}
+					]
+				},
+				{
+					"question": "What component of the Vari-nozzle turns water on and off?",
+					"answers":[
+						{"answer":"Pistol grip"},
+						{"answer":"Water activation handle"},
+						{"correct":true,"answer":"Bail"},
+						{"answer":"Upper stability control grip"}
+					]
+				},
+				{
+					"question": "What activates the HALON 1301 firefighting system?",
+					"answers":[
+						{"answer":"Helium"},
+						{"answer":"Nitrogen"},
+						{"correct":true,"answer":"Carbon Dioxide (CO2)"},
+						{"answer":"Oxygen (O2)"}
+					]
+				},
+				{
+					"question": "What fixed firefighting system extinguishes fire in paint storage and hazardous materials lockers?",
+					"answers":[
+						{"answer":"AFFF"},
+						{"answer":"Firemain"},
+						{"correct":true,"answer":"CO2 total flooding system"},
+						{"answer":"HALON 1301"}
+					]
+				},
+				{
+					"question": "The portable AFFF can contains _____ gallons of concentrate.",
+					"answers":[
+						{"correct":true,"answer":"2.5"},
+						{"answer":"3"},
+						{"answer":"5"},
+						{"answer":"10"}
+					]
+				},
+				{
+					"question": "Who gives the order to “Go On Air”? ",
+					"answers":[
+						{"answer":"Hose-Man"},
+						{"answer":"Nozzle-Man"},
+						{"answer":"Team Leader"},
+						{"correct":true,"answer":"On-Scene Leader"}
+					]
+				},
+				{
+					"question": "How many hose teams make up a shipboard fire party?",
+					"answers":[
+						{"answer":"3"},
+						{"correct":true,"answer":"2"},
+						{"answer":"1"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question": "Who has overall responsibility for the fire party at the scene?",
+					"answers":[
+						{"answer":"Team Leader"},
+						{"correct":true,"answer":"On-Scene Leader"},
+						{"answer":"Nozzle Man"},
+						{"answer":"Damage Control Officer"}
+					]
+				},
+				{
+					"question": "Which fire party member is responsible for checking for further damage and causalities?",
+					"answers":[
+						{"answer":"Messenger"},
+						{"answer":"Boundary Man"},
+						{"correct":true,"answer":"Investigators"},
+						{"answer":"Sound and Security"}
+					]
+				},
+				{
+					"question": "Which member of the fire party operates the NFTI?",
+					"answers":[
+						{"answer":"On-Scene Leader"},
+						{"answer":"1st Hoseman"},
+						{"correct":true,"answer":"Team Leader"},
+						{"answer":"Investigator"}
+					]
+				},
+				{
+					"question": "When calling away a shipboard emergency, the ringing of the ships bell twice signifies what?",
+					"answers":[
+						{"answer":"Emergency on the flight deck"},
+						{"answer":"Emergency Forward"},
+						{"correct":true,"answer":"Emergency Amid-ships"},
+						{"answer":"Emergency AFT"}
+					]
+				},
+				{
+					"question": "When the alarm sounds at sea, who is the first to respond to the causality?",
+					"answers":[
+						{"answer":"Fire Department"},
+						{"correct":true,"answer":"At-Sea Fire Party"},
+						{"answer":"Fore Marshall"},
+						{"answer":"Damage Control Training Team (DCTT)"}
+					]
+				},
+				{
+					"question": "Which Hose Team is the Access Man assigned to?",
+					"answers":[
+						{"answer":"#1 Hose Team"},
+						{"correct":true,"answer":"#2 Hose Team"},
+						{"answer":"Reserve Hose Team"},
+						{"answer":"None"}
+					]
+				},
+				{
+					"question": "What is the Boundary Man’s job?",
+					"answers":[
+						{"answer":"Secure Passageways"},
+						{"answer":"Stand watch at repair locker"},
+						{"correct":true,"answer":"Establish & maintain fire boundaries"},
+						{"answer":"Establish & maintain routes to and from casualty"}
+					]
+				},
+				{
+					"question": "The two main components of the NFTI are the Monitor and _______?",
+					"answers":[
+						{"answer":"Neck Strap"},
+						{"answer":"Computer Relay Cord"},
+						{"correct":true,"answer":"Battery Pack"},
+						{"answer":"Thermal Insulation Cover"}
+					]
+				}
+			]
+		},
+		{
+			"title": "Military Customs & Courtesies",
+			"slug": "customs",
+			"image": true,
+			"description": "Understanding and the proper execution of military protocols.",
+			"tags":[
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What are acts or verbal expressions of consideration or respect for others?",
+					"answers":[
+						{"answer":"Custom"},
+						{"answer":"Courtesies","correct":true},
+						{"answer":"Etiquette"},
+						{"answer":"Tradition"}
+					]
+				},
+				{
+					"question":"What are behaviors that have been performed for such a long time that they have become common practice?",
+					"answers":[
+						{"answer":"Custom","correct":true},
+						{"answer":"Courtesies"},
+						{"answer":"Etiquette"},
+						{"answer":"Tradition"}
+					]
+				},
+				{
+					"question":"You should render your salute how many paces from the person being saluted?",
+					"answers":[
+						{"answer":"5"},
+						{"answer":"6","correct":true},
+						{"answer":"7"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question":"_____ is the maximum number of paces for saluting?",
+					"answers":[
+						{"answer":"10 "},
+						{"answer":"20 "},
+						{"answer":"25 "},
+						{"answer":"30 ","correct":true}
+					]
+				},
+				{
+					"question":"What is rendered to officials or officers as they board and depart a ship?",
+					"answers":[
+						{"answer":"Ship Honors"},
+						{"answer":"Boatswain Honors"},
+						{"answer":"Side Honors","correct":true},
+						{"answer":"Custom Honors"}
+					]
+				},
+				{
+					"question":"What time is evening colors conducted on board a ship?",
+					"answers":[
+						{"answer":"1700"},
+						{"answer":"1800"},
+						{"answer":"1900"},
+						{"answer":"Sunset","correct":true}
+					]
+				},
+				{
+					"question":"Ships NOT underway also hoist and lower what other flag during morning and evening colors?",
+					"answers":[
+						{"answer":"Ship’s Flag"},
+						{"answer":"Union Jack","correct":true},
+						{"answer":"National Ensign"},
+						{"answer":"Captain’s Personal Flag"}
+					]
+				},
+				{
+					"question":"Who can direct the half-masting of the Ensign?",
+					"answers":[
+						{"answer":"President","correct":true},
+						{"answer":"Vice-President"},
+						{"answer":"Congress"},
+						{"answer":"Senate"}
+					]
+				},
+				{
+					"question":"When walking, what do you say to request permission to pass an officer?",
+					"answers":[
+						{"answer":"Following your lead Sir/Ma’am"},
+						{"answer":"Good Morning Sir/Ma’am"},
+						{"answer":"By your leave Sir/Ma’am","correct":true},
+						{"answer":"By your lead Sir/Ma’am"}
+					]
+				},
+				{
+					"question":"Who is required to salute an officer if you are part of a work detail?",
+					"answers":[
+						{"answer":"No one"},
+						{"answer":"Everyone that is part of the work detail"},
+						{"answer":"Only personnel who can safely salute"},
+						{"answer":"The person in charge of the work detail","correct":true}
+					]
+				},
+				{
+					"question":"What year did the first official salute underway of the American flag by a foreign government occur?",
+					"answers":[
+						{"answer":"1777"},
+						{"answer":"1778","correct":true},
+						{"answer":"1779"},
+						{"answer":"1780"}
+					]
+				},
+				{
+					"question":"_____ was the captain of the USS RANGER when the American Flag was first rendered by a foreign government.",
+					"answers":[
+						{"answer":"John Paul Jones","correct":true},
+						{"answer":"Stephen Decatur"},
+						{"answer":"Oliver Hazard Perry"},
+						{"answer":"Isaac Hull"}
+					]
+				},
+				{
+					"question":"Which US ship received the first official salute of the American flag by a foreign nation?",
+					"answers":[
+						{"answer":"Serapis"},
+						{"answer":"BonHomme Richard"},
+						{"answer":"Ranger","correct":true},
+						{"answer":"Enterprise"}
+					]
+				},
+				{
+					"question":"What words appear across the bottom of this American Revolution era flag?",
+					"image":"cc1.png",
+					"answers":[
+						{"answer":"Don’t Tread On Me"},
+						{"answer":"Dont tread on me","correct":true},
+						{"answer":"Do Not Tread On Me"},
+						{"answer":"You Will Not Tread On Me"}
+					]
+				},
+				{
+					"question":"What word is passed over the 1MC at 0755 during morning colors?  ",
+					"answers":[
+						{"answer":"Colors"},
+						{"answer":"Call to Colors"},
+						{"answer":"Nothing, a Boatswain’s pipe is sounded"},
+						{"answer":"First Call to Colors","correct":true}
+					]
+				},
+				{
+					"question":"At what time is “First Call to Colors” passed over the 1MC for morning colors?",
+					"answers":[
+						{"answer":"0745"},
+						{"answer":"0750"},
+						{"answer":"0755","correct":true},
+						{"answer":"0800"}
+					]
+				},
+				{
+					"question":"What do two police type whistle blasts signify for morning colors?",
+					"answers":[
+						{"answer":"Come to attention facing the flag"},
+						{"answer":"Salute"},
+						{"answer":"Drop your salute","correct":true},
+						{"answer":"Carry On"}
+					]
+				},
+				{
+					"question":"What do three police type whistle blasts signify for morning colors?",
+					"answers":[
+						{"answer":"Come to attention facing the flag"},
+						{"answer":"Salute"},
+						{"answer":"Drop your salute"},
+						{"answer":"Carry On","correct":true}
+					]
+				},
+				{
+					"question":"What does one police type whistle blast signify for morning colors?",
+					"answers":[
+						{"answer":"Come to attention facing the flag","correct":true},
+						{"answer":"Salute"},
+						{"answer":"Drop your salute"},
+						{"answer":"Carry on"}
+					]
+				},
+				{
+					"question":"What song is played for morning colors?",
+					"answers":[
+						{"answer":"Reveille"},
+						{"answer":"Taps"},
+						{"answer":"Retreat"},
+						{"answer":"To the Colors","correct":true}
+					]
+				},
+				{
+					"question":"What song is played for evening colors?",
+					"answers":[
+						{"answer":"Reveille"},
+						{"answer":"Taps"},
+						{"answer":"Retreat","correct":true},
+						{"answer":"To the Colors"}
+					]
+				},
+				{
+					"question":"Where is the national ensign flown from while underway?",
+					"answers":[
+						{"answer":"Whip"},
+						{"answer":"Gaff","correct":true},
+						{"answer":"Jackstaff"},
+						{"answer":"Flagstaff"}
+					]
+				},
+				{
+					"question":"Which flag/pennant is this?",
+					"image":"cc2.png",
+					"answers":[
+						{"answer":"Union Jack"},
+						{"answer":"Personal Flag"},
+						{"answer":"Commission Pennant","correct":true},
+						{"answer":"Command Pennant"}
+					]
+				},
+				{
+					"question":"Which special flag accompanies Navy Flag Officers in an official capacity wherever they go?",
+					"answers":[
+						{"answer":"Personal Flag","correct":true},
+						{"answer":"Commission Pennant"},
+						{"answer":"Command Pennant"},
+						{"answer":"Third Substitute"}
+					]
+				},
+				{
+					"question":"Officers who are not admirals but have command of more than one ship or number of aircraft rate a _______?",
+					"answers":[
+						{"answer":"Personal Flags"},
+						{"answer":"Commission Pennant"},
+						{"answer":"Command Pennant","correct":true},
+						{"answer":"Third Substitute"}
+					]
+				},
+				{
+					"question":"The fourth substitute is flown when whom is absent?",
+					"answers":[
+						{"answer":"Admiral"},
+						{"answer":"Admiral’s Chief of Staff"},
+						{"answer":"Commanding Officer"},
+						{"answer":"Civil or military official","correct":true}
+					]
+				},
+				{
+					"question":"What is the only pennant flown above the national ensign?",
+					"answers":[
+						{"answer":"Commission Pennant"},
+						{"answer":"Command Pennant"},
+						{"answer":"Third Substitute"},
+						{"answer":"Church Pennant","correct":true}
+					]
+				},
+				{
+					"question":"How many shots are fired for an Admirals gun salute?",
+					"answers":[
+						{"answer":"17","correct":true},
+						{"answer":"15"},
+						{"answer":"13"},
+						{"answer":"11"}
+					]
+				},
+				{
+					"question":"How many shots are fired for a Vice Admirals gun salute?",
+					"answers":[
+						{"answer":"17 "},
+						{"answer":"15 ","correct":true},
+						{"answer":"13 "},
+						{"answer":"11 "}
+					]
+				},
+				{
+					"question":"How many shots are fired for a Vice Rear Admiral (upper half) gun salute?",
+					"answers":[
+						{"answer":"17 "},
+						{"answer":"15 "},
+						{"answer":"13 ","correct":true},
+						{"answer":"11 "}
+					]
+				},
+				{
+					"question":"How many shots are fired for a Vice Rear Admiral (lower half) gun salute?",
+					"answers":[
+						{"answer":"17 "},
+						{"answer":"15 "},
+						{"answer":"13 "},
+						{"answer":"11 ","correct":true}
+					]
+				}
+			]
+		},
+		{
+			"title": "Military Customs & Courtesies",
+			"slug": "customs",
+			"image": true,
+			"description": "Understanding and the proper execution of military protocols.",
+			"tags":[
+			],
+			"highScore": 0,
+			"lastScore": 0,
+			"cumulativeScore":0,
+			"played":0,
+			"questions":[
+				{
+					"question":"What are acts or verbal expressions of consideration or respect for others?",
+					"answers":[
+						{"answer":"Custom"},
+						{"answer":"Courtesies","correct":true},
+						{"answer":"Etiquette"},
+						{"answer":"Tradition"}
+					]
+				},
+				{
+					"question":"What are behaviors that have been performed for such a long time that they have become common practice?",
+					"answers":[
+						{"answer":"Custom","correct":true},
+						{"answer":"Courtesies"},
+						{"answer":"Etiquette"},
+						{"answer":"Tradition"}
+					]
+				},
+				{
+					"question":"You should render your salute how many paces from the person being saluted?",
+					"answers":[
+						{"answer":"5"},
+						{"answer":"6","correct":true},
+						{"answer":"7"},
+						{"answer":"4"}
+					]
+				},
+				{
+					"question":"_____ is the maximum number of paces for saluting?",
+					"answers":[
+						{"answer":"10 "},
+						{"answer":"20 "},
+						{"answer":"25 "},
+						{"answer":"30 ","correct":true}
+					]
+				},
+				{
+					"question":"What is rendered to officials or officers as they board and depart a ship?",
+					"answers":[
+						{"answer":"Ship Honors"},
+						{"answer":"Boatswain Honors"},
+						{"answer":"Side Honors","correct":true},
+						{"answer":"Custom Honors"}
+					]
+				},
+				{
+					"question":"What time is evening colors conducted on board a ship?",
+					"answers":[
+						{"answer":"1700"},
+						{"answer":"1800"},
+						{"answer":"1900"},
+						{"answer":"Sunset","correct":true}
+					]
+				},
+				{
+					"question":"Ships NOT underway also hoist and lower what other flag during morning and evening colors?",
+					"answers":[
+						{"answer":"Ship’s Flag"},
+						{"answer":"Union Jack","correct":true},
+						{"answer":"National Ensign"},
+						{"answer":"Captain’s Personal Flag"}
+					]
+				},
+				{
+					"question":"Who can direct the half-masting of the Ensign?",
+					"answers":[
+						{"answer":"President","correct":true},
+						{"answer":"Vice-President"},
+						{"answer":"Congress"},
+						{"answer":"Senate"}
+					]
+				},
+				{
+					"question":"When walking, what do you say to request permission to pass an officer?",
+					"answers":[
+						{"answer":"Following your lead Sir/Ma’am"},
+						{"answer":"Good Morning Sir/Ma’am"},
+						{"answer":"By your leave Sir/Ma’am","correct":true},
+						{"answer":"By your lead Sir/Ma’am"}
+					]
+				},
+				{
+					"question":"Who is required to salute an officer if you are part of a work detail?",
+					"answers":[
+						{"answer":"No one"},
+						{"answer":"Everyone that is part of the work detail"},
+						{"answer":"Only personnel who can safely salute"},
+						{"answer":"The person in charge of the work detail","correct":true}
+					]
+				},
+				{
+					"question":"What year did the first official salute underway of the American flag by a foreign government occur?",
+					"answers":[
+						{"answer":"1777"},
+						{"answer":"1778","correct":true},
+						{"answer":"1779"},
+						{"answer":"1780"}
+					]
+				},
+				{
+					"question":"_____ was the captain of the USS RANGER when the American Flag was first rendered by a foreign government.",
+					"answers":[
+						{"answer":"John Paul Jones","correct":true},
+						{"answer":"Stephen Decatur"},
+						{"answer":"Oliver Hazard Perry"},
+						{"answer":"Isaac Hull"}
+					]
+				},
+				{
+					"question":"Which US ship received the first official salute of the American flag by a foreign nation?",
+					"answers":[
+						{"answer":"Serapis"},
+						{"answer":"BonHomme Richard"},
+						{"answer":"Ranger","correct":true},
+						{"answer":"Enterprise"}
+					]
+				},
+				{
+					"question":"What words appear across the bottom of this American Revolution era flag?",
+					"image":"cc1.png",
+					"answers":[
+						{"answer":"Don’t Tread On Me"},
+						{"answer":"Dont tread on me","correct":true},
+						{"answer":"Do Not Tread On Me"},
+						{"answer":"You Will Not Tread On Me"}
+					]
+				},
+				{
+					"question":"What word is passed over the 1MC at 0755 during morning colors?  ",
+					"answers":[
+						{"answer":"Colors"},
+						{"answer":"Call to Colors"},
+						{"answer":"Nothing, a Boatswain’s pipe is sounded"},
+						{"answer":"First Call to Colors","correct":true}
+					]
+				},
+				{
+					"question":"At what time is “First Call to Colors” passed over the 1MC for morning colors?",
+					"answers":[
+						{"answer":"0745"},
+						{"answer":"0750"},
+						{"answer":"0755","correct":true},
+						{"answer":"0800"}
+					]
+				},
+				{
+					"question":"What do two police type whistle blasts signify for morning colors?",
+					"answers":[
+						{"answer":"Come to attention facing the flag"},
+						{"answer":"Salute"},
+						{"answer":"Drop your salute","correct":true},
+						{"answer":"Carry On"}
+					]
+				},
+				{
+					"question":"What do three police type whistle blasts signify for morning colors?",
+					"answers":[
+						{"answer":"Come to attention facing the flag"},
+						{"answer":"Salute"},
+						{"answer":"Drop your salute"},
+						{"answer":"Carry On","correct":true}
+					]
+				},
+				{
+					"question":"What does one police type whistle blast signify for morning colors?",
+					"answers":[
+						{"answer":"Come to attention facing the flag","correct":true},
+						{"answer":"Salute"},
+						{"answer":"Drop your salute"},
+						{"answer":"Carry on"}
+					]
+				},
+				{
+					"question":"What song is played for morning colors?",
+					"answers":[
+						{"answer":"Reveille"},
+						{"answer":"Taps"},
+						{"answer":"Retreat"},
+						{"answer":"To the Colors","correct":true}
+					]
+				},
+				{
+					"question":"What song is played for evening colors?",
+					"answers":[
+						{"answer":"Reveille"},
+						{"answer":"Taps"},
+						{"answer":"Retreat","correct":true},
+						{"answer":"To the Colors"}
+					]
+				},
+				{
+					"question":"Where is the national ensign flown from while underway?",
+					"answers":[
+						{"answer":"Whip"},
+						{"answer":"Gaff","correct":true},
+						{"answer":"Jackstaff"},
+						{"answer":"Flagstaff"}
+					]
+				},
+				{
+					"question":"Which flag/pennant is this?",
+					"image":"cc2.png",
+					"answers":[
+						{"answer":"Union Jack"},
+						{"answer":"Personal Flag"},
+						{"answer":"Commission Pennant","correct":true},
+						{"answer":"Command Pennant"}
+					]
+				},
+				{
+					"question":"Which special flag accompanies Navy Flag Officers in an official capacity wherever they go?",
+					"answers":[
+						{"answer":"Personal Flag","correct":true},
+						{"answer":"Commission Pennant"},
+						{"answer":"Command Pennant"},
+						{"answer":"Third Substitute"}
+					]
+				},
+				{
+					"question":"Officers who are not admirals but have command of more than one ship or number of aircraft rate a _______?",
+					"answers":[
+						{"answer":"Personal Flags"},
+						{"answer":"Commission Pennant"},
+						{"answer":"Command Pennant","correct":true},
+						{"answer":"Third Substitute"}
+					]
+				},
+				{
+					"question":"The fourth substitute is flown when whom is absent?",
+					"answers":[
+						{"answer":"Admiral"},
+						{"answer":"Admiral’s Chief of Staff"},
+						{"answer":"Commanding Officer"},
+						{"answer":"Civil or military official","correct":true}
+					]
+				},
+				{
+					"question":"What is the only pennant flown above the national ensign?",
+					"answers":[
+						{"answer":"Commission Pennant"},
+						{"answer":"Command Pennant"},
+						{"answer":"Third Substitute"},
+						{"answer":"Church Pennant","correct":true}
+					]
+				},
+				{
+					"question":"How many shots are fired for an Admirals gun salute?",
+					"answers":[
+						{"answer":"17","correct":true},
+						{"answer":"15"},
+						{"answer":"13"},
+						{"answer":"11"}
+					]
+				},
+				{
+					"question":"How many shots are fired for a Vice Admirals gun salute?",
+					"answers":[
+						{"answer":"17 "},
+						{"answer":"15 ","correct":true},
+						{"answer":"13 "},
+						{"answer":"11 "}
+					]
+				},
+				{
+					"question":"How many shots are fired for a Vice Rear Admiral (upper half) gun salute?",
+					"answers":[
+						{"answer":"17 "},
+						{"answer":"15 "},
+						{"answer":"13 ","correct":true},
+						{"answer":"11 "}
+					]
+				},
+				{
+					"question":"How many shots are fired for a Vice Rear Admiral (lower half) gun salute?",
+					"answers":[
+						{"answer":"17 "},
+						{"answer":"15 "},
+						{"answer":"13 "},
+						{"answer":"11 ","correct":true}
+					]
+				}
 			]
 		}
 	]
