@@ -84,14 +84,12 @@ html {
   }
 }
 body {
-  background: -webkit-linear-gradient(top, #2D3A4D 0%, #36647B 100%);
   background: linear-gradient(to bottom, #2D3A4D 0%, #36647B 100%);
   color: white;
   font-size: 1rem;
 }
 .animated {
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
+  animation-duration: .5s;
 }
 a:hover {
   text-decoration: none !important;
@@ -127,8 +125,7 @@ a:hover {
   top: 50%;
   right: 20px;
   display: block;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   pointer-events: none;
   font-size: 20px;
 }
@@ -142,7 +139,6 @@ a:hover {
   border-radius: 10px;
 }
 .btn.btn-primary {
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
   background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
   color: white;
   box-shadow: 1px 1px 8px 0px rgba(3, 26, 46, 0.31);
@@ -157,9 +153,8 @@ a:hover {
 }
 header {
   height: 100px;
-  padding: 20px !important;
+  padding: 30px !important;
   z-index: 10;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
   background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
 }
 @media only screen and (max-width: 767px) {
@@ -253,7 +248,6 @@ header a {
   width: 176px;
   height: 176px;
   padding: 30px;
-  background: -webkit-radial-gradient(center ellipse, #30A1C1 0%, #217E8F 100%);
   background: radial-gradient(ellipse at center, #30A1C1 0%, #217E8F 100%);
   border: 5px solid rgba(170, 223, 250, 0.57);
 }
@@ -277,8 +271,7 @@ header a {
   top: 50%;
   left: 0;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
@@ -305,7 +298,6 @@ header a {
   display: block;
   width: 40%;
   height: 100%;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
   background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
 }
 .screen-achievements {
@@ -327,14 +319,9 @@ header a {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
 }
 .screen-achievements .achievements-list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .screen-achievements .achievements-list .achievement {
   display: block;
@@ -400,6 +387,7 @@ header a {
 }
 .modal.nofade.fade .modal-dialog {
   -webkit-transform: translate(0);
+  -moz-transform: translate(0);
   transform: translate(0);
 }
 #achievementsModal .confetti {
@@ -409,2211 +397,1003 @@ header a {
   background-color: #f00;
   opacity: 0.0;
   z-index: -1;
-  -webkit-animation-name: fallsway;
-          animation-name: fallsway;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-name: fallsway;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 #achievementsModal .confetti:nth-child(1) {
-  -webkit-transform: scale(0.38394597);
-          transform: scale(0.38394597);
-  -webkit-animation-name: 'animation-1';
-          animation-name: 'animation-1';
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-  background-color: #8006d7;
-}
-@-webkit-keyframes 'animation-1' {
-  0% {
-    left: 15.69212729%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: -1.0649664%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 6.94343485%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 84.36209019%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 43.80142935%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.1553143);
+  animation-name: 'animation-1';
+  animation-delay: 0.2s;
+  background-color: #9f17d0;
 }
 @keyframes 'animation-1' {
   0% {
-    left: 15.69212729%;
+    left: 66.34696388%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: -1.0649664%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 82.36159993%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 6.94343485%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 25.49154329%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 84.36209019%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 68.17766129%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 43.80142935%;
+    left: 70.07526129%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(2) {
-  -webkit-transform: scale(0.03159893);
-          transform: scale(0.03159893);
-  -webkit-animation-name: 'animation-2';
-          animation-name: 'animation-2';
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-  background-color: #7c24c7;
-}
-@-webkit-keyframes 'animation-2' {
-  0% {
-    left: 28.84977322%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 88.33532093%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 52.15169892%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 67.59048339%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 4.58722294%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.4457015);
+  animation-name: 'animation-2';
+  animation-delay: 0.4s;
+  background-color: #45fd6d;
 }
 @keyframes 'animation-2' {
   0% {
-    left: 28.84977322%;
+    left: 51.97283026%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 88.33532093%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 6.60834517%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 52.15169892%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 33.72397921%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 67.59048339%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 62.03235698%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 4.58722294%;
+    left: 79.46431251%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(3) {
-  -webkit-transform: scale(0.16173746);
-          transform: scale(0.16173746);
-  -webkit-animation-name: 'animation-3';
-          animation-name: 'animation-3';
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-  background-color: #40f9ca;
-}
-@-webkit-keyframes 'animation-3' {
-  0% {
-    left: 33.49133699%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 40.59454204%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 89.22156494%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 67.35278533%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 83.70567275%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.1762277);
+  animation-name: 'animation-3';
+  animation-delay: 0.6s;
+  background-color: #bd7da7;
 }
 @keyframes 'animation-3' {
   0% {
-    left: 33.49133699%;
+    left: 90.16705818%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 40.59454204%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 71.04987674%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 89.22156494%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 19.36422226%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 67.35278533%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 12.99198716%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 83.70567275%;
+    left: 31.06715326%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(4) {
-  -webkit-transform: scale(0.35200989);
-          transform: scale(0.35200989);
-  -webkit-animation-name: 'animation-4';
-          animation-name: 'animation-4';
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-  background-color: #f97ac5;
-}
-@-webkit-keyframes 'animation-4' {
-  0% {
-    left: 66.96874849%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 56.00590596%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 22.41283588%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 21.88144063%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 70.51406778%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.42199859);
+  animation-name: 'animation-4';
+  animation-delay: 0.8s;
+  background-color: #25e71c;
 }
 @keyframes 'animation-4' {
   0% {
-    left: 66.96874849%;
+    left: 67.82736132%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 56.00590596%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 8.35313369%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 22.41283588%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 1.6007199%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 21.88144063%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 9.85540637%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 70.51406778%;
+    left: 63.53017063%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(5) {
-  -webkit-transform: scale(0.24782776);
-          transform: scale(0.24782776);
-  -webkit-animation-name: 'animation-5';
-          animation-name: 'animation-5';
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  background-color: #86218;
-}
-@-webkit-keyframes 'animation-5' {
-  0% {
-    left: 34.49193854%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 98.16128022%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 2.70578341%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 18.57879213%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 3.14945921%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.7191026);
+  animation-name: 'animation-5';
+  animation-delay: 1s;
+  background-color: #668eb7;
 }
 @keyframes 'animation-5' {
   0% {
-    left: 34.49193854%;
+    left: 67.91674012%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 98.16128022%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 95.68124458%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 2.70578341%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 84.37620239%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 18.57879213%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 77.15974241%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 3.14945921%;
+    left: 4.64306152%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(6) {
-  -webkit-transform: scale(0.50544462);
-          transform: scale(0.50544462);
-  -webkit-animation-name: 'animation-6';
-          animation-name: 'animation-6';
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-  background-color: #8b1c12;
-}
-@-webkit-keyframes 'animation-6' {
-  0% {
-    left: 47.89174567%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 2.95423065%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 41.93124489%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 14.44504243%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 35.56565749%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.81334953);
+  animation-name: 'animation-6';
+  animation-delay: 1.2s;
+  background-color: #8bfe75;
 }
 @keyframes 'animation-6' {
   0% {
-    left: 47.89174567%;
+    left: 43.05980174%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 2.95423065%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: -0.52267902%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 41.93124489%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 0.00751579%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 14.44504243%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 80.37317915%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 35.56565749%;
+    left: 89.73700759%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(7) {
-  -webkit-transform: scale(0.44505588);
-          transform: scale(0.44505588);
-  -webkit-animation-name: 'animation-7';
-          animation-name: 'animation-7';
-  -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-  background-color: #7d0de4;
-}
-@-webkit-keyframes 'animation-7' {
-  0% {
-    left: 37.86477258%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 41.76514937%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 59.85653071%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 69.30553181%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 63.56433974%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.08708685);
+  animation-name: 'animation-7';
+  animation-delay: 1.4s;
+  background-color: #896c03;
 }
 @keyframes 'animation-7' {
   0% {
-    left: 37.86477258%;
+    left: 10.25088165%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 41.76514937%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 27.9240835%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 59.85653071%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 3.67016845%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 69.30553181%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 69.12395262%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 63.56433974%;
+    left: 83.98881214%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(8) {
-  -webkit-transform: scale(0.80397792);
-          transform: scale(0.80397792);
-  -webkit-animation-name: 'animation-8';
-          animation-name: 'animation-8';
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-  background-color: #868ec7;
-}
-@-webkit-keyframes 'animation-8' {
-  0% {
-    left: 47.71492219%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 83.71233502%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 47.60186009%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 99.90551311%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 6.4678982%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.19292945);
+  animation-name: 'animation-8';
+  animation-delay: 1.6s;
+  background-color: #378e55;
 }
 @keyframes 'animation-8' {
   0% {
-    left: 47.71492219%;
+    left: 29.84810953%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 83.71233502%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 37.75486971%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 47.60186009%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 32.44799295%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 99.90551311%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 32.78023316%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 6.4678982%;
+    left: 50.73896935%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(9) {
-  -webkit-transform: scale(0.06764796);
-          transform: scale(0.06764796);
-  -webkit-animation-name: 'animation-9';
-          animation-name: 'animation-9';
-  -webkit-animation-delay: 1.8s;
-          animation-delay: 1.8s;
-  background-color: #742550;
-}
-@-webkit-keyframes 'animation-9' {
-  0% {
-    left: 53.75229307%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 3.61526497%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 78.8958524%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 82.97103473%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 10.87308888%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.09012619);
+  animation-name: 'animation-9';
+  animation-delay: 1.8s;
+  background-color: #10eed8;
 }
 @keyframes 'animation-9' {
   0% {
-    left: 53.75229307%;
+    left: 83.23118565%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 3.61526497%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 41.28099992%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 78.8958524%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 40.16472593%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 82.97103473%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 63.28098877%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 10.87308888%;
+    left: 28.75620036%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(10) {
-  -webkit-transform: scale(0.79139846);
-          transform: scale(0.79139846);
-  -webkit-animation-name: 'animation-10';
-          animation-name: 'animation-10';
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  background-color: #ba54ee;
-}
-@-webkit-keyframes 'animation-10' {
-  0% {
-    left: 66.33482027%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 75.56950838%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 40.62203265%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 6.43478864%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 77.12181282%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.36538262);
+  animation-name: 'animation-10';
+  animation-delay: 2s;
+  background-color: #8040fe;
 }
 @keyframes 'animation-10' {
   0% {
-    left: 66.33482027%;
+    left: 55.41238332%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 75.56950838%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 36.79376877%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 40.62203265%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 7.05335779%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 6.43478864%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 9.85378832%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 77.12181282%;
+    left: 49.19554734%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(11) {
-  -webkit-transform: scale(0.59540122);
-          transform: scale(0.59540122);
-  -webkit-animation-name: 'animation-11';
-          animation-name: 'animation-11';
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
-  background-color: #793137;
-}
-@-webkit-keyframes 'animation-11' {
-  0% {
-    left: 63.46837497%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 88.82651756%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 56.10331484%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: -1.4413836%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 45.86678581%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.57072676);
+  animation-name: 'animation-11';
+  animation-delay: 2.2s;
+  background-color: #121e09;
 }
 @keyframes 'animation-11' {
   0% {
-    left: 63.46837497%;
+    left: 24.31260598%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 88.82651756%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 17.62259498%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 56.10331484%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 89.89321057%;
+    transform: skew(-30deg);
   }
   75% {
-    left: -1.4413836%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 58.67544615%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 45.86678581%;
+    left: 90.79962397%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(12) {
-  -webkit-transform: scale(0.82328398);
-          transform: scale(0.82328398);
-  -webkit-animation-name: 'animation-12';
-          animation-name: 'animation-12';
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
-  background-color: #4f2e59;
-}
-@-webkit-keyframes 'animation-12' {
-  0% {
-    left: 80.53965922%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 28.30254062%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 57.14128402%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 32.40058179%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 12.04498399%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.90067067);
+  animation-name: 'animation-12';
+  animation-delay: 2.4s;
+  background-color: #7b306b;
 }
 @keyframes 'animation-12' {
   0% {
-    left: 80.53965922%;
+    left: 66.33331577%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 28.30254062%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 41.40185325%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 57.14128402%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 71.88801859%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 32.40058179%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 30.71330351%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 12.04498399%;
+    left: 5.7358717%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(13) {
-  -webkit-transform: scale(0.46558858);
-          transform: scale(0.46558858);
-  -webkit-animation-name: 'animation-13';
-          animation-name: 'animation-13';
-  -webkit-animation-delay: 2.6s;
-          animation-delay: 2.6s;
-  background-color: #44069;
-}
-@-webkit-keyframes 'animation-13' {
-  0% {
-    left: 28.274979%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: -0.29496658%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 91.79361323%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 58.39389548%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 92.60107718%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.01843789);
+  animation-name: 'animation-13';
+  animation-delay: 2.6s;
+  background-color: #697187;
 }
 @keyframes 'animation-13' {
   0% {
-    left: 28.274979%;
+    left: 3.75863454%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: -0.29496658%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 69.48060207%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 91.79361323%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 76.84949551%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 58.39389548%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 61.68499908%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 92.60107718%;
+    left: 56.06701596%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(14) {
-  -webkit-transform: scale(0.39878525);
-          transform: scale(0.39878525);
-  -webkit-animation-name: 'animation-14';
-          animation-name: 'animation-14';
-  -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-  background-color: #b8c88f;
-}
-@-webkit-keyframes 'animation-14' {
-  0% {
-    left: 51.41710267%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 41.87543287%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 63.02679677%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 76.60383331%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 64.44750656%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.07444082);
+  animation-name: 'animation-14';
+  animation-delay: 2.8s;
+  background-color: #1cb05c;
 }
 @keyframes 'animation-14' {
   0% {
-    left: 51.41710267%;
+    left: 21.20597654%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 41.87543287%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 32.86374134%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 63.02679677%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 12.3833921%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 76.60383331%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 50.54234358%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 64.44750656%;
+    left: 48.67800234%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(15) {
-  -webkit-transform: scale(0.28174566);
-          transform: scale(0.28174566);
-  -webkit-animation-name: 'animation-15';
-          animation-name: 'animation-15';
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  background-color: #994119;
-}
-@-webkit-keyframes 'animation-15' {
-  0% {
-    left: 56.4515162%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 73.06040697%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 76.08263058%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 24.00974515%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 38.88115599%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.41477507);
+  animation-name: 'animation-15';
+  animation-delay: 3s;
+  background-color: #7dd965;
 }
 @keyframes 'animation-15' {
   0% {
-    left: 56.4515162%;
+    left: 38.75910664%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 73.06040697%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 67.85010208%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 76.08263058%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 49.34137704%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 24.00974515%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 20.40267523%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 38.88115599%;
+    left: 54.26486814%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(16) {
-  -webkit-transform: scale(0.44583463);
-          transform: scale(0.44583463);
-  -webkit-animation-name: 'animation-16';
-          animation-name: 'animation-16';
-  -webkit-animation-delay: 3.2s;
-          animation-delay: 3.2s;
-  background-color: #5af8e;
-}
-@-webkit-keyframes 'animation-16' {
-  0% {
-    left: 43.9738995%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 69.72125955%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 3.35150742%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 35.36557897%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 72.84640496%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.59496349);
+  animation-name: 'animation-16';
+  animation-delay: 3.2s;
+  background-color: #99b238;
 }
 @keyframes 'animation-16' {
   0% {
-    left: 43.9738995%;
+    left: 72.83419559%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 69.72125955%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 93.17424489%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 3.35150742%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 84.95935656%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 35.36557897%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 55.660958%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 72.84640496%;
+    left: 44.60174287%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(17) {
-  -webkit-transform: scale(0.55569688);
-          transform: scale(0.55569688);
-  -webkit-animation-name: 'animation-17';
-          animation-name: 'animation-17';
-  -webkit-animation-delay: 3.4s;
-          animation-delay: 3.4s;
-  background-color: #aefa95;
-}
-@-webkit-keyframes 'animation-17' {
-  0% {
-    left: 2.91174458%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 5.62348201%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 7.62143784%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 18.04491833%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 5.71379727%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.4548745);
+  animation-name: 'animation-17';
+  animation-delay: 3.4s;
+  background-color: #fe8d79;
 }
 @keyframes 'animation-17' {
   0% {
-    left: 2.91174458%;
+    left: 21.22674204%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 5.62348201%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 45.50618425%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 7.62143784%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 93.32294002%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 18.04491833%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 16.42711953%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 5.71379727%;
+    left: 73.16546366%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(18) {
-  -webkit-transform: scale(0.93932627);
-          transform: scale(0.93932627);
-  -webkit-animation-name: 'animation-18';
-          animation-name: 'animation-18';
-  -webkit-animation-delay: 3.6s;
-          animation-delay: 3.6s;
-  background-color: #98829b;
-}
-@-webkit-keyframes 'animation-18' {
-  0% {
-    left: 54.34820441%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 15.16963716%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 36.65585783%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 47.46807368%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 92.63149739%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.16472653);
+  animation-name: 'animation-18';
+  animation-delay: 3.6s;
+  background-color: #8b8b83;
 }
 @keyframes 'animation-18' {
   0% {
-    left: 54.34820441%;
+    left: 8.40348221%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 15.16963716%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 18.03067013%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 36.65585783%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 45.03463428%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 47.46807368%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 86.91304315%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 92.63149739%;
+    left: 75.61202718%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(19) {
-  -webkit-transform: scale(0.75830423);
-          transform: scale(0.75830423);
-  -webkit-animation-name: 'animation-19';
-          animation-name: 'animation-19';
-  -webkit-animation-delay: 3.8s;
-          animation-delay: 3.8s;
-  background-color: #e20138;
-}
-@-webkit-keyframes 'animation-19' {
-  0% {
-    left: 67.48903893%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 34.13761164%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 10.94174638%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 38.48299602%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 17.84009575%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.14876749);
+  animation-name: 'animation-19';
+  animation-delay: 3.8s;
+  background-color: #7a7da7;
 }
 @keyframes 'animation-19' {
   0% {
-    left: 67.48903893%;
+    left: 86.89558373%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 34.13761164%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 87.03229397%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 10.94174638%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 39.22863621%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 38.48299602%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 13.30950071%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 17.84009575%;
+    left: 21.95096995%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(20) {
-  -webkit-transform: scale(0.61601916);
-          transform: scale(0.61601916);
-  -webkit-animation-name: 'animation-20';
-          animation-name: 'animation-20';
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-  background-color: #1b2c66;
-}
-@-webkit-keyframes 'animation-20' {
-  0% {
-    left: 55.28528153%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 85.63077626%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 32.26104331%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 48.99954044%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 37.25405594%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.07147256);
+  animation-name: 'animation-20';
+  animation-delay: 4s;
+  background-color: #c2da6b;
 }
 @keyframes 'animation-20' {
   0% {
-    left: 55.28528153%;
+    left: 66.70448189%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 85.63077626%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 67.49167751%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 32.26104331%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 93.34583469%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 48.99954044%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 21.4583281%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 37.25405594%;
+    left: 64.00903453%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(21) {
-  -webkit-transform: scale(0.10811148);
-          transform: scale(0.10811148);
-  -webkit-animation-name: 'animation-21';
-          animation-name: 'animation-21';
-  -webkit-animation-delay: 4.2s;
-          animation-delay: 4.2s;
-  background-color: #b77133;
-}
-@-webkit-keyframes 'animation-21' {
-  0% {
-    left: 33.45994883%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 36.52945679%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 30.53211916%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 15.16297112%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 41.97958295%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.02398128);
+  animation-name: 'animation-21';
+  animation-delay: 4.2s;
+  background-color: #744cb7;
 }
 @keyframes 'animation-21' {
   0% {
-    left: 33.45994883%;
+    left: 13.92722038%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 36.52945679%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: -2.79242575%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 30.53211916%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 30.95585168%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 15.16297112%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 98.65275769%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 41.97958295%;
+    left: 91.56903163%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(22) {
-  -webkit-transform: scale(0.91590795);
-          transform: scale(0.91590795);
-  -webkit-animation-name: 'animation-22';
-          animation-name: 'animation-22';
-  -webkit-animation-delay: 4.4s;
-          animation-delay: 4.4s;
-  background-color: #ec7ed1;
-}
-@-webkit-keyframes 'animation-22' {
-  0% {
-    left: 22.00094413%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 32.16956477%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 5.02758105%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 58.93401112%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 47.9855851%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.37819674);
+  animation-name: 'animation-22';
+  animation-delay: 4.4s;
+  background-color: #1b621a;
 }
 @keyframes 'animation-22' {
   0% {
-    left: 22.00094413%;
+    left: 11.34946063%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 32.16956477%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 73.17514417%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 5.02758105%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 18.60436196%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 58.93401112%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 16.85306694%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 47.9855851%;
+    left: 18.01193141%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(23) {
-  -webkit-transform: scale(0.24306743);
-          transform: scale(0.24306743);
-  -webkit-animation-name: 'animation-23';
-          animation-name: 'animation-23';
-  -webkit-animation-delay: 4.6s;
-          animation-delay: 4.6s;
-  background-color: #c5b7d9;
-}
-@-webkit-keyframes 'animation-23' {
-  0% {
-    left: 47.97941171%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 0.57214333%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 88.43756369%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 44.53730536%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 70.11388058%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.3651606);
+  animation-name: 'animation-23';
+  animation-delay: 4.6s;
+  background-color: #24f0ce;
 }
 @keyframes 'animation-23' {
   0% {
-    left: 47.97941171%;
+    left: 40.26698191%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 0.57214333%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 1.91221055%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 88.43756369%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 93.15863543%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 44.53730536%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 27.94277375%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 70.11388058%;
+    left: 13.23940803%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(24) {
-  -webkit-transform: scale(0.41509449);
-          transform: scale(0.41509449);
-  -webkit-animation-name: 'animation-24';
-          animation-name: 'animation-24';
-  -webkit-animation-delay: 4.8s;
-          animation-delay: 4.8s;
-  background-color: #9b8fae;
-}
-@-webkit-keyframes 'animation-24' {
-  0% {
-    left: 24.75152896%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 63.2602653%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 25.9339778%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 45.09533268%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 29.06273518%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.1835927);
+  animation-name: 'animation-24';
+  animation-delay: 4.8s;
+  background-color: #480b9e;
 }
 @keyframes 'animation-24' {
   0% {
-    left: 24.75152896%;
+    left: 77.2367614%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 63.2602653%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 8.26901469%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 25.9339778%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 73.65064457%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 45.09533268%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 28.3870157%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 29.06273518%;
+    left: 79.98610787%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(25) {
-  -webkit-transform: scale(0.64879024);
-          transform: scale(0.64879024);
-  -webkit-animation-name: 'animation-25';
-          animation-name: 'animation-25';
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  background-color: #612b32;
-}
-@-webkit-keyframes 'animation-25' {
-  0% {
-    left: 2.11838214%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 41.47756727%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 6.1619931%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 28.31044003%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 16.04013546%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.9269283);
+  animation-name: 'animation-25';
+  animation-delay: 5s;
+  background-color: #1fb29d;
 }
 @keyframes 'animation-25' {
   0% {
-    left: 2.11838214%;
+    left: 71.23198235%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 41.47756727%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 26.95869828%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 6.1619931%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 65.29075995%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 28.31044003%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 52.87076682%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 16.04013546%;
+    left: 92.89522665%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(26) {
-  -webkit-transform: scale(0.42598474);
-          transform: scale(0.42598474);
-  -webkit-animation-name: 'animation-26';
-          animation-name: 'animation-26';
-  -webkit-animation-delay: 5.2s;
-          animation-delay: 5.2s;
-  background-color: #109cfc;
-}
-@-webkit-keyframes 'animation-26' {
-  0% {
-    left: 6.83912742%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 36.27777639%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 91.10621093%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: -0.36470803%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 5.71942509%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.20838867);
+  animation-name: 'animation-26';
+  animation-delay: 5.2s;
+  background-color: #ea2ee2;
 }
 @keyframes 'animation-26' {
   0% {
-    left: 6.83912742%;
+    left: 89.24171774%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 36.27777639%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 72.92764915%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 91.10621093%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 59.09414094%;
+    transform: skew(-30deg);
   }
   75% {
-    left: -0.36470803%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 33.34342469%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 5.71942509%;
+    left: 13.34757138%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(27) {
-  -webkit-transform: scale(0.70837734);
-          transform: scale(0.70837734);
-  -webkit-animation-name: 'animation-27';
-          animation-name: 'animation-27';
-  -webkit-animation-delay: 5.4s;
-          animation-delay: 5.4s;
-  background-color: #298d45;
-}
-@-webkit-keyframes 'animation-27' {
-  0% {
-    left: 39.98521242%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 60.81191219%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 48.41168583%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 66.44289254%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 24.24257317%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.06009747);
+  animation-name: 'animation-27';
+  animation-delay: 5.4s;
+  background-color: #93045d;
 }
 @keyframes 'animation-27' {
   0% {
-    left: 39.98521242%;
+    left: 68.9563474%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 60.81191219%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 27.93291698%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 48.41168583%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 6.06708505%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 66.44289254%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 74.43873246%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 24.24257317%;
+    left: 78.42359632%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(28) {
-  -webkit-transform: scale(0.67389284);
-          transform: scale(0.67389284);
-  -webkit-animation-name: 'animation-28';
-          animation-name: 'animation-28';
-  -webkit-animation-delay: 5.6s;
-          animation-delay: 5.6s;
-  background-color: #58718c;
-}
-@-webkit-keyframes 'animation-28' {
-  0% {
-    left: 75.97622309%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 85.31767738%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 79.161133%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 39.41057019%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 15.81098439%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.17602068);
+  animation-name: 'animation-28';
+  animation-delay: 5.6s;
+  background-color: #d67fdd;
 }
 @keyframes 'animation-28' {
   0% {
-    left: 75.97622309%;
+    left: 53.09025611%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 85.31767738%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 71.63757338%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 79.161133%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 13.08483309%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 39.41057019%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 76.13806951%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 15.81098439%;
+    left: 35.50420195%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(29) {
-  -webkit-transform: scale(0.18975128);
-          transform: scale(0.18975128);
-  -webkit-animation-name: 'animation-29';
-          animation-name: 'animation-29';
-  -webkit-animation-delay: 5.8s;
-          animation-delay: 5.8s;
-  background-color: #c0e7f4;
-}
-@-webkit-keyframes 'animation-29' {
-  0% {
-    left: 46.8058925%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 26.69911991%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 31.52896794%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 20.24785561%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 68.97837165%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.11158114);
+  animation-name: 'animation-29';
+  animation-delay: 5.8s;
+  background-color: #573214;
 }
 @keyframes 'animation-29' {
   0% {
-    left: 46.8058925%;
+    left: 49.9801235%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 26.69911991%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 13.17860911%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 31.52896794%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 19.35009326%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 20.24785561%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 97.58941007%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 68.97837165%;
+    left: 83.19603186%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #achievementsModal .confetti:nth-child(30) {
-  -webkit-transform: scale(0.56610897);
-          transform: scale(0.56610897);
-  -webkit-animation-name: 'animation-30';
-          animation-name: 'animation-30';
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-  background-color: #6a0548;
-}
-@-webkit-keyframes 'animation-30' {
-  0% {
-    left: 85.94982928%;
-    top: -5%;
-    opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  25% {
-    left: 48.20963801%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-    opacity: 1;
-  }
-  50% {
-    left: 41.02857647%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
-  75% {
-    left: 88.35805805%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  100% {
-    top: 100%;
-    left: 1.65508377%;
-    opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
-  }
+  transform: scale(0.92264974);
+  animation-name: 'animation-30';
+  animation-delay: 6s;
+  background-color: #36dd5;
 }
 @keyframes 'animation-30' {
   0% {
-    left: 85.94982928%;
+    left: 23.27401875%;
     top: -5%;
     opacity: 1.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
   25% {
-    left: 48.20963801%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 87.74456487%;
+    transform: skew(30deg);
     opacity: 1;
   }
   50% {
-    left: 41.02857647%;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    left: 0.59791711%;
+    transform: skew(-30deg);
   }
   75% {
-    left: 88.35805805%;
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
+    left: 40.60662696%;
+    transform: skew(30deg);
   }
   100% {
     top: 100%;
-    left: 1.65508377%;
+    left: 8.5844834%;
     opacity: 0.0;
-    -webkit-transform: skew(-30deg);
-            transform: skew(-30deg);
+    transform: skew(-30deg);
   }
 }
 #categoriesModal .btn-close,
@@ -2675,7 +1455,6 @@ header a {
   width: 470px;
   margin-right: 60px;
   padding: 40px;
-  background: -webkit-linear-gradient(top, #EEEEEE 0%, #B7B7B7 100%);
   background: linear-gradient(to bottom, #EEEEEE 0%, #B7B7B7 100%);
   color: black;
   text-align: center;
@@ -2711,7 +1490,6 @@ header a {
   border-radius: 50%;
   padding: 30px;
   border: 6px solid rgba(170, 223, 250, 0.57);
-  background: -webkit-radial-gradient(center ellipse, #30A1C1 0%, #217E8F 100%);
   background: radial-gradient(ellipse at center, #30A1C1 0%, #217E8F 100%);
   position: relative;
 }
@@ -2730,8 +1508,7 @@ header a {
   top: 50%;
   left: 0;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
@@ -2781,7 +1558,6 @@ header a {
   padding: 0;
   overflow: hidden;
   z-index: 999;
-  background: -webkit-linear-gradient(top, #EEEEEE 0%, #B7B7B7 100%);
   background: linear-gradient(to bottom, #EEEEEE 0%, #B7B7B7 100%);
   color: black;
   text-align: center;
@@ -2876,7 +1652,6 @@ header a {
   display: block;
   width: 40%;
   height: 100%;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
   background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
 }
 .category-data .category-stats {
@@ -2924,7 +1699,6 @@ header a {
 }
 .screen-stats .stats-cumulative {
   padding: 40px;
-  background: -webkit-linear-gradient(bottom, #2D3A4D 0%, #36647B 100%);
   background: linear-gradient(to top, #2D3A4D 0%, #36647B 100%);
 }
 @media only screen and (max-width: 767px) {
@@ -3000,7 +1774,6 @@ header a {
   display: block;
   width: 0%;
   height: 100%;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
   background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
 }
 .screen-stats h2 {
@@ -3014,7 +1787,6 @@ header a {
 .screen-stats .stats-achievements {
   padding: 40px;
   position: relative;
-  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #c3ccd1 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #c3ccd1 100%);
 }
 .screen-stats .stats-achievements .btn {
@@ -3101,7 +1873,6 @@ header a {
   position: absolute;
   top: 0;
   bottom: 0;
-  background: -webkit-linear-gradient(bottom, #2D3A4D 0%, #36647B 100%);
   background: linear-gradient(to top, #2D3A4D 0%, #36647B 100%);
 }
 .screen-stats .stats-categories .stats-categories-list .stat-category .stat-category-icon img {
@@ -3111,8 +1882,7 @@ header a {
   top: 50%;
   left: 0;
   right: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   margin: 0 auto;
 }
 @media only screen and (max-width: 767px) {
@@ -3289,7 +2059,6 @@ header a {
 .screen-game .game-timer-bar .game-timer-bar-inner,
 .screen-end .game-timer-bar .game-timer-bar-inner {
   height: 20px;
-  background: -webkit-linear-gradient(left, #3DB0B6 0%, #33A1C1 100%);
   background: linear-gradient(to right, #3DB0B6 0%, #33A1C1 100%);
   width: 100%;
 }
@@ -3341,7 +2110,6 @@ header a {
 }
 .screen-end .end-scores {
   padding: 40px 0;
-  background: -webkit-linear-gradient(bottom, #2D3A4D 0%, #36647B 100%);
   background: linear-gradient(to top, #2D3A4D 0%, #36647B 100%);
   zoom: 1;
 }
@@ -3394,7 +2162,6 @@ header a {
 .screen-end .end-history-wrapper {
   padding: 40px 0;
   height: 660px;
-  background: -webkit-linear-gradient(top, #EEEEEE 0%, #B7B7B7 100%);
   background: linear-gradient(to bottom, #EEEEEE 0%, #B7B7B7 100%);
 }
 @media only screen and (max-width: 767px) {
@@ -3428,7 +2195,6 @@ header a {
   padding: 40px;
   margin-right: 60px;
   overflow: visible;
-  background: -webkit-linear-gradient(bottom, #2D3A4D 0%, #36647B 100%);
   background: linear-gradient(to top, #2D3A4D 0%, #36647B 100%);
 }
 .screen-end .end-history-wrapper .end-history .game-data .game-question-wrapper {
