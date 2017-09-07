@@ -1461,16 +1461,21 @@ header{
 			}
 
 			.game-data{
-				width: 340px;
-				height: 200px;
+				
+				width: 500px;
+				height: 510px;
+				
 				padding: @lessPadding*2;
 				margin-right: 2*@basePadding;
 				overflow:visible;
 
 				background: @background;
 
+				@media @smartphones{
+					width: 340px;
+					height: 200px;
+				}
 
-				
 				.game-question-wrapper{
 					height: 210px;
 					
