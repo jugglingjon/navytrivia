@@ -273,6 +273,28 @@
 					"operator": "===",
 					"threshold": true
 				}
+			},
+			{
+				"title":"Courteous",
+				"slug": "customs",
+				"description": "Correctly answer all questions in Military Customs & Courtesies",
+				"image": true,
+				"criteria":{
+					"stat": "isComplete('customs').boolean",
+					"operator": "===",
+					"threshold": true
+				}
+			},
+			{
+				"title":"Defender",
+				"slug": "cbrd",
+				"description": "Correctly answer all questions in CBRD",
+				"image": true,
+				"criteria":{
+					"stat": "isComplete('cbrd').boolean",
+					"operator": "===",
+					"threshold": true
+				}
 			}
 		]
 	,
@@ -3282,132 +3304,7 @@
 						{"correct":true,"answer":"Black 'D'"},
 						{"answer":"Yellow 'D'"}
 					]
-				},
-				{
-					"question": "At which MOPP level are you to have your mask in the carrier on your person?",
-					"answers":[
-						{"correct":true,"answer":"2"},
-						{"answer":"5"},
-						{"answer":"1"},
-						{"answer":"4"}
-					]
-				},
-				{
-					"question": "Which mask is used in a chemical warfare environment?",
-					"answers":[
-						{"correct":true,"answer":"MK 50"},
-						{"answer":"MCU-3K"},
-						{"answer":"MUC-2P"},
-						{"answer":"DELTA 7"}
-					]
-				},
-				{
-					"question": "Which canister is used on the M50 Mask?",
-					"answers":[
-						{"answer":"C2"},
-						{"correct":true,"answer":"M61"},
-						{"answer":"C1"},
-						{"answer":"M16"}
-					]
-				},
-				{
-					"question": "What MOPP level is put in place when an attack is “Probable”?",
-					"answers":[
-						{"correct":true,"answer":"3"},
-						{"answer":"4"},
-						{"answer":"2"},
-						{"answer":"1"}
-					]
-				},
-				{
-					"question": "What protective garment is used in a CBR environment?",
-					"answers":[
-						{"correct":true,"answer":"JLIST"},
-						{"answer":"ACPG"},
-						{"answer":"CBRS"},
-						{"answer":"MOPPG"}
-					]
-				},
-				{
-					"question": "What does MOPP stand for?",
-					"answers":[
-						{"correct":true,"answer":"Mission Oriented Protective Posture"},
-						{"answer":"Military Operations Post Protection*"},
-						{"answer":"Mission Oriented Post Protection Maritime Office Projects & Planning"}
-					]
-				},
-				{
-					"question": "In MOPP level 4, which item is the last to be donned?",
-					"answers":[
-						{"answer":"Mask"},
-						{"answer":"Blouse"},
-						{"answer":"Boots"},
-						{"correct":true,"answer":"Gloves"}
-					]
-				},
-				{
-					"question": "MOPP Level _____ is implemented when it is suspected that CBR will be used in the operational area.",
-					"answers":[
-						{"answer":"1"},
-						{"answer":"2"},
-						{"answer":"3"},
-						{"correct":true,"answer":"4"}
-					]
-				},
-				{
-					"question": "MOPP Level _____ is implemented when a suspected threat is in the operational area.",
-					"answers":[
-						{"correct":true,"answer":"1"},
-						{"answer":"2"},
-						{"answer":"3"},
-						{"answer":"4"}
-					]
-				},
-				{
-					"question": "MOPP Level _____ is implemented when a threat to use CBR has been made in the operational area.",
-					"answers":[
-						{"answer":"1"},
-						{"answer":"2"},
-						{"correct":true,"answer":"3"},
-						{"answer":"4"}
-					]
-				},
-				{
-					"question": "MOPP Level _____ is implemented when it is believed that CBR may be used in the operational area.",
-					"answers":[
-						{"answer":"1"},
-						{"answer":"2"},
-						{"correct":true,"answer":"3"},
-						{"answer":"4"}
-					]
-				},
-				{
-					"question": "Donning your mask, hood and gloves is done in MOPP Level _____.",
-					"answers":[
-						{"answer":"1"},
-						{"answer":"2"},
-						{"answer":"3"},
-						{"correct":true,"answer":"4"}
-					]
-				},
-				{
-					"question": "Donning your JLIST suit with hood down and installing a new canister on your mask is done in MOPP Level _____.",
-					"answers":[
-						{"answer":"1"},
-						{"answer":"2"},
-						{"correct":true,"answer":"3"},
-						{"answer":"4"}
-					]
-				},
-				{
-					"question": "At which MOPP Level is CBRD protective gear issued?",
-					"answers":[
-						{"correct":true,"answer":"1"},
-						{"answer":"2"},
-						{"answer":"3"},
-						{"answer":"4"}
-					]
-				}	
+				}
 			]
 		},
 		{
@@ -4179,10 +4076,10 @@
 			]
 		},
 		{
-			"title": "Military Customs & Courtesies",
-			"slug": "customs",
+			"title": "CBRD",
+			"slug": "cbrd",
 			"image": true,
-			"description": "Understanding and the proper execution of military protocols.",
+			"description": "Chemical, Biological, and Radiological Defense procedure and equipment.",
 			"tags":[
 			],
 			"highScore": 0,
@@ -4191,284 +4088,128 @@
 			"played":0,
 			"questions":[
 				{
-					"question":"What are acts or verbal expressions of consideration or respect for others?",
+					"question": "At which MOPP level are you to have your mask in the carrier on your person?",
 					"answers":[
-						{"answer":"Custom"},
-						{"answer":"Courtesies","correct":true},
-						{"answer":"Etiquette"},
-						{"answer":"Tradition"}
-					]
-				},
-				{
-					"question":"What are behaviors that have been performed for such a long time that they have become common practice?",
-					"answers":[
-						{"answer":"Custom","correct":true},
-						{"answer":"Courtesies"},
-						{"answer":"Etiquette"},
-						{"answer":"Tradition"}
-					]
-				},
-				{
-					"question":"You should render your salute how many paces from the person being saluted?",
-					"answers":[
+						{"correct":true,"answer":"2"},
 						{"answer":"5"},
-						{"answer":"6","correct":true},
-						{"answer":"7"},
+						{"answer":"1"},
 						{"answer":"4"}
 					]
 				},
 				{
-					"question":"_____ is the maximum number of paces for saluting?",
+					"question": "Which mask is used in a chemical warfare environment?",
 					"answers":[
-						{"answer":"10 "},
-						{"answer":"20 "},
-						{"answer":"25 "},
-						{"answer":"30 ","correct":true}
+						{"correct":true,"answer":"MK 50"},
+						{"answer":"MCU-3K"},
+						{"answer":"MUC-2P"},
+						{"answer":"DELTA 7"}
 					]
 				},
 				{
-					"question":"What is rendered to officials or officers as they board and depart a ship?",
+					"question": "Which canister is used on the M50 Mask?",
 					"answers":[
-						{"answer":"Ship Honors"},
-						{"answer":"Boatswain Honors"},
-						{"answer":"Side Honors","correct":true},
-						{"answer":"Custom Honors"}
+						{"answer":"C2"},
+						{"correct":true,"answer":"M61"},
+						{"answer":"C1"},
+						{"answer":"M16"}
 					]
 				},
 				{
-					"question":"What time is evening colors conducted on board a ship?",
+					"question": "What MOPP level is put in place when an attack is “Probable”?",
 					"answers":[
-						{"answer":"1700"},
-						{"answer":"1800"},
-						{"answer":"1900"},
-						{"answer":"Sunset","correct":true}
+						{"correct":true,"answer":"3"},
+						{"answer":"4"},
+						{"answer":"2"},
+						{"answer":"1"}
 					]
 				},
 				{
-					"question":"Ships NOT underway also hoist and lower what other flag during morning and evening colors?",
+					"question": "What protective garment is used in a CBR environment?",
 					"answers":[
-						{"answer":"Ship’s Flag"},
-						{"answer":"Union Jack","correct":true},
-						{"answer":"National Ensign"},
-						{"answer":"Captain’s Personal Flag"}
+						{"correct":true,"answer":"JLIST"},
+						{"answer":"ACPG"},
+						{"answer":"CBRS"},
+						{"answer":"MOPPG"}
 					]
 				},
 				{
-					"question":"Who can direct the half-masting of the Ensign?",
+					"question": "What does MOPP stand for?",
 					"answers":[
-						{"answer":"President","correct":true},
-						{"answer":"Vice-President"},
-						{"answer":"Congress"},
-						{"answer":"Senate"}
+						{"correct":true,"answer":"Mission Oriented Protective Posture"},
+						{"answer":"Military Operations Post Protection*"},
+						{"answer":"Mission Oriented Post Protection Maritime Office Projects & Planning"}
 					]
 				},
 				{
-					"question":"When walking, what do you say to request permission to pass an officer?",
+					"question": "In MOPP level 4, which item is the last to be donned?",
 					"answers":[
-						{"answer":"Following your lead Sir/Ma’am"},
-						{"answer":"Good Morning Sir/Ma’am"},
-						{"answer":"By your leave Sir/Ma’am","correct":true},
-						{"answer":"By your lead Sir/Ma’am"}
+						{"answer":"Mask"},
+						{"answer":"Blouse"},
+						{"answer":"Boots"},
+						{"correct":true,"answer":"Gloves"}
 					]
 				},
 				{
-					"question":"Who is required to salute an officer if you are part of a work detail?",
+					"question": "MOPP Level _____ is implemented when it is suspected that CBR will be used in the operational area.",
 					"answers":[
-						{"answer":"No one"},
-						{"answer":"Everyone that is part of the work detail"},
-						{"answer":"Only personnel who can safely salute"},
-						{"answer":"The person in charge of the work detail","correct":true}
+						{"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"correct":true,"answer":"4"}
 					]
 				},
 				{
-					"question":"What year did the first official salute underway of the American flag by a foreign government occur?",
+					"question": "MOPP Level _____ is implemented when a suspected threat is in the operational area.",
 					"answers":[
-						{"answer":"1777"},
-						{"answer":"1778","correct":true},
-						{"answer":"1779"},
-						{"answer":"1780"}
+						{"correct":true,"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"answer":"4"}
 					]
 				},
 				{
-					"question":"_____ was the captain of the USS RANGER when the American Flag was first rendered by a foreign government.",
+					"question": "MOPP Level _____ is implemented when a threat to use CBR has been made in the operational area.",
 					"answers":[
-						{"answer":"John Paul Jones","correct":true},
-						{"answer":"Stephen Decatur"},
-						{"answer":"Oliver Hazard Perry"},
-						{"answer":"Isaac Hull"}
+						{"answer":"1"},
+						{"answer":"2"},
+						{"correct":true,"answer":"3"},
+						{"answer":"4"}
 					]
 				},
 				{
-					"question":"Which US ship received the first official salute of the American flag by a foreign nation?",
+					"question": "MOPP Level _____ is implemented when it is believed that CBR may be used in the operational area.",
 					"answers":[
-						{"answer":"Serapis"},
-						{"answer":"BonHomme Richard"},
-						{"answer":"Ranger","correct":true},
-						{"answer":"Enterprise"}
+						{"answer":"1"},
+						{"answer":"2"},
+						{"correct":true,"answer":"3"},
+						{"answer":"4"}
 					]
 				},
 				{
-					"question":"What words appear across the bottom of this American Revolution era flag?",
-					"image":"cc1.png",
+					"question": "Donning your mask, hood and gloves is done in MOPP Level _____.",
 					"answers":[
-						{"answer":"Don’t Tread On Me"},
-						{"answer":"Dont tread on me","correct":true},
-						{"answer":"Do Not Tread On Me"},
-						{"answer":"You Will Not Tread On Me"}
+						{"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"correct":true,"answer":"4"}
 					]
 				},
 				{
-					"question":"What word is passed over the 1MC at 0755 during morning colors?  ",
+					"question": "Donning your JLIST suit with hood down and installing a new canister on your mask is done in MOPP Level _____.",
 					"answers":[
-						{"answer":"Colors"},
-						{"answer":"Call to Colors"},
-						{"answer":"Nothing, a Boatswain’s pipe is sounded"},
-						{"answer":"First Call to Colors","correct":true}
+						{"answer":"1"},
+						{"answer":"2"},
+						{"correct":true,"answer":"3"},
+						{"answer":"4"}
 					]
 				},
 				{
-					"question":"At what time is “First Call to Colors” passed over the 1MC for morning colors?",
+					"question": "At which MOPP Level is CBRD protective gear issued?",
 					"answers":[
-						{"answer":"0745"},
-						{"answer":"0750"},
-						{"answer":"0755","correct":true},
-						{"answer":"0800"}
-					]
-				},
-				{
-					"question":"What do two police type whistle blasts signify for morning colors?",
-					"answers":[
-						{"answer":"Come to attention facing the flag"},
-						{"answer":"Salute"},
-						{"answer":"Drop your salute","correct":true},
-						{"answer":"Carry On"}
-					]
-				},
-				{
-					"question":"What do three police type whistle blasts signify for morning colors?",
-					"answers":[
-						{"answer":"Come to attention facing the flag"},
-						{"answer":"Salute"},
-						{"answer":"Drop your salute"},
-						{"answer":"Carry On","correct":true}
-					]
-				},
-				{
-					"question":"What does one police type whistle blast signify for morning colors?",
-					"answers":[
-						{"answer":"Come to attention facing the flag","correct":true},
-						{"answer":"Salute"},
-						{"answer":"Drop your salute"},
-						{"answer":"Carry on"}
-					]
-				},
-				{
-					"question":"What song is played for morning colors?",
-					"answers":[
-						{"answer":"Reveille"},
-						{"answer":"Taps"},
-						{"answer":"Retreat"},
-						{"answer":"To the Colors","correct":true}
-					]
-				},
-				{
-					"question":"What song is played for evening colors?",
-					"answers":[
-						{"answer":"Reveille"},
-						{"answer":"Taps"},
-						{"answer":"Retreat","correct":true},
-						{"answer":"To the Colors"}
-					]
-				},
-				{
-					"question":"Where is the national ensign flown from while underway?",
-					"answers":[
-						{"answer":"Whip"},
-						{"answer":"Gaff","correct":true},
-						{"answer":"Jackstaff"},
-						{"answer":"Flagstaff"}
-					]
-				},
-				{
-					"question":"Which flag/pennant is this?",
-					"image":"cc2.png",
-					"answers":[
-						{"answer":"Union Jack"},
-						{"answer":"Personal Flag"},
-						{"answer":"Commission Pennant","correct":true},
-						{"answer":"Command Pennant"}
-					]
-				},
-				{
-					"question":"Which special flag accompanies Navy Flag Officers in an official capacity wherever they go?",
-					"answers":[
-						{"answer":"Personal Flag","correct":true},
-						{"answer":"Commission Pennant"},
-						{"answer":"Command Pennant"},
-						{"answer":"Third Substitute"}
-					]
-				},
-				{
-					"question":"Officers who are not admirals but have command of more than one ship or number of aircraft rate a _______?",
-					"answers":[
-						{"answer":"Personal Flags"},
-						{"answer":"Commission Pennant"},
-						{"answer":"Command Pennant","correct":true},
-						{"answer":"Third Substitute"}
-					]
-				},
-				{
-					"question":"The fourth substitute is flown when whom is absent?",
-					"answers":[
-						{"answer":"Admiral"},
-						{"answer":"Admiral’s Chief of Staff"},
-						{"answer":"Commanding Officer"},
-						{"answer":"Civil or military official","correct":true}
-					]
-				},
-				{
-					"question":"What is the only pennant flown above the national ensign?",
-					"answers":[
-						{"answer":"Commission Pennant"},
-						{"answer":"Command Pennant"},
-						{"answer":"Third Substitute"},
-						{"answer":"Church Pennant","correct":true}
-					]
-				},
-				{
-					"question":"How many shots are fired for an Admirals gun salute?",
-					"answers":[
-						{"answer":"17","correct":true},
-						{"answer":"15"},
-						{"answer":"13"},
-						{"answer":"11"}
-					]
-				},
-				{
-					"question":"How many shots are fired for a Vice Admirals gun salute?",
-					"answers":[
-						{"answer":"17 "},
-						{"answer":"15 ","correct":true},
-						{"answer":"13 "},
-						{"answer":"11 "}
-					]
-				},
-				{
-					"question":"How many shots are fired for a Vice Rear Admiral (upper half) gun salute?",
-					"answers":[
-						{"answer":"17 "},
-						{"answer":"15 "},
-						{"answer":"13 ","correct":true},
-						{"answer":"11 "}
-					]
-				},
-				{
-					"question":"How many shots are fired for a Vice Rear Admiral (lower half) gun salute?",
-					"answers":[
-						{"answer":"17 "},
-						{"answer":"15 "},
-						{"answer":"13 "},
-						{"answer":"11 ","correct":true}
+						{"correct":true,"answer":"1"},
+						{"answer":"2"},
+						{"answer":"3"},
+						{"answer":"4"}
 					]
 				}
 			]
