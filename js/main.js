@@ -18,10 +18,10 @@ var $data,
 	$correctScore=100,
 	$bonusScore=100,
 	$gameData=[],
-	$localKey='navyTriviaDataAlpha',
+	$localKey='navyTriviaData',
 	$currentScreen='screen-categories',
 	$lastScreen='screen-categories',
-	$version='1.0';
+	$version='2.0';
 
 var $startTime,
 	$questionTimer,
