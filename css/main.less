@@ -365,17 +365,23 @@ header{
 		}
 
 		.category-image-wrapper,.achievement-image-wrapper{
+
 			position: relative;
 			border-radius: 50%;
 			width: 176px;
-			height: 176px;
 			padding: @basePadding;
 
 			background: radial-gradient(ellipse at center, #30A1C1 0%,#217E8F 100%);
 			border:5px solid @highlightMuted;
 
+			&::after{
+				content:'';
+				display:block;
+				padding-bottom:100%;
+
+			}
+
 			@media @smartphones{
-				height: 140px;
 				width: 100%;
 			}
 
